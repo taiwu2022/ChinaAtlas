@@ -15,3 +15,7 @@
 
 - Portraits are curated in data/portraits.json by stable person ID plus exact name. Use explicit official captions/profile pages, never inferred facial identity. Keep source/credit/date provenance; no AI-generated substitute faces.
 - Portrait binaries are linked from official sites over HTTPS and only loaded inside profiles. No-photo/error states must preserve readable profiles and private drafts. Mirror portrait JSON to the local maintenance dist/research and update its exact image-origin CSP when adding hosts.
+
+- Expansion schema and upkeep: docs/DATA_MODEL.md. New role verification_status and as_of_date distinguish current evidence, undated directories, historical facts, conflicts and unverified leads. Do not turn historical status into known departure.
+- Homonyms: possible_identity_ids is an identity review queue, never a social relation; known distinct people must not be linked as possible same identities. Retain each ID until explicit evidence supports a merge.
+- Large locations use place_groups and lazy selected-person links; keep legacy small-group links, deep links and filtered regional exports functional. Run scripts/audit_data.py and synthetic scale tests before publishing.

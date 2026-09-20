@@ -26,7 +26,9 @@ function publicRegionExport(id){
  const copy=JSON.parse(JSON.stringify(atlas));copy.people.forEach(p=>delete p.personal_note);
  if(!id)return copy;
  const ps=regionPeople(id),pids=new Set(ps.map(p=>p.id));copy.people=copy.people.filter(p=>pids.has(p.id));copy.career_posts=copy.career_posts.filter(p=>pids.has(p.person_id));copy.career_links=copy.career_links.filter(l=>pids.has(l.from)&&pids.has(l.to));copy.person_connections=copy.person_connections.filter(l=>pids.has(l.from)&&pids.has(l.to));copy.events=copy.events.filter(e=>e.person_ids.some(pid=>pids.has(pid)));
- const orgs=new Set(copy.people.flatMap(p=>p.roles.map(r=>r.org_id)));copy.institutions=copy.institutions.filter(o=>orgs.has(o.id));copy.relations=copy.relations.filter(r=>orgs.has(r.from)&&orgs.has(r.to));copy.guides=[];copy.rank_mapping=[];copy.regional_coverage=copy.regional_coverage.filter(r=>r.location_id===id);
+ const postIds=new Set(copy.career_posts.map(p=>p.id));copy.place_groups=(copy.place_groups||[]).map(g=>({...g,person_ids:g.person_ids.filter(pid=>pids.has(pid)),post_ids:g.post_ids.filter(pid=>postIds.has(pid))})).filter(g=>g.person_ids.length>1);copy.research_coverage=(copy.research_coverage||[]).filter(r=>inheritedPlaces([r.location_id]).includes(id));
+ for(const group of copy.place_groups)group.source_ids=[...new Set(copy.career_posts.filter(p=>group.post_ids.includes(p.id)).flatMap(p=>p.source_ids))];
+ const orgs=new Set([...copy.people.flatMap(p=>p.roles.map(r=>r.org_id)),...copy.career_posts.map(p=>p.organization_id)]);copy.institutions=copy.institutions.filter(o=>orgs.has(o.id));copy.relations=copy.relations.filter(r=>orgs.has(r.from)&&orgs.has(r.to));copy.guides=[];copy.rank_mapping=[];copy.regional_coverage=copy.regional_coverage.filter(r=>r.location_id===id);
  const ids=new Set();function collect(v){if(Array.isArray(v))v.forEach(collect);else if(v&&typeof v==='object')for(const [k,x] of Object.entries(v)){if(k.endsWith('source_ids'))x.forEach(i=>ids.add(i));else collect(x);}}
  collect({...copy,sources:[]});copy.sources=copy.sources.filter(s=>ids.has(s.id));copy.region=place(id);copy.format='china-atlas-public-region-v1';return copy;
 }

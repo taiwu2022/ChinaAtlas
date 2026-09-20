@@ -6,17 +6,19 @@ from urllib.parse import urlsplit
 def fields(text):
  keys=text.split();return set(keys+[k+suffix for k in keys for suffix in ('_en','_zh')])
 SCHEMAS={
- 'people':fields('id name roles bio focus source_ids checked_at status historical tags profile_status location_ids birth_year birth_month identity_note'),
- 'roles':fields('title org_id status since until rank rank_basis source_ids note office_band date_note checked_at current_evidence_date latest_confirmed_at first_observed_at announced_at ended_announced_at'),
+ 'people':fields('id name roles bio focus source_ids checked_at status historical tags profile_status location_ids birth_year birth_month identity_note possible_identity_ids'),
+ 'roles':fields('title org_id status since until rank rank_basis source_ids note office_band date_note checked_at current_evidence_date latest_confirmed_at first_observed_at announced_at ended_announced_at verification_status as_of_date'),
  'bio':fields('years role source_ids date_note'),
- 'institutions':fields('id name kind parent_id level_label duties authority limits source_ids location_ids territorial_level hierarchy_annotation'),
+ 'institutions':fields('id name kind parent_id level_label duties authority limits source_ids location_ids territorial_level hierarchy_annotation sector'),
  'sources':fields('id url title published_at accessed_at source_type basis note evidence_summary availability_note'),
  'relations':fields('from to type label source_ids'),
- 'career_posts':fields('id person_id organization_id organization_name location_ids start end title source_ids note start_precision end_precision is_current checked_at date_note interval_basis known_through end_by latest_confirmed_at status current_evidence_date'),
+ 'career_posts':fields('id person_id organization_id organization_name location_ids start end title source_ids note start_precision end_precision is_current checked_at date_note interval_basis known_through end_by latest_confirmed_at status current_evidence_date verification_status as_of_date'),
  'career_links':fields('id from to type start end precision_note organization_id organization_name post_ids location_ids source_ids label description date'),
  'person_connections':fields('id from to type label description date source_ids location_ids'),
  'events':fields('id date title person_ids org_ids description source_ids status announced_at effective_at'),
  'locations':fields('id name type parent_id'),
+ 'place_groups':fields('id location_id person_ids post_ids source_ids'),
+ 'research_coverage':fields('id location_id org_id sector status note source_ids checked_at'),
  'regional_coverage':fields('id location_id note'),
  'rank_mapping':fields('id sort_order label definition_source_ids usual_office_examples example_source_ids example_basis person_rank_rule'),
  'guides':fields('id title body source_ids learning_question historical_note')}
@@ -97,6 +99,10 @@ def validate(data):
  for link in data['career_links']:
   assert {link['from'],link['to']}<=ids['people']
   assert set(link.get('post_ids',[]))<=ids['career_posts']
+ for group in data.get('place_groups',[]):
+  assert group['location_id'] in ids['locations']
+  assert set(group['person_ids'])<=ids['people']
+  assert set(group['post_ids'])<=ids['career_posts']
  for post in data['career_posts']:assert post['person_id'] in ids['people']
  assert not data['documents'] and not any(g.get('course_refs') for g in data['guides'])
 

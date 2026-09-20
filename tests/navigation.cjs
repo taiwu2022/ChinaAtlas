@@ -80,11 +80,13 @@ function fixture(start = '#people') {
     $: id => elements[id] || null,
     atlas: { people: [...people.values()], guides: [{ id: 'guide-a' }], career_links: [] },
     query: '', focus: 'all', peopleLevel: 'all', peopleTrack: 'all', peopleStatus: 'all', peopleOrg: 'all',
+    peopleSector:'all',peopleVerification:'all',regionSector:'all',regionVerification:'all',
     peoplePlace: 'all', peopleRegionMode: 'any', regionId: 'jining', regionService: 'current', regionDepth: 'direct',
     networkPerson: 'a', networkPlace: 'all', networkKind: 'all', networkTrail: [], graphMode: 'dual', graphRelation: 'all', route: 'people',
     place: id => ['jining', 'jinan', 'shandong'].includes(id) ? { id } : null,
     person: id => people.get(id), org: id => id === 'org-a' ? { id } : null,
     showPerson: id => draw('person', id), showOrg: id => draw('org', id), showGuide: id => draw('guide', id),
+    findNetworkLink: id => context.atlas.career_links.find(l=>l.id===id),
     showDocument: id => draw('document', id), showLink: id => draw('link', id), showPersonMap: id => draw('roles', id),
     showEvidence: e => draw('evidence', e.id), showDeviceNotes: () => draw('notes', 'device'),
     showAsk: (kind, id) => draw('ask', kind + ':' + id), showAddProfile: () => draw('add', 'profile'),
@@ -160,7 +162,7 @@ test('Jining past-service view survives a different region and duplicate Back ha
   f.run(productionLine(regionLines, 'function regionClick('));
   await f.click({regionService: 'past'}); await f.click({regionDepth: 'all'});
   await f.click({region: 'jinan'}); await f.browserNavigationEvents();
-  assert.equal(f.context.regionId, 'jinan'); assert.equal(f.context.regionService, 'current');
+  assert.equal(f.context.regionId, 'jinan'); assert.equal(f.context.regionService, 'all');
   await f.traverse('back'); assert.equal(f.context.regionId, 'jining');
   assert.equal(f.context.regionService, 'past'); assert.equal(f.context.regionDepth, 'all');
 });
@@ -201,3 +203,5 @@ test('Close then a fresh profile click intentionally uses explicitly saved note'
   f.run('closeAtlasDetail()'); await f.browserNavigationEvents(); await f.click({ person: 'a' });
   assert.equal(f.elements['person-note'].value, 'saved:a');
 });
+
+test('legacy saved reading state defaults new evidence filters without hiding the directory',()=>{const f=fixture();f.run("restoreReadingState({query:'old query',peoplePlace:'jining'})");assert.equal(f.context.peopleSector,'all');assert.equal(f.context.peopleVerification,'all');assert.equal(f.context.regionSector,'all');});

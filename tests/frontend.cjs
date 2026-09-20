@@ -20,7 +20,7 @@ test("atlas.documents.length",0);
 run("regionId='shandong';regionService='current';regionDepth='direct';query=''");test("drawRegions().includes('地方')||drawRegions().includes('林武')",true);test("regionPeople('shandong','current',false).some(p=>p.id==='li-ganjie')",false);
 
 run("regionId='jining';regionService='current';regionDepth='direct';query=''");
-test("regionPeople('jining','current',false).length",9);
+test("regionPeople('jining','current',false).length >= 50",true);
 test("regionPeople('jining','current',false).some(p=>p.id==='zhang-haibo-jining')",false);
 test("regionPeople('weifang','past').some(p=>p.id==='guo-fei')",true);
 test("personLabel(person('zhang-haibo-jining')).includes('1971')",true);
@@ -39,3 +39,14 @@ test("personLabel(person('zhang-haibo-shandong')).includes('1969')",true);
 console.log(checks+' frontend/data regression checks passed');
 
 for(const name of ['drawPublicChanges','drawPublicGuide']){const html=run(name+'()');assert(!html.includes('data-open-document'));assert(!html.includes('news/refresh'));}
+
+// Large membership expansion retains exact source and profile navigation.
+run("networkKind='same_place';networkPlace='jining'");
+test("networkLinks('wen-jinrong').length > 400",true);
+test("networkLinks('wen-jinrong').every(l=>l.source_ids.length && l.post_ids.length)",true);
+test("findNetworkLink(networkLinks('wen-jinrong')[0].id).id === networkLinks('wen-jinrong')[0].id",true);
+run("regionId='shanghai';regionDepth='direct';regionService='all';regionSector=regionVerification='all';query=''");
+test("drawRegions().includes('data-person=\"xi-jinping\"')",true);
+const unknown={id:'test-unknown',roles:[{status:'historical',title:'某局副局长',org_id:'jining-government',verification_status:'directory_only'}]};ctx.unknown=unknown;
+test("band(unknown)",'uncertain');test("mainRole(unknown).startsWith('记录：')",true);
+console.log('Expanded directory, status and lazy network regression checks passed');
