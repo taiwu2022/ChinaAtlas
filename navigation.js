@@ -2,8 +2,8 @@
 let restoringDetail=false,navigationReady=false,navigationRun=0,lastBaseRoute='',peopleFiltersOpen=null,restoringRoute=false;
 const hashParts=()=>{const [page,...rest]=location.hash.slice(1).split('?');return {page:page||'people',params:new URLSearchParams(rest.join('?'))};};
 function baseHash(){const {page,params}=hashParts();params.delete('view');params.delete('id');return '#'+page+(params.size?'?'+params:'');}
-function captureReadingState(){return {query,focus,peopleLevel,peopleTrack,peopleStatus,peopleOrg,peoplePlace,peopleRegionMode,peopleFiltersOpen,regionId,regionService,regionDepth,networkPerson,networkPlace,networkKind,graphMode,graphRelation};}
-function restoreReadingState(s){if(!s)return;({query,focus,peopleLevel,peopleTrack,peopleStatus,peopleOrg,peoplePlace,peopleRegionMode,peopleFiltersOpen,regionId,regionService,regionDepth,networkPerson,networkPlace,networkKind,graphMode,graphRelation}=s);$('search').value=query;}
+function captureReadingState(){return {query,focus,peopleLevel,peopleTrack,peopleStatus,peopleOrg,peoplePlace,peopleRegionMode,peopleFiltersOpen,peopleSector,peopleVerification,regionSector,regionVerification,regionId,regionService,regionDepth,networkPerson,networkPlace,networkKind,graphMode,graphRelation};}
+function restoreReadingState(s){if(!s)return;s={peopleSector:'all',peopleVerification:'all',regionSector:'all',regionVerification:'all',...s};({query,focus,peopleLevel,peopleTrack,peopleStatus,peopleOrg,peoplePlace,peopleRegionMode,peopleFiltersOpen,peopleSector,peopleVerification,regionSector,regionVerification,regionId,regionService,regionDepth,networkPerson,networkPlace,networkKind,graphMode,graphRelation}=s);$('search').value=query;}
 function rememberReadingPosition(){if(!navigationReady||restoringRoute)return;const note=$('person-note'),question=$('ask-question');history.replaceState({...history.state,atlasRoute:hashParts().page,atlasUI:captureReadingState(),atlasScroll:window.scrollY,atlasDetailScroll:$('detail').scrollTop,atlasOpenSections:Array.from($('detail-body')?.querySelectorAll?.('details')||[]).map((el,i)=>el.open?i:-1).filter(i=>i>=0),...(note?{noteDraft:note.value}:{}),...(question?{questionDraft:question.value}:{})},'',location.href);}
 function navigateModal(kind,id,draw){
  if(restoringDetail){draw();return;}
@@ -33,7 +33,7 @@ async function handleAtlasNavigation(){
   else if(view==='org'&&org(id))showOrg(id);
   else if(view==='guide'&&atlas.guides.some(g=>g.id===id))showGuide(id);
   else if(view==='document'&&!isPublicAtlas()&&atlas.documents.some(d=>d.id===id))showDocument(id);
-  else if(view==='link'&&(atlas.career_links||[]).some(l=>l.id===id))showLink(id);
+  else if(view==='link'&&findNetworkLink(id))showLink(id);
   else if(view==='roles'&&person(id))showPersonMap(id);
   else if(view==='evidence')showEvidence(evidence);
   else if(view==='notes'&&isPublicAtlas())showDeviceNotes();
