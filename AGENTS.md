@@ -19,3 +19,6 @@
 - Expansion schema and upkeep: docs/DATA_MODEL.md. New role verification_status and as_of_date distinguish current evidence, undated directories, historical facts, conflicts and unverified leads. Do not turn historical status into known departure.
 - Homonyms: possible_identity_ids is an identity review queue, never a social relation; known distinct people must not be linked as possible same identities. Retain each ID until explicit evidence supports a merge.
 - Large locations use place_groups and lazy selected-person links; keep legacy small-group links, deep links and filtered regional exports functional. Run scripts/audit_data.py and synthetic scale tests before publishing.
+
+- Evidence upkeep: docs/SOURCE_SEARCH_METHODS.md lists actual research methods; data/source-catalog.json is a discovery configuration, not a running crawler. Regenerate source_inventory.py and accuracy_report.py with the actual research date after changing data. Reports are read-only and no error count certifies factual truth. Preserve legacy unknowns and recorded conflicts.
+- profile_facts stores sourced public background by stable person ID, field/value and evidence dates. Facts do not refresh offices or automatically create career links. Include them in both regional exports; run accuracy, export and frontend regression tests.

@@ -47,3 +47,11 @@ For locations with more than 40 recorded people, `place_groups` stores linear me
 6. Run data, network, export and browser checks. Commit a source PR, then publish only the clean generated Pages snapshot.
 
 A refresh is a new reviewed snapshot. The website does not automatically rewrite appointments from a headline or an LLM response. Coverage records identify unfinished departments and source conflicts so subsequent sessions can continue without confusing missing data with vacant offices.
+
+## Field-level public background facts
+
+`profile_facts` is an additive collection, keyed by a stable fact ID and `person_id`. Each row has `field`, a display `label`, `value`, `evidence_status` (verified/unverified/conflicting), `source_ids`, a short `evidence_excerpt`, `as_of_date`, `reviewed_at` and an optional qualification `note`. Fact evidence dates never refresh current offices. Missing facts remain absent, not synthetic values. Education can have several rows; a study period alone does not prove a degree. Career fragments without supported periods do not automatically generate network edges.
+
+Both public and maintenance regional exports include only their selected people's facts and the required sources. The public whitelist removes local archive paths and private notes. SQLite overlays and review history remain unchanged.
+
+New sources may add `canonical_document_id`, `original_publisher`, and `repost_of` for explicit provenance; old sources have not been fully backfilled. A duplicate URL is a citation identity issue, not proof that the two entries are wrong. The read-only audit identifies evidence gaps; see [accuracy method](ACCURACY_METHOD.md) and [source methods](SOURCE_SEARCH_METHODS.md).

@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-21",
+  "purpose": "人工维护的发现入口。与 data/atlas.json 中支持具体事实的 sources 分开；此文件尚未接入采集执行器。",
+  "status_definitions": {
+    "existing_on_use": "维护版服务器已有按启动或使用触发的标题刷新；不是定时任务，也不自动改写人物。",
+    "proposed_manual_review": "建议保留的人工发现入口，尚无该入口的自动采集或定时调度；每条事实仍需读取原文核验。"
+  },
+  "notes": [
+    "下列来源家族和类型用于导航，不以域名判断权威性。",
+    "入口被列入清单不表示该网站已被完整采集，也不表示历史网页证明现任职务。",
+    "正文日期、事件日期和访问日期分别保留；同源转载不能算独立验证。",
+    "学术目录只作发现和方法参考，未自动下载、导入其数据。"
+  ],
+  "entries": [
+    {
+      "id": "12371-personnel-news",
+      "name": "共产党员网人事任免",
+      "entry_url": "https://www.12371.cn/special/rsrm/",
+      "group": "12371.cn",
+      "category": "appointment_discovery",
+      "region_ids": [],
+      "status": "existing_on_use",
+      "scope": "提取有日期的文章标题和链接；普通刷新按上次尝试起 24 小时节流，强制刷新 30 秒节流。",
+      "review_required": true
+    },
+    {
+      "id": "jining-organization",
+      "name": "济宁市委组织部／灯塔济宁党建",
+      "entry_url": "http://jnswzzb.jndq.gov.cn/",
+      "group": "jndq.gov.cn",
+      "category": "organization_department",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "干部公示、任免宣布、组织工作活动；公示与正式任职分别记录。",
+      "review_required": true
+    },
+    {
+      "id": "jining-npc",
+      "name": "济宁市人大常委会",
+      "entry_url": "https://jiningrenda.jining.gov.cn/",
+      "group": "jining.gov.cn",
+      "category": "npc_appointments",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "选举任免、辞职、组成人员；栏目抓取规则待实现，以具体决定原文为证据。",
+      "review_required": true
+    },
+    {
+      "id": "jining-government-directory",
+      "name": "济宁市政府机构职能与领导信息",
+      "entry_url": "https://www.jining.gov.cn/col/col74032/",
+      "group": "jining.gov.cn",
+      "category": "government_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "部门和领导发现入口；旧机构、无更新日期目录不能整体认证为现任。",
+      "review_required": true
+    },
+    {
+      "id": "jining-emergency-leaders",
+      "name": "济宁市应急管理局领导介绍",
+      "entry_url": "https://safety.jining.gov.cn/col/col9596/index.html",
+      "group": "jining.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "应急管理班子与分工，另查具名活动；消防第一政治委员等兼任单独核验。",
+      "review_required": true
+    },
+    {
+      "id": "jining-commerce-leaders",
+      "name": "济宁市商务局领导信息",
+      "entry_url": "https://business.jining.gov.cn/col/col6718/index.html",
+      "group": "jining.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "班子与分工、商业流通业务；无日期目录另查近期履职。",
+      "review_required": true
+    },
+    {
+      "id": "jining-market-leaders",
+      "name": "济宁市市场监管局市局领导",
+      "entry_url": "https://amr.jining.gov.cn/col/col31586/index.html",
+      "group": "jining.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "市局班子与分工；知识产权等兼任须独立证据，网页创建日不作为任职起点。",
+      "review_required": true
+    },
+    {
+      "id": "jining-land-institutions",
+      "name": "济宁市自然资源和规划局组织机构",
+      "entry_url": "https://nrp.jining.gov.cn/col/col60562/index.html",
+      "group": "jining.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "领导、科室、直属单位；同名或跨部门冲突留待人工确认。",
+      "review_required": true
+    },
+    {
+      "id": "jining-environment-institutions",
+      "name": "济宁市生态环境局机构概况",
+      "entry_url": "https://jnhj.jining.gov.cn/col/col18543/index.html",
+      "group": "jining.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "职能、领导及分局线索；市局和省驻济监测中心分别建机构。",
+      "review_required": true
+    },
+    {
+      "id": "jining-transport",
+      "name": "济宁市交通运输局",
+      "entry_url": "https://jnjt.jining.gov.cn/",
+      "group": "jining.gov.cn",
+      "category": "department_activity",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "近期具名活动与领导分工；交通、港航、公路等角色按机构拆分。",
+      "review_required": true
+    },
+    {
+      "id": "jining-urban-management",
+      "name": "济宁市城市管理局",
+      "entry_url": "https://csgl.jining.gov.cn/",
+      "group": "jining.gov.cn",
+      "category": "department_activity",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "办公会议、分工与具名活动；科室称谓不自动解释为负责人。",
+      "review_required": true
+    },
+    {
+      "id": "shandong-courts-jining",
+      "name": "山东法院网及济宁辖区法院子站",
+      "entry_url": "https://www.sdcourt.gov.cn/",
+      "group": "sdcourt.gov.cn",
+      "category": "judiciary",
+      "region_ids": [
+        "jining",
+        "shandong"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "法院工作报告、具名活动；司法职务结合人大任免原文确认。",
+      "review_required": true
+    },
+    {
+      "id": "jining-prosecutor-leaders",
+      "name": "济宁市人民检察院领导介绍",
+      "entry_url": "https://jnsjcy.jining.gov.cn/col/col78839/index.html",
+      "group": "jining.gov.cn",
+      "category": "judiciary",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "领导目录，结合该站履职活动及人大任免保留时间证据。",
+      "review_required": true
+    },
+    {
+      "id": "ucsd-ccp-elites-catalog",
+      "name": "UC San Diego CCP Elites 数据目录",
+      "entry_url": "https://chinadatalab.ucsd.edu/resources/ccp-elites-database/",
+      "group": "ucsd.edu",
+      "category": "academic_catalog",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "历史履历数据及授权说明；目录已引用，不等于数据已导入，也不证明现任。",
+      "review_required": true
+    },
+    {
+      "id": "ucsd-ccp-elites-method",
+      "name": "China Data Lab 中共精英可视化与方法介绍",
+      "entry_url": "https://chinadatalab.ucsd.edu/viz-blog/the-makeup-of-the-ccp-elite-update/",
+      "group": "ucsd.edu",
+      "category": "academic_method",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "历史覆盖、履历与可视化方法参考；非实时任免来源。",
+      "review_required": true
+    },
+    {
+      "id": "cfps-cadre-coding",
+      "name": "CFPS 行政／管理职务变量方法文档",
+      "entry_url": "https://www.isss.pku.edu.cn/cfps/docs/20191025120406491438.pdf",
+      "group": "pku.edu.cn",
+      "category": "academic_method",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "历史职位编码参考；不能将历史等级示例直接变为当代个人级别。",
+      "review_required": true
+    },
+    {
+      "id": "nccu-cped",
+      "name": "政治大学中共政治菁英资料库",
+      "entry_url": "https://cped.nccu.edu.tw/about.aspx",
+      "category": "historical_discovery",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "1949年以来副部级以上历史资料；详细查询需注册审核，尚未导入。",
+      "review_required": true
+    },
+    {
+      "id": "jiang-cped",
+      "name": "Junyan Jiang CPED",
+      "entry_url": "https://www.junyanjiang.com/data.html",
+      "category": "historical_discovery",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "与政大CPED不同；主要历史覆盖至2015年，需向作者获取，尚未导入。",
+      "review_required": true
+    },
+    {
+      "id": "wikidata-sources",
+      "name": "Wikidata 人物资料引用规范",
+      "entry_url": "https://www.wikidata.org/wiki/Help:Sources",
+      "category": "historical_discovery",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "身份和原引用发现；保留版本、限定符与原references，不自动作为事实确认。",
+      "review_required": true
+    }
+  ]
+}

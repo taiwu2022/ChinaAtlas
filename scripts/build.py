@@ -3,10 +3,13 @@ import hashlib,json,shutil,tempfile,subprocess
 from pathlib import Path
 from export_public import validate,validate_evidence,BANNED
 from portraits import validate_portraits
+from accuracy_report import analyze
 ROOT=Path(__file__).resolve().parents[1]
 def build():
  data=json.loads((ROOT/'data/atlas.json').read_text());validate(data)
  validate_evidence(data,json.loads((ROOT/'data/evidence.json').read_text()))
+ report=analyze(data,json.loads((ROOT/'data/evidence.json').read_text()),data['verified_at'])
+ assert not report['totals']['error'],'Evidence audit found structural errors; run scripts/accuracy_report.py'
  validate_portraits(data,json.loads((ROOT/'data/portraits.json').read_text()))
  target=Path(tempfile.mkdtemp(prefix='china-atlas-build-'))
  allowed={'.html','.css','.js','.svg','.png','.webmanifest'}

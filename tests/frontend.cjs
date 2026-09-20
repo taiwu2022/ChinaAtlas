@@ -50,3 +50,16 @@ test("drawRegions().includes('data-person=\"xi-jinping\"')",true);
 const unknown={id:'test-unknown',roles:[{status:'historical',title:'某局副局长',org_id:'jining-government',verification_status:'directory_only'}]};ctx.unknown=unknown;
 test("band(unknown)",'uncertain');test("mainRole(unknown).startsWith('记录：')",true);
 console.log('Expanded directory, status and lazy network regression checks passed');
+
+// Field-level evidence remains visible, escaped and confined to regional exports.
+test("profileFacts(person('wen-jinrong')).includes('北京大学')",true);
+test("profileFacts(person('wen-jinrong')).includes('1996年7月')",true);
+test("profileFacts(person('xi-jinping'))",'');
+run("atlas.profile_facts.push({id:'unsafe-test',person_id:'wen-jinrong',field:'education',value:'<script>unsafe()</script>',evidence_status:'unverified',source_ids:[]})");
+test("profileFacts(person('wen-jinrong')).includes('<script>unsafe()')",false);
+test("profileFacts(person('wen-jinrong')).includes('未核实')",true);
+run("atlas.profile_facts.pop();regionDepth='all';regionService='all';regionSector=regionVerification='all';query=''");
+test("publicRegionExport('jining').profile_facts.length",24);
+test("publicRegionExport('shanghai').profile_facts.length",0);
+test("drawPublicGuide().includes('SOURCE_SEARCH_METHODS.md')",true);
+console.log('Background facts, escaping and regional export checks passed');

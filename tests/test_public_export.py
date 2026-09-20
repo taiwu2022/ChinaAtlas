@@ -99,6 +99,29 @@ class PublicExportTests(unittest.TestCase):
         self.assertTrue(all(not g.get('course_refs') for g in self.base['guides']))
         self.assertTrue(all(g['id'] in export_public.PUBLIC_GUIDES for g in self.base['guides']))
 
+    def test_background_facts_preserve_provenance_but_strip_local_paths(self):
+        data = self.fixture()
+        fact = data['profile_facts'][0]
+        fact['raw_path'] = '/Users/private/SENTINEL.html'
+        fact['personal_note'] = 'PRIVATE_SENTINEL'
+        result = export_public.sanitize(data)
+        public = next(f for f in result['profile_facts'] if f['id'] == fact['id'])
+        self.assertEqual(public['source_ids'], fact['source_ids'])
+        self.assertEqual(public['evidence_excerpt'], fact['evidence_excerpt'])
+        self.assertNotIn('SENTINEL', json.dumps(result))
+
+    def test_background_fact_requires_identity_and_sources(self):
+        for field, value in [('person_id', 'missing-person'), ('source_ids', []), ('evidence_status', 'probably')]:
+            with self.subTest(field=field):
+                data = self.fixture()
+                data['profile_facts'][0][field] = value
+                self.assert_rejected(data)
+
+    def test_background_fact_duplicate_is_rejected(self):
+        data = self.fixture()
+        data['profile_facts'].append(copy.deepcopy(data['profile_facts'][0]))
+        self.assert_rejected(data)
+
     def test_build_removes_stale_artifacts(self):
         spec = importlib.util.spec_from_file_location('atlas_test_build', ROOT / 'scripts/build.py')
         module = importlib.util.module_from_spec(spec)

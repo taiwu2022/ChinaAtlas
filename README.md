@@ -28,12 +28,23 @@
 
 后续维护规则见 [数据模型](docs/DATA_MODEL.md)。
 
+## 来源与核验
+
+- [信息来源与检索方法](docs/SOURCE_SEARCH_METHODS.md)：网站清单、查询式、原文取证步骤和以后补充网站的模板。
+- [来源全量盘点](docs/SOURCE_INVENTORY.md)：461 个来源编号、433 个网址；不同链接仍可能同源转载。
+- [准确性检查方法](docs/ACCURACY_METHOD.md)与[本次复核队列](docs/ACCURACY_REPORT.md)：一致性错误、待核线索和证据缺口分开；检查通过不等于事实全部正确。
+- [常用入口配置](data/source-catalog.json)：以后可继续添加网站；当前未新增定时爬虫。
+
+人物详情新增逐条有出处的“背景资料”，先覆盖温金荣、郭飞、庞建栋 24 条出生、教育及早期履历事实。制度页的“资料怎么核实与更新”可直接打开上述说明。
+
 ## 开发与维护
 
 Python 3.10+ 构建，无 npm 依赖；Node 18+ 用于回归测试。
 
 ```sh
 python3 scripts/audit_data.py
+python3 scripts/accuracy_report.py --as-of 2026-09-21
+python3 scripts/source_inventory.py --as-of 2026-09-21
 python3 scripts/build.py
 python3 -m http.server 8080 --directory site
 python3 -m unittest discover -s tests -p 'test_*.py'
