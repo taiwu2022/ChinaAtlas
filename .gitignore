@@ -1,0 +1,8 @@
+site/
+.DS_Store
+__pycache__/
+.env
+.env.*
+*.sqlite*
+*-notes*.json
+.sites-runtime/
