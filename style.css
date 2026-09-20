@@ -60,8 +60,15 @@ main{padding-top:28px}main>header{margin-bottom:20px}main>header h1{font-size:1.
 @media(max-width:360px){.portrait-slot{flex-basis:96px}.profile-portrait{width:96px}.profile-portrait img{width:96px;height:120px}.profile-heading{gap:12px}.profile-heading .detail-title{font-size:1.6rem}}
 
 /* Large public rosters retain every card while skipping offscreen layout work. */
-.person-card,.regional-person,.neighbor-card{content-visibility:auto;contain-intrinsic-size:auto 190px}
+.person-card,.regional-person,.neighbor-card{content-visibility:auto;contain-intrinsic-block-size:auto 190px;contain-intrinsic-inline-size:0;min-width:0;max-width:100%;overflow-wrap:anywhere}
 .evidence-status{display:block;margin:9px 0 4px;color:#866321;font-size:11px;line-height:1.6;font-weight:500}
 .evidence-filters{margin:12px 0 20px;max-width:700px}.evidence-filters label{flex:1;min-width:150px}
 .coverage-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:16px}.coverage-grid article{border-top:1px solid var(--line,#ddd);padding-top:12px}.coverage-grid p{font-size:13px;line-height:1.8}
 @media(max-width:600px){.evidence-filters{display:grid;grid-template-columns:1fr 1fr;gap:10px}.evidence-filters label{min-width:0}.evidence-filters select{width:100%;min-width:0}.coverage-grid{grid-template-columns:1fr}}
+
+/* Each background fact has its own evidence; long source notes stay folded. */
+.fact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.profile-fact{padding:14px;border:1px solid var(--line,#e3e1dc);border-radius:12px;min-width:0;overflow-wrap:anywhere}
+.profile-fact>p{margin:7px 0 10px;line-height:1.65}.profile-fact summary{font-size:12px;color:var(--muted,#69746c);cursor:pointer}
+.profile-fact blockquote{font-size:13px;margin:12px 0;padding:0 0 0 12px}.profile-fact .note{font-size:12px}.profile-facts .section-title{align-items:center}
+@media(max-width:600px){.fact-grid{grid-template-columns:1fr}.profile-fact{padding:12px}}

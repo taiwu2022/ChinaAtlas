@@ -46028,10 +46028,10 @@
     {
       "id": "v4-zhang-publicity",
       "url": "https://www.qingdao.gov.cn/ywdt/zwyw/202605/t20260501_10583276.shtml",
-      "title": "全市群众身边不正之风和腐败问题集中整治工作推进会议召开",
+      "title": "“青年代言人”事迹分享会举行",
       "published_at": "2026-05-01",
       "accessed_at": "2026-09-21",
-      "evidence_summary": "4月30日上午，市委副书记、宣传部部长张惠出席。",
+      "evidence_summary": "4月30日下午，市委副书记、宣传部部长张惠出席。",
       "source_type": "official_or_official_media",
       "has_local_evidence": true
     },
@@ -48016,11 +48016,437 @@
       "has_local_evidence": true
     },
     {
+      "id": "bg-wen-bjnews-20211028",
+      "url": "https://m.bjnews.com.cn/detail/163539809614268.html",
+      "title": "温金荣任惠州市代市长",
+      "published_at": "2021-10-28",
+      "accessed_at": "2026-09-21",
+      "source_type": "established_media",
+      "note": "新京报“政事儿”；正文明确引述官方简历，页面全文已读取。",
+      "canonical_document_id": "bg-wen-bjnews-20211028",
+      "original_publisher": "新京报",
+      "has_local_evidence": true
+    },
+    {
+      "id": "bg-wen-gongshi-20211018",
+      "url": "http://gd.people.com.cn/n2/2021/1018/c123932-34960893.html",
+      "title": "广东省管干部任前公示通告",
+      "published_at": "2021-10-18",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_notice_republished",
+      "note": "人民网转载南方日报所载中共广东省委组织部2021-10-17公示；HTTPS证书异常，HTTP原网页全文读取成功；未绕过TLS验证。",
+      "canonical_document_id": "bg-wen-gongshi-20211018",
+      "original_publisher": "中共广东省委组织部（公示）；南方日报载文；人民网转载",
+      "has_local_evidence": true
+    },
+    {
+      "id": "bg-wen-pku-20250325",
+      "url": "https://www.pku.org.cn/info/1371/16525.htm",
+      "title": "温金荣代表：坚持高端化、智能化、绿色化、集群化，推动科技创新和产业创新深度融合",
+      "published_at": "2025-03-25",
+      "accessed_at": "2026-09-21",
+      "source_type": "university_official",
+      "note": "北京大学校友网；页面标注来源大众网，含校友学历简介。",
+      "canonical_document_id": "bg-wen-pku-20250325",
+      "original_publisher": "大众网",
+      "has_local_evidence": true
+    },
+    {
+      "id": "bg-wen-pku-20230316",
+      "url": "https://www.pku.org.cn/info/1218/6265.htm",
+      "title": "【2023两会】温金荣代表：牢牢把握高质量发展这个首要任务 加快打造广东高质量发展新增长极",
+      "published_at": "2023-03-16",
+      "accessed_at": "2026-09-21",
+      "source_type": "university_official",
+      "note": "北京大学校友网转载惠州日报，明确1992级本科校友。",
+      "canonical_document_id": "bg-wen-pku-20230316",
+      "original_publisher": "惠州日报",
+      "has_local_evidence": true
+    },
+    {
+      "id": "bg-pang-people-20230807",
+      "url": "http://sd.people.com.cn/n2/2023/0807/c363933-40522188.html",
+      "title": "庞建栋已任济宁市委常委、组织部部长、统战部部长",
+      "published_at": "2023-08-07",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_media_republication",
+      "note": "人民网山东频道转载大众报业·大众日报客户端；HTTPS证书异常，HTTP原网页全文读取成功；未绕过TLS验证。",
+      "canonical_document_id": "bg-pang-people-20230807",
+      "original_publisher": "大众报业·大众日报客户端",
+      "has_local_evidence": true
+    },
+    {
       "accessed_at": "2026-09-20",
       "id": "notice-2167d36cbdde87a9842a",
       "published_at": "2026-09-20",
       "title": "Official personnel announcement · 2026-09-20",
       "url": "https://www.12371.cn/2026/09/20/ARTI1789898177186374.shtml"
+    }
+  ],
+  "profile_facts": [
+    {
+      "id": "bg-wen-jinrong-birth_month",
+      "person_id": "wen-jinrong",
+      "field": "birth_date",
+      "value": "1973年8月",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-gongshi-20211018",
+        "bg-wen-bjnews-20211028"
+      ],
+      "evidence_excerpt": "温金荣，男，汉族，1973年8月生，在职研究生、管理学博士，中共党员",
+      "as_of_date": "2021-10-18",
+      "reviewed_at": "2026-09-21",
+      "note": "公开出生年月；无具体生日。",
+      "label": "出生年月"
+    },
+    {
+      "id": "bg-wen-jinrong-native_place",
+      "person_id": "wen-jinrong",
+      "field": "native_place",
+      "value": "广东省五华县",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-bjnews-20211028"
+      ],
+      "evidence_excerpt": "温金荣，男，广东省五华县人，汉族",
+      "as_of_date": "2021-10-28",
+      "reviewed_at": "2026-09-21",
+      "note": "原文表述为“五华县人”，按公开籍贯/籍贯式信息展示，不据此认定出生地。",
+      "label": "籍贯"
+    },
+    {
+      "id": "bg-wen-jinrong-work_started",
+      "person_id": "wen-jinrong",
+      "field": "work_started",
+      "value": "1996年7月",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-bjnews-20211028"
+      ],
+      "evidence_excerpt": "1996年7月参加工作",
+      "as_of_date": "2021-10-28",
+      "reviewed_at": "2026-09-21",
+      "note": "照录简历中的参加工作年月；同篇另记1997年7月后在广东省政法系统工作，两者含义不同，未自行更改或补足过渡经历。",
+      "label": "参加工作"
+    },
+    {
+      "id": "bg-wen-jinrong-cpc_joined",
+      "person_id": "wen-jinrong",
+      "field": "party_joined",
+      "value": "1996年6月",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-bjnews-20211028"
+      ],
+      "evidence_excerpt": "1996年6月加入中国共产党",
+      "as_of_date": "2021-10-28",
+      "reviewed_at": "2026-09-21",
+      "note": "公开背景信息；核验日期不表示新的任职日期。",
+      "label": "加入中共"
+    },
+    {
+      "id": "bg-wen-jinrong-education_level",
+      "person_id": "wen-jinrong",
+      "field": "education",
+      "value": "在职研究生",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-gongshi-20211018",
+        "bg-wen-bjnews-20211028"
+      ],
+      "evidence_excerpt": "在职研究生、管理学博士",
+      "as_of_date": "2021-10-18",
+      "reviewed_at": "2026-09-21",
+      "note": "省委组织部公示明确在职；此为学历层次，管理学博士另列为学位。",
+      "label": "学历"
+    },
+    {
+      "id": "bg-wen-jinrong-undergraduate_education",
+      "person_id": "wen-jinrong",
+      "field": "education",
+      "value": "北京大学经济学院，1992级本科；获学士学位",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-pku-20250325",
+        "bg-wen-pku-20230316"
+      ],
+      "evidence_excerpt": "1992-1997年就读于北京大学经济学院，获学士学位。",
+      "as_of_date": "2025-03-25",
+      "reviewed_at": "2026-09-21",
+      "note": "本科与学士分别由北大校友网2023、2025页面支持；不额外推断具体学士学位门类。来源同时记1992—1997年就读，与1996年参加工作并列保留，不擅自调和。",
+      "label": "本科学习"
+    },
+    {
+      "id": "bg-wen-jinrong-undergraduate_subject",
+      "person_id": "wen-jinrong",
+      "field": "education",
+      "value": "经济学",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-bjnews-20211028"
+      ],
+      "evidence_excerpt": "1992年9月后，北京大学经济学专业学习",
+      "as_of_date": "2021-10-28",
+      "reviewed_at": "2026-09-21",
+      "note": "仅对应北京大学学习阶段；不把本科专业套用于后续研究生学习。",
+      "label": "本科专业"
+    },
+    {
+      "id": "bg-wen-jinrong-masters_study",
+      "person_id": "wen-jinrong",
+      "field": "education",
+      "value": "2000年9月至2003年6月，中山大学工商管理硕士专业学习",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-bjnews-20211028"
+      ],
+      "evidence_excerpt": "2000年9月至2003年6月参加中山大学工商管理硕士专业学习",
+      "as_of_date": "2021-10-28",
+      "reviewed_at": "2026-09-21",
+      "note": "这是公开简历中的学习经历；原文未明确该阶段取得学位/毕业证，故不单独写“获工商管理硕士学位”，不自行标全日制。",
+      "label": "硕士阶段学习"
+    },
+    {
+      "id": "bg-wen-jinrong-doctoral_education",
+      "person_id": "wen-jinrong",
+      "field": "education",
+      "value": "中山大学行政管理专业，2015年8月至2019年12月学习，获管理学博士学位",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-bjnews-20211028",
+        "bg-wen-gongshi-20211018"
+      ],
+      "evidence_excerpt": "2015年8月至2019年12月参加中山大学行政管理专业学习，获管理学博士学位",
+      "as_of_date": "2021-10-28",
+      "reviewed_at": "2026-09-21",
+      "note": "专业为行政管理、学位为管理学博士；学历“在职研究生”由任前公示另行确认，不把学历与学位混写。",
+      "label": "博士阶段学习"
+    },
+    {
+      "id": "bg-wen-jinrong-early_post_200712",
+      "person_id": "wen-jinrong",
+      "field": "career_background",
+      "value": "2007年12月后，广东省委政法委维稳工作处副处长",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-bjnews-20211028"
+      ],
+      "evidence_excerpt": "2007年12月后，任广东省委政法委维稳工作处副处长",
+      "as_of_date": "2021-10-28",
+      "reviewed_at": "2026-09-21",
+      "note": "历史岗位，按原文保留“后”；没有推算正式任职日或离任日。",
+      "label": "早期任职"
+    },
+    {
+      "id": "bg-wen-jinrong-early_post_200905",
+      "person_id": "wen-jinrong",
+      "field": "career_background",
+      "value": "2009年5月后，广东省委政法委政治部副主任",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-bjnews-20211028"
+      ],
+      "evidence_excerpt": "2009年5月后，任广东省委政法委政治部副主任",
+      "as_of_date": "2021-10-28",
+      "reviewed_at": "2026-09-21",
+      "note": "历史岗位；未从该职务推定个人级别或精确离任时间。",
+      "label": "早期任职"
+    },
+    {
+      "id": "bg-wen-jinrong-early_post_201607",
+      "person_id": "wen-jinrong",
+      "field": "career_background",
+      "value": "2016年7月后，广东省农垦集团公司（省农垦总局）董事、党组副书记",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-wen-bjnews-20211028"
+      ],
+      "evidence_excerpt": "2016年7月后，任广东省农垦集团公司（省农垦总局）董事、党组副书记",
+      "as_of_date": "2021-10-28",
+      "reviewed_at": "2026-09-21",
+      "note": "历史岗位；公司职务与党内职务均按原文保留。",
+      "label": "早期任职"
+    },
+    {
+      "id": "bg-guo-fei-birth_month",
+      "person_id": "guo-fei",
+      "field": "birth_date",
+      "value": "1977年4月",
+      "evidence_status": "verified",
+      "source_ids": [
+        "v4-jining-guo-prior-careers"
+      ],
+      "evidence_excerpt": "郭飞，1977年4月生，研究生，文学硕士。",
+      "as_of_date": "2026-08-10",
+      "reviewed_at": "2026-09-21",
+      "note": "公开出生年月；未取得具体生日。",
+      "label": "出生年月"
+    },
+    {
+      "id": "bg-guo-fei-education_level",
+      "person_id": "guo-fei",
+      "field": "education",
+      "value": "研究生",
+      "evidence_status": "verified",
+      "source_ids": [
+        "v4-jining-guo-prior-careers"
+      ],
+      "evidence_excerpt": "郭飞，1977年4月生，研究生，文学硕士。",
+      "as_of_date": "2026-08-10",
+      "reviewed_at": "2026-09-21",
+      "note": "来源未说明全日制/在职、学校或专业；不据文学硕士反推专业。",
+      "label": "学历"
+    },
+    {
+      "id": "bg-guo-fei-degree",
+      "person_id": "guo-fei",
+      "field": "education",
+      "value": "文学硕士",
+      "evidence_status": "verified",
+      "source_ids": [
+        "v4-jining-guo-prior-careers"
+      ],
+      "evidence_excerpt": "郭飞，1977年4月生，研究生，文学硕士。",
+      "as_of_date": "2026-08-10",
+      "reviewed_at": "2026-09-21",
+      "note": "学位门类按原文，不能等同于具体所学专业；学校留空。",
+      "label": "学位"
+    },
+    {
+      "id": "bg-guo-fei-early_post_jining_police",
+      "person_id": "guo-fei",
+      "field": "career_background",
+      "value": "曾任济宁市公安局干部",
+      "evidence_status": "verified",
+      "source_ids": [
+        "v4-jining-guo-prior-careers"
+      ],
+      "evidence_excerpt": "郭飞曾任济宁市公安局干部",
+      "as_of_date": "2026-08-10",
+      "reviewed_at": "2026-09-21",
+      "note": "原文未给起止日期，保持未知；这不是对当前职务的判断。",
+      "label": "早期任职"
+    },
+    {
+      "id": "bg-guo-fei-early_posts_shandong_organization",
+      "person_id": "guo-fei",
+      "field": "career_background",
+      "value": "曾在山东省委组织部任科员、副主任科员、主任科员、副处长等",
+      "evidence_status": "verified",
+      "source_ids": [
+        "v4-jining-guo-prior-careers"
+      ],
+      "evidence_excerpt": "山东省委组织部干部（历任科员、副主任科员、主任科员、副处长等）",
+      "as_of_date": "2026-08-10",
+      "reviewed_at": "2026-09-21",
+      "note": "原文没有逐岗位年月；仅记录公开列明的顺序，不补时间或具体处室。",
+      "label": "早期任职"
+    },
+    {
+      "id": "bg-guo-fei-early_post_201408",
+      "person_id": "guo-fei",
+      "field": "career_background",
+      "value": "2014年8月，山东省委组织部干部一处处长",
+      "evidence_status": "verified",
+      "source_ids": [
+        "v4-jining-guo-prior-careers"
+      ],
+      "evidence_excerpt": "2014年8月，郭飞任山东省委组织部干部一处处长",
+      "as_of_date": "2026-08-10",
+      "reviewed_at": "2026-09-21",
+      "note": "历史任职起始月份，未给离任日期。",
+      "label": "早期任职"
+    },
+    {
+      "id": "bg-guo-fei-early_post_201905",
+      "person_id": "guo-fei",
+      "field": "career_background",
+      "value": "2019年5月，聊城市茌平县委书记（副厅级）",
+      "evidence_status": "verified",
+      "source_ids": [
+        "v4-jining-guo-prior-careers"
+      ],
+      "evidence_excerpt": "2019年5月，任聊城茌平县委书记（副厅级）。",
+      "as_of_date": "2026-08-10",
+      "reviewed_at": "2026-09-21",
+      "note": "按来源保留任职当时“茌平县”名称；副厅级由原文直接支持，不推广到未注明的其他时期。",
+      "label": "早期任职"
+    },
+    {
+      "id": "bg-guo-fei-early_post_202202",
+      "person_id": "guo-fei",
+      "field": "career_background",
+      "value": "2022年2月，日照市委常委、组织部部长",
+      "evidence_status": "verified",
+      "source_ids": [
+        "v4-jining-guo-prior-careers"
+      ],
+      "evidence_excerpt": "2022年2月，任日照市委常委、组织部部长。",
+      "as_of_date": "2026-08-10",
+      "reviewed_at": "2026-09-21",
+      "note": "历史职务；未推算具体到日的任免时间。",
+      "label": "早期任职"
+    },
+    {
+      "id": "bg-jining-person-a922ff9340ce7b-early_post_research_deputy",
+      "person_id": "jining-person-a922ff9340ce7b",
+      "field": "career_background",
+      "value": "曾任山东省委组织部研究室副主任",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-pang-people-20230807"
+      ],
+      "evidence_excerpt": "庞建栋曾任山东省委组织部研究室副主任、研究室主任",
+      "as_of_date": "2023-08-07",
+      "reviewed_at": "2026-09-21",
+      "note": "2023年报道回顾的历史岗位；原文没有起止日期，不补时间。",
+      "label": "早期任职"
+    },
+    {
+      "id": "bg-jining-person-a922ff9340ce7b-early_post_research_director",
+      "person_id": "jining-person-a922ff9340ce7b",
+      "field": "career_background",
+      "value": "曾任山东省委组织部研究室主任",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-pang-people-20230807"
+      ],
+      "evidence_excerpt": "庞建栋曾任山东省委组织部研究室副主任、研究室主任",
+      "as_of_date": "2023-08-07",
+      "reviewed_at": "2026-09-21",
+      "note": "原文未给任职年月；不能从2023年报道日期反推任命日期。",
+      "label": "早期任职"
+    },
+    {
+      "id": "bg-jining-person-a922ff9340ce7b-early_post_cadre_one",
+      "person_id": "jining-person-a922ff9340ce7b",
+      "field": "career_background",
+      "value": "曾任山东省委组织部干部一处处长",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-pang-people-20230807"
+      ],
+      "evidence_excerpt": "省委组织部干部一处处长，省委组织部部务委员、干部一处处长等职务。",
+      "as_of_date": "2023-08-07",
+      "reviewed_at": "2026-09-21",
+      "note": "原文列明的历史岗位；起止年月未核实。",
+      "label": "早期任职"
+    },
+    {
+      "id": "bg-jining-person-a922ff9340ce7b-early_post_department_member",
+      "person_id": "jining-person-a922ff9340ce7b",
+      "field": "career_background",
+      "value": "曾任山东省委组织部部务委员、干部一处处长",
+      "evidence_status": "verified",
+      "source_ids": [
+        "bg-pang-people-20230807"
+      ],
+      "evidence_excerpt": "省委组织部部务委员、干部一处处长等职务。",
+      "as_of_date": "2023-08-07",
+      "reviewed_at": "2026-09-21",
+      "note": "原文“部务委员”照录，不改为“部委委员”；与只任处长阶段分列，不臆测任职时间。",
+      "label": "早期任职"
     }
   ],
   "relations": [
@@ -111470,6 +111896,12 @@
         "v4-ucsd-elite-catalog",
         "v4-ucsd-elite-portal-method"
       ]
+    },
+    {
+      "id": "accuracy-methodology",
+      "title": "资料怎么核实与更新",
+      "body": "一条职务、一条学历，分别保留依据。原文支持、无日期目录、历史资料、未核实和来源冲突各自标明。\n自动检查负责找重复身份候选、日期矛盾和证据缺口；事实仍须对照原文。旧目录不能压过新任免，同一通稿的转载也不算多份独立证明。\n来源网页、事件日期、核对日期分开保存。历史背景允许逐项补充；不知道的继续空着。新的采集入口先评估，再生成候选更新，不自动改现任。",
+      "source_ids": []
     }
   ],
   "caveats": [
