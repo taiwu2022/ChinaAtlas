@@ -12,3 +12,6 @@
 - Run Python export/build tests and Node portable/navigation/frontend tests. Preserve the maintenance app ledger.
 - Source changes use `codex/*` branches and PRs; `gh-pages` contains only clean generated output. Record source commit in build-info.
 - Published snapshot may precede source PR merge only when explicitly described in the PR.
+
+- Portraits are curated in data/portraits.json by stable person ID plus exact name. Use explicit official captions/profile pages, never inferred facial identity. Keep source/credit/date provenance; no AI-generated substitute faces.
+- Portrait binaries are linked from official sites over HTTPS and only loaded inside profiles. No-photo/error states must preserve readable profiles and private drafts. Mirror portrait JSON to the local maintenance dist/research and update its exact image-origin CSP when adding hosts.
