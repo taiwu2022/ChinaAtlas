@@ -42,6 +42,7 @@
 ## 来源与核验
 
 - [信息来源与检索方法](docs/SOURCE_SEARCH_METHODS.md)：网站清单、查询式、原文取证步骤和以后补充网站的模板。
+- [新增查询渠道核查](docs/SOURCE_CHANNEL_REVIEW_2026-09-21.md)：核对用户提供的 DeepSeek 建议，整理山东／济宁、中央任免、人物库和待评估商业数据；区分已读原文、搜索线索与供应商自述。
 - [来源全量盘点](docs/SOURCE_INVENTORY.md)：516 个来源编号、483 个网址；不同链接仍可能同源转载。
 - [中央工作机关核对](docs/WORKING_AGENCIES_2026-09-21.md)：国务院及中央工作机关展开方式、央行与外汇局的隶属关系和本轮范围。
 - [准确性检查方法](docs/ACCURACY_METHOD.md)与[本次复核队列](docs/ACCURACY_REPORT.md)：一致性错误、待核线索和证据缺口分开；检查通过不等于事实全部正确。
