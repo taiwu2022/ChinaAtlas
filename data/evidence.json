@@ -2547,5 +2547,194 @@
     "event_date": "2023-12-14",
     "evidence_excerpt": "于培雪为济宁市公安局高新技术产业开发区分局政委，试用期一年；刘国柱为济宁市市场监督管理局副局长，试用期一年。免去刘国柱的济宁市特种设备检验研究院院长职务。济宁市应急管理局加挂济宁市地震局牌子……",
     "verified_facts": "正文2023-12-14。刘国柱转任条款可核实本人行政职业阶段；于培雪2023任高新分局政委与2025同一任免公告旧职自然免除形成明确起止。地震局挂牌事实也在原文，具体领导兼任单独记录。"
+  },
+  "v9-status-expulsion-20260921": {
+    "id": "v9-status-expulsion-20260921",
+    "title": "张又侠、刘振立严重违纪违法被开除党籍军籍",
+    "url": "http://www.mod.gov.cn/gfbw/qwfb/16488072.html",
+    "published_at": "2026-09-21",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "待召开中央委员会全体会议时予以追认；此前",
+    "verified_facts": "国防部转载新华社，2026-09-21 18:01:58。通报分别公布党籍、军籍、党代表资格和移送审查起诉；党籍处分待全会追认，军籍决定在此前、未给具体日期。"
+  },
+  "v9-status-expulsion-army-20260921": {
+    "id": "v9-status-expulsion-army-20260921",
+    "title": "张又侠、刘振立严重违纪违法被开除党籍军籍",
+    "url": "http://www.81.cn/yw_208727/16488071.html",
+    "published_at": "2026-09-21",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "",
+    "verified_facts": "中国军网转载同一新华社电稿，发布时间2026-09-21 18:01:58，用作原文交叉检查。"
+  },
+  "v9-status-investigation-20260124": {
+    "id": "v9-status-investigation-20260124",
+    "title": "张又侠、刘振立涉嫌严重违纪违法被立案审查调查",
+    "url": "http://www.mod.gov.cn/gfbw/qwfb/16439106.html",
+    "published_at": "2026-01-24",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "",
+    "verified_facts": "国防部公告时间2026-01-24 15:00；党中央决定立案审查调查，未单独给决定作出的具体日期。"
+  },
+  "v9-status-state-removal-20260828": {
+    "id": "v9-status-state-removal-20260828",
+    "title": "受权发布丨全国人民代表大会常务委员会决定免职的名单",
+    "url": "https://www1.xinhuanet.com/politics/20260828/9f7a67c5059e4e7b8a45a8353c5688c8/c.html",
+    "published_at": "2026-08-28",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "",
+    "verified_facts": "全国人大常委会2026年8月28日通过名单，明确免去张又侠国家军委副主席和刘振立国家军委委员。只适用于国家军委，不能据此关闭党的军委职务。"
+  },
+  "v9-status-state-appointment-20230311": {
+    "id": "v9-status-state-appointment-20230311",
+    "title": "中华人民共和国全国人民代表大会公告（第五号）",
+    "url": "https://www.gov.cn/xinwen/2023-03/12/content_5746212.htm",
+    "published_at": "2023-03-12",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "",
+    "verified_facts": "页面2023-03-12 03:01发布；全国人大决定任命日期是2023-03-11。本条起点仅代表这届任期，不代表张又侠首次任职。"
+  },
+  "v9-status-party-appointment-20221023": {
+    "id": "v9-status-party-appointment-20221023",
+    "title": "中国共产党第二十届中央委员会第一次全体会议公报",
+    "url": "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml",
+    "published_at": "2022-10-23",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "",
+    "verified_facts": "外交部原页正文时间2022-10-23 14:55；URL含20221024，不能取URL作发布日期。列明政治局委员张又侠、党的军委副主席张又侠和委员刘振立。本届任期起点不等于首次任职。"
+  },
+  "v9-status-rules-party-2023": {
+    "id": "v9-status-rules-party-2023",
+    "title": "中共中央印发《中国共产党纪律处分条例》",
+    "url": "https://app.www.gov.cn/govdata/gov/202312/28/510658/article.html",
+    "published_at": "2023-12-28",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "",
+    "verified_facts": "政府网新华社文本：第8条党纪处分种类；第11条撤销党内职务；2023修订版自2024年1月1日起施行。"
+  },
+  "v9-status-rules-party-charter-2022": {
+    "id": "v9-status-rules-party-charter-2022",
+    "title": "中国共产党章程（2022年10月22日通过）",
+    "url": "https://djyj.12371.cn/2022/11/10/ARTI1668074243471682.shtml",
+    "published_at": "2022-11",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "",
+    "verified_facts": "共产党员网刊载2022年党章，来源标注《党建研究》2022年第11期；第42条规定有关委员处分的决定与全会追认。网页具体发布日期未单独核实，不取URL日期补齐。"
+  },
+  "v9-status-rules-organization-2021": {
+    "id": "v9-status-rules-organization-2021",
+    "title": "中共中央办公厅印发《中国共产党组织处理规定（试行）》",
+    "url": "https://www.12371.cn/2021/03/28/ARTI1616933039479965.shtml",
+    "published_at": "2021-03-28",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "",
+    "verified_facts": "第3条将组织处理界定为针对特定违规失责等情形的措施，列举五种处理。不能把无原因普通免职自动归为组织处理。正文标注2021-03-19中办发布，网页2021-03-28刊载。"
+  },
+  "v9-status-rules-pla-2025": {
+    "id": "v9-status-rules-pla-2025",
+    "title": "中国人民解放军纪律条令（2025）",
+    "url": "http://www.mod.gov.cn/gfbw/fgwx/16372284.html",
+    "published_at": "2025-02-27",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "",
+    "verified_facts": "中央军委命令2025-02-14发布，2025-04-01施行；第90至92条分类列处分，第156条规定开除军籍后的军衔、职务和待遇后果。个案未另给军衔取消日期，不造个人精确日期事件。"
+  },
+  "v9-status-rules-public-2020": {
+    "id": "v9-status-rules-public-2020",
+    "title": "中华人民共和国公职人员政务处分法",
+    "url": "http://www.npc.gov.cn/npc/c2/c30834/202006/t20200620_306633.html",
+    "published_at": "2020-06-20",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "",
+    "verified_facts": "全国人大网；第7条政务处分类型，第17至18条区分组织处理、免去或辞去领导职务与政务处分；第26条开除后的关系解除。"
+  },
+  "v9-status-rules-criminal-2018": {
+    "id": "v9-status-rules-criminal-2018",
+    "title": "中华人民共和国刑事诉讼法（2018年修正）",
+    "url": "http://www.npc.gov.cn/c2/c12435/201905/t20190521_276591.html",
+    "published_at": "2018-11-05",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "",
+    "verified_facts": "全国人大网页面实际标注2018-11-05 16:25，URL含201905不作为公布日期。第12条依法判决前不得确定有罪；第176条说明审查起诉与提起公诉的区别。"
+  },
+  "v9-department-discipline-open": {
+    "id": "v9-department-discipline-open",
+    "title": "济宁市纪委监委：领导机构（2026-08-24更新）",
+    "url": "http://jnjjjc.jndq.gov.cn/col/col35838/index.html",
+    "published_at": "2026-08-24",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "中共济宁市第十四届纪律检查委员会\n书      记：\n李增民\n副  书  记：\n刘连伟\n杜彦峰\n孙希忠\n常      委：\n李增民\n刘连伟\n杜彦峰\n孙希忠\n徐志波\n李文凯\n韩 梅（女）\n谢　猛\n张　建\n委员（按姓氏笔画为序排列）：\n于　涌　　马国安　　王广亮\n王尚国　　王敏彦　　田玉平\n田希涛　　冯　华\n刘　东\n刘　明\n刘东利\n刘连伟\n刘国巨\n刘海峰\n（回族）\n刘绪民\n孙兴格\n孙希忠\n杜彦峰\n杜爱民\n李　建\n李文凯\n李增民\n杨卫东\n张　建\n张　博\n张　斌\n张治国\n张彦生\n陈恒林\n郑　杰\n侯曙光\n贾庆忠\n徐守亮\n徐志波\n高兆波\n郭卫东\n陶可星\n黄继伟\n蒋永轩\n韩　梅\n（女）\n程庆辉\n谢　猛\n济宁市监察委员会\n主    任：\n李增民\n副 主 任：\n刘连伟\n杜彦峰\n孙希忠\n委\n员：\n李文凯\n谢　猛\n张　建\n黄继伟\n郭卫东\n",
+    "verified_facts": "真实原页显示2026-08-24 16:56；原col62842入口通过网页脚本转向此col35838页。搜索缓存的6月名单已过时，不沿用。姓名仅空格归一；未把单独委员同名条目与其他机构官员自动合并。HTTPS证书到期，读取官方HTTP原页，未关闭证书校验。"
+  },
+  "v9-department-li-election": {
+    "id": "v9-department-li-election",
+    "title": "市十八届人大六次会议胜利闭幕：李增民当选监委主任",
+    "url": "https://dlrk.jining.gov.cn/art/2026/8/25/art_182_2938827.html",
+    "published_at": "2026-08-25",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "本报济宁8月24日讯……今天上午，济宁市第十八届人民代表大会第六次会议……大会选举……李增民为济宁市监察委员会主任。",
+    "verified_facts": "事件2026-08-24，网页2026-08-25；正式选举与此前代理主任分别记录。政府站转载济宁日报社，和已有同稿属于同一证据家族。"
+  },
+  "v9-department-li-acting-decision": {
+    "id": "v9-department-li-acting-decision",
+    "title": "济宁市人大常委会关于李增民代理济宁市监察委员会主任职务的决定",
+    "url": "https://jiningrenda.jining.gov.cn/art/2026/7/21/art_31313_2706089.html",
+    "published_at": "2026-07-21",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "（2026年7月21日济宁市十八届人大常委会第三十四次会议通过）……决定：李增民为济宁市监察委员会代理主任。",
+    "verified_facts": "通过日和发表日均2026-07-21；确认代理主任，不误记为正式当选主任。"
+  },
+  "v9-department-zhu-resignation": {
+    "id": "v9-department-zhu-resignation",
+    "title": "济宁市人大常委会关于接受朱朝辉请求辞去济宁市监察委员会主任职务的决定",
+    "url": "https://jiningrenda.jining.gov.cn/art/2026/7/1/art_31313_2706073.html",
+    "published_at": "2026-07-01",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "（2026年6月30日济宁市十八届人大常委会第三十三次会议通过）……接受朱朝辉辞去济宁市监察委员会主任职务的请求，报济宁市人民代表大会备案。",
+    "verified_facts": "决定通过2026-06-30，公开2026-07-01；只结束监察委员会主任岗位，不据此结束市委常委或纪委书记，也不推断原因。"
+  },
+  "v9-department-discipline-aug26": {
+    "id": "v9-department-discipline-aug26",
+    "title": "市纪委常委会召开会议：李增民主持",
+    "url": "http://jnjjjc.jndq.gov.cn/art/2026/8/26/art_35836_2714201.html",
+    "published_at": "2026-08-26",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "8月26日，市纪委常委会召开会议……市委常委、市纪委书记、市监委主任李增民主持会议并讲话。",
+    "verified_facts": "2026-08-26具名履职确认市委常委、纪委书记、监委主任三项职务；党内岗位具体任职起点未查，保持空值。"
+  },
+  "v9-department-org-liu-aug17": {
+    "id": "v9-department-org-liu-aug17",
+    "title": "政策精准赋能 全链护航成长：济宁出台首批OPC创业支持清单",
+    "url": "https://www.jining.gov.cn/art/2026/8/19/art_106010_2938779.html",
+    "published_at": "2026-08-19",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "8月17日下午，济宁市政府新闻办公室举行新闻发布会……发布人：刘东利，市委组织部副部长，市人力资源和社会保障局党组书记、局长。",
+    "verified_facts": "活动2026-08-17，发表2026-08-19；同一具名介绍明确三项兼任，分到对应党政机构。不与纪委委员名单里的纯姓名条目自动合并。"
+  },
+  "v9-department-org-zhu-jul3": {
+    "id": "v9-department-org-zhu-jul3",
+    "title": "强中层、提效能、勇担当：济宁高新区中层干部专题培训班举办",
+    "url": "https://www.jnhn.gov.cn/art/2026/7/6/art_23981_2825601.html",
+    "published_at": "2026-07-06",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "7月3日下午，培训班结业。济宁市委组织部副部长，市委党员教育中心主任，高新区党工委副书记朱磊……",
+    "verified_facts": "2026-07-03结业活动明确三项职务，发表于2026-07-06；没有将2月活动或无日期高新区领导目录当作最新任期。"
+  },
+  "v9-department-org-yang-exam": {
+    "id": "v9-department-org-yang-exam",
+    "title": "学校圆满完成2026年度省考及选调生笔试承办任务",
+    "url": "https://jxjy.sdpu.edu.cn/info/1054/2779.htm",
+    "published_at": "2025-12-10",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "12月7日，2026年度山东省考试录用公务员笔试及山东省2026年度选拔录用选调生（第二批）笔试……考试期间，省巡考领导及市委组织部副部长杨志国亲临考点巡视指导。",
+    "verified_facts": "标题含2026年度，真实活动是2025-12-07、网页2025-12-10。超过180天，仅历史履职，不据标题误判为2026现任。"
+  },
+  "v9-department-housing-heat-sep4": {
+    "id": "v9-department-housing-heat-sep4",
+    "title": "市住房城乡建设局调研组督导调研“邹热入曲”重点民生工程",
+    "url": "https://jnszjj.jining.gov.cn/art/2026/9/4/art_7616_2707758.html",
+    "published_at": "2026-09-04",
+    "accessed_at": "2026-09-21",
+    "evidence_excerpt": "9月4日，市住房城乡建设局党组书记、局长薛聪带队深入“邹热入曲”项目一线实地督导调研。",
+    "verified_facts": "2026-09-04活动和发表同日，明确党组书记及局长；行政局长起点使用已核2025-06-16人大任命，党组任职起点继续未知。"
   }
 }

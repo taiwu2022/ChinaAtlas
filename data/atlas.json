@@ -10054,7 +10054,9 @@
       "name_en": "",
       "focus": [],
       "source_ids": [
-        "v6-jn-inspection"
+        "v6-jn-inspection",
+        "v9-department-zhu-resignation",
+        "v9-department-discipline-open"
       ],
       "checked_at": "2026-09-21",
       "profile_status": "public_office_record",
@@ -10081,37 +10083,51 @@
         {
           "title": "济宁市纪委书记",
           "org_id": "jining-discipline",
-          "status": "historical",
+          "status": "former",
           "since": null,
           "until": null,
           "rank": "个人级别未单独核准",
           "rank_basis": "职务来源不单独证明个人行政级别。",
           "source_ids": [
-            "v6-jn-inspection"
+            "v6-jn-inspection",
+            "v9-department-discipline-open"
           ],
-          "verification_status": "historical_only",
+          "verification_status": "verified_former",
           "as_of_date": "2026-03-03",
           "checked_at": "2026-09-21",
-          "note": "确认报道日期的公开职务，未据此延续为现任。"
+          "note": "原3月3日职务保留。8月24日独任书记岗位已由李增民担任，确认朱朝辉是前任；党内离任具体日期未查，until仍空，不借用6月30日行政辞职日期。",
+          "date_note": "原3月3日职务保留。8月24日独任书记岗位已由李增民担任，确认朱朝辉是前任；党内离任具体日期未查，until仍空，不借用6月30日行政辞职日期。"
         },
         {
           "title": "济宁市监委主任",
           "org_id": "jining-supervision",
-          "status": "historical",
+          "status": "former",
           "since": null,
-          "until": null,
+          "until": "2026-06-30",
           "rank": "个人级别未单独核准",
           "rank_basis": "职务来源不单独证明个人行政级别。",
           "source_ids": [
-            "v6-jn-inspection"
+            "v6-jn-inspection",
+            "v9-department-zhu-resignation"
           ],
-          "verification_status": "historical_only",
-          "as_of_date": "2026-03-03",
+          "verification_status": "verified_former",
+          "as_of_date": "2026-06-30",
           "checked_at": "2026-09-21",
-          "note": "确认报道日期的公开职务，未据此延续为现任。"
+          "note": "2026-06-30人大常委会接受辞去监委主任请求（7月1日发表）；只结束该国家机关职务，任期起点未在本轮核实。",
+          "latest_confirmed_at": "2026-06-30",
+          "date_note": "2026-06-30人大常委会接受辞去监委主任请求（7月1日发表）；只结束该国家机关职务，任期起点未在本轮核实。"
         }
       ],
-      "bio": []
+      "bio": [
+        {
+          "years": "2026-06-30 资料确认（起任日期待核）",
+          "role": "辞去济宁市监察委员会主任职务的请求获人大常委会接受",
+          "source_ids": [
+            "v9-department-zhu-resignation"
+          ],
+          "years_en": "Evidence dated 2026-06-30; start date unverified"
+        }
+      ]
     },
     {
       "id": "jining-person-bd7f4ab821db12",
@@ -14394,7 +14410,9 @@
       "checked_at": "2026-09-21",
       "source_ids": [
         "v7-jn-dept-all-36",
-        "v7-jn-dept-housing2026"
+        "v7-jn-dept-housing2026",
+        "v9-department-housing-heat-sep4",
+        "v8-dept-gov-notice-19797"
       ],
       "profile_status": "local_expansion",
       "location_ids": [
@@ -14402,32 +14420,59 @@
       ],
       "roles": [
         {
-          "title": "济宁市住房和城乡建设局党组书记、局长",
+          "title": "济宁市住房和城乡建设局局长",
           "org_id": "jining-housing-construction",
-          "status": "historical",
+          "status": "current",
+          "since": "2025-06-16",
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v7-jn-dept-all-36",
+            "v7-jn-dept-housing2026",
+            "v9-department-housing-heat-sep4",
+            "v8-dept-gov-notice-19797"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-09-04",
+          "latest_confirmed_at": "2026-09-04",
+          "date_note": "行政任命由2025-06-16人大常委会决定；9月4日调研正文再确认当前履职。",
+          "note": "行政任命由2025-06-16人大常委会决定；9月4日调研正文再确认当前履职。"
+        },
+        {
+          "title": "济宁市住房和城乡建设局党组书记",
+          "org_id": "jining-housing-construction-party-group",
+          "status": "current",
           "since": null,
           "until": null,
           "rank": "个人级别未单独核准",
-          "rank_basis": "只记录来源明确写出的职务/职级；不从职务推断个人行政级别。",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
           "source_ids": [
-            "v7-jn-dept-all-36",
-            "v7-jn-dept-housing2026"
+            "v9-department-housing-heat-sep4"
           ],
-          "verification_status": "historical_only",
-          "as_of_date": "2026-01-14",
-          "latest_confirmed_at": "2026-01-14",
-          "date_note": "2026年官方具名履职材料与政府领导目录交叉核对；as_of_date为具名履职日，不代表任期起点。",
-          "note": "2026年官方具名履职材料与政府领导目录交叉核对；as_of_date为具名履职日，不代表任期起点。 该具名材料已超过180天；本库保留当时职务，不续算为近期现任。"
+          "verification_status": "verified_current",
+          "as_of_date": "2026-09-04",
+          "latest_confirmed_at": "2026-09-04",
+          "date_note": "9月4日调研正文明确党组书记；党内任职起点未知，不借用行政任命日期。",
+          "note": "9月4日调研正文明确党组书记；党内任职起点未知，不借用行政任命日期。"
         }
       ],
       "bio": [
         {
-          "years": "2026-01-14",
-          "role": "济宁市住房和城乡建设局党组书记、局长",
+          "years": "2025-06-16 起（任职起点已核）",
+          "role": "济宁市住房和城乡建设局局长",
           "source_ids": [
-            "v7-jn-dept-all-36",
-            "v7-jn-dept-housing2026"
-          ]
+            "v8-dept-gov-notice-19797"
+          ],
+          "years_en": "2025-06-16 (documented start)"
+        },
+        {
+          "years": "2026-09-04 资料确认（起任日期待核）",
+          "role": "济宁市住房和城乡建设局党组书记",
+          "source_ids": [
+            "v9-department-housing-heat-sep4"
+          ],
+          "years_en": "Evidence dated 2026-09-04; start date unverified"
         }
       ]
     },
@@ -38848,6 +38893,1214 @@
       ]
     },
     {
+      "id": "zhang-youxia",
+      "name": "张又侠",
+      "name_en": "Zhang Youxia",
+      "status": "historical",
+      "historical": true,
+      "location_ids": [
+        "central"
+      ],
+      "tags": [
+        "历史人物",
+        "中央军委",
+        "任职与处分记录"
+      ],
+      "focus": [
+        "2026年9月21日官方公布开除党籍处分，仍待中央委员会全体会议追认。",
+        "开除军籍决定发生在此前，具体日期未披露；涉嫌犯罪问题移送军事检察机关审查起诉，不等于已被判决有罪。"
+      ],
+      "source_ids": [
+        "v9-status-expulsion-20260921",
+        "v9-status-expulsion-army-20260921",
+        "v9-status-investigation-20260124",
+        "v9-status-state-removal-20260828",
+        "v9-status-state-appointment-20230311",
+        "v9-status-party-appointment-20221023"
+      ],
+      "checked_at": "2026-09-21",
+      "identity_note": "按官方同篇任职与处分通报确认身份；不补未经核实的个人背景、家属或私人关系。",
+      "roles": [
+        {
+          "org_id": "politburo",
+          "title": "中共中央政治局委员",
+          "title_en": "Member of the CPC Central Political Bureau",
+          "status": "former",
+          "since": "2022-10-23",
+          "until": null,
+          "rank": "历史公开职务；个人级别未在本批单独核定",
+          "rank_basis": "仅依据公开任职记录，不从职务名称推算个人级别。",
+          "source_ids": [
+            "v9-status-party-appointment-20221023",
+            "v9-status-expulsion-20260921"
+          ],
+          "verification_status": "verified_former",
+          "as_of_date": "2026-09-21",
+          "date_note": "2022年10月23日仅为本届职务产生日期，不代表首次任职。9月21日已宣布开除党籍且待全会追认；原军籍处分具体日期未披露。本条保留历史身份、退出当前名册，具体职务终止日不从处分公告日期推定。",
+          "note": "2022年10月23日仅为本届职务产生日期，不代表首次任职。9月21日已宣布开除党籍且待全会追认；原军籍处分具体日期未披露。本条保留历史身份、退出当前名册，具体职务终止日不从处分公告日期推定。"
+        },
+        {
+          "org_id": "cpc-cmc",
+          "title": "中共中央军事委员会副主席",
+          "title_en": "Vice Chairman of the CPC Central Military Commission",
+          "status": "former",
+          "since": "2022-10-23",
+          "until": null,
+          "rank": "历史公开职务；个人级别未在本批单独核定",
+          "rank_basis": "仅依据公开任职记录，不从职务名称推算个人级别。",
+          "source_ids": [
+            "v9-status-party-appointment-20221023",
+            "v9-status-expulsion-20260921"
+          ],
+          "verification_status": "verified_former",
+          "as_of_date": "2026-09-21",
+          "date_note": "2022年10月23日仅为本届职务产生日期，不代表首次任职。9月21日已宣布开除党籍且待全会追认；原军籍处分具体日期未披露。本条保留历史身份、退出当前名册，具体职务终止日不从处分公告日期推定。",
+          "note": "2022年10月23日仅为本届职务产生日期，不代表首次任职。9月21日已宣布开除党籍且待全会追认；原军籍处分具体日期未披露。本条保留历史身份、退出当前名册，具体职务终止日不从处分公告日期推定。"
+        },
+        {
+          "org_id": "state-cmc",
+          "title": "中华人民共和国中央军事委员会副主席",
+          "title_en": "Vice Chairman of the PRC Central Military Commission",
+          "status": "former",
+          "since": "2023-03-11",
+          "until": "2026-08-28",
+          "rank": "历史公开职务；个人级别未在本批单独核定",
+          "rank_basis": "仅依据公开任职记录，不从职务名称推算个人级别。",
+          "source_ids": [
+            "v9-status-state-appointment-20230311",
+            "v9-status-state-removal-20260828"
+          ],
+          "verification_status": "verified_former",
+          "as_of_date": "2026-08-28",
+          "date_note": "2023年3月11日为本届任命日期；2026年8月28日全国人大常委会决定免职。只涉及国家军委，不替代党的军委程序。",
+          "note": "2023年3月11日为本届任命日期；2026年8月28日全国人大常委会决定免职。只涉及国家军委，不替代党的军委程序。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "本届任职始于2022-10-23；结束日期未单列",
+          "role": "中共中央政治局委员",
+          "source_ids": [
+            "v9-status-party-appointment-20221023",
+            "v9-status-expulsion-20260921"
+          ]
+        },
+        {
+          "years": "本届任职始于2022-10-23；结束日期未单列",
+          "role": "中共中央军事委员会副主席",
+          "source_ids": [
+            "v9-status-party-appointment-20221023",
+            "v9-status-expulsion-20260921"
+          ]
+        },
+        {
+          "years": "2023-03-11—2026-08-28",
+          "role": "中华人民共和国中央军事委员会副主席",
+          "source_ids": [
+            "v9-status-state-appointment-20230311",
+            "v9-status-state-removal-20260828"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "liu-zhenli",
+      "name": "刘振立",
+      "name_en": "Liu Zhenli",
+      "status": "historical",
+      "historical": true,
+      "location_ids": [
+        "central"
+      ],
+      "tags": [
+        "历史人物",
+        "中央军委",
+        "任职与处分记录"
+      ],
+      "focus": [
+        "2026年9月21日官方公布开除党籍处分，仍待中央委员会全体会议追认。",
+        "开除军籍决定发生在此前，具体日期未披露；涉嫌犯罪问题移送军事检察机关审查起诉，不等于已被判决有罪。"
+      ],
+      "source_ids": [
+        "v9-status-expulsion-20260921",
+        "v9-status-expulsion-army-20260921",
+        "v9-status-investigation-20260124",
+        "v9-status-state-removal-20260828",
+        "v9-status-state-appointment-20230311",
+        "v9-status-party-appointment-20221023"
+      ],
+      "checked_at": "2026-09-21",
+      "identity_note": "按官方同篇任职与处分通报确认身份；不补未经核实的个人背景、家属或私人关系。",
+      "roles": [
+        {
+          "org_id": "cpc-cmc",
+          "title": "中共中央军事委员会委员",
+          "title_en": "Member of the CPC Central Military Commission",
+          "status": "former",
+          "since": "2022-10-23",
+          "until": null,
+          "rank": "历史公开职务；个人级别未在本批单独核定",
+          "rank_basis": "仅依据公开任职记录，不从职务名称推算个人级别。",
+          "source_ids": [
+            "v9-status-party-appointment-20221023",
+            "v9-status-expulsion-20260921"
+          ],
+          "verification_status": "verified_former",
+          "as_of_date": "2026-09-21",
+          "date_note": "2022年10月23日仅为本届职务产生日期，不代表首次任职。9月21日已宣布开除党籍且待全会追认；原军籍处分具体日期未披露。本条保留历史身份、退出当前名册，具体职务终止日不从处分公告日期推定。",
+          "note": "2022年10月23日仅为本届职务产生日期，不代表首次任职。9月21日已宣布开除党籍且待全会追认；原军籍处分具体日期未披露。本条保留历史身份、退出当前名册，具体职务终止日不从处分公告日期推定。"
+        },
+        {
+          "org_id": "state-cmc",
+          "title": "中华人民共和国中央军事委员会委员",
+          "title_en": "Member of the PRC Central Military Commission",
+          "status": "former",
+          "since": "2023-03-11",
+          "until": "2026-08-28",
+          "rank": "历史公开职务；个人级别未在本批单独核定",
+          "rank_basis": "仅依据公开任职记录，不从职务名称推算个人级别。",
+          "source_ids": [
+            "v9-status-state-appointment-20230311",
+            "v9-status-state-removal-20260828"
+          ],
+          "verification_status": "verified_former",
+          "as_of_date": "2026-08-28",
+          "date_note": "2023年3月11日为本届任命日期；2026年8月28日全国人大常委会决定免职。只涉及国家军委，不替代党的军委程序。",
+          "note": "2023年3月11日为本届任命日期；2026年8月28日全国人大常委会决定免职。只涉及国家军委，不替代党的军委程序。"
+        },
+        {
+          "org_id": "cmc-joint-staff-department",
+          "title": "中央军委联合参谋部参谋长",
+          "title_en": "Chief of Staff of the CMC Joint Staff Department",
+          "status": "former",
+          "since": null,
+          "until": null,
+          "rank": "历史公开职务；个人级别未在本批单独核定",
+          "rank_basis": "仅依据公开任职记录，不从职务名称推算个人级别。",
+          "source_ids": [
+            "v9-status-investigation-20260124",
+            "v9-status-expulsion-20260921"
+          ],
+          "verification_status": "verified_former",
+          "as_of_date": "2026-09-21",
+          "date_note": "9月21日通报明确称原参谋长；本批未查得具体首次任命或离任日。",
+          "note": "9月21日通报明确称原参谋长；本批未查得具体首次任命或离任日。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "本届任职始于2022-10-23；结束日期未单列",
+          "role": "中共中央军事委员会委员",
+          "source_ids": [
+            "v9-status-party-appointment-20221023",
+            "v9-status-expulsion-20260921"
+          ]
+        },
+        {
+          "years": "2023-03-11—2026-08-28",
+          "role": "中华人民共和国中央军事委员会委员",
+          "source_ids": [
+            "v9-status-state-appointment-20230311",
+            "v9-status-state-removal-20260828"
+          ]
+        },
+        {
+          "years": "历史任职；起止日期未核定",
+          "role": "中央军委联合参谋部参谋长",
+          "source_ids": [
+            "v9-status-investigation-20260124",
+            "v9-status-expulsion-20260921"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-e0588e1426a9",
+      "name": "刘连伟",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市纪委副书记",
+          "org_id": "jining-discipline",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        },
+        {
+          "title": "济宁市监察委员会副主任",
+          "org_id": "jining-supervision",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市纪委副书记",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        },
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市监察委员会副主任",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-3dbe17d4d637",
+      "name": "杜彦峰",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市纪委副书记",
+          "org_id": "jining-discipline",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        },
+        {
+          "title": "济宁市监察委员会副主任",
+          "org_id": "jining-supervision",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市纪委副书记",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        },
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市监察委员会副主任",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-067ba473e528",
+      "name": "孙希忠",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市纪委副书记",
+          "org_id": "jining-discipline",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        },
+        {
+          "title": "济宁市监察委员会副主任",
+          "org_id": "jining-supervision",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市纪委副书记",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        },
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市监察委员会副主任",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-ddeed068d5c7",
+      "name": "徐志波",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市纪委常委",
+          "org_id": "jining-discipline",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市纪委常委",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-b57b29d20895",
+      "name": "李文凯",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市纪委常委",
+          "org_id": "jining-discipline",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        },
+        {
+          "title": "济宁市监察委员会委员",
+          "org_id": "jining-supervision",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市纪委常委",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        },
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市监察委员会委员",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-5955cd1e1895",
+      "name": "韩梅",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市纪委常委",
+          "org_id": "jining-discipline",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市纪委常委",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-d50edd6cdf0e",
+      "name": "谢猛",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市纪委常委",
+          "org_id": "jining-discipline",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        },
+        {
+          "title": "济宁市监察委员会委员",
+          "org_id": "jining-supervision",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市纪委常委",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        },
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市监察委员会委员",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-19d16e8b03e2",
+      "name": "张建",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市纪委常委",
+          "org_id": "jining-discipline",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        },
+        {
+          "title": "济宁市监察委员会委员",
+          "org_id": "jining-supervision",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市纪委常委",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        },
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市监察委员会委员",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-5d40681b12c7",
+      "name": "黄继伟",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市纪委委员",
+          "org_id": "jining-discipline",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        },
+        {
+          "title": "济宁市监察委员会委员",
+          "org_id": "jining-supervision",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。不与其他单位同名者合并。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。不与其他单位同名者合并。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市纪委委员",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        },
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市监察委员会委员",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-e56b862229e4",
+      "name": "郭卫东",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市纪委委员",
+          "org_id": "jining-discipline",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+        },
+        {
+          "title": "济宁市监察委员会委员",
+          "org_id": "jining-supervision",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。不与其他单位同名者合并。",
+          "note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。不与其他单位同名者合并。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市纪委委员",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        },
+        {
+          "years": "2026-08-24 资料确认（起任日期待核）",
+          "role": "济宁市监察委员会委员",
+          "source_ids": [
+            "v9-department-discipline-open"
+          ],
+          "years_en": "Evidence dated 2026-08-24; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-bbcaf88d452f",
+      "name": "李增民",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-discipline-aug26",
+        "v9-department-discipline-open",
+        "v9-department-li-election",
+        "v9-department-li-acting-decision"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市委常委",
+          "org_id": "jining-party",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-aug26"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-26",
+          "latest_confirmed_at": "2026-08-26",
+          "date_note": "8月26日具名报道明确；任期起点未在原文提供。",
+          "note": "8月26日具名报道明确；任期起点未在原文提供。"
+        },
+        {
+          "title": "济宁市纪委书记",
+          "org_id": "jining-discipline",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-discipline-open",
+            "v9-department-discipline-aug26"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-26",
+          "latest_confirmed_at": "2026-08-26",
+          "date_note": "8月24日领导目录及8月26日具名履职均明确；不以国家机关任命日期代替党内任职起点。",
+          "note": "8月24日领导目录及8月26日具名履职均明确；不以国家机关任命日期代替党内任职起点。"
+        },
+        {
+          "title": "济宁市监察委员会主任",
+          "org_id": "jining-supervision",
+          "status": "current",
+          "since": "2026-08-24",
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-li-election",
+            "v9-department-discipline-aug26"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-26",
+          "latest_confirmed_at": "2026-08-26",
+          "date_note": "2026-08-24当选，8月25日公开报道；8月26日履职再次确认。",
+          "note": "2026-08-24当选，8月25日公开报道；8月26日履职再次确认。"
+        },
+        {
+          "title": "济宁市监察委员会代理主任",
+          "org_id": "jining-supervision",
+          "status": "former",
+          "since": "2026-07-21",
+          "until": "2026-08-24",
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-li-acting-decision",
+            "v9-department-li-election"
+          ],
+          "verification_status": "verified_former",
+          "as_of_date": "2026-08-24",
+          "latest_confirmed_at": "2026-08-24",
+          "date_note": "7月21日人大常委会决定代理，8月24日正式当选主任，代理阶段结束；不是免职、降职或处分。",
+          "note": "7月21日人大常委会决定代理，8月24日正式当选主任，代理阶段结束；不是免职、降职或处分。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-26 资料确认（起任日期待核）",
+          "role": "济宁市委常委",
+          "source_ids": [
+            "v9-department-discipline-aug26"
+          ],
+          "years_en": "Evidence dated 2026-08-26; start date unverified"
+        },
+        {
+          "years": "2026-08-26 资料确认（起任日期待核）",
+          "role": "济宁市纪委书记",
+          "source_ids": [
+            "v9-department-discipline-open",
+            "v9-department-discipline-aug26"
+          ],
+          "years_en": "Evidence dated 2026-08-26; start date unverified"
+        },
+        {
+          "years": "2026-08-24 起（任职起点已核）",
+          "role": "济宁市监察委员会主任",
+          "source_ids": [
+            "v9-department-li-election",
+            "v9-department-discipline-aug26"
+          ],
+          "years_en": "2026-08-24 (documented start)"
+        },
+        {
+          "years": "2026-07-21 — 2026-08-24",
+          "role": "济宁市监察委员会代理主任",
+          "source_ids": [
+            "v9-department-li-acting-decision",
+            "v9-department-li-election"
+          ],
+          "years_en": "2026-07-21 — 2026-08-24"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-d5f7db720a67",
+      "name": "刘东利",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-org-liu-aug17"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市委组织部副部长",
+          "org_id": "jining-organization",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-org-liu-aug17"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-17",
+          "latest_confirmed_at": "2026-08-17",
+          "date_note": "8月17日新闻发布会明确职务；任职起点未核。",
+          "note": "8月17日新闻发布会明确职务；任职起点未核。"
+        },
+        {
+          "title": "济宁市人力资源和社会保障局党组书记",
+          "org_id": "jining-human-resources-party-group",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-org-liu-aug17"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-17",
+          "latest_confirmed_at": "2026-08-17",
+          "date_note": "同一发布人介绍明确党组书记，与行政局长分列。",
+          "note": "同一发布人介绍明确党组书记，与行政局长分列。"
+        },
+        {
+          "title": "济宁市人力资源和社会保障局局长",
+          "org_id": "jining-human-resources-social-security",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-org-liu-aug17"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-08-17",
+          "latest_confirmed_at": "2026-08-17",
+          "date_note": "同一发布人介绍明确局长；未按其他名单同姓名添加纪委委员身份。",
+          "note": "同一发布人介绍明确局长；未按其他名单同姓名添加纪委委员身份。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-08-17 资料确认（起任日期待核）",
+          "role": "济宁市委组织部副部长",
+          "source_ids": [
+            "v9-department-org-liu-aug17"
+          ],
+          "years_en": "Evidence dated 2026-08-17; start date unverified"
+        },
+        {
+          "years": "2026-08-17 资料确认（起任日期待核）",
+          "role": "济宁市人力资源和社会保障局党组书记",
+          "source_ids": [
+            "v9-department-org-liu-aug17"
+          ],
+          "years_en": "Evidence dated 2026-08-17; start date unverified"
+        },
+        {
+          "years": "2026-08-17 资料确认（起任日期待核）",
+          "role": "济宁市人力资源和社会保障局局长",
+          "source_ids": [
+            "v9-department-org-liu-aug17"
+          ],
+          "years_en": "Evidence dated 2026-08-17; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-72e87863e521",
+      "name": "朱磊",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-org-zhu-jul3"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市委组织部副部长",
+          "org_id": "jining-organization",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-org-zhu-jul3"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-07-03",
+          "latest_confirmed_at": "2026-07-03",
+          "date_note": "7月3日结业讲话正文明确市委组织部副部长，7月6日发布。",
+          "note": "7月3日结业讲话正文明确市委组织部副部长，7月6日发布。"
+        },
+        {
+          "title": "济宁市委党员教育中心主任",
+          "org_id": "jining-party-member-education-center",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-org-zhu-jul3"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-07-03",
+          "latest_confirmed_at": "2026-07-03",
+          "date_note": "同一具名介绍确认；具体任期起点未核。",
+          "note": "同一具名介绍确认；具体任期起点未核。"
+        },
+        {
+          "title": "济宁高新区党工委副书记",
+          "org_id": "jining-hightech-party",
+          "status": "current",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-org-zhu-jul3"
+          ],
+          "verification_status": "verified_current",
+          "as_of_date": "2026-07-03",
+          "latest_confirmed_at": "2026-07-03",
+          "date_note": "同一具名介绍确认；职业地点只在该岗位使用高新区，不把市级组织部职务下沉为高新区岗位。",
+          "note": "同一具名介绍确认；职业地点只在该岗位使用高新区，不把市级组织部职务下沉为高新区岗位。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2026-07-03 资料确认（起任日期待核）",
+          "role": "济宁市委组织部副部长",
+          "source_ids": [
+            "v9-department-org-zhu-jul3"
+          ],
+          "years_en": "Evidence dated 2026-07-03; start date unverified"
+        },
+        {
+          "years": "2026-07-03 资料确认（起任日期待核）",
+          "role": "济宁市委党员教育中心主任",
+          "source_ids": [
+            "v9-department-org-zhu-jul3"
+          ],
+          "years_en": "Evidence dated 2026-07-03; start date unverified"
+        },
+        {
+          "years": "2026-07-03 资料确认（起任日期待核）",
+          "role": "济宁高新区党工委副书记",
+          "source_ids": [
+            "v9-department-org-zhu-jul3"
+          ],
+          "years_en": "Evidence dated 2026-07-03; start date unverified"
+        }
+      ]
+    },
+    {
+      "id": "jining-v9-a1e7b4fa483a",
+      "name": "杨志国",
+      "name_en": "",
+      "focus": [],
+      "source_ids": [
+        "v9-department-org-yang-exam"
+      ],
+      "checked_at": "2026-09-21",
+      "profile_status": "public_office_record",
+      "location_ids": [
+        "jining"
+      ],
+      "roles": [
+        {
+          "title": "济宁市委组织部副部长",
+          "org_id": "jining-organization",
+          "status": "historical",
+          "since": null,
+          "until": null,
+          "rank": "个人级别未单独核准",
+          "rank_basis": "只按原文记录职务，不从岗位名称或机构规格推算个人级别。",
+          "source_ids": [
+            "v9-department-org-yang-exam"
+          ],
+          "verification_status": "historical_only",
+          "as_of_date": "2025-12-07",
+          "latest_confirmed_at": "2025-12-07",
+          "date_note": "2026年度省考实际于2025-12-07举行，12月10日发布；超过180天，不作为2026-09-21现任确认。",
+          "note": "2026年度省考实际于2025-12-07举行，12月10日发布；超过180天，不作为2026-09-21现任确认。"
+        }
+      ],
+      "bio": [
+        {
+          "years": "2025-12-07 资料确认（起任日期待核）",
+          "role": "济宁市委组织部副部长",
+          "source_ids": [
+            "v9-department-org-yang-exam"
+          ],
+          "years_en": "Evidence dated 2025-12-07; start date unverified"
+        }
+      ]
+    },
+    {
       "checked_at": "2026-09-20",
       "focus": [],
       "focus_en": [],
@@ -46726,6 +47979,107 @@
       ]
     },
     {
+      "id": "cmc-joint-staff-department",
+      "name": "中央军委联合参谋部",
+      "name_en": "Joint Staff Department of the Central Military Commission",
+      "kind": "historical_entity",
+      "sector": "historical",
+      "parent_id": null,
+      "location_ids": [
+        "central"
+      ],
+      "level_label": "历史履历实体 · 本批未建立现任机构名册",
+      "duties": [],
+      "authority": [],
+      "limits": [
+        "保留通报确认的原任职身份；不据此推断继任者、具体任免日期或完整指挥关系。"
+      ],
+      "source_ids": [
+        "v9-status-expulsion-20260921",
+        "v9-status-investigation-20260124"
+      ]
+    },
+    {
+      "id": "jining-human-resources-social-security",
+      "name": "济宁市人力资源和社会保障局",
+      "kind": "state",
+      "parent_id": "jining-government",
+      "level_label": "公开资料所载单位（个人级别另核）",
+      "territorial_level": "prefecture",
+      "location_ids": [
+        "jining"
+      ],
+      "sector": "human_resources",
+      "duties": [],
+      "authority": [],
+      "limits": [
+        "机构归类不代替完整法定领导关系；个人行政级别与职务分别核准。"
+      ],
+      "source_ids": [
+        "v9-department-org-liu-aug17"
+      ]
+    },
+    {
+      "id": "jining-human-resources-party-group",
+      "name": "中共济宁市人力资源和社会保障局党组",
+      "kind": "party",
+      "parent_id": null,
+      "level_label": "公开资料所载单位（个人级别另核）",
+      "territorial_level": "prefecture",
+      "location_ids": [
+        "jining"
+      ],
+      "sector": "human_resources",
+      "duties": [],
+      "authority": [],
+      "limits": [
+        "机构归类不代替完整法定领导关系；个人行政级别与职务分别核准。"
+      ],
+      "source_ids": [
+        "v9-department-org-liu-aug17"
+      ]
+    },
+    {
+      "id": "jining-party-member-education-center",
+      "name": "中共济宁市委党员教育中心",
+      "kind": "party",
+      "parent_id": null,
+      "level_label": "公开资料所载单位（个人级别另核）",
+      "territorial_level": "prefecture",
+      "location_ids": [
+        "jining"
+      ],
+      "sector": "organization",
+      "duties": [],
+      "authority": [],
+      "limits": [
+        "机构归类不代替完整法定领导关系；个人行政级别与职务分别核准。"
+      ],
+      "source_ids": [
+        "v9-department-org-zhu-jul3"
+      ]
+    },
+    {
+      "id": "jining-housing-construction-party-group",
+      "name": "中共济宁市住房和城乡建设局党组",
+      "kind": "party",
+      "parent_id": null,
+      "level_label": "公开资料所载单位（个人级别另核）",
+      "territorial_level": "prefecture",
+      "location_ids": [
+        "jining"
+      ],
+      "sector": "housing",
+      "duties": [],
+      "authority": [],
+      "limits": [
+        "机构归类不代替完整法定领导关系；个人行政级别与职务分别核准。"
+      ],
+      "source_ids": [
+        "v9-department-housing-heat-sep4"
+      ]
+    },
+    {
       "authority": [],
       "authority_en": [],
       "duties": [],
@@ -51052,6 +52406,218 @@
       "has_local_evidence": true
     },
     {
+      "id": "v9-status-expulsion-20260921",
+      "url": "http://www.mod.gov.cn/gfbw/qwfb/16488072.html",
+      "title": "张又侠、刘振立严重违纪违法被开除党籍军籍",
+      "published_at": "2026-09-21",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_xinhua_reprint",
+      "note": "国防部转载新华社，2026-09-21 18:01:58。通报分别公布党籍、军籍、党代表资格和移送审查起诉；党籍处分待全会追认，军籍决定在此前、未给具体日期。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-status-expulsion-army-20260921",
+      "url": "http://www.81.cn/yw_208727/16488071.html",
+      "title": "张又侠、刘振立严重违纪违法被开除党籍军籍",
+      "published_at": "2026-09-21",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_xinhua_reprint",
+      "note": "中国军网转载同一新华社电稿，发布时间2026-09-21 18:01:58，用作原文交叉检查。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-status-investigation-20260124",
+      "url": "http://www.mod.gov.cn/gfbw/qwfb/16439106.html",
+      "title": "张又侠、刘振立涉嫌严重违纪违法被立案审查调查",
+      "published_at": "2026-01-24",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "note": "国防部公告时间2026-01-24 15:00；党中央决定立案审查调查，未单独给决定作出的具体日期。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-status-state-removal-20260828",
+      "url": "https://www1.xinhuanet.com/politics/20260828/9f7a67c5059e4e7b8a45a8353c5688c8/c.html",
+      "title": "受权发布丨全国人民代表大会常务委员会决定免职的名单",
+      "published_at": "2026-08-28",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_authorized_release",
+      "note": "全国人大常委会2026年8月28日通过名单，明确免去张又侠国家军委副主席和刘振立国家军委委员。只适用于国家军委，不能据此关闭党的军委职务。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-status-state-appointment-20230311",
+      "url": "https://www.gov.cn/xinwen/2023-03/12/content_5746212.htm",
+      "title": "中华人民共和国全国人民代表大会公告（第五号）",
+      "published_at": "2023-03-12",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_xinhua_reprint",
+      "note": "页面2023-03-12 03:01发布；全国人大决定任命日期是2023-03-11。本条起点仅代表这届任期，不代表张又侠首次任职。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-status-party-appointment-20221023",
+      "url": "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml",
+      "title": "中国共产党第二十届中央委员会第一次全体会议公报",
+      "published_at": "2022-10-23",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "note": "外交部原页正文时间2022-10-23 14:55；URL含20221024，不能取URL作发布日期。列明政治局委员张又侠、党的军委副主席张又侠和委员刘振立。本届任期起点不等于首次任职。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-status-rules-party-2023",
+      "url": "https://app.www.gov.cn/govdata/gov/202312/28/510658/article.html",
+      "title": "中共中央印发《中国共产党纪律处分条例》",
+      "published_at": "2023-12-28",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_xinhua_reprint",
+      "note": "政府网新华社文本：第8条党纪处分种类；第11条撤销党内职务；2023修订版自2024年1月1日起施行。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-status-rules-party-charter-2022",
+      "url": "https://djyj.12371.cn/2022/11/10/ARTI1668074243471682.shtml",
+      "title": "中国共产党章程（2022年10月22日通过）",
+      "published_at": "2022-11",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_rules_reprint",
+      "note": "共产党员网刊载2022年党章，来源标注《党建研究》2022年第11期；第42条规定有关委员处分的决定与全会追认。网页具体发布日期未单独核实，不取URL日期补齐。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-status-rules-organization-2021",
+      "url": "https://www.12371.cn/2021/03/28/ARTI1616933039479965.shtml",
+      "title": "中共中央办公厅印发《中国共产党组织处理规定（试行）》",
+      "published_at": "2021-03-28",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_xinhua_reprint",
+      "note": "第3条将组织处理界定为针对特定违规失责等情形的措施，列举五种处理。不能把无原因普通免职自动归为组织处理。正文标注2021-03-19中办发布，网页2021-03-28刊载。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-status-rules-pla-2025",
+      "url": "http://www.mod.gov.cn/gfbw/fgwx/16372284.html",
+      "title": "中国人民解放军纪律条令（2025）",
+      "published_at": "2025-02-27",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_rules_reprint",
+      "note": "中央军委命令2025-02-14发布，2025-04-01施行；第90至92条分类列处分，第156条规定开除军籍后的军衔、职务和待遇后果。个案未另给军衔取消日期，不造个人精确日期事件。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-status-rules-public-2020",
+      "url": "http://www.npc.gov.cn/npc/c2/c30834/202006/t20200620_306633.html",
+      "title": "中华人民共和国公职人员政务处分法",
+      "published_at": "2020-06-20",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_law",
+      "note": "全国人大网；第7条政务处分类型，第17至18条区分组织处理、免去或辞去领导职务与政务处分；第26条开除后的关系解除。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-status-rules-criminal-2018",
+      "url": "http://www.npc.gov.cn/c2/c12435/201905/t20190521_276591.html",
+      "title": "中华人民共和国刑事诉讼法（2018年修正）",
+      "published_at": "2018-11-05",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_law",
+      "note": "全国人大网页面实际标注2018-11-05 16:25，URL含201905不作为公布日期。第12条依法判决前不得确定有罪；第176条说明审查起诉与提起公诉的区别。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-department-discipline-open",
+      "url": "http://jnjjjc.jndq.gov.cn/col/col35838/index.html",
+      "title": "济宁市纪委监委：领导机构（2026-08-24更新）",
+      "published_at": "2026-08-24",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "basis": "真实原页显示2026-08-24 16:56；原col62842入口通过网页脚本转向此col35838页。搜索缓存的6月名单已过时，不沿用。姓名仅空格归一；未把单独委员同名条目与其他机构官员自动合并。HTTPS证书到期，读取官方HTTP原页，未关闭证书校验。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-department-li-election",
+      "url": "https://dlrk.jining.gov.cn/art/2026/8/25/art_182_2938827.html",
+      "title": "市十八届人大六次会议胜利闭幕：李增民当选监委主任",
+      "published_at": "2026-08-25",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_republication",
+      "basis": "事件2026-08-24，网页2026-08-25；正式选举与此前代理主任分别记录。政府站转载济宁日报社，和已有同稿属于同一证据家族。",
+      "canonical_document_id": "v4-jining-mayor-election-20260824",
+      "note": "与已有www.jining.gov.cn同稿，dlrk政府子域地址；不算独立来源验证。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-department-li-acting-decision",
+      "url": "https://jiningrenda.jining.gov.cn/art/2026/7/21/art_31313_2706089.html",
+      "title": "济宁市人大常委会关于李增民代理济宁市监察委员会主任职务的决定",
+      "published_at": "2026-07-21",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "basis": "通过日和发表日均2026-07-21；确认代理主任，不误记为正式当选主任。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-department-zhu-resignation",
+      "url": "https://jiningrenda.jining.gov.cn/art/2026/7/1/art_31313_2706073.html",
+      "title": "济宁市人大常委会关于接受朱朝辉请求辞去济宁市监察委员会主任职务的决定",
+      "published_at": "2026-07-01",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "basis": "决定通过2026-06-30，公开2026-07-01；只结束监察委员会主任岗位，不据此结束市委常委或纪委书记，也不推断原因。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-department-discipline-aug26",
+      "url": "http://jnjjjc.jndq.gov.cn/art/2026/8/26/art_35836_2714201.html",
+      "title": "市纪委常委会召开会议：李增民主持",
+      "published_at": "2026-08-26",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "basis": "2026-08-26具名履职确认市委常委、纪委书记、监委主任三项职务；党内岗位具体任职起点未查，保持空值。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-department-org-liu-aug17",
+      "url": "https://www.jining.gov.cn/art/2026/8/19/art_106010_2938779.html",
+      "title": "政策精准赋能 全链护航成长：济宁出台首批OPC创业支持清单",
+      "published_at": "2026-08-19",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_republication",
+      "basis": "活动2026-08-17，发表2026-08-19；同一具名介绍明确三项兼任，分到对应党政机构。不与纪委委员名单里的纯姓名条目自动合并。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-department-org-zhu-jul3",
+      "url": "https://www.jnhn.gov.cn/art/2026/7/6/art_23981_2825601.html",
+      "title": "强中层、提效能、勇担当：济宁高新区中层干部专题培训班举办",
+      "published_at": "2026-07-06",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "basis": "2026-07-03结业活动明确三项职务，发表于2026-07-06；没有将2月活动或无日期高新区领导目录当作最新任期。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-department-org-yang-exam",
+      "url": "https://jxjy.sdpu.edu.cn/info/1054/2779.htm",
+      "title": "学校圆满完成2026年度省考及选调生笔试承办任务",
+      "published_at": "2025-12-10",
+      "accessed_at": "2026-09-21",
+      "source_type": "university_official",
+      "basis": "标题含2026年度，真实活动是2025-12-07、网页2025-12-10。超过180天，仅历史履职，不据标题误判为2026现任。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v9-department-housing-heat-sep4",
+      "url": "https://jnszjj.jining.gov.cn/art/2026/9/4/art_7616_2707758.html",
+      "title": "市住房城乡建设局调研组督导调研“邹热入曲”重点民生工程",
+      "published_at": "2026-09-04",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "basis": "2026-09-04活动和发表同日，明确党组书记及局长；行政局长起点使用已核2025-06-16人大任命，党组任职起点继续未知。",
+      "has_local_evidence": true
+    },
+    {
       "accessed_at": "2026-09-20",
       "id": "notice-2167d36cbdde87a9842a",
       "published_at": "2026-09-20",
@@ -51559,6 +53125,354 @@
       "as_of_date": "2026-05-22",
       "reviewed_at": "2026-09-21",
       "note": "来自本人官方领导介绍；不扩展到未载明院校、专业或学位。"
+    }
+  ],
+  "status_events": [
+    {
+      "id": "v9-status-zhang-youxia-investigation-20260124",
+      "person_id": "zhang-youxia",
+      "category": "investigation",
+      "code": "investigation_opened",
+      "label": "立案审查调查",
+      "announced_at": "2026-01-24",
+      "effective_at": null,
+      "date_note": "1月24日为公告日期；公告未另列决定作出日。",
+      "description": "国防部公告称，党中央研究决定对张又侠立案审查调查。",
+      "org_ids": [
+        "cpc-cmc"
+      ],
+      "source_ids": [
+        "v9-status-investigation-20260124"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "党中央",
+      "procedure_note": "属于调查阶段，不等于已经作出党纪处分、提起公诉或有罪判决。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-zhang-youxia-state-office-removed-20260828",
+      "person_id": "zhang-youxia",
+      "category": "office_change",
+      "code": "office_removed",
+      "label": "国家军委职务被免去",
+      "announced_at": "2026-08-28",
+      "effective_at": "2026-08-28",
+      "date_note": "通过日期和公告日期均为2026年8月28日。",
+      "description": "全国人大常委会于8月28日决定免去张又侠的中华人民共和国中央军事委员会副主席职务。",
+      "org_ids": [
+        "state-cmc"
+      ],
+      "source_ids": [
+        "v9-status-state-removal-20260828"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "第十四届全国人民代表大会常务委员会第二十四次会议",
+      "procedure_note": "国家军委任免单独记录，不将此日期用于党的军委职务。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-zhang-youxia-party-expulsion-20260921",
+      "person_id": "zhang-youxia",
+      "category": "party_discipline",
+      "code": "expelled_party",
+      "label": "开除党籍（待中央全会追认）",
+      "announced_at": "2026-09-21",
+      "effective_at": null,
+      "date_note": "9月21日是通报和审议决定日；通报未另列执行生效时间。",
+      "description": "9月21日中央政治局会议审议处理报告，决定给予张又侠开除党籍处分；公告明确仍须中央委员会全体会议追认。",
+      "org_ids": [
+        "politburo",
+        "cpc-cmc"
+      ],
+      "source_ids": [
+        "v9-status-expulsion-20260921"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "经中央军委常务会议研究并报中共中央政治局会议审议",
+      "procedure_note": "处分已经宣布；后续全会追认尚未在本通报完成，不写成已追认，也不写成尚未作出处分决定。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-zhang-youxia-military-expulsion-before-20260921",
+      "person_id": "zhang-youxia",
+      "category": "military_status",
+      "code": "expelled_military",
+      "label": "开除军籍（此前已决定）",
+      "announced_at": "2026-09-21",
+      "effective_at": null,
+      "date_note": "官方仅说明军籍处分已于此前决定；未知具体日，不用9月21日代替。",
+      "description": "9月21日通报披露，中央军委此前已决定给予张又侠开除军籍处分。",
+      "org_ids": [],
+      "source_ids": [
+        "v9-status-expulsion-20260921"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "中央军委（通报未细分党或国家机关名义）",
+      "procedure_note": "党籍和军籍分别记录。个案通报未单列军衔取消的决定日期；规则后果另见制度说明。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-zhang-youxia-party-delegate-terminated-20260921",
+      "person_id": "zhang-youxia",
+      "category": "qualification",
+      "code": "qualification_terminated",
+      "label": "党的二十大代表资格终止",
+      "announced_at": "2026-09-21",
+      "effective_at": null,
+      "date_note": "9月21日为决定及公告日期；未另列资格终止的执行时间。",
+      "description": "官方通报宣布终止张又侠的中国共产党第二十次全国代表大会代表资格。",
+      "org_ids": [
+        "party_congress"
+      ],
+      "source_ids": [
+        "v9-status-expulsion-20260921"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "经中央军委常务会议研究并报中共中央政治局会议审议",
+      "procedure_note": "这里是党的全国代表大会代表资格，不能替换为全国人大代表资格。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-zhang-youxia-referred-for-prosecution-20260921",
+      "person_id": "zhang-youxia",
+      "category": "judicial",
+      "code": "referred_for_prosecution",
+      "label": "移送军事检察机关审查起诉",
+      "announced_at": "2026-09-21",
+      "effective_at": null,
+      "date_note": "9月21日通报该处理；未单列案卷移送或检察机关受理日期。",
+      "description": "官方通报宣布将张又侠涉嫌犯罪问题移送军事检察机关依法审查起诉。",
+      "org_ids": [],
+      "source_ids": [
+        "v9-status-expulsion-20260921"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "经中央军委常务会议研究并报中共中央政治局会议审议",
+      "procedure_note": "不据此推定检察机关已提起公诉、法院已审理或已判决有罪。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-liu-zhenli-investigation-20260124",
+      "person_id": "liu-zhenli",
+      "category": "investigation",
+      "code": "investigation_opened",
+      "label": "立案审查调查",
+      "announced_at": "2026-01-24",
+      "effective_at": null,
+      "date_note": "1月24日为公告日期；公告未另列决定作出日。",
+      "description": "国防部公告称，党中央研究决定对刘振立立案审查调查。",
+      "org_ids": [
+        "cpc-cmc"
+      ],
+      "source_ids": [
+        "v9-status-investigation-20260124"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "党中央",
+      "procedure_note": "属于调查阶段，不等于已经作出党纪处分、提起公诉或有罪判决。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-liu-zhenli-state-office-removed-20260828",
+      "person_id": "liu-zhenli",
+      "category": "office_change",
+      "code": "office_removed",
+      "label": "国家军委职务被免去",
+      "announced_at": "2026-08-28",
+      "effective_at": "2026-08-28",
+      "date_note": "通过日期和公告日期均为2026年8月28日。",
+      "description": "全国人大常委会于8月28日决定免去刘振立的中华人民共和国中央军事委员会委员职务。",
+      "org_ids": [
+        "state-cmc"
+      ],
+      "source_ids": [
+        "v9-status-state-removal-20260828"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "第十四届全国人民代表大会常务委员会第二十四次会议",
+      "procedure_note": "国家军委任免单独记录，不将此日期用于党的军委职务。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-liu-zhenli-party-expulsion-20260921",
+      "person_id": "liu-zhenli",
+      "category": "party_discipline",
+      "code": "expelled_party",
+      "label": "开除党籍（待中央全会追认）",
+      "announced_at": "2026-09-21",
+      "effective_at": null,
+      "date_note": "9月21日是通报和审议决定日；通报未另列执行生效时间。",
+      "description": "9月21日中央政治局会议审议处理报告，决定给予刘振立开除党籍处分；公告明确仍须中央委员会全体会议追认。",
+      "org_ids": [
+        "politburo",
+        "cpc-cmc"
+      ],
+      "source_ids": [
+        "v9-status-expulsion-20260921"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "经中央军委常务会议研究并报中共中央政治局会议审议",
+      "procedure_note": "处分已经宣布；后续全会追认尚未在本通报完成，不写成已追认，也不写成尚未作出处分决定。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-liu-zhenli-military-expulsion-before-20260921",
+      "person_id": "liu-zhenli",
+      "category": "military_status",
+      "code": "expelled_military",
+      "label": "开除军籍（此前已决定）",
+      "announced_at": "2026-09-21",
+      "effective_at": null,
+      "date_note": "官方仅说明军籍处分已于此前决定；未知具体日，不用9月21日代替。",
+      "description": "9月21日通报披露，中央军委此前已决定给予刘振立开除军籍处分。",
+      "org_ids": [],
+      "source_ids": [
+        "v9-status-expulsion-20260921"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "中央军委（通报未细分党或国家机关名义）",
+      "procedure_note": "党籍和军籍分别记录。个案通报未单列军衔取消的决定日期；规则后果另见制度说明。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-liu-zhenli-party-delegate-terminated-20260921",
+      "person_id": "liu-zhenli",
+      "category": "qualification",
+      "code": "qualification_terminated",
+      "label": "党的二十大代表资格终止",
+      "announced_at": "2026-09-21",
+      "effective_at": null,
+      "date_note": "9月21日为决定及公告日期；未另列资格终止的执行时间。",
+      "description": "官方通报宣布终止刘振立的中国共产党第二十次全国代表大会代表资格。",
+      "org_ids": [
+        "party_congress"
+      ],
+      "source_ids": [
+        "v9-status-expulsion-20260921"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "经中央军委常务会议研究并报中共中央政治局会议审议",
+      "procedure_note": "这里是党的全国代表大会代表资格，不能替换为全国人大代表资格。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-liu-zhenli-referred-for-prosecution-20260921",
+      "person_id": "liu-zhenli",
+      "category": "judicial",
+      "code": "referred_for_prosecution",
+      "label": "移送军事检察机关审查起诉",
+      "announced_at": "2026-09-21",
+      "effective_at": null,
+      "date_note": "9月21日通报该处理；未单列案卷移送或检察机关受理日期。",
+      "description": "官方通报宣布将刘振立涉嫌犯罪问题移送军事检察机关依法审查起诉。",
+      "org_ids": [],
+      "source_ids": [
+        "v9-status-expulsion-20260921"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "经中央军委常务会议研究并报中共中央政治局会议审议",
+      "procedure_note": "不据此推定检察机关已提起公诉、法院已审理或已判决有罪。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-yu-yongsheng-mayor-resigned-20241203",
+      "person_id": "yu-yongsheng",
+      "category": "office_change",
+      "code": "resigned",
+      "label": "接受辞去济宁市市长职务",
+      "announced_at": "2024-12-05",
+      "effective_at": "2024-12-03",
+      "date_note": "人大决定于2024年12月3日通过；本来源网页于12月5日刊载。",
+      "description": "济宁市人大常委会接受于永生辞去济宁市人民政府市长职务的请求，并报市人民代表大会备案。",
+      "org_ids": [
+        "jining-government"
+      ],
+      "source_ids": [
+        "v8-career-yu-resign-20241203"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "济宁市第十八届人民代表大会常务委员会第二十一次会议",
+      "procedure_note": "本事件仅记录接受辞职程序；该决定没有认定其离任为处分，也未称退休，不据此推断个人主动程度或其他未说明原因。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-zhu-resigned-20260630",
+      "person_id": "jining-person-ee330110e0d4d4",
+      "category": "office_change",
+      "code": "resigned",
+      "label": "辞去济宁市监察委员会主任",
+      "announced_at": "2026-07-01",
+      "effective_at": "2026-06-30",
+      "date_note": "effect日期来自原文明示通过/选举日，未用抓取日回填。",
+      "description": "人大常委会接受辞职请求，报市人民代表大会备案；不推断辞职原因或其他职务变化。",
+      "org_ids": [
+        "jining-supervision"
+      ],
+      "source_ids": [
+        "v9-department-zhu-resignation"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "济宁市第十八届人大常委会第三十三次会议",
+      "procedure_note": "公开原文核准的单项国家机关职务决定，不自动推断党内任职或纪律/司法状态。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-li-acting-20260721",
+      "person_id": "jining-v9-bbcaf88d452f",
+      "category": "office_change",
+      "code": "appointed",
+      "label": "决定李增民为济宁市监察委员会代理主任",
+      "announced_at": "2026-07-21",
+      "effective_at": "2026-07-21",
+      "date_note": "effect日期来自原文明示通过/选举日，未用抓取日回填。",
+      "description": "人大常委会决定代理主任，正式主任选举另列。",
+      "org_ids": [
+        "jining-supervision"
+      ],
+      "source_ids": [
+        "v9-department-li-acting-decision"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "济宁市第十八届人大常委会第三十四次会议",
+      "procedure_note": "公开原文核准的单项国家机关职务决定，不自动推断党内任职或纪律/司法状态。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "v9-status-li-elected-20260824",
+      "person_id": "jining-v9-bbcaf88d452f",
+      "category": "office_change",
+      "code": "appointed",
+      "label": "李增民当选济宁市监察委员会主任",
+      "announced_at": "2026-08-25",
+      "effective_at": "2026-08-24",
+      "date_note": "effect日期来自原文明示通过/选举日，未用抓取日回填。",
+      "description": "市人大六次会议8月24日选举，8月25日报道。",
+      "org_ids": [
+        "jining-supervision"
+      ],
+      "source_ids": [
+        "v9-department-li-election"
+      ],
+      "evidence_status": "verified",
+      "decision_authority": "济宁市第十八届人民代表大会第六次会议",
+      "procedure_note": "公开原文核准的单项国家机关职务决定，不自动推断党内任职或纪律/司法状态。",
+      "reviewed_at": "2026-09-21",
+      "supersedes_event_ids": []
     }
   ],
   "relations": [
@@ -57162,14 +59076,16 @@
       "start": null,
       "end": null,
       "is_current": false,
-      "status": "historical",
+      "status": "former",
       "checked_at": "2026-09-21",
-      "verification_status": "historical_only",
+      "verification_status": "verified_former",
       "as_of_date": "2026-03-03",
       "source_ids": [
-        "v6-jn-inspection"
+        "v6-jn-inspection",
+        "v9-department-discipline-open"
       ],
-      "date_note": "确认报道日期的公开职务，未据此延续为现任。"
+      "date_note": "原3月3日职务保留。8月24日独任书记岗位已由李增民担任，确认朱朝辉是前任；党内离任具体日期未查，until仍空，不借用6月30日行政辞职日期。",
+      "latest_confirmed_at": "2026-03-03"
     },
     {
       "id": "v6-post-49f088c5b5e6c5",
@@ -57181,16 +59097,19 @@
       ],
       "title": "济宁市监委主任",
       "start": null,
-      "end": null,
+      "end": "2026-06-30",
       "is_current": false,
-      "status": "historical",
+      "status": "former",
       "checked_at": "2026-09-21",
-      "verification_status": "historical_only",
-      "as_of_date": "2026-03-03",
+      "verification_status": "verified_former",
+      "as_of_date": "2026-06-30",
       "source_ids": [
-        "v6-jn-inspection"
+        "v6-jn-inspection",
+        "v9-department-zhu-resignation"
       ],
-      "date_note": "确认报道日期的公开职务，未据此延续为现任。"
+      "date_note": "2026-06-30人大常委会接受辞去监委主任请求（7月1日发表）；只结束该国家机关职务，任期起点未在本轮核实。",
+      "end_precision": "day",
+      "latest_confirmed_at": "2026-06-30"
     },
     {
       "id": "v6-post-d2b582f635f3bb",
@@ -59686,22 +61605,24 @@
       "location_ids": [
         "jining"
       ],
-      "start": null,
+      "start": "2025-06-16",
       "end": null,
-      "start_precision": null,
+      "start_precision": "day",
       "end_precision": null,
-      "title": "济宁市住房和城乡建设局党组书记、局长",
-      "is_current": false,
+      "title": "济宁市住房和城乡建设局局长",
+      "is_current": true,
       "source_ids": [
         "v7-jn-dept-all-36",
-        "v7-jn-dept-housing2026"
+        "v7-jn-dept-housing2026",
+        "v9-department-housing-heat-sep4",
+        "v8-dept-gov-notice-19797"
       ],
-      "checked_at": "2026-01-14",
-      "verification_status": "historical_only",
-      "as_of_date": "2026-01-14",
-      "latest_confirmed_at": "2026-01-14",
-      "date_note": "2026年官方具名履职材料与政府领导目录交叉核对；as_of_date为具名履职日，不代表任期起点。 该具名材料已超过180天；本库保留当时职务，不续算为近期现任。",
-      "status": "historical"
+      "checked_at": "2026-09-21",
+      "verification_status": "verified_current",
+      "as_of_date": "2026-09-04",
+      "latest_confirmed_at": "2026-09-04",
+      "date_note": "行政任命由2025-06-16人大常委会决定；9月4日调研正文再确认当前履职。",
+      "status": "current"
     },
     {
       "id": "career-v7-jining-d1876c43bae3-0",
@@ -74949,6 +76870,867 @@
       "latest_confirmed_at": "2025-07-16",
       "date_note": "2025-07-16政府任命、8月1日公布；超过180天，仅保留历史任命，不以搜索未发现免职就断言现任。泗水同名者履历未经身份桥接，不合并。",
       "status": "historical"
+    },
+    {
+      "id": "v9-status-career-zhang-youxia-politburo",
+      "person_id": "zhang-youxia",
+      "organization_id": "politburo",
+      "organization_name": "中共中央政治局",
+      "location_ids": [
+        "central"
+      ],
+      "start": "2022-10-23",
+      "end": null,
+      "title": "中共中央政治局委员",
+      "title_en": "Member of the CPC Central Political Bureau",
+      "status": "former",
+      "is_current": false,
+      "verification_status": "verified_former",
+      "as_of_date": "2026-09-21",
+      "checked_at": "2026-09-21",
+      "source_ids": [
+        "v9-status-party-appointment-20221023",
+        "v9-status-expulsion-20260921"
+      ],
+      "note": "2022年10月23日仅为本届职务产生日期，不代表首次任职。9月21日已宣布开除党籍且待全会追认；原军籍处分具体日期未披露。本条保留历史身份、退出当前名册，具体职务终止日不从处分公告日期推定。"
+    },
+    {
+      "id": "v9-status-career-zhang-youxia-cpc-cmc",
+      "person_id": "zhang-youxia",
+      "organization_id": "cpc-cmc",
+      "organization_name": "中共中央军事委员会",
+      "location_ids": [
+        "central"
+      ],
+      "start": "2022-10-23",
+      "end": null,
+      "title": "中共中央军事委员会副主席",
+      "title_en": "Vice Chairman of the CPC Central Military Commission",
+      "status": "former",
+      "is_current": false,
+      "verification_status": "verified_former",
+      "as_of_date": "2026-09-21",
+      "checked_at": "2026-09-21",
+      "source_ids": [
+        "v9-status-party-appointment-20221023",
+        "v9-status-expulsion-20260921"
+      ],
+      "note": "2022年10月23日仅为本届职务产生日期，不代表首次任职。9月21日已宣布开除党籍且待全会追认；原军籍处分具体日期未披露。本条保留历史身份、退出当前名册，具体职务终止日不从处分公告日期推定。"
+    },
+    {
+      "id": "v9-status-career-zhang-youxia-state-cmc",
+      "person_id": "zhang-youxia",
+      "organization_id": "state-cmc",
+      "organization_name": "中华人民共和国中央军事委员会",
+      "location_ids": [
+        "central"
+      ],
+      "start": "2023-03-11",
+      "end": "2026-08-28",
+      "title": "中华人民共和国中央军事委员会副主席",
+      "title_en": "Vice Chairman of the PRC Central Military Commission",
+      "status": "former",
+      "is_current": false,
+      "verification_status": "verified_former",
+      "as_of_date": "2026-08-28",
+      "checked_at": "2026-09-21",
+      "source_ids": [
+        "v9-status-state-appointment-20230311",
+        "v9-status-state-removal-20260828"
+      ],
+      "note": "2023年3月11日为本届任命日期；2026年8月28日全国人大常委会决定免职。只涉及国家军委，不替代党的军委程序。"
+    },
+    {
+      "id": "v9-status-career-liu-zhenli-cpc-cmc",
+      "person_id": "liu-zhenli",
+      "organization_id": "cpc-cmc",
+      "organization_name": "中共中央军事委员会",
+      "location_ids": [
+        "central"
+      ],
+      "start": "2022-10-23",
+      "end": null,
+      "title": "中共中央军事委员会委员",
+      "title_en": "Member of the CPC Central Military Commission",
+      "status": "former",
+      "is_current": false,
+      "verification_status": "verified_former",
+      "as_of_date": "2026-09-21",
+      "checked_at": "2026-09-21",
+      "source_ids": [
+        "v9-status-party-appointment-20221023",
+        "v9-status-expulsion-20260921"
+      ],
+      "note": "2022年10月23日仅为本届职务产生日期，不代表首次任职。9月21日已宣布开除党籍且待全会追认；原军籍处分具体日期未披露。本条保留历史身份、退出当前名册，具体职务终止日不从处分公告日期推定。"
+    },
+    {
+      "id": "v9-status-career-liu-zhenli-state-cmc",
+      "person_id": "liu-zhenli",
+      "organization_id": "state-cmc",
+      "organization_name": "中华人民共和国中央军事委员会",
+      "location_ids": [
+        "central"
+      ],
+      "start": "2023-03-11",
+      "end": "2026-08-28",
+      "title": "中华人民共和国中央军事委员会委员",
+      "title_en": "Member of the PRC Central Military Commission",
+      "status": "former",
+      "is_current": false,
+      "verification_status": "verified_former",
+      "as_of_date": "2026-08-28",
+      "checked_at": "2026-09-21",
+      "source_ids": [
+        "v9-status-state-appointment-20230311",
+        "v9-status-state-removal-20260828"
+      ],
+      "note": "2023年3月11日为本届任命日期；2026年8月28日全国人大常委会决定免职。只涉及国家军委，不替代党的军委程序。"
+    },
+    {
+      "id": "v9-status-career-liu-zhenli-cmc-joint-staff-department",
+      "person_id": "liu-zhenli",
+      "organization_id": "cmc-joint-staff-department",
+      "organization_name": "中央军委联合参谋部",
+      "location_ids": [
+        "central"
+      ],
+      "start": null,
+      "end": null,
+      "title": "中央军委联合参谋部参谋长",
+      "title_en": "Chief of Staff of the CMC Joint Staff Department",
+      "status": "former",
+      "is_current": false,
+      "verification_status": "verified_former",
+      "as_of_date": "2026-09-21",
+      "checked_at": "2026-09-21",
+      "source_ids": [
+        "v9-status-investigation-20260124",
+        "v9-status-expulsion-20260921"
+      ],
+      "note": "9月21日通报明确称原参谋长；本批未查得具体首次任命或离任日。"
+    },
+    {
+      "id": "v9-career-jining-v9-e0588e1426a9-0",
+      "person_id": "jining-v9-e0588e1426a9",
+      "organization_id": "jining-discipline",
+      "organization_name": "中共济宁市纪律检查委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市纪委副书记",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-e0588e1426a9-1",
+      "person_id": "jining-v9-e0588e1426a9",
+      "organization_id": "jining-supervision",
+      "organization_name": "济宁市监察委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市监察委员会副主任",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-3dbe17d4d637-0",
+      "person_id": "jining-v9-3dbe17d4d637",
+      "organization_id": "jining-discipline",
+      "organization_name": "中共济宁市纪律检查委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市纪委副书记",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-3dbe17d4d637-1",
+      "person_id": "jining-v9-3dbe17d4d637",
+      "organization_id": "jining-supervision",
+      "organization_name": "济宁市监察委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市监察委员会副主任",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-067ba473e528-0",
+      "person_id": "jining-v9-067ba473e528",
+      "organization_id": "jining-discipline",
+      "organization_name": "中共济宁市纪律检查委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市纪委副书记",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-067ba473e528-1",
+      "person_id": "jining-v9-067ba473e528",
+      "organization_id": "jining-supervision",
+      "organization_name": "济宁市监察委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市监察委员会副主任",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-ddeed068d5c7-0",
+      "person_id": "jining-v9-ddeed068d5c7",
+      "organization_id": "jining-discipline",
+      "organization_name": "中共济宁市纪律检查委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市纪委常委",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-b57b29d20895-0",
+      "person_id": "jining-v9-b57b29d20895",
+      "organization_id": "jining-discipline",
+      "organization_name": "中共济宁市纪律检查委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市纪委常委",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-b57b29d20895-1",
+      "person_id": "jining-v9-b57b29d20895",
+      "organization_id": "jining-supervision",
+      "organization_name": "济宁市监察委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市监察委员会委员",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-5955cd1e1895-0",
+      "person_id": "jining-v9-5955cd1e1895",
+      "organization_id": "jining-discipline",
+      "organization_name": "中共济宁市纪律检查委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市纪委常委",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-d50edd6cdf0e-0",
+      "person_id": "jining-v9-d50edd6cdf0e",
+      "organization_id": "jining-discipline",
+      "organization_name": "中共济宁市纪律检查委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市纪委常委",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-d50edd6cdf0e-1",
+      "person_id": "jining-v9-d50edd6cdf0e",
+      "organization_id": "jining-supervision",
+      "organization_name": "济宁市监察委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市监察委员会委员",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-19d16e8b03e2-0",
+      "person_id": "jining-v9-19d16e8b03e2",
+      "organization_id": "jining-discipline",
+      "organization_name": "中共济宁市纪律检查委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市纪委常委",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-19d16e8b03e2-1",
+      "person_id": "jining-v9-19d16e8b03e2",
+      "organization_id": "jining-supervision",
+      "organization_name": "济宁市监察委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市监察委员会委员",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-5d40681b12c7-0",
+      "person_id": "jining-v9-5d40681b12c7",
+      "organization_id": "jining-discipline",
+      "organization_name": "中共济宁市纪律检查委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市纪委委员",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-5d40681b12c7-1",
+      "person_id": "jining-v9-5d40681b12c7",
+      "organization_id": "jining-supervision",
+      "organization_name": "济宁市监察委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市监察委员会委员",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。不与其他单位同名者合并。"
+    },
+    {
+      "id": "v9-career-jining-v9-e56b862229e4-0",
+      "person_id": "jining-v9-e56b862229e4",
+      "organization_id": "jining-discipline",
+      "organization_name": "中共济宁市纪律检查委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市纪委委员",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。"
+    },
+    {
+      "id": "v9-career-jining-v9-e56b862229e4-1",
+      "person_id": "jining-v9-e56b862229e4",
+      "organization_id": "jining-supervision",
+      "organization_name": "济宁市监察委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市监察委员会委员",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24纪委监委领导机构原页具名列示；这是名册证据日，不是首次任命日。任职起点未核，留空。不与其他单位同名者合并。"
+    },
+    {
+      "id": "v9-career-jining-v9-bbcaf88d452f-0",
+      "person_id": "jining-v9-bbcaf88d452f",
+      "organization_id": "jining-party",
+      "organization_name": "中国共产党济宁市委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市委常委",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-aug26"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-26",
+      "latest_confirmed_at": "2026-08-26",
+      "checked_at": "2026-09-21",
+      "date_note": "8月26日具名报道明确；任期起点未在原文提供。"
+    },
+    {
+      "id": "v9-career-jining-v9-bbcaf88d452f-1",
+      "person_id": "jining-v9-bbcaf88d452f",
+      "organization_id": "jining-discipline",
+      "organization_name": "中共济宁市纪律检查委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市纪委书记",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-discipline-open",
+        "v9-department-discipline-aug26"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-26",
+      "latest_confirmed_at": "2026-08-26",
+      "checked_at": "2026-09-21",
+      "date_note": "8月24日领导目录及8月26日具名履职均明确；不以国家机关任命日期代替党内任职起点。"
+    },
+    {
+      "id": "v9-career-jining-v9-bbcaf88d452f-2",
+      "person_id": "jining-v9-bbcaf88d452f",
+      "organization_id": "jining-supervision",
+      "organization_name": "济宁市监察委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市监察委员会主任",
+      "start": "2026-08-24",
+      "end": null,
+      "start_precision": "day",
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-li-election",
+        "v9-department-discipline-aug26"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-26",
+      "latest_confirmed_at": "2026-08-26",
+      "checked_at": "2026-09-21",
+      "date_note": "2026-08-24当选，8月25日公开报道；8月26日履职再次确认。"
+    },
+    {
+      "id": "v9-career-jining-v9-bbcaf88d452f-3",
+      "person_id": "jining-v9-bbcaf88d452f",
+      "organization_id": "jining-supervision",
+      "organization_name": "济宁市监察委员会",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市监察委员会代理主任",
+      "start": "2026-07-21",
+      "end": "2026-08-24",
+      "start_precision": "day",
+      "end_precision": "day",
+      "is_current": false,
+      "status": "former",
+      "source_ids": [
+        "v9-department-li-acting-decision",
+        "v9-department-li-election"
+      ],
+      "verification_status": "verified_former",
+      "as_of_date": "2026-08-24",
+      "latest_confirmed_at": "2026-08-24",
+      "checked_at": "2026-09-21",
+      "date_note": "7月21日人大常委会决定代理，8月24日正式当选主任，代理阶段结束；不是免职、降职或处分。"
+    },
+    {
+      "id": "v9-career-jining-v9-d5f7db720a67-0",
+      "person_id": "jining-v9-d5f7db720a67",
+      "organization_id": "jining-organization",
+      "organization_name": "中共济宁市委组织部",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市委组织部副部长",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-org-liu-aug17"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-17",
+      "latest_confirmed_at": "2026-08-17",
+      "checked_at": "2026-09-21",
+      "date_note": "8月17日新闻发布会明确职务；任职起点未核。"
+    },
+    {
+      "id": "v9-career-jining-v9-d5f7db720a67-1",
+      "person_id": "jining-v9-d5f7db720a67",
+      "organization_id": "jining-human-resources-party-group",
+      "organization_name": "中共济宁市人力资源和社会保障局党组",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市人力资源和社会保障局党组书记",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-org-liu-aug17"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-17",
+      "latest_confirmed_at": "2026-08-17",
+      "checked_at": "2026-09-21",
+      "date_note": "同一发布人介绍明确党组书记，与行政局长分列。"
+    },
+    {
+      "id": "v9-career-jining-v9-d5f7db720a67-2",
+      "person_id": "jining-v9-d5f7db720a67",
+      "organization_id": "jining-human-resources-social-security",
+      "organization_name": "济宁市人力资源和社会保障局",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市人力资源和社会保障局局长",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-org-liu-aug17"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-08-17",
+      "latest_confirmed_at": "2026-08-17",
+      "checked_at": "2026-09-21",
+      "date_note": "同一发布人介绍明确局长；未按其他名单同姓名添加纪委委员身份。"
+    },
+    {
+      "id": "v9-career-jining-v9-72e87863e521-0",
+      "person_id": "jining-v9-72e87863e521",
+      "organization_id": "jining-organization",
+      "organization_name": "中共济宁市委组织部",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市委组织部副部长",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-org-zhu-jul3"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-07-03",
+      "latest_confirmed_at": "2026-07-03",
+      "checked_at": "2026-09-21",
+      "date_note": "7月3日结业讲话正文明确市委组织部副部长，7月6日发布。"
+    },
+    {
+      "id": "v9-career-jining-v9-72e87863e521-1",
+      "person_id": "jining-v9-72e87863e521",
+      "organization_id": "jining-party-member-education-center",
+      "organization_name": "中共济宁市委党员教育中心",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市委党员教育中心主任",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-org-zhu-jul3"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-07-03",
+      "latest_confirmed_at": "2026-07-03",
+      "checked_at": "2026-09-21",
+      "date_note": "同一具名介绍确认；具体任期起点未核。"
+    },
+    {
+      "id": "v9-career-jining-v9-72e87863e521-2",
+      "person_id": "jining-v9-72e87863e521",
+      "organization_id": "jining-hightech-party",
+      "organization_name": "济宁高新区党工作委员会",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "title": "济宁高新区党工委副书记",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-org-zhu-jul3"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-07-03",
+      "latest_confirmed_at": "2026-07-03",
+      "checked_at": "2026-09-21",
+      "date_note": "同一具名介绍确认；职业地点只在该岗位使用高新区，不把市级组织部职务下沉为高新区岗位。"
+    },
+    {
+      "id": "v9-career-jining-v9-a1e7b4fa483a-0",
+      "person_id": "jining-v9-a1e7b4fa483a",
+      "organization_id": "jining-organization",
+      "organization_name": "中共济宁市委组织部",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市委组织部副部长",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": false,
+      "status": "historical",
+      "source_ids": [
+        "v9-department-org-yang-exam"
+      ],
+      "verification_status": "historical_only",
+      "as_of_date": "2025-12-07",
+      "latest_confirmed_at": "2025-12-07",
+      "checked_at": "2026-09-21",
+      "date_note": "2026年度省考实际于2025-12-07举行，12月10日发布；超过180天，不作为2026-09-21现任确认。"
+    },
+    {
+      "id": "v9-career-jining-2e1469ef9373-party",
+      "person_id": "jining-2e1469ef9373",
+      "organization_id": "jining-housing-construction-party-group",
+      "organization_name": "中共济宁市住房和城乡建设局党组",
+      "location_ids": [
+        "jining"
+      ],
+      "title": "济宁市住房和城乡建设局党组书记",
+      "start": null,
+      "end": null,
+      "start_precision": null,
+      "end_precision": null,
+      "is_current": true,
+      "status": "current",
+      "source_ids": [
+        "v9-department-housing-heat-sep4"
+      ],
+      "verification_status": "verified_current",
+      "as_of_date": "2026-09-04",
+      "latest_confirmed_at": "2026-09-04",
+      "checked_at": "2026-09-21",
+      "date_note": "9月4日调研正文明确党组书记；党内任职起点未知，不借用行政任命日期。"
     }
   ],
   "career_links": [
@@ -75001,6 +77783,29 @@
         "hist-state-leaders-2003"
       ],
       "id": "link-896ba551df73129839"
+    },
+    {
+      "type": "co_service",
+      "start": "2023-03-11",
+      "end": "2026-08-28",
+      "precision_note": "根据公开任期计算出的确定交集；不表示私人熟识。",
+      "from": "zhang-youxia",
+      "to": "liu-zhenli",
+      "organization_id": "state-cmc",
+      "organization_name": "中华人民共和国中央军事委员会",
+      "post_ids": [
+        "v9-status-career-zhang-youxia-state-cmc",
+        "v9-status-career-liu-zhenli-state-cmc"
+      ],
+      "location_ids": [
+        "central",
+        "china"
+      ],
+      "source_ids": [
+        "v9-status-state-appointment-20230311",
+        "v9-status-state-removal-20260828"
+      ],
+      "id": "link-f21fef83ba06cbe13d"
     },
     {
       "type": "possible_overlap",
@@ -83230,6 +86035,25 @@
     },
     {
       "type": "same_place",
+      "from": "jining-hightech-cbd27792ec",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "career-jining-hightech-cbd27792ec-7a8150ed",
+        "career-jining-hightech-cbd27792ec-15bfe2c7",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-counties-hightech-current",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-3fc759fe5962640ef1"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-0a90eac3f914",
       "to": "jining-judicial-0c2cce66e3f3",
       "location_ids": [
@@ -83902,6 +86726,26 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-0a90eac3f914",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-0a90eac3f914-post-0",
+        "jining-judicial-0a90eac3f914-post-1",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2704589",
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-4250a68bcad220a0cc"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-0c2cce66e3f3",
       "to": "jining-judicial-0c6e5fe88046",
       "location_ids": [
@@ -84496,6 +87340,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-0c2cce66e3f3",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-0c2cce66e3f3-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2703765",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-467bb54b44bd4e824c"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-0c6e5fe88046",
       "to": "jining-judicial-0d3cb56f853f-5ea5d4",
       "location_ids": [
@@ -85071,6 +87933,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-0c6e5fe88046",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-0c6e5fe88046-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2704674",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-4990ef879b373ce122"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-0d3cb56f853f-5ea5d4",
       "to": "jining-judicial-1f74679f8494",
       "location_ids": [
@@ -85630,6 +88510,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-0d3cb56f853f-5ea5d4",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-0d3cb56f853f-5ea5d4-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2703765",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-c94916f604d2176b75"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-1f74679f8494",
       "to": "jining-judicial-1fa822cdbfb9",
       "location_ids": [
@@ -86173,6 +89071,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-1f74679f8494",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-1f74679f8494-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2704086",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-77e3d80ca5c9cc8105"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-1fa822cdbfb9",
       "to": "jining-judicial-253662bb7c7d",
       "location_ids": [
@@ -86688,6 +89604,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-1fa822cdbfb9",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-1fa822cdbfb9-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-adee52a0cedcbe21be"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-253662bb7c7d",
       "to": "jining-judicial-2cdc4200049f",
       "location_ids": [
@@ -87194,6 +90128,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-253662bb7c7d",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-253662bb7c7d-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705660",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-5b6c32c91b92feeef6"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-2cdc4200049f",
       "to": "jining-judicial-3437cfb67d10",
       "location_ids": [
@@ -87683,6 +90635,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-2cdc4200049f",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-2cdc4200049f-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2703905",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-d97d6ba0b245415082"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-3437cfb67d10",
       "to": "jining-judicial-423729328652",
       "location_ids": [
@@ -88154,6 +91124,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-3437cfb67d10",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-3437cfb67d10-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705571",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-ac6ba175bd18604067"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-423729328652",
       "to": "jining-judicial-50443df4692b",
       "location_ids": [
@@ -88595,6 +91583,24 @@
       ],
       "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
       "id": "link-3dede3e51cd285dcc3"
+    },
+    {
+      "type": "same_place",
+      "from": "jining-judicial-423729328652",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-423729328652-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-13720a795af938b908"
     },
     {
       "type": "same_place",
@@ -89053,6 +92059,25 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-50443df4692b",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-50443df4692b-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2704674",
+        "jining-renda-2705152",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-46de68f06cc23ad7af"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-5c9f03b6661e",
       "to": "jining-judicial-67e0e544db2a",
       "location_ids": [
@@ -89467,6 +92492,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-5c9f03b6661e",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-5c9f03b6661e-post-1",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2704674",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-69f20e8dec930dc240"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-67e0e544db2a",
       "to": "jining-judicial-69477b0490d2",
       "location_ids": [
@@ -89865,6 +92908,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-67e0e544db2a",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-67e0e544db2a-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705236",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-a6188eb32ecd6c31a0"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-69477b0490d2",
       "to": "jining-judicial-797ba471db41",
       "location_ids": [
@@ -90237,6 +93298,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-69477b0490d2",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-69477b0490d2-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-204efdb4ca1df74489"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-797ba471db41",
       "to": "jining-judicial-7fd5e735f70e-3f6d0d",
       "location_ids": [
@@ -90599,6 +93678,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-797ba471db41",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-797ba471db41-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705030",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-f5e57128f9487de2ba"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-7fd5e735f70e-3f6d0d",
       "to": "jining-judicial-88f4c6519794",
       "location_ids": [
@@ -90942,6 +94039,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-7fd5e735f70e-3f6d0d",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-7fd5e735f70e-3f6d0d-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705840",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-164030e5b97512d58a"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-88f4c6519794",
       "to": "jining-judicial-8b821c84fb39",
       "location_ids": [
@@ -91267,6 +94382,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-88f4c6519794",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-88f4c6519794-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2703765",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-11e02691d626f33cf4"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-8b821c84fb39",
       "to": "jining-judicial-8ceb12f0b3d6",
       "location_ids": [
@@ -91568,6 +94701,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-8b821c84fb39",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-8b821c84fb39-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-e9191eab4a7a7a7c24"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-8ceb12f0b3d6",
       "to": "jining-judicial-9759d6c8e906",
       "location_ids": [
@@ -91852,6 +95003,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-8ceb12f0b3d6",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-8ceb12f0b3d6-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-f1dcbcf9a626dcc5dc"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-9759d6c8e906",
       "to": "jining-judicial-985ab20d4728",
       "location_ids": [
@@ -92119,6 +95288,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-9759d6c8e906",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-9759d6c8e906-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-96163f8ab65645ee06"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-985ab20d4728",
       "to": "jining-judicial-9dfe752eb3b2",
       "location_ids": [
@@ -92373,6 +95560,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-985ab20d4728",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-985ab20d4728-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705660",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-d4327f66438a6732fd"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-9dfe752eb3b2",
       "to": "jining-judicial-a26f6c84465d",
       "location_ids": [
@@ -92605,6 +95810,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-9dfe752eb3b2",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-9dfe752eb3b2-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-3aecf5f1cbec634270"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-a26f6c84465d",
       "to": "jining-judicial-a819d5cf9539",
       "location_ids": [
@@ -92817,6 +96040,24 @@
       ],
       "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
       "id": "link-01d59a99e6558213f8"
+    },
+    {
+      "type": "same_place",
+      "from": "jining-judicial-a26f6c84465d",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-a26f6c84465d-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-59daf197ada2d9ab55"
     },
     {
       "type": "same_place",
@@ -93038,6 +96279,26 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-a819d5cf9539",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-a819d5cf9539-post-0",
+        "jining-judicial-a819d5cf9539-post-2",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2704674",
+        "jining-renda-2705364",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-d7c21b2e8fec339817"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-d005700a0c5c",
       "to": "jining-judicial-dcf99479ebff-3f6d0d",
       "location_ids": [
@@ -93216,6 +96477,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-d005700a0c5c",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-d005700a0c5c-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-8ca48b9bc687dde331"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-dcf99479ebff-3f6d0d",
       "to": "jining-judicial-dfb0a302a2f6",
       "location_ids": [
@@ -93378,6 +96657,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-dcf99479ebff-3f6d0d",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-dcf99479ebff-3f6d0d-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705840",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-9554cf32a0e000d595"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-dfb0a302a2f6",
       "to": "jining-judicial-e3e61eff2789",
       "location_ids": [
@@ -93522,6 +96819,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-dfb0a302a2f6",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-dfb0a302a2f6-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2704838",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-bec0c8c3f48ca92e8b"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-e3e61eff2789",
       "to": "jining-judicial-e81281d21020",
       "location_ids": [
@@ -93648,6 +96963,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-e3e61eff2789",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-e3e61eff2789-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2706072",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-0e1b99b5903c5fefad"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-e81281d21020",
       "to": "jining-judicial-ebb3cb43d5b3",
       "location_ids": [
@@ -93755,6 +97088,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-e81281d21020",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-e81281d21020-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-d6e8244445daa30358"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-ebb3cb43d5b3",
       "to": "jining-judicial-eef55d3ba8d2",
       "location_ids": [
@@ -93845,6 +97196,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-ebb3cb43d5b3",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-ebb3cb43d5b3-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705829",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-03e45800905b05be66"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-eef55d3ba8d2",
       "to": "jining-judicial-f0bc67b22fce",
       "location_ids": [
@@ -93917,6 +97286,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-eef55d3ba8d2",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-eef55d3ba8d2-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705364",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-865e6ca1d343913a0c"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-f0bc67b22fce",
       "to": "jining-judicial-f362ef8d2a5c",
       "location_ids": [
@@ -93971,6 +97358,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-f0bc67b22fce",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-f0bc67b22fce-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2704674",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-c50fd7f5a3020e45b6"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-f362ef8d2a5c",
       "to": "jining-judicial-fe455eb6d5ce",
       "location_ids": [
@@ -94007,6 +97412,24 @@
     },
     {
       "type": "same_place",
+      "from": "jining-judicial-f362ef8d2a5c",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-f362ef8d2a5c-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2703765",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-489cda3ea9e4ebefa7"
+    },
+    {
+      "type": "same_place",
       "from": "jining-judicial-fe455eb6d5ce",
       "to": "jining-judicial-fedec929d247",
       "location_ids": [
@@ -94022,6 +97445,42 @@
       ],
       "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
       "id": "link-e0814e9e355892571f"
+    },
+    {
+      "type": "same_place",
+      "from": "jining-judicial-fe455eb6d5ce",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-fe455eb6d5ce-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705099",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-cf1ef5a6b47c2b835a"
+    },
+    {
+      "type": "same_place",
+      "from": "jining-judicial-fedec929d247",
+      "to": "jining-v9-72e87863e521",
+      "location_ids": [
+        "jining-hightech"
+      ],
+      "post_ids": [
+        "jining-judicial-fedec929d247-post-0",
+        "v9-career-jining-v9-72e87863e521-2"
+      ],
+      "source_ids": [
+        "jining-renda-2705277",
+        "v9-department-org-zhu-jul3"
+      ],
+      "precision_note": "同地经历可以发生在不同时期、不同机构；不据此称为同事。",
+      "id": "link-ca57519be406a5a122"
     },
     {
       "type": "same_place",
@@ -112685,6 +116144,20 @@
         "jining-v8-dept-b6efd045906e",
         "jining-v8-dept-eb5aef6aef9f",
         "jining-v8-dept-fbdb8716eb2c",
+        "jining-v9-067ba473e528",
+        "jining-v9-19d16e8b03e2",
+        "jining-v9-3dbe17d4d637",
+        "jining-v9-5955cd1e1895",
+        "jining-v9-5d40681b12c7",
+        "jining-v9-72e87863e521",
+        "jining-v9-a1e7b4fa483a",
+        "jining-v9-b57b29d20895",
+        "jining-v9-bbcaf88d452f",
+        "jining-v9-d50edd6cdf0e",
+        "jining-v9-d5f7db720a67",
+        "jining-v9-ddeed068d5c7",
+        "jining-v9-e0588e1426a9",
+        "jining-v9-e56b862229e4",
         "jining-weishan-3c9440f19b",
         "jining-weishan-5707a53b24",
         "jining-weishan-a106037649",
@@ -113576,7 +117049,37 @@
         "v8-career-post-yu-jining-deputy-secretary",
         "v8-career-post-yu-jining-executive",
         "v8-career-post-yu-jining-mayor",
-        "v8-career-post-yu-jining-standing"
+        "v8-career-post-yu-jining-standing",
+        "v9-career-jining-2e1469ef9373-party",
+        "v9-career-jining-v9-067ba473e528-0",
+        "v9-career-jining-v9-067ba473e528-1",
+        "v9-career-jining-v9-19d16e8b03e2-0",
+        "v9-career-jining-v9-19d16e8b03e2-1",
+        "v9-career-jining-v9-3dbe17d4d637-0",
+        "v9-career-jining-v9-3dbe17d4d637-1",
+        "v9-career-jining-v9-5955cd1e1895-0",
+        "v9-career-jining-v9-5d40681b12c7-0",
+        "v9-career-jining-v9-5d40681b12c7-1",
+        "v9-career-jining-v9-72e87863e521-0",
+        "v9-career-jining-v9-72e87863e521-1",
+        "v9-career-jining-v9-72e87863e521-2",
+        "v9-career-jining-v9-a1e7b4fa483a-0",
+        "v9-career-jining-v9-b57b29d20895-0",
+        "v9-career-jining-v9-b57b29d20895-1",
+        "v9-career-jining-v9-bbcaf88d452f-0",
+        "v9-career-jining-v9-bbcaf88d452f-1",
+        "v9-career-jining-v9-bbcaf88d452f-2",
+        "v9-career-jining-v9-bbcaf88d452f-3",
+        "v9-career-jining-v9-d50edd6cdf0e-0",
+        "v9-career-jining-v9-d50edd6cdf0e-1",
+        "v9-career-jining-v9-d5f7db720a67-0",
+        "v9-career-jining-v9-d5f7db720a67-1",
+        "v9-career-jining-v9-d5f7db720a67-2",
+        "v9-career-jining-v9-ddeed068d5c7-0",
+        "v9-career-jining-v9-e0588e1426a9-0",
+        "v9-career-jining-v9-e0588e1426a9-1",
+        "v9-career-jining-v9-e56b862229e4-0",
+        "v9-career-jining-v9-e56b862229e4-1"
       ],
       "source_ids": [
         "jining-counties-economic-zone-june",
@@ -113739,7 +117242,16 @@
         "v8-dept-market-aug3-ip",
         "v8-dept-market-hu-college",
         "v8-dept-market-jul22-drugs",
-        "v8-dept-market-jun29-traffic"
+        "v8-dept-market-jun29-traffic",
+        "v9-department-discipline-aug26",
+        "v9-department-discipline-open",
+        "v9-department-housing-heat-sep4",
+        "v9-department-li-acting-decision",
+        "v9-department-li-election",
+        "v9-department-org-liu-aug17",
+        "v9-department-org-yang-exam",
+        "v9-department-org-zhu-jul3",
+        "v9-department-zhu-resignation"
       ]
     },
     {
@@ -114578,6 +118090,20 @@
         "jining-v8-dept-b6efd045906e",
         "jining-v8-dept-eb5aef6aef9f",
         "jining-v8-dept-fbdb8716eb2c",
+        "jining-v9-067ba473e528",
+        "jining-v9-19d16e8b03e2",
+        "jining-v9-3dbe17d4d637",
+        "jining-v9-5955cd1e1895",
+        "jining-v9-5d40681b12c7",
+        "jining-v9-72e87863e521",
+        "jining-v9-a1e7b4fa483a",
+        "jining-v9-b57b29d20895",
+        "jining-v9-bbcaf88d452f",
+        "jining-v9-d50edd6cdf0e",
+        "jining-v9-d5f7db720a67",
+        "jining-v9-ddeed068d5c7",
+        "jining-v9-e0588e1426a9",
+        "jining-v9-e56b862229e4",
         "jining-weishan-3c9440f19b",
         "jining-weishan-5707a53b24",
         "jining-weishan-a106037649",
@@ -115563,7 +119089,37 @@
         "v8-career-post-yu-weifang-vice-mayor",
         "v8-career-post-yu-zaozhuang-police-deputy",
         "v8-career-post-yu-zaozhuang-traffic-chief",
-        "v8-career-post-yu-zaozhuang-traffic-deputy"
+        "v8-career-post-yu-zaozhuang-traffic-deputy",
+        "v9-career-jining-2e1469ef9373-party",
+        "v9-career-jining-v9-067ba473e528-0",
+        "v9-career-jining-v9-067ba473e528-1",
+        "v9-career-jining-v9-19d16e8b03e2-0",
+        "v9-career-jining-v9-19d16e8b03e2-1",
+        "v9-career-jining-v9-3dbe17d4d637-0",
+        "v9-career-jining-v9-3dbe17d4d637-1",
+        "v9-career-jining-v9-5955cd1e1895-0",
+        "v9-career-jining-v9-5d40681b12c7-0",
+        "v9-career-jining-v9-5d40681b12c7-1",
+        "v9-career-jining-v9-72e87863e521-0",
+        "v9-career-jining-v9-72e87863e521-1",
+        "v9-career-jining-v9-72e87863e521-2",
+        "v9-career-jining-v9-a1e7b4fa483a-0",
+        "v9-career-jining-v9-b57b29d20895-0",
+        "v9-career-jining-v9-b57b29d20895-1",
+        "v9-career-jining-v9-bbcaf88d452f-0",
+        "v9-career-jining-v9-bbcaf88d452f-1",
+        "v9-career-jining-v9-bbcaf88d452f-2",
+        "v9-career-jining-v9-bbcaf88d452f-3",
+        "v9-career-jining-v9-d50edd6cdf0e-0",
+        "v9-career-jining-v9-d50edd6cdf0e-1",
+        "v9-career-jining-v9-d5f7db720a67-0",
+        "v9-career-jining-v9-d5f7db720a67-1",
+        "v9-career-jining-v9-d5f7db720a67-2",
+        "v9-career-jining-v9-ddeed068d5c7-0",
+        "v9-career-jining-v9-e0588e1426a9-0",
+        "v9-career-jining-v9-e0588e1426a9-1",
+        "v9-career-jining-v9-e56b862229e4-0",
+        "v9-career-jining-v9-e56b862229e4-1"
       ],
       "source_ids": [
         "jining-counties-economic-zone-june",
@@ -115802,7 +119358,16 @@
         "v8-dept-market-aug3-ip",
         "v8-dept-market-hu-college",
         "v8-dept-market-jul22-drugs",
-        "v8-dept-market-jun29-traffic"
+        "v8-dept-market-jun29-traffic",
+        "v9-department-discipline-aug26",
+        "v9-department-discipline-open",
+        "v9-department-housing-heat-sep4",
+        "v9-department-li-acting-decision",
+        "v9-department-li-election",
+        "v9-department-org-liu-aug17",
+        "v9-department-org-yang-exam",
+        "v9-department-org-zhu-jul3",
+        "v9-department-zhu-resignation"
       ]
     }
   ],
@@ -116711,6 +120276,21 @@
       "title": "资料怎么核实与更新",
       "body": "一条职务、一条学历，分别保留依据。原文支持、无日期目录、历史资料、未核实和来源冲突各自标明。\n自动检查列出已记录的身份待核候选，并检查日期矛盾和证据缺口；事实仍须对照原文。旧目录不能压过新任免，同一通稿的转载也不算多份独立证明。\n来源网页、事件日期、核对日期分开保存。历史背景允许逐项补充；不知道的继续空着。新的采集入口先评估，再生成候选更新，不自动改现任。",
       "source_ids": []
+    },
+    {
+      "id": "personnel-status-labels",
+      "title": "任职变动、处分与司法进展",
+      "body": "先分清任职、纪律、身份和司法四条线。同一天的通报可能涉及多条线，每个动作分别记，不把一个“落马”标签当作完整履历。\n\n免职只说明某项职务被解除，单凭这个词不能认定是处分。政务处分中的撤职、党纪中的撤销党内职务、组织处理中的免职，是不同制度下的具体措施。换届、调任、辞职、退休也不能互相代替；只有原文明确说明原因，才标注相应的离任类型。\n\n党纪处分有警告、严重警告、撤销党内职务、留党察看、开除党籍。政务处分有警告、记过、记大过、降级、撤职、开除。正式组织处理包括停职检查、调整职务、责令辞职、免职、降职；普通任免没有说明处理性质时，不自动放入这一类。\n\n“双开”要展开看开除的对象。开除党籍和开除公职是一种组合，军队通报可能是开除党籍和开除军籍。本库分别显示。2025年解放军纪律条令第156条规定，开除军籍还带有取消军衔、原有职务和待遇级别自然撤销等后果；这些一般规则不替代个案公告中未披露的具体日期。\n\n立案审查调查、移送审查起诉、检察机关提起公诉、法院判决，是不同阶段。移送不等于已经起诉，调查和处分也不等于有罪判决。只有后续原文明确给出下一阶段，才增加对应事件。\n\n已宣布处分与仍待追认可以同时成立。党章第42条规定了有关中央和地方委员会委员处分的决定和追认程序。比如2026年9月21日张又侠、刘振立的开除党籍决定已公布，但通报仍保留中央委员会全体会议追认这一后续程序。\n\n本库区分公告日、已知生效日和人工核对日。原文只说此前，具体日期就留空；党和国家两个军委的职务、党代表与人大代表资格也分别记录。新事件保留旧记录，只有明确的撤销或更正原文才取代原事件。\n\n对照例：济宁市人大常委会2024年12月3日接受于永生辞去市长职务，网页12月5日刊载。本库据此写接受辞职，不把它改写成退休、处分，或对其个人原因作额外判断。",
+      "source_ids": [
+        "v9-status-rules-party-2023",
+        "v9-status-rules-party-charter-2022",
+        "v9-status-rules-organization-2021",
+        "v9-status-rules-public-2020",
+        "v9-status-rules-pla-2025",
+        "v9-status-rules-criminal-2018",
+        "v9-status-expulsion-20260921",
+        "v8-career-yu-resign-20241203"
+      ]
     }
   ],
   "caveats": [
