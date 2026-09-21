@@ -18,6 +18,7 @@ async function handleAtlasNavigation(){
  if(history.state?.atlasUI&&history.state.atlasRoute===page)restoreReadingState(history.state.atlasUI);
  else if(lastBaseRoute!==base){query='';$('search').value='';}
  lastBaseRoute=base;
+ if(page==='map')graphMode=['dual','state','finance','local','all'].includes(params.get('diagram'))?params.get('diagram'):'dual';
  if(page==='people')restorePeopleAddress(params);
  if(params.has('region')&&place(params.get('region')))regionId=params.get('region');
  if(page==='network'){
@@ -66,6 +67,7 @@ function installAtlasNavigation(){
  handleAtlasNavigation();
 }
 function syncNetworkAddress(){if(!navigationReady||route!=='network')return;const p=hashParts().params;p.set('center',networkPerson);if(networkPlace!=='all')p.set('place',networkPlace);else p.delete('place');history.replaceState({...history.state},'','#network?'+p);}
+function goMapView(mode){rememberReadingPosition();graphMode=['dual','state','finance','local','all'].includes(mode)?mode:'dual';query='';$('search').value='';leaveDetailForRoute('map'+(graphMode==='dual'?'':'?diagram='+graphMode),true);}
 async function navigationClick(b){
  if(b.id==='detail-back'){rememberReadingPosition();if(history.state?.atlasDepth)history.back();else closeAtlasDetail();return true;}
  if(b.dataset.copyPerson){const url=new URL(location.href);url.hash='people?view=person&id='+encodeURIComponent(b.dataset.copyPerson);try{if(navigator.share&&compactScreen())await navigator.share({title:person(b.dataset.copyPerson)?.name+' · China Atlas',url:url.href});else{await navigator.clipboard.writeText(url.href);toast('人物链接已复制。');}}catch(e){if(e.name!=='AbortError')toast('暂时无法分享，可复制浏览器地址。');}return true;}

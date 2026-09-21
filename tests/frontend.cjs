@@ -9,7 +9,7 @@ test("band(person('lin-wu'))",'ministerial');test("band(person('zhou-naixiang'))
 for(const id of ['deng-xiaoping','zhu-rongji','jiang-zemin','wang-qishan'])test(`band(person('${id}'))`,'historical');
 test("mainRole(person('zhu-rongji'))",'前国务院总理（1998-03—2003-03）');
 test("mainRole(person('lin-wu'))",'山东省委书记');
-for(const mode of ['dual','finance','local','all']){run(`graphMode='${mode}';query=''`);const html=run('drawMap()');for(const id of ['deng-xiaoping','zhu-rongji','jiang-zemin','wang-qishan']){assert(!html.includes('data-person="'+id+'"'));checks++;}for(const m of html.matchAll(/data-node="([^"]+)"/g)){assert(ctx.fixture.institutions.some(o=>o.id===m[1]),m[1]);}}
+for(const mode of ['dual','state','finance','local','all']){run(`graphMode='${mode}';query=''`);const html=run('drawMap()');for(const id of ['deng-xiaoping','zhu-rongji','jiang-zemin','wang-qishan']){assert(!html.includes('data-person="'+id+'"'));checks++;}for(const m of html.matchAll(/data-node="([^"]+)"/g)){assert(ctx.fixture.institutions.some(o=>o.id===m[1]),m[1]);}}
 run("peoplePlace='shandong'");test("[\"李干杰\",\"林武\",\"周乃翔\"].every(name=>drawPeople().includes(name))",true);
 run("peoplePlace='all';peopleStatus='historical'");test("drawPeople().includes('朱镕基')",true);
 run("focus='economy';peopleStatus='historical'");test("drawPeople().includes('朱镕基')",true);run("focus='all'");
@@ -85,3 +85,31 @@ run("atlas.people.pop();query='';networkPlace='all';networkKind='all'");
 console.log('Evidence-state, pair comparison and profile timeline regression checks passed');
 
 test("profileHeading({id:'unknown-profile',name:'待核人物',roles:[{status:'historical',verification_status:'unverified'}]}).includes('任职状态待复核')",true);
+
+// Institutional classification is distinct from geography and broad parent grouping.
+test("workingAgencyGroup(org('pboc'),'state_council')",'component');
+test("workingAgencyGroup(org('nfra'),'state_council')",'direct');
+test("workingAgencyGroup(org('csrc'),'state_council')",'direct');
+test("workingAgencyGroup(org('sasac'),'state_council')",'special');
+test("workingAgencyGroup(org('shandong-government'),'state_council')",'');
+test("workingAgencyGroup(org('local_government'),'state_council')",'');
+test("workingAgencyGroup(org('ministry-environment-protection-historical'),'state_council')",'');
+test("workingAgencyGroup(org('ccdi'),'central_committee')",'');
+test("workingAgencyGroup(org('cpc-organization-department'),'central_committee')",'general');
+test("workingAgencyChildren('ndrc').some(o=>o.id==='nda')",true);
+test("workingAgencyChildren('pboc').some(o=>o.id==='safe')",true);
+test("workingAgencyGroup(org('safe'),'state_council')",'');
+test("workingAgencyGroup(org('nbs'),'state_council')",'direct');
+test("institutionInArea(org('safe'),'central')",true);
+test("workingAgencyChildren('pboc').some(o=>o.id==='pboc_branch')",false);
+test("workingAgencyChildren('central_financial_office').some(o=>o.id==='central_financial_work_commission')",false);
+test("workingAgencyCard('pboc').includes('潘功胜') && workingAgencyCard('pboc').includes('行长')",true);
+run("graphMode='dual';query=''");
+test("drawMap().includes('data-agency=\"pboc\"') && drawMap().includes('data-agency=\"cpc-united-front-department\"')",true);
+ctx.fixture.institutions.push({id:'test-unproven-child',name:'未核下级',parent_id:'pboc',level_label:'待核',duties:[]});
+test("workingAgencyChildren('pboc').some(o=>o.id==='test-unproven-child')",false);
+ctx.fixture.institutions.pop();
+ctx.fixture.relations.unshift({from:'pboc',to:'safe',type:'administrative_leadership',label:'UNSOURCED WRONG LABEL',source_ids:[]});
+test("workingAgencyCard('pboc').includes('UNSOURCED WRONG LABEL')",false);
+ctx.fixture.relations.shift();
+console.log('Working agency classification, sourced child links and visible role checks passed');

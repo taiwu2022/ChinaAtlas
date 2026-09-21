@@ -4,7 +4,7 @@
 
 盘点日期：2026-09-21。来自 `data/atlas.json` 当前快照；本报告没有重新访问网页。
 
-**511 条来源 ID · 478 个唯一 URL · 169 个 host · 106 个维护分组。**
+**516 条来源 ID · 483 个唯一 URL · 170 个 host · 107 个维护分组。**
 
 完整逐条清单见 [source-inventory.json](../reports/source-inventory.json)；检索与取证说明见 [来源维护指南](SOURCE_SEARCH_METHODS.md)，人工入口配置见 [source-catalog.json](../data/source-catalog.json)。
 
@@ -48,11 +48,11 @@ python3 scripts/source_inventory.py
 | amr.jining.gov.cn | 6 | 6 | jining.gov.cn | [2026年全市市场监管工作会议](<https://amr.jining.gov.cn/art/2026/1/29/art_31585_2708491.html>)<br>[市低速电动车管理工作专班市场秩序监管组召开市场整治工作推进会](<https://amr.jining.gov.cn/art/2026/6/29/art_31585_2708583.html>) |
 | sd.dzwww.com | 6 | 5 | dzwww.com | [担当尽责结硕果——梁山县委书记、县人武部党委第一书记谷永强抓武装阵地和民兵队伍建设纪事](<https://sd.dzwww.com/kjww/202602/t20260206_17407172.htm>)<br>[济南六区三县一市新一届党委“一把手”集体亮相](<https://sd.dzwww.com/sdgd/sdgdxw/201112/t20111230_6845521.htm>) |
 | www.qingdao.gov.cn | 6 | 6 | qingdao.gov.cn | [青岛市十七届人大四次会议胜利闭幕](<https://www.qingdao.gov.cn/ywdt/tpxw/202502/t20250212_8939166.shtml>)<br>[青岛市领导干部会议召开 宣布中央、省委关于青岛市委主要负责同志职务调整的决定](<https://www.qingdao.gov.cn/ywdt/zwyw/202312/t20231224_7739648.shtml>) |
+| app.www.gov.cn | 5 | 5 | www.gov.cn | [中共中央 国务院印发《党和国家机构改革方案》](<https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html>)<br>[国务院关于部委管理的国家局设置的通知（国发〔2023〕6号）](<https://app.www.gov.cn/govdata/gov/202303/20/498123/article.html>) |
 | paper.people.com.cn | 5 | 5 | people.com.cn | [《环球人物》：朱镕基在上海的工作与1989年市委书记任命](<https://paper.people.com.cn/hqrw/html/2013-08/26/content_1300579.htm>)<br>[国务院任免国家工作人员](<https://paper.people.com.cn/rmrb/html/2024-07/24/nw.D110000renmrb_20240724_7-04.htm>) |
 | www.gov.cn | 5 | 5 | www.gov.cn | [国务院公报：2025年3月31日任命李成钢](<https://www.gov.cn/gongbao/2025/issue_12026/202505/content_7022571.html>)<br>[国务院任免国家工作人员（2016年5月20日）](<https://www.gov.cn/xinwen/2016-05/20/content_5074944.htm>) |
 | www.mofcom.gov.cn | 5 | 5 | mofcom.gov.cn | [王文涛部长与欧委会贸易和经济安全委员谢夫乔维奇举行视频会谈](<https://www.mofcom.gov.cn/syxwfb/art/2026/art_e64496474d964fb1973d1975ba9d4779.html>)<br>[中共中央印发《深化党和国家机构改革方案》](<https://www.mofcom.gov.cn/xxgcxjpxsdzgtsshzysx/zywj/art/2018/art_3fa8291d599c4e959c83947a9900c262.html>) |
 | www.sdcourt.gov.cn | 5 | 4 | sdcourt.gov.cn | [济宁西部知识产权保护工作联席会议在嘉祥召开](<https://www.sdcourt.gov.cn/jningjiaxfy/384894/384921/44572882/index.html>)<br>[葛传伟院长在曲阜市人大会议作法院工作报告](<https://www.sdcourt.gov.cn/jningqffy/385482/385446/44522838/index.html>) |
-| app.www.gov.cn | 4 | 4 | www.gov.cn | [中共中央 国务院印发《党和国家机构改革方案》](<https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html>)<br>[国务院关于机构设置的通知（国发〔2023〕5号）](<https://app.www.gov.cn/govdata/gov/202303/20/498124/article.html>) |
 | jnsjcy.jining.gov.cn | 4 | 3 | jining.gov.cn | [全市检察工作推进会召开](<https://jnsjcy.jining.gov.cn/art/2026/8/18/art_62416_2706994.html>)<br>[全市府检联动联席会议召开](<https://jnsjcy.jining.gov.cn/art/2026/9/4/art_62416_2706997.html>) |
 | politics.people.com.cn | 4 | 4 | people.com.cn | [韩金峰当选济南市人大常委会主任 于海田当选济南市市长](<https://politics.people.com.cn/BIG5/n1/2022/0422/c1001-32406336.html>)<br>[湖北省委主要负责同志职务调整 应勇任湖北省委书记（新华社稿及简历）](<https://politics.people.com.cn/n1/2020/0213/c1001-31585419.html>) |
 | renshi.people.com.cn | 4 | 4 | people.com.cn | [龚正同志不再担任山东省委副书记](<https://renshi.people.com.cn/n1/2020/0321/c139617-31642518.html>)<br>[张海波任山东省威海市委书记（简历）](<https://renshi.people.com.cn/n1/2020/0409/c139617-31666881.html>) |
@@ -70,6 +70,7 @@ python3 scripts/source_inventory.py
 | www.fmprc.gov.cn | 3 | 2 | fmprc.gov.cn | [习近平离京赴新德里出席金砖国家领导人第十八次会晤](<https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677220/xgxw_677226/202609/t20260912_12021080.shtml>)<br>[中国共产党第二十届中央委员会第一次全体会议公报](<https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml>) |
 | www.ndrc.gov.cn | 3 | 3 | ndrc.gov.cn | [国家发展和改革委员会职能配置、内设机构](<https://www.ndrc.gov.cn/fzggw/bnpz/201906/t20190613_948567.html>)<br>[郑栅洁：国家发展改革委党组书记、主任](<https://www.ndrc.gov.cn/fzggw/wld/zsj/>) |
 | www.nfra.gov.cn | 3 | 3 | nfra.gov.cn | [国家金融监督管理总局官方网站：丁向群书记、局长](<https://www.nfra.gov.cn/>)<br>[丁向群会见香港金管局总裁余伟文和香港银行公会代表团](<https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1260731&itemId=922>) |
+| www.safe.gov.cn | 3 | 3 | safe.gov.cn | [潘功胜同志任中国人民银行党委书记](<https://www.safe.gov.cn/anhui/2023/0714/2313.html>)<br>[国家外汇管理局：基本职能](<https://www.safe.gov.cn/safe/jbzn/index.html>) |
 | www.shanghai.gov.cn | 3 | 3 | shanghai.gov.cn | [中共中央批准朱忠明任上海市委副书记](<https://www.shanghai.gov.cn/nw4411/20240720/b4392a03df7240948c3a80510e4e9052.html>)<br>[快讯！朱忠明任上海市副市长、代理市长](<https://www.shanghai.gov.cn/nw4411/20260904/5f02c611b46f459f82968961d57aa37e.html>) |
 | www.spp.gov.cn | 3 | 3 | spp.gov.cn | [应勇在十四届全国人大四次会议上作最高检工作报告](<https://www.spp.gov.cn/spp/2026zgjgzbg/202603/t20260309_722619.shtml>)<br>[最高人民检察院职能配置和内设机构设置](<https://www.spp.gov.cn/spp/zdgz/201901/t20190104_404292.shtml>) |
 | www.thepaper.cn | 3 | 3 | thepaper.cn | [大众日报、山东政事：周乃翔任山东省委委员、常委、副书记、代省长](<https://www.thepaper.cn/newsDetail_forward_14736826>)<br>[山东省联社党委书记、理事长孙开连履新山东省委组织部副部长](<https://www.thepaper.cn/newsDetail_forward_19651631>) |
@@ -95,6 +96,7 @@ python3 scripts/source_inventory.py
 | www.mee.gov.cn | 2 | 2 | mee.gov.cn | [长江生态环境保护民主监督工作座谈会；李干杰以中央统战部部长身份主持](<https://www.mee.gov.cn/ywdt/szyw/202504/t20250403_1106389.shtml>)<br>[中华人民共和国国务院组织法（2024年修订）](<https://www.mee.gov.cn/zcwj/gwywj/202403/t20240312_1068167.shtml>) |
 | www.mfa.gov.cn | 2 | 2 | mfa.gov.cn | [王毅同志简历](<https://www.mfa.gov.cn/web/wjbz_673089/grjl_673095/>)<br>[中华人民共和国外交部主要职责](<https://www.mfa.gov.cn/wjb_673085/zyzz_673087/>) |
 | www.mohrss.gov.cn | 2 | 2 | mohrss.gov.cn | [国务院任免国家工作人员（2025年4月16日）](<https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/bnrsgl/rsrm/202504/t20250416_540550.html>)<br>[国务院任免国家工作人员（2026年7月3日）](<https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/bnrsgl/rsrm/202607/t20260703_579521.html>) |
+| www.nea.gov.cn | 2 | 2 | nea.gov.cn | [郑栅洁同志简历（国家能源局历史页面）](<https://www.nea.gov.cn/2015-08/20/c_134538058.htm>)<br>[中共中央印发《中国共产党政法工作条例》（国家能源局转载）](<https://www.nea.gov.cn/2019-02/01/c_137792155.htm>) |
 | www.pbc.gov.cn | 2 | 2 | pbc.gov.cn | [潘功胜：中国人民银行党委书记、行长](<https://www.pbc.gov.cn/hanglingdao/128697/128734/index.html>)<br>[中国人民银行2024年预算：主要职能](<https://www.pbc.gov.cn/rmyh/105208/2025080818581365807/2024032614483822654.pdf>) |
 | www.pku.org.cn | 2 | 2 | pku.org.cn | [【2023两会】温金荣代表：牢牢把握高质量发展这个首要任务 加快打造广东高质量发展新增长极](<https://www.pku.org.cn/info/1218/6265.htm>)<br>[温金荣代表：坚持高端化、智能化、绿色化、集群化，推动科技创新和产业创新深度融合](<https://www.pku.org.cn/info/1371/16525.htm>) |
 | www.zjsjw.gov.cn | 2 | 2 | zjsjw.gov.cn | [浙江省纪委省监委领导机构](<https://www.zjsjw.gov.cn/lingdaojigou/202004/t20200416_1468118.shtml>)<br>[傅明先赴嘉兴瞻仰南湖红船 调研清廉村居建设](<https://www.zjsjw.gov.cn/toutiao/202210/t20221001_7075106.shtml>) |
@@ -177,16 +179,15 @@ python3 scripts/source_inventory.py
 | www.ln.gov.cn | 1 | 1 | ln.gov.cn | [李乐成同志简历（辽宁省政府2023年两会页面）](<https://www.ln.gov.cn/web/qmzx/2023lnlh/spxx/2023020210533194951/index.shtml>) |
 | www.locpg.gov.cn | 1 | 1 | locpg.gov.cn | [李希同志简历](<https://www.locpg.gov.cn/zt/2017-10/25/c_129726746.htm>) |
 | www.mencius.gov.cn | 1 | 1 | mencius.gov.cn | [邹城市委常委会会议暨市委党的建设工作领导小组会议召开](<https://www.mencius.gov.cn/index.php/cms/item-view-id-29552.shtml>) |
-| www.nea.gov.cn | 1 | 1 | nea.gov.cn | [郑栅洁同志简历（国家能源局历史页面）](<https://www.nea.gov.cn/2015-08/20/c_134538058.htm>) |
 | www.pdsjjw.gov.cn | 1 | 1 | pdsjjw.gov.cn | [中央宣传部负责人就《中国共产党宣传工作条例》答记者问（新华社；官方纪委网站转载）](<https://www.pdsjjw.gov.cn/sitesources/xxjjjcw/page_pc/gcsd/article28511629fd5f4b63b0a48a43d1ed1f6b.html>) |
 | www.picc.com.cn | 1 | 1 | picc.com.cn | [中国人保关于董事长任职的公告：丁向群任职2024年12月20日生效](<https://www.picc.com.cn/xwzx/gkxx/zdsx/202412/P020241222591769218306.pdf>) |
 | www.qingdaonews.com | 1 | 1 | qingdaonews.com | [权威发布：孟庆斌任山东省交通运输厅党组书记](<https://www.qingdaonews.com/app/content/2021-05/02/content_22696355.htm>) |
 | www.rmzxw.com.cn | 1 | 1 | rmzxw.com.cn | [付志方当选山东省政协主席 9名副主席6名新面孔](<https://www.rmzxw.com.cn/c/2018-01-30/1947551.shtml?n2m=1>) |
 | www.rznews.cn | 1 | 1 | rznews.cn | [张惠同志活动专辑（历史页面：用于已结束履历）](<https://www.rznews.cn/viscms/zhsjhdzhuanji626/>) |
-| www.safe.gov.cn | 1 | 1 | safe.gov.cn | [潘功胜同志任中国人民银行党委书记](<https://www.safe.gov.cn/anhui/2023/0714/2313.html>) |
 | www.sasac.gov.cn | 1 | 1 | sasac.gov.cn | [关于进一步加强地方国有资产监管工作的若干意见](<https://www.sasac.gov.cn/n2588035/n2588320/n2588335/c4259465/content.html>) |
 | www.sdpu.edu.cn | 1 | 1 | sdpu.edu.cn | [济宁市市场监督管理局党组成员、副局长胡国梁一行到我校调研指导](<https://www.sdpu.edu.cn/info/1409/11607.htm>) |
 | www.sohu.com | 1 | 1 | sohu.com | [任刚已任临沂市政府党组书记（大众日报综合沂水发布等）](<https://www.sohu.com/a/465322500_673626>) |
+| www.stats.gov.cn | 1 | 1 | stats.gov.cn | [国家统计局：机构职能](<https://www.stats.gov.cn/jg/jgzn/>) |
 | www.sznews.com | 1 | 1 | sznews.com | [刘吉当选惠州市人大常委会主任，温金荣当选惠州市政府市长](<https://www.sznews.com/news/content/mb/2021-11/12/content_24732645.htm>) |
 | www.weihai.gov.cn | 1 | 1 | weihai.gov.cn | [张海波到高区调研新一代信息技术产业链发展情况](<https://www.weihai.gov.cn/art/2026/9/4/art_60618_6588286.html>) |
 | www.whnews.cn | 1 | 1 | whnews.cn | [全市领导干部会议宣布威海市主要负责同志职务调整](<https://www.whnews.cn/news/node/2022-06/25/content_7233927.htm>) |
@@ -200,7 +201,7 @@ python3 scripts/source_inventory.py
 
 ## 统计口径与变化
 
-输入快照 SHA-256：`704d346f27193768052996a3869b7f335d7528333962d3d92fb36f52deccf0b8`。
+输入快照 SHA-256：`69816e23bc19640fa43534f743ed9e906c7f406b0758ec88289ce8955dcc16b2`。
 
 本次有 19 组 URL 被多个 source ID 引用；旧 ID 为维持现有人物引用而保留，详见 JSON 的 `duplicate_url_groups`。
 

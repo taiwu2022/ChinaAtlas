@@ -2,12 +2,12 @@
   "schema_version": 1,
   "inventory_date": "2026-09-21",
   "dataset": "data/atlas.json",
-  "dataset_sha256": "704d346f27193768052996a3869b7f335d7528333962d3d92fb36f52deccf0b8",
-  "source_count": 511,
-  "unique_url_count": 478,
-  "unique_host_count": 169,
-  "site_group_count": 106,
-  "has_local_evidence_count": 304,
+  "dataset_sha256": "69816e23bc19640fa43534f743ed9e906c7f406b0758ec88289ce8955dcc16b2",
+  "source_count": 516,
+  "unique_url_count": 483,
+  "unique_host_count": 170,
+  "site_group_count": 107,
+  "has_local_evidence_count": 315,
   "notes": [
     "Read-only metadata inventory; no pages fetched and no facts independently reverified.",
     "Unique URLs remove only fragments. Query strings, HTTP/HTTPS, case and trailing slashes remain distinct.",
@@ -787,6 +787,36 @@
       ]
     },
     {
+      "name": "app.www.gov.cn",
+      "source_count": 5,
+      "unique_url_count": 5,
+      "source_ids": [
+        "pboc_change",
+        "reform_2023",
+        "sc_org",
+        "v10-managed-national-bureaus",
+        "v9-status-rules-party-2023"
+      ],
+      "hosts": [
+        "app.www.gov.cn"
+      ],
+      "groups": [
+        "www.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "reform_2023",
+          "title": "中共中央 国务院印发《党和国家机构改革方案》",
+          "url": "https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html"
+        },
+        {
+          "source_id": "v10-managed-national-bureaus",
+          "title": "国务院关于部委管理的国家局设置的通知（国发〔2023〕6号）",
+          "url": "https://app.www.gov.cn/govdata/gov/202303/20/498123/article.html"
+        }
+      ]
+    },
+    {
       "name": "paper.people.com.cn",
       "source_count": 5,
       "unique_url_count": 5,
@@ -903,35 +933,6 @@
           "source_id": "jining-court-qufu-20260206",
           "title": "葛传伟院长在曲阜市人大会议作法院工作报告",
           "url": "https://www.sdcourt.gov.cn/jningqffy/385482/385446/44522838/index.html"
-        }
-      ]
-    },
-    {
-      "name": "app.www.gov.cn",
-      "source_count": 4,
-      "unique_url_count": 4,
-      "source_ids": [
-        "pboc_change",
-        "reform_2023",
-        "sc_org",
-        "v9-status-rules-party-2023"
-      ],
-      "hosts": [
-        "app.www.gov.cn"
-      ],
-      "groups": [
-        "www.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "reform_2023",
-          "title": "中共中央 国务院印发《党和国家机构改革方案》",
-          "url": "https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html"
-        },
-        {
-          "source_id": "sc_org",
-          "title": "国务院关于机构设置的通知（国发〔2023〕5号）",
-          "url": "https://app.www.gov.cn/govdata/gov/202303/20/498124/article.html"
         }
       ]
     },
@@ -1415,6 +1416,34 @@
           "source_id": "eco-ding-june",
           "title": "丁向群会见香港金管局总裁余伟文和香港银行公会代表团",
           "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1260731&itemId=922"
+        }
+      ]
+    },
+    {
+      "name": "www.safe.gov.cn",
+      "source_count": 3,
+      "unique_url_count": 3,
+      "source_ids": [
+        "eco-pan-party",
+        "v10-safe-functions",
+        "v10-safe-structure"
+      ],
+      "hosts": [
+        "www.safe.gov.cn"
+      ],
+      "groups": [
+        "safe.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "eco-pan-party",
+          "title": "潘功胜同志任中国人民银行党委书记",
+          "url": "https://www.safe.gov.cn/anhui/2023/0714/2313.html"
+        },
+        {
+          "source_id": "v10-safe-functions",
+          "title": "国家外汇管理局：基本职能",
+          "url": "https://www.safe.gov.cn/safe/jbzn/index.html"
         }
       ]
     },
@@ -2078,6 +2107,33 @@
           "source_id": "eco-cheng-director",
           "title": "国务院任免国家工作人员（2026年7月3日）",
           "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/bnrsgl/rsrm/202607/t20260703_579521.html"
+        }
+      ]
+    },
+    {
+      "name": "www.nea.gov.cn",
+      "source_count": 2,
+      "unique_url_count": 2,
+      "source_ids": [
+        "eco-zheng-bio",
+        "v10-political-legal-rules"
+      ],
+      "hosts": [
+        "www.nea.gov.cn"
+      ],
+      "groups": [
+        "nea.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "eco-zheng-bio",
+          "title": "郑栅洁同志简历（国家能源局历史页面）",
+          "url": "https://www.nea.gov.cn/2015-08/20/c_134538058.htm"
+        },
+        {
+          "source_id": "v10-political-legal-rules",
+          "title": "中共中央印发《中国共产党政法工作条例》（国家能源局转载）",
+          "url": "https://www.nea.gov.cn/2019-02/01/c_137792155.htm"
         }
       ]
     },
@@ -3829,27 +3885,6 @@
       ]
     },
     {
-      "name": "www.nea.gov.cn",
-      "source_count": 1,
-      "unique_url_count": 1,
-      "source_ids": [
-        "eco-zheng-bio"
-      ],
-      "hosts": [
-        "www.nea.gov.cn"
-      ],
-      "groups": [
-        "nea.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "eco-zheng-bio",
-          "title": "郑栅洁同志简历（国家能源局历史页面）",
-          "url": "https://www.nea.gov.cn/2015-08/20/c_134538058.htm"
-        }
-      ]
-    },
-    {
       "name": "www.pdsjjw.gov.cn",
       "source_count": 1,
       "unique_url_count": 1,
@@ -3955,27 +3990,6 @@
       ]
     },
     {
-      "name": "www.safe.gov.cn",
-      "source_count": 1,
-      "unique_url_count": 1,
-      "source_ids": [
-        "eco-pan-party"
-      ],
-      "hosts": [
-        "www.safe.gov.cn"
-      ],
-      "groups": [
-        "safe.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "eco-pan-party",
-          "title": "潘功胜同志任中国人民银行党委书记",
-          "url": "https://www.safe.gov.cn/anhui/2023/0714/2313.html"
-        }
-      ]
-    },
-    {
       "name": "www.sasac.gov.cn",
       "source_count": 1,
       "unique_url_count": 1,
@@ -4035,6 +4049,27 @@
           "source_id": "v4-ren-organization-bio",
           "title": "任刚已任临沂市政府党组书记（大众日报综合沂水发布等）",
           "url": "https://www.sohu.com/a/465322500_673626"
+        }
+      ]
+    },
+    {
+      "name": "www.stats.gov.cn",
+      "source_count": 1,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v10-nbs-functions"
+      ],
+      "hosts": [
+        "www.stats.gov.cn"
+      ],
+      "groups": [
+        "stats.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v10-nbs-functions",
+          "title": "国家统计局：机构职能",
+          "url": "https://www.stats.gov.cn/jg/jgzn/"
         }
       ]
     },
@@ -4667,6 +4702,42 @@
       ]
     },
     {
+      "name": "www.gov.cn",
+      "source_count": 10,
+      "unique_url_count": 10,
+      "source_ids": [
+        "eco-lichenggang-gazette",
+        "eco-nfra-rank",
+        "nfra_rules",
+        "pboc_change",
+        "reform_2023",
+        "sc_org",
+        "v10-managed-national-bureaus",
+        "v9-status-rules-party-2023",
+        "v9-status-state-appointment-20230311",
+        "wang-deputy-2016"
+      ],
+      "hosts": [
+        "app.www.gov.cn",
+        "www.gov.cn"
+      ],
+      "groups": [
+        "www.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "reform_2023",
+          "title": "中共中央 国务院印发《党和国家机构改革方案》",
+          "url": "https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html"
+        },
+        {
+          "source_id": "v10-managed-national-bureaus",
+          "title": "国务院关于部委管理的国家局设置的通知（国发〔2023〕6号）",
+          "url": "https://app.www.gov.cn/govdata/gov/202303/20/498123/article.html"
+        }
+      ]
+    },
+    {
       "name": "beijing.gov.cn",
       "source_count": 9,
       "unique_url_count": 9,
@@ -4841,41 +4912,6 @@
           "source_id": "v9-status-rules-public-2020",
           "title": "中华人民共和国公职人员政务处分法",
           "url": "http://www.npc.gov.cn/npc/c2/c30834/202006/t20200620_306633.html"
-        }
-      ]
-    },
-    {
-      "name": "www.gov.cn",
-      "source_count": 9,
-      "unique_url_count": 9,
-      "source_ids": [
-        "eco-lichenggang-gazette",
-        "eco-nfra-rank",
-        "nfra_rules",
-        "pboc_change",
-        "reform_2023",
-        "sc_org",
-        "v9-status-rules-party-2023",
-        "v9-status-state-appointment-20230311",
-        "wang-deputy-2016"
-      ],
-      "hosts": [
-        "app.www.gov.cn",
-        "www.gov.cn"
-      ],
-      "groups": [
-        "www.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "reform_2023",
-          "title": "中共中央 国务院印发《党和国家机构改革方案》",
-          "url": "https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html"
-        },
-        {
-          "source_id": "sc_org",
-          "title": "国务院关于机构设置的通知（国发〔2023〕5号）",
-          "url": "https://app.www.gov.cn/govdata/gov/202303/20/498124/article.html"
         }
       ]
     },
@@ -5654,6 +5690,34 @@
       ]
     },
     {
+      "name": "safe.gov.cn",
+      "source_count": 3,
+      "unique_url_count": 3,
+      "source_ids": [
+        "eco-pan-party",
+        "v10-safe-functions",
+        "v10-safe-structure"
+      ],
+      "hosts": [
+        "www.safe.gov.cn"
+      ],
+      "groups": [
+        "safe.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "eco-pan-party",
+          "title": "潘功胜同志任中国人民银行党委书记",
+          "url": "https://www.safe.gov.cn/anhui/2023/0714/2313.html"
+        },
+        {
+          "source_id": "v10-safe-functions",
+          "title": "国家外汇管理局：基本职能",
+          "url": "https://www.safe.gov.cn/safe/jbzn/index.html"
+        }
+      ]
+    },
+    {
       "name": "shandong.gov.cn",
       "source_count": 3,
       "unique_url_count": 3,
@@ -5969,6 +6033,33 @@
           "source_id": "mfa_duties",
           "title": "中华人民共和国外交部主要职责",
           "url": "https://www.mfa.gov.cn/wjb_673085/zyzz_673087/"
+        }
+      ]
+    },
+    {
+      "name": "nea.gov.cn",
+      "source_count": 2,
+      "unique_url_count": 2,
+      "source_ids": [
+        "eco-zheng-bio",
+        "v10-political-legal-rules"
+      ],
+      "hosts": [
+        "www.nea.gov.cn"
+      ],
+      "groups": [
+        "nea.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "eco-zheng-bio",
+          "title": "郑栅洁同志简历（国家能源局历史页面）",
+          "url": "https://www.nea.gov.cn/2015-08/20/c_134538058.htm"
+        },
+        {
+          "source_id": "v10-political-legal-rules",
+          "title": "中共中央印发《中国共产党政法工作条例》（国家能源局转载）",
+          "url": "https://www.nea.gov.cn/2019-02/01/c_137792155.htm"
         }
       ]
     },
@@ -6648,27 +6739,6 @@
       ]
     },
     {
-      "name": "nea.gov.cn",
-      "source_count": 1,
-      "unique_url_count": 1,
-      "source_ids": [
-        "eco-zheng-bio"
-      ],
-      "hosts": [
-        "www.nea.gov.cn"
-      ],
-      "groups": [
-        "nea.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "eco-zheng-bio",
-          "title": "郑栅洁同志简历（国家能源局历史页面）",
-          "url": "https://www.nea.gov.cn/2015-08/20/c_134538058.htm"
-        }
-      ]
-    },
-    {
       "name": "ouc.edu.cn",
       "source_count": 1,
       "unique_url_count": 1,
@@ -6879,27 +6949,6 @@
       ]
     },
     {
-      "name": "safe.gov.cn",
-      "source_count": 1,
-      "unique_url_count": 1,
-      "source_ids": [
-        "eco-pan-party"
-      ],
-      "hosts": [
-        "www.safe.gov.cn"
-      ],
-      "groups": [
-        "safe.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "eco-pan-party",
-          "title": "潘功胜同志任中国人民银行党委书记",
-          "url": "https://www.safe.gov.cn/anhui/2023/0714/2313.html"
-        }
-      ]
-    },
-    {
       "name": "sdlvtc.cn",
       "source_count": 1,
       "unique_url_count": 1,
@@ -6980,6 +7029,27 @@
           "source_id": "v4-ren-organization-bio",
           "title": "任刚已任临沂市政府党组书记（大众日报综合沂水发布等）",
           "url": "https://www.sohu.com/a/465322500_673626"
+        }
+      ]
+    },
+    {
+      "name": "stats.gov.cn",
+      "source_count": 1,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v10-nbs-functions"
+      ],
+      "hosts": [
+        "www.stats.gov.cn"
+      ],
+      "groups": [
+        "stats.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v10-nbs-functions",
+          "title": "国家统计局：机构职能",
+          "url": "https://www.stats.gov.cn/jg/jgzn/"
         }
       ]
     },
@@ -7232,7 +7302,8 @@
     "official_notice_reprint": 2,
     "official_notice_republished": 1,
     "official_or_official_media": 32,
-    "official_original": 24,
+    "official_original": 28,
+    "official_reprint": 1,
     "official_republication": 2,
     "official_rules_reprint": 2,
     "official_xinhua_reprint": 5,
@@ -7245,14 +7316,14 @@
     "academic_institution_news": 5,
     "academic_method_or_catalog": 3,
     "appointment_or_election": 100,
-    "government_directory": 26,
-    "institutional_rules": 25,
+    "government_directory": 27,
+    "institutional_rules": 26,
     "judiciary": 16,
     "named_public_activity": 165,
     "news_media": 123,
     "npc": 62,
     "organization_department": 10,
-    "other_public_reference": 144
+    "other_public_reference": 147
   },
   "duplicate_url_groups": [
     {
@@ -11768,7 +11839,7 @@
       "classification_status": "metadata_heuristic_not_verified",
       "published_at": "2019-09-02",
       "accessed_at": "2026-09-21",
-      "has_local_evidence": false,
+      "has_local_evidence": true,
       "same_url_source_ids": [
         "publicity_rules_qa"
       ]
@@ -11808,7 +11879,7 @@
       "classification_status": "metadata_heuristic_not_verified",
       "published_at": "2018-03-21",
       "accessed_at": "2026-09-21",
-      "has_local_evidence": false,
+      "has_local_evidence": true,
       "same_url_source_ids": [
         "reform_2018"
       ]
@@ -11827,7 +11898,7 @@
       "classification_status": "metadata_heuristic_not_verified",
       "published_at": "2023-03-16",
       "accessed_at": "2026-09-21",
-      "has_local_evidence": false,
+      "has_local_evidence": true,
       "same_url_source_ids": [
         "reform_2023"
       ]
@@ -11923,7 +11994,7 @@
       "classification_status": "metadata_heuristic_not_verified",
       "published_at": "2023-03-20",
       "accessed_at": "2026-09-21",
-      "has_local_evidence": false,
+      "has_local_evidence": true,
       "same_url_source_ids": [
         "sc_org"
       ]
@@ -12137,9 +12208,104 @@
       "classification_status": "metadata_heuristic_not_verified",
       "published_at": "2021-01-06",
       "accessed_at": "2026-09-21",
-      "has_local_evidence": false,
+      "has_local_evidence": true,
       "same_url_source_ids": [
         "united_front_rules"
+      ]
+    },
+    {
+      "source_id": "v10-managed-national-bureaus",
+      "title": "国务院关于部委管理的国家局设置的通知（国发〔2023〕6号）",
+      "url": "https://app.www.gov.cn/govdata/gov/202303/20/498123/article.html",
+      "canonical_url": "https://app.www.gov.cn/govdata/gov/202303/20/498123/article.html",
+      "host": "app.www.gov.cn",
+      "group": "www.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2023-03-20",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v10-managed-national-bureaus"
+      ]
+    },
+    {
+      "source_id": "v10-nbs-functions",
+      "title": "国家统计局：机构职能",
+      "url": "https://www.stats.gov.cn/jg/jgzn/",
+      "canonical_url": "https://www.stats.gov.cn/jg/jgzn/",
+      "host": "www.stats.gov.cn",
+      "group": "stats.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "government_directory"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": null,
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v10-nbs-functions"
+      ]
+    },
+    {
+      "source_id": "v10-political-legal-rules",
+      "title": "中共中央印发《中国共产党政法工作条例》（国家能源局转载）",
+      "url": "https://www.nea.gov.cn/2019-02/01/c_137792155.htm",
+      "canonical_url": "https://www.nea.gov.cn/2019-02/01/c_137792155.htm",
+      "host": "www.nea.gov.cn",
+      "group": "nea.gov.cn",
+      "type": "official_reprint",
+      "category_tags": [
+        "institutional_rules"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2019-02-01",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v10-political-legal-rules"
+      ]
+    },
+    {
+      "source_id": "v10-safe-functions",
+      "title": "国家外汇管理局：基本职能",
+      "url": "https://www.safe.gov.cn/safe/jbzn/index.html",
+      "canonical_url": "https://www.safe.gov.cn/safe/jbzn/index.html",
+      "host": "www.safe.gov.cn",
+      "group": "safe.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": null,
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v10-safe-functions"
+      ]
+    },
+    {
+      "source_id": "v10-safe-structure",
+      "title": "国家外汇管理局：机构设置",
+      "url": "https://www.safe.gov.cn/safe/jgsz/index.html",
+      "canonical_url": "https://www.safe.gov.cn/safe/jgsz/index.html",
+      "host": "www.safe.gov.cn",
+      "group": "safe.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": null,
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v10-safe-structure"
       ]
     },
     {
@@ -17342,7 +17508,7 @@
       "classification_status": "metadata_heuristic_not_verified",
       "published_at": "2025-12-08",
       "accessed_at": "2026-09-21",
-      "has_local_evidence": false,
+      "has_local_evidence": true,
       "same_url_source_ids": [
         "work_org_rules_2025"
       ]

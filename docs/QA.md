@@ -64,3 +64,12 @@ The responsive checks use desktop browser viewport emulation, not physical iPhon
 - Browser preview: all six routes plus department directory, specific department roster and status profile fit 320/390/1280 px (27 route/viewport checks). Department search/filter, the two expulsion profiles, source disclosure and Back were inspected. Mobile roster and event layouts were visually reviewed. These are viewport checks rather than physical-device tests.
 - The maintenance server explicitly serves both new modules. The live API reports 697 profiles, 1,028 posts and 16 status events; its whitelist export equals the public snapshot. SQLite full row contents match the v9 pre-change backup: 30 records, 1 review, 2 revisions, 0 profile notes. Six regional snapshots and original evidence are saved locally.
 - Audit: 0 structural errors, 29 research flags, 848 evidence-record gaps and 19 duplicate-URL groups. This is not a database-wide factual accuracy certification. The 22-entry discovery catalog remains manual except for the existing 12371 on-use headline refresh.
+
+
+## Working agencies on the overview (2026-09-21)
+
+- Added sourced NBS/SAFE institutions and 13 explicit institutional relationships. The public merged view contains 697 identities, 333 institutions, 516 source IDs and 315 evidence objects. People, careers and personnel events are unchanged. All four SQLite table row contents still equal the pre-change backup; the live maintenance API equals the public whitelist export.
+- The overview displays legal agency categories separately from broad parent grouping; provinces and schematic tiers do not appear as ministries. Managed bureaux and committee offices require sourced typed links. Current agency rosters show every recorded person with their actual role; former profiles are excluded.
+- 117 public and 105 maintenance Python tests pass. Public frontend, 15 navigation, 9 storage, portraits and personnel tests pass, as do the 49 maintenance frontend checks. New regressions cover institutional categories, managed versus direct agencies, an unsourced duplicate edge, exact-person roles and diagram/deep-link/draft restoration.
+- All five map views fit 320/390/1280 px (15 viewport checks); final new institution cards are also checked. Phone layout inspected visually; desktop geometry, person and institution drilldown and Back exercised. Viewports are emulated, not physical devices.
+- Read-only audit: 0 structural errors, 29 research flags, 842 evidence-record gaps and 19 duplicate-URL groups.

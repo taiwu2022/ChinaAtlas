@@ -1,22 +1,22 @@
 {
   "schema_version": "china-atlas-accuracy-report-v1",
   "as_of_date": "2026-09-21",
-  "input_sha256": "dd6d8edafaa8248a7414c61adb65b2d15766a373f85113f623854e89bb982988",
-  "evidence_sha256": "b76bafd6308cf74cc4d9272f937a974838ee4c4c507c560332c6300c62a470f9",
+  "input_sha256": "2dc42e8433b55fec4d6f42736be2d953d2167e4313f6d81559f730be847e6220",
+  "evidence_sha256": "492ce3e5f8ddb867a0fb335dc8a3e336414aa5a3152e0623d4652def52e9423b",
   "stale_after_days": 180,
   "scope": "只读一致性与证据缺口检查；未联网、未逐条重读原文，也不证明未标记资料必然正确。",
   "counts": {
     "people": 697,
     "career_posts": 1028,
-    "sources": 511,
+    "sources": 516,
     "profile_facts": 33,
     "status_events": 16
   },
-  "unique_source_urls": 478,
+  "unique_source_urls": 483,
   "totals": {
     "error": 0,
     "review": 29,
-    "gap": 848,
+    "gap": 842,
     "info": 19
   },
   "issues": [
@@ -3044,44 +3044,11 @@
       "level": "gap",
       "code": "missing_excerpt",
       "entity_type": "sources",
-      "entity_id": "publicity_rules_qa",
-      "person_id": null,
-      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
-      "source_ids": [
-        "publicity_rules_qa"
-      ]
-    },
-    {
-      "level": "gap",
-      "code": "missing_excerpt",
-      "entity_type": "sources",
       "entity_id": "ranks",
       "person_id": null,
       "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
       "source_ids": [
         "ranks"
-      ]
-    },
-    {
-      "level": "gap",
-      "code": "missing_excerpt",
-      "entity_type": "sources",
-      "entity_id": "reform_2018",
-      "person_id": null,
-      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
-      "source_ids": [
-        "reform_2018"
-      ]
-    },
-    {
-      "level": "gap",
-      "code": "missing_excerpt",
-      "entity_type": "sources",
-      "entity_id": "reform_2023",
-      "person_id": null,
-      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
-      "source_ids": [
-        "reform_2023"
       ]
     },
     {
@@ -3126,17 +3093,6 @@
       "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
       "source_ids": [
         "sc_law"
-      ]
-    },
-    {
-      "level": "gap",
-      "code": "missing_excerpt",
-      "entity_type": "sources",
-      "entity_id": "sc_org",
-      "person_id": null,
-      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
-      "source_ids": [
-        "sc_org"
       ]
     },
     {
@@ -3247,17 +3203,6 @@
       "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
       "source_ids": [
         "tax_reform"
-      ]
-    },
-    {
-      "level": "gap",
-      "code": "missing_excerpt",
-      "entity_type": "sources",
-      "entity_id": "united_front_rules",
-      "person_id": null,
-      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
-      "source_ids": [
-        "united_front_rules"
       ]
     },
     {
@@ -3753,17 +3698,6 @@
       "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
       "source_ids": [
         "wang-qishan-vp-election"
-      ]
-    },
-    {
-      "level": "gap",
-      "code": "missing_excerpt",
-      "entity_type": "sources",
-      "entity_id": "work_org_rules_2025",
-      "person_id": null,
-      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
-      "source_ids": [
-        "work_org_rules_2025"
       ]
     },
     {

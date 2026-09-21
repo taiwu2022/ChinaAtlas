@@ -250,3 +250,17 @@ test('institution roster entry opens a clean department view and invalid departm
  const invalid=fixture('#people?browse=departments&department=missing&area=missing&service=invalid');
  assert.equal(invalid.run('departmentId'),'all');assert.equal(invalid.run('departmentPlace'),'all');assert.equal(invalid.run('departmentService'),'all');
 });
+
+test('State Council diagram deep link survives profile, roster, source and Back navigation', async () => {
+ const f=fixture('#map?diagram=state');
+ assert.equal(f.context.graphMode,'state');
+ f.run("showPerson('a')");await f.typeNote('agency profile draft');
+ f.context.api=async()=>({id:'source-a'});await f.click({evidence:'source-a'});await tick();
+ await f.traverse('back');assert.equal(f.elements['person-note'].value,'agency profile draft');
+ await f.traverse('back');assert.equal(f.context.graphMode,'state');
+ await f.click({viewOrgPeople:'org-a'});assert.equal(f.params().get('department'),'org-a');
+ await f.traverse('back');assert.equal(f.params().get('diagram'),'state');assert.equal(f.context.graphMode,'state');
+ await f.click({mapMode:'finance'});assert.equal(f.context.graphMode,'finance');assert.equal(f.params().get('diagram'),'finance');
+ await f.traverse('back');assert.equal(f.context.graphMode,'state');
+ const invalid=fixture('#map?diagram=not-a-view');assert.equal(invalid.context.graphMode,'dual');
+});
