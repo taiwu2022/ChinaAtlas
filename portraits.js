@@ -21,7 +21,7 @@ function portraitHTML(p){
  const photo=portraitFor(p);if(!photo)return '';
  return `<figure class="profile-portrait"><img data-profile-portrait="${esc(p.id)}" src="${esc(photo.image_url)}" alt="${esc(p.name)}的公开肖像" width="144" height="180" decoding="async" referrerpolicy="no-referrer"><figcaption><a href="${esc(photo.source_url)}" target="_blank" rel="noopener noreferrer" title="${esc(photo.source_title)}">照片来源 ↗</a>${photo.credit?`<small>${esc(photo.credit)}</small>`:''}</figcaption></figure>`;
 }
-function profileHeading(p){return `<div class="profile-heading"><div class="profile-identity"><span class="pill">${current(p).length?'现任与历任职务':personStatus(p)==='uncertain'?'任职状态待复核':'历史人物'}</span><h2 class="detail-title">${esc(p.name)}</h2><p class="detail-subtitle"><span lang="en">${esc(p.name_en||'')}${p.birth_year?' · '+esc(p.birth_year)+'年生':''}</span></p></div><div class="portrait-slot" data-portrait-for="${esc(p.id)}">${portraitHTML(p)}</div></div><p class="profile-checked">档案整理于 ${esc(p.checked_at)}</p>`;}
+function profileHeading(p){const subtitle=[p.name_en,p.birth_year?p.birth_year+'年生':''].filter(Boolean).join(' · ');return `<div class="profile-heading"><div class="profile-identity"><h2 class="detail-title">${esc(p.name)}</h2>${subtitle?`<p class="detail-subtitle">${esc(subtitle)}</p>`:''}</div><div class="portrait-slot" data-portrait-for="${esc(p.id)}">${portraitHTML(p)}</div></div>`;}
 function refreshProfilePortrait(){
  const slot=document.querySelector('.portrait-slot[data-portrait-for]');if(!slot||!atlas)return;
  const p=person(slot.dataset.portraitFor);if(p)slot.innerHTML=portraitHTML(p);
