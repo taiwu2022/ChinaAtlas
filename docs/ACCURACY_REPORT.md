@@ -75,4 +75,4 @@
 
 先比较精确岗位、人物身份和事件时间，找到原始任免/简历，再记录更正原因与旧值；网页快照和结构检查均不能替代这一过程。
 
-输入数据 SHA-256：`fceed983ba9d72a2c1da8c24809876afdf45cf2c1bd1c8fadde8cc5584df375c`；证据摘录 SHA-256：`4b7dbba0f32d28aaf0b0bc84bc2812a817a1834eacd44d6818a23cacdf081e76`。
+输入数据 SHA-256：`e338381c03880acadddeb4b4142331681dd8f677e67067c6621688a6e5c604d0`；证据摘录 SHA-256：`4b7dbba0f32d28aaf0b0bc84bc2812a817a1834eacd44d6818a23cacdf081e76`。

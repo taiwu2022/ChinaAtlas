@@ -192,7 +192,7 @@ python3 scripts/source_inventory.py
 
 ## 统计口径与变化
 
-输入快照 SHA-256：`37f6ae93cc3aa79b47df5a4d6b0bc8e279ffd8e857fe360e552926d47921e550`。
+输入快照 SHA-256：`9cc937eb47f449cc2943eb05a693927a0a8eb6c6eb6d478133727cd94833ae44`。
 
 本次有 14 组 URL 被多个 source ID 引用；旧 ID 为维持现有人物引用而保留，详见 JSON 的 `duplicate_url_groups`。
 

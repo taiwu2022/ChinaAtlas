@@ -1,7 +1,7 @@
 {
   "schema_version": "china-atlas-accuracy-report-v1",
   "as_of_date": "2026-09-21",
-  "input_sha256": "fceed983ba9d72a2c1da8c24809876afdf45cf2c1bd1c8fadde8cc5584df375c",
+  "input_sha256": "e338381c03880acadddeb4b4142331681dd8f677e67067c6621688a6e5c604d0",
   "evidence_sha256": "4b7dbba0f32d28aaf0b0bc84bc2812a817a1834eacd44d6818a23cacdf081e76",
   "stale_after_days": 180,
   "scope": "只读一致性与证据缺口检查；未联网、未逐条重读原文，也不证明未标记资料必然正确。",
