@@ -95,15 +95,15 @@ function fixture(start = '#people') {
     isPublicAtlas: () => true, compactScreen: () => true,
     toast: message => log.errors.push(message), requestAnimationFrame: fn => fn(), navigator: {},
     publicModeUI() {}, finishGraph() {},
-    portableClick: async () => false, regionClick: () => false, registryClick: async () => false, networkClick: async () => false,
+    searchClick: () => false, portableClick: async () => false, regionClick: () => false, registryClick: async () => false, networkClick: async () => false,
     localStorage: { setItem() {} }, api: async () => ({}),
   };
   vm.createContext(context);
   const run = source => vm.runInContext(source, context);
   run(navigationSource);
   run(departmentSource);
-  ['Map', 'People', 'Changes', 'Guide', 'Network', 'Regions'].forEach(name => context['draw' + name] = () => {
-    log.renders.push({ route: context.route, query: context.query, place: context.peoplePlace, region: context.regionId, service: context.regionService }); return '';
+  ['SearchResults', 'Map', 'People', 'Changes', 'Guide', 'Network', 'Regions'].forEach(name => context['draw' + name] = () => {
+    log.renders.push({ view:name, route: context.route, query: context.query, place: context.peoplePlace, region: context.regionId, service: context.regionService }); return '';
   });
   run(productionLine(appLines, 'function render()'));
   run(productionLine(appLines, "document.addEventListener('click'"));
@@ -263,4 +263,12 @@ test('State Council diagram deep link survives profile, roster, source and Back 
  await f.click({mapMode:'finance'});assert.equal(f.context.graphMode,'finance');assert.equal(f.params().get('diagram'),'finance');
  await f.traverse('back');assert.equal(f.context.graphMode,'state');
  const invalid=fixture('#map?diagram=not-a-view');assert.equal(invalid.context.graphMode,'dual');
+});
+
+test('each route renders global search independently of hidden filters and returns to its own view',()=>{
+ for(const [route,view] of Object.entries({map:'Map',people:'People',regions:'Regions',network:'Network',changes:'Changes',guide:'Guide'})){
+  const f=fixture('#'+route);f.context.query='刘瑞峰';f.context.peopleStatus='historical';f.context.peoplePlace='shanghai';f.context.focus='economy';f.run('render()');
+  assert.equal(f.log.renders.at(-1).view,'SearchResults');assert.equal(f.context.peopleStatus,'historical');
+  f.context.query='';f.run('render()');assert.equal(f.log.renders.at(-1).view,view);assert.equal(f.context.peoplePlace,'shanghai');
+ }
 });

@@ -2,7 +2,7 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
 const root=require('node:path').resolve(__dirname,'..');
 const el={addEventListener(){},value:'',close(){},open:false};
 const ctx=vm.createContext({document:{getElementById:()=>el,addEventListener(){},querySelectorAll:()=>[],querySelector:()=>el},window:{addEventListener(){}},location:{hash:'#map'},console,URL,URLSearchParams,Set,Map,setTimeout,requestAnimationFrame(){}});
-for(const f of ['portable.js','navigation.js','graph.js','registry-ui.js','network.js','regions.js','portraits.js','personnel.js','departments.js','app.js'])vm.runInContext(fs.readFileSync(root+'/web/'+f,'utf8').replace(/boot\(\);\s*$/,''),ctx);
+for(const f of ['portable.js','navigation.js','graph.js','registry-ui.js','network.js','regions.js','portraits.js','personnel.js','departments.js','search.js','profile.js','app.js'])vm.runInContext(fs.readFileSync(root+'/web/'+f,'utf8').replace(/boot\(\);\s*$/,''),ctx);
 ctx.fixture=JSON.parse(fs.readFileSync(process.argv[2]||root+'/data/atlas.json','utf8'));if(!ctx.fixture.career_links){ctx.fixture.career_links=JSON.parse(require('node:child_process').execFileSync('/opt/homebrew/bin/python3',['-c','import json,sys;from network import build_network;print(json.dumps(build_network(json.load(sys.stdin))))'],{cwd:root,input:JSON.stringify(ctx.fixture),encoding:'utf8'}));}vm.runInContext('atlas=fixture',ctx);
 const run=s=>vm.runInContext(s,ctx);let checks=0;const test=(s,expected)=>{assert.deepEqual(JSON.parse(JSON.stringify(run(s))),expected,s);checks++;};
 test("band(person('lin-wu'))",'ministerial');test("band(person('zhou-naixiang'))",'ministerial');test("band(person('han-zheng'))",'national-unverified');
@@ -84,7 +84,7 @@ test("comparisonBody('empty-test','xi-jinping').includes('<img src=x onerror=bad
 run("atlas.people.pop();query='';networkPlace='all';networkKind='all'");
 console.log('Evidence-state, pair comparison and profile timeline regression checks passed');
 
-test("profileHeading({id:'unknown-profile',name:'待核人物',roles:[{status:'historical',verification_status:'unverified'}]}).includes('任职状态待复核')",true);
+test("profileReadingOffice({title:'待核职务',status:'historical',records:[{status:'historical',verification_status:'unverified'}]}).includes('待核实')",true);
 
 // Institutional classification is distinct from geography and broad parent grouping.
 test("workingAgencyGroup(org('pboc'),'state_council')",'component');
@@ -113,3 +113,12 @@ ctx.fixture.relations.unshift({from:'pboc',to:'safe',type:'administrative_leader
 test("workingAgencyCard('pboc').includes('UNSOURCED WRONG LABEL')",false);
 ctx.fixture.relations.shift();
 console.log('Working agency classification, sourced child links and visible role checks passed');
+
+// Network and comparison careers keep evidence dates without routine metadata in the reading view.
+test("displayPeriod({is_current:true})",'在任');
+test("displayPeriod({start:'2000',status:'former'})",'2000 起 · 曾任');
+test("displayPeriod({start:'2000',end:'2002'})",'2000 — 2002');
+test("displayPeriod({start:'2000'})",'2000 起 · 历史记录 · 当前状态待核');
+test("postCard({title:'职务',organization_name:'单位',is_current:true,as_of_date:'2026-05-21',date_note:'as_of_date metadata',source_ids:[]}).includes('<summary>资料与来源</summary><p class=\"note\">as_of_date metadata')",true);
+test("postCard({title:'职务',organization_name:'单位',verification_status:'conflicting',source_ids:[]}).includes('来源冲突')",true);
+console.log('Compact network career presentation checks passed');
