@@ -2,12 +2,12 @@
   "schema_version": 1,
   "inventory_date": "2026-09-21",
   "dataset": "data/atlas.json",
-  "dataset_sha256": "9cc937eb47f449cc2943eb05a693927a0a8eb6c6eb6d478133727cd94833ae44",
-  "source_count": 461,
-  "unique_url_count": 433,
-  "unique_host_count": 161,
-  "site_group_count": 102,
-  "has_local_evidence_count": 254,
+  "dataset_sha256": "8e1aea5a8b45874cc15698cbb70a40a638b86d487eb30fa38b1253c5356c92c0",
+  "source_count": 490,
+  "unique_url_count": 459,
+  "unique_host_count": 165,
+  "site_group_count": 105,
+  "has_local_evidence_count": 283,
   "notes": [
     "Read-only metadata inventory; no pages fetched and no facts independently reverified.",
     "Unique URLs remove only fragments. Query strings, HTTP/HTTPS, case and trailing slashes remain distinct.",
@@ -18,9 +18,84 @@
   ],
   "host_stats": [
     {
+      "name": "www.jining.gov.cn",
+      "source_count": 50,
+      "unique_url_count": 35,
+      "source_ids": [
+        "jining-counties-jiaxiang-mayor",
+        "jining-counties-jinxiang-deputies",
+        "jining-counties-jinxiang-july",
+        "jining-counties-jinxiang-removal",
+        "jining-counties-qufu-july",
+        "jining-counties-rencheng-cppcc",
+        "jining-counties-sishui-election",
+        "jining-counties-weishan-feb",
+        "jining-counties-wenshang-cppcc",
+        "jining-counties-yanzhou-npc",
+        "jining-counties-yanzhou-party",
+        "jining-court-election-20260120",
+        "v4-jining-finance-meeting-20260819",
+        "v4-jining-leaders-current-20260916",
+        "v4-jining-li-tiandong-roster",
+        "v4-jining-liu-current-20260907",
+        "v4-jining-liu-roster",
+        "v4-jining-mayor-election-20260824",
+        "v4-jining-wen-start-20241021",
+        "v4-jining-zhang-dong-roster",
+        "v7-jn-dept-all-0",
+        "v7-jn-dept-all-1",
+        "v7-jn-dept-all-13",
+        "v7-jn-dept-all-15",
+        "v7-jn-dept-all-20",
+        "v7-jn-dept-all-23",
+        "v7-jn-dept-all-30",
+        "v7-jn-dept-all-31",
+        "v7-jn-dept-all-32",
+        "v7-jn-dept-all-36",
+        "v7-jn-dept-all-38",
+        "v7-jn-dept-all-39",
+        "v7-jn-dept-all-42",
+        "v7-jn-dept-all-43",
+        "v7-jn-dept-all-46",
+        "v7-jn-dept-all-5",
+        "v7-jn-dept-environment-meeting2026",
+        "v7-jn-dept-opc2026",
+        "v7-jn-dept-police-lu2026",
+        "v7-jn-dept-urban-list2026",
+        "v8-career-yu-gazette-202105",
+        "v8-dept-gov-2020-6",
+        "v8-dept-gov-notice-15432",
+        "v8-dept-gov-notice-17849",
+        "v8-dept-gov-notice-17894",
+        "v8-dept-gov-notice-19797",
+        "v8-dept-gov-notice-19798",
+        "v8-dept-gov-notice-19896",
+        "v8-dept-gov-notice-19897",
+        "v8-dept-hu-transfer-official"
+      ],
+      "hosts": [
+        "www.jining.gov.cn"
+      ],
+      "groups": [
+        "jining.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v8-dept-gov-notice-15432",
+          "title": "济宁市人民政府关于公布任免市政府组成人员职务的通知（济政任〔2023〕7号）",
+          "url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=15432"
+        },
+        {
+          "source_id": "v8-dept-gov-notice-17849",
+          "title": "济宁市人民政府关于任免仲波等工作人员职务的通知（济政任〔2023〕12号）",
+          "url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=17849"
+        }
+      ]
+    },
+    {
       "name": "jiningrenda.jining.gov.cn",
-      "source_count": 43,
-      "unique_url_count": 39,
+      "source_count": 44,
+      "unique_url_count": 40,
       "source_ids": [
         "jining-renda-2703745",
         "jining-renda-2703765",
@@ -64,7 +139,8 @@
         "v4-jining-zhang-haibo-election-20250114",
         "v4-jining-zhang-haibo-end-20260721",
         "v6-jn-npc",
-        "v7-jn-dept-june-appointments2026"
+        "v7-jn-dept-june-appointments2026",
+        "v8-career-yu-resign-20241203"
       ],
       "hosts": [
         "jiningrenda.jining.gov.cn"
@@ -82,71 +158,6 @@
           "source_id": "jining-renda-2704403",
           "title": "济宁市人大常委会 选举任免 济宁市十八届人大常委会第5次会议任免名单",
           "url": "https://jiningrenda.jining.gov.cn/art/2022/11/8/art_31314_2704403.html"
-        }
-      ]
-    },
-    {
-      "name": "www.jining.gov.cn",
-      "source_count": 40,
-      "unique_url_count": 25,
-      "source_ids": [
-        "jining-counties-jiaxiang-mayor",
-        "jining-counties-jinxiang-deputies",
-        "jining-counties-jinxiang-july",
-        "jining-counties-jinxiang-removal",
-        "jining-counties-qufu-july",
-        "jining-counties-rencheng-cppcc",
-        "jining-counties-sishui-election",
-        "jining-counties-weishan-feb",
-        "jining-counties-wenshang-cppcc",
-        "jining-counties-yanzhou-npc",
-        "jining-counties-yanzhou-party",
-        "jining-court-election-20260120",
-        "v4-jining-finance-meeting-20260819",
-        "v4-jining-leaders-current-20260916",
-        "v4-jining-li-tiandong-roster",
-        "v4-jining-liu-current-20260907",
-        "v4-jining-liu-roster",
-        "v4-jining-mayor-election-20260824",
-        "v4-jining-wen-start-20241021",
-        "v4-jining-zhang-dong-roster",
-        "v7-jn-dept-all-0",
-        "v7-jn-dept-all-1",
-        "v7-jn-dept-all-13",
-        "v7-jn-dept-all-15",
-        "v7-jn-dept-all-20",
-        "v7-jn-dept-all-23",
-        "v7-jn-dept-all-30",
-        "v7-jn-dept-all-31",
-        "v7-jn-dept-all-32",
-        "v7-jn-dept-all-36",
-        "v7-jn-dept-all-38",
-        "v7-jn-dept-all-39",
-        "v7-jn-dept-all-42",
-        "v7-jn-dept-all-43",
-        "v7-jn-dept-all-46",
-        "v7-jn-dept-all-5",
-        "v7-jn-dept-environment-meeting2026",
-        "v7-jn-dept-opc2026",
-        "v7-jn-dept-police-lu2026",
-        "v7-jn-dept-urban-list2026"
-      ],
-      "hosts": [
-        "www.jining.gov.cn"
-      ],
-      "groups": [
-        "jining.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "jining-counties-jinxiang-removal",
-          "title": "金乡县人民政府关于公布任免宋伟等职务的通知",
-          "url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=21898"
-        },
-        {
-          "source_id": "v4-jining-wen-start-20241021",
-          "title": "全市领导干部会议召开：宣布济宁市委主要负责同志调整",
-          "url": "https://www.jining.gov.cn/art/2024/10/22/art_182_2888553.html"
         }
       ]
     },
@@ -249,6 +260,43 @@
       ]
     },
     {
+      "name": "sd.people.com.cn",
+      "source_count": 12,
+      "unique_url_count": 11,
+      "source_ids": [
+        "bg-pang-people-20230807",
+        "v4-jn-party-election-20220412",
+        "v4-shandong-party-election-20220601",
+        "v4-zeng-vicegov-end",
+        "v4-zeng-vicegov-start",
+        "v4pm-chen-ping-aug-current",
+        "v4pm-chen-ping-zaozhuang-end",
+        "v4pm-fu-sd-end",
+        "v4pm-yan-bio-original",
+        "v8-career-pang-cv-20230807",
+        "v8-career-yu-acting-20210316",
+        "v8-career-yu-transfer-20241202"
+      ],
+      "hosts": [
+        "sd.people.com.cn"
+      ],
+      "groups": [
+        "people.com.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v8-career-yu-acting-20210316",
+          "title": "于永生任济宁市人民政府副市长、代理市长",
+          "url": "http://sd.people.com.cn/n2/2021/0317/c363933-34625656.html"
+        },
+        {
+          "source_id": "bg-pang-people-20230807",
+          "title": "庞建栋已任济宁市委常委、组织部部长、统战部部长",
+          "url": "http://sd.people.com.cn/n2/2023/0807/c363933-40522188.html"
+        }
+      ]
+    },
+    {
       "name": "news.12371.cn",
       "source_count": 10,
       "unique_url_count": 10,
@@ -280,40 +328,6 @@
           "source_id": "hist-deng-1971-1980",
           "title": "邓小平生平年表·1971—1980",
           "url": "https://news.12371.cn/2014/08/21/ARTI1408604592052720.shtml"
-        }
-      ]
-    },
-    {
-      "name": "sd.people.com.cn",
-      "source_count": 9,
-      "unique_url_count": 9,
-      "source_ids": [
-        "bg-pang-people-20230807",
-        "v4-jn-party-election-20220412",
-        "v4-shandong-party-election-20220601",
-        "v4-zeng-vicegov-end",
-        "v4-zeng-vicegov-start",
-        "v4pm-chen-ping-aug-current",
-        "v4pm-chen-ping-zaozhuang-end",
-        "v4pm-fu-sd-end",
-        "v4pm-yan-bio-original"
-      ],
-      "hosts": [
-        "sd.people.com.cn"
-      ],
-      "groups": [
-        "people.com.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "bg-pang-people-20230807",
-          "title": "庞建栋已任济宁市委常委、组织部部长、统战部部长",
-          "url": "http://sd.people.com.cn/n2/2023/0807/c363933-40522188.html"
-        },
-        {
-          "source_id": "v4pm-yan-bio-original",
-          "title": "闫剑波同志当选威海市市长及简历",
-          "url": "https://sd.people.com.cn/n2/2020/0728/c363933-34189785.html"
         }
       ]
     },
@@ -605,6 +619,37 @@
           "source_id": "nsc_law",
           "title": "中华人民共和国监察法（2024年修正）",
           "url": "https://www.npc.gov.cn/c2/c30834/202502/t20250205_442676.html"
+        }
+      ]
+    },
+    {
+      "name": "amr.jining.gov.cn",
+      "source_count": 6,
+      "unique_url_count": 6,
+      "source_ids": [
+        "v7-jn-dept-market-leaders",
+        "v7-jn-dept-market2026",
+        "v8-dept-market-aug20-food",
+        "v8-dept-market-aug3-ip",
+        "v8-dept-market-jul22-drugs",
+        "v8-dept-market-jun29-traffic"
+      ],
+      "hosts": [
+        "amr.jining.gov.cn"
+      ],
+      "groups": [
+        "jining.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v7-jn-dept-market2026",
+          "title": "2026年全市市场监管工作会议",
+          "url": "https://amr.jining.gov.cn/art/2026/1/29/art_31585_2708491.html"
+        },
+        {
+          "source_id": "v8-dept-market-jun29-traffic",
+          "title": "市低速电动车管理工作专班市场秩序监管组召开市场整治工作推进会",
+          "url": "https://amr.jining.gov.cn/art/2026/6/29/art_31585_2708583.html"
         }
       ]
     },
@@ -909,6 +954,35 @@
       ]
     },
     {
+      "name": "safety.jining.gov.cn",
+      "source_count": 4,
+      "unique_url_count": 4,
+      "source_ids": [
+        "v7-jn-dept-emergency",
+        "v7-jn-dept-fire2026",
+        "v8-dept-emergency-jul3",
+        "v8-dept-emergency-june16"
+      ],
+      "hosts": [
+        "safety.jining.gov.cn"
+      ],
+      "groups": [
+        "jining.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v7-jn-dept-fire2026",
+          "title": "全市安全防范暨“应消合一”工作推进会议召开",
+          "url": "https://safety.jining.gov.cn/art/2026/4/29/art_9636_2709576.html"
+        },
+        {
+          "source_id": "v8-dept-emergency-june16",
+          "title": "济宁市“安全生产月”宣传咨询日活动火热开展",
+          "url": "https://safety.jining.gov.cn/art/2026/6/16/art_9636_2709671.html"
+        }
+      ]
+    },
+    {
       "name": "www.csrc.gov.cn",
       "source_count": 4,
       "unique_url_count": 4,
@@ -1049,6 +1123,34 @@
           "source_id": "sc_org",
           "title": "国务院关于机构设置的通知（国发〔2023〕5号）",
           "url": "https://app.www.gov.cn/govdata/gov/202303/20/498124/article.html"
+        }
+      ]
+    },
+    {
+      "name": "jtt.shandong.gov.cn",
+      "source_count": 3,
+      "unique_url_count": 3,
+      "source_ids": [
+        "v8-career-yu-current-20260915",
+        "v8-career-yu-directory-20250118",
+        "v8-career-yu-party-current-20260910"
+      ],
+      "hosts": [
+        "jtt.shandong.gov.cn"
+      ],
+      "groups": [
+        "shandong.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v8-career-yu-directory-20250118",
+          "title": "党组书记、厅长：于永生",
+          "url": "https://jtt.shandong.gov.cn/art/2025/1/18/art_100458_10322270.html"
+        },
+        {
+          "source_id": "v8-career-yu-party-current-20260910",
+          "title": "省委第三巡视组巡视省交通运输厅党组工作动员会召开",
+          "url": "https://jtt.shandong.gov.cn/art/2026/9/10/art_12459_10333175.html"
         }
       ]
     },
@@ -1305,33 +1407,6 @@
       ]
     },
     {
-      "name": "amr.jining.gov.cn",
-      "source_count": 2,
-      "unique_url_count": 2,
-      "source_ids": [
-        "v7-jn-dept-market-leaders",
-        "v7-jn-dept-market2026"
-      ],
-      "hosts": [
-        "amr.jining.gov.cn"
-      ],
-      "groups": [
-        "jining.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "v7-jn-dept-market2026",
-          "title": "2026年全市市场监管工作会议",
-          "url": "https://amr.jining.gov.cn/art/2026/1/29/art_31585_2708491.html"
-        },
-        {
-          "source_id": "v7-jn-dept-market-leaders",
-          "title": "济宁市市场监管局市局领导",
-          "url": "https://amr.jining.gov.cn/col/col31586/index.html"
-        }
-      ]
-    },
-    {
       "name": "chinadatalab.ucsd.edu",
       "source_count": 2,
       "unique_url_count": 2,
@@ -1494,6 +1569,50 @@
       ]
     },
     {
+      "name": "m.bjnews.com.cn",
+      "source_count": 2,
+      "unique_url_count": 1,
+      "source_ids": [
+        "bg-wen-bjnews-20211028",
+        "v8-career-wen-cv-20211028"
+      ],
+      "hosts": [
+        "m.bjnews.com.cn"
+      ],
+      "groups": [
+        "bjnews.com.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "bg-wen-bjnews-20211028",
+          "title": "温金荣任惠州市代市长",
+          "url": "https://m.bjnews.com.cn/detail/163539809614268.html"
+        }
+      ]
+    },
+    {
+      "name": "m.dzplus.dzng.com",
+      "source_count": 2,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v4-jining-guo-prior-careers",
+        "v8-career-guo-cv-20260810"
+      ],
+      "hosts": [
+        "m.dzplus.dzng.com"
+      ],
+      "groups": [
+        "dzng.com"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v4-jining-guo-prior-careers",
+          "title": "潍坊市委副书记郭飞，已任济宁市代市长",
+          "url": "https://m.dzplus.dzng.com/share/general/0/NEWS3597072BRBQALVQHRZEQ"
+        }
+      ]
+    },
+    {
       "name": "news.cnr.cn",
       "source_count": 2,
       "unique_url_count": 2,
@@ -1521,6 +1640,33 @@
       ]
     },
     {
+      "name": "nrp.jining.gov.cn",
+      "source_count": 2,
+      "unique_url_count": 2,
+      "source_ids": [
+        "v7-jn-dept-land",
+        "v8-dept-hu-land-profile"
+      ],
+      "hosts": [
+        "nrp.jining.gov.cn"
+      ],
+      "groups": [
+        "jining.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v8-dept-hu-land-profile",
+          "title": "胡国梁｜济宁市自然资源和规划局领导信息",
+          "url": "https://nrp.jining.gov.cn/art/2026/5/22/art_60567_2738114.html"
+        },
+        {
+          "source_id": "v7-jn-dept-land",
+          "title": "济宁市自然资源和规划局组织机构领导栏目",
+          "url": "https://nrp.jining.gov.cn/col/col60562/index.html"
+        }
+      ]
+    },
+    {
       "name": "qd.ifeng.com",
       "source_count": 2,
       "unique_url_count": 2,
@@ -1544,33 +1690,6 @@
           "source_id": "v4-ren-career-bio",
           "title": "任刚已任青岛市代市长：成长于基层，在临沂工作近10年",
           "url": "https://qd.ifeng.com/c/8gDuiHZ5AUr"
-        }
-      ]
-    },
-    {
-      "name": "safety.jining.gov.cn",
-      "source_count": 2,
-      "unique_url_count": 2,
-      "source_ids": [
-        "v7-jn-dept-emergency",
-        "v7-jn-dept-fire2026"
-      ],
-      "hosts": [
-        "safety.jining.gov.cn"
-      ],
-      "groups": [
-        "jining.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "v7-jn-dept-fire2026",
-          "title": "全市安全防范暨“应消合一”工作推进会议召开",
-          "url": "https://safety.jining.gov.cn/art/2026/4/29/art_9636_2709576.html"
-        },
-        {
-          "source_id": "v7-jn-dept-emergency",
-          "title": "济宁市应急管理局领导简介",
-          "url": "https://safety.jining.gov.cn/col/col9596/index.html"
         }
       ]
     },
@@ -2146,6 +2265,27 @@
           "source_id": "hist-zhu-mayor-years",
           "title": "《朱镕基讲话实录》专题：上海市长1988—1991年",
           "url": "https://dangshi.people.com.cn/GB/146570/238288/index.html"
+        }
+      ]
+    },
+    {
+      "name": "dzrb.dzng.com",
+      "source_count": 1,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v8-career-yu-appoint-20250118"
+      ],
+      "hosts": [
+        "dzrb.dzng.com"
+      ],
+      "groups": [
+        "dzng.com"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v8-career-yu-appoint-20250118",
+          "title": "山东省人民代表大会常务委员会公告（第77号）",
+          "url": "https://dzrb.dzng.com/general/0/NEWS2088408MLMYGSZDEVUYE"
         }
       ]
     },
@@ -2801,48 +2941,6 @@
       ]
     },
     {
-      "name": "m.bjnews.com.cn",
-      "source_count": 1,
-      "unique_url_count": 1,
-      "source_ids": [
-        "bg-wen-bjnews-20211028"
-      ],
-      "hosts": [
-        "m.bjnews.com.cn"
-      ],
-      "groups": [
-        "bjnews.com.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "bg-wen-bjnews-20211028",
-          "title": "温金荣任惠州市代市长",
-          "url": "https://m.bjnews.com.cn/detail/163539809614268.html"
-        }
-      ]
-    },
-    {
-      "name": "m.dzplus.dzng.com",
-      "source_count": 1,
-      "unique_url_count": 1,
-      "source_ids": [
-        "v4-jining-guo-prior-careers"
-      ],
-      "hosts": [
-        "m.dzplus.dzng.com"
-      ],
-      "groups": [
-        "dzng.com"
-      ],
-      "representative_links": [
-        {
-          "source_id": "v4-jining-guo-prior-careers",
-          "title": "潍坊市委副书记郭飞，已任济宁市代市长",
-          "url": "https://m.dzplus.dzng.com/share/general/0/NEWS3597072BRBQALVQHRZEQ"
-        }
-      ]
-    },
-    {
       "name": "news.ouc.edu.cn",
       "source_count": 1,
       "unique_url_count": 1,
@@ -2864,23 +2962,23 @@
       ]
     },
     {
-      "name": "nrp.jining.gov.cn",
+      "name": "news.shm.com.cn",
       "source_count": 1,
       "unique_url_count": 1,
       "source_ids": [
-        "v7-jn-dept-land"
+        "v8-career-yu-cv-20210430"
       ],
       "hosts": [
-        "nrp.jining.gov.cn"
+        "news.shm.com.cn"
       ],
       "groups": [
-        "jining.gov.cn"
+        "shm.com.cn"
       ],
       "representative_links": [
         {
-          "source_id": "v7-jn-dept-land",
-          "title": "济宁市自然资源和规划局组织机构领导栏目",
-          "url": "https://nrp.jining.gov.cn/col/col60562/index.html"
+          "source_id": "v8-career-yu-cv-20210430",
+          "title": "于永生当选济宁市市长",
+          "url": "https://news.shm.com.cn/2021-04/30/content_5205603.htm"
         }
       ]
     },
@@ -3809,6 +3907,27 @@
       ]
     },
     {
+      "name": "www.sdpu.edu.cn",
+      "source_count": 1,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v8-dept-market-hu-college"
+      ],
+      "hosts": [
+        "www.sdpu.edu.cn"
+      ],
+      "groups": [
+        "sdpu.edu.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v8-dept-market-hu-college",
+          "title": "济宁市市场监督管理局党组成员、副局长胡国梁一行到我校调研指导",
+          "url": "https://www.sdpu.edu.cn/info/1409/11607.htm"
+        }
+      ]
+    },
+    {
       "name": "www.sohu.com",
       "source_count": 1,
       "unique_url_count": 1,
@@ -4022,8 +4141,8 @@
   "group_stats": [
     {
       "name": "jining.gov.cn",
-      "source_count": 113,
-      "unique_url_count": 93,
+      "source_count": 131,
+      "unique_url_count": 111,
       "source_ids": [
         "jining-counties-economic-zone-june",
         "jining-counties-jiaxiang-mayor",
@@ -4137,7 +4256,25 @@
         "v7-jn-dept-police2026",
         "v7-jn-dept-transport2026",
         "v7-jn-dept-urban-list2026",
-        "v7-jn-dept-urban2026"
+        "v7-jn-dept-urban2026",
+        "v8-career-yu-gazette-202105",
+        "v8-career-yu-resign-20241203",
+        "v8-dept-emergency-jul3",
+        "v8-dept-emergency-june16",
+        "v8-dept-gov-2020-6",
+        "v8-dept-gov-notice-15432",
+        "v8-dept-gov-notice-17849",
+        "v8-dept-gov-notice-17894",
+        "v8-dept-gov-notice-19797",
+        "v8-dept-gov-notice-19798",
+        "v8-dept-gov-notice-19896",
+        "v8-dept-gov-notice-19897",
+        "v8-dept-hu-land-profile",
+        "v8-dept-hu-transfer-official",
+        "v8-dept-market-aug20-food",
+        "v8-dept-market-aug3-ip",
+        "v8-dept-market-jul22-drugs",
+        "v8-dept-market-jun29-traffic"
       ],
       "hosts": [
         "amr.jining.gov.cn",
@@ -4168,9 +4305,86 @@
           "url": "https://amr.jining.gov.cn/art/2026/1/29/art_31585_2708491.html"
         },
         {
-          "source_id": "v7-jn-dept-market-leaders",
-          "title": "济宁市市场监管局市局领导",
-          "url": "https://amr.jining.gov.cn/col/col31586/index.html"
+          "source_id": "v8-dept-market-jun29-traffic",
+          "title": "市低速电动车管理工作专班市场秩序监管组召开市场整治工作推进会",
+          "url": "https://amr.jining.gov.cn/art/2026/6/29/art_31585_2708583.html"
+        }
+      ]
+    },
+    {
+      "name": "people.com.cn",
+      "source_count": 41,
+      "unique_url_count": 40,
+      "source_ids": [
+        "audit-he-cefac-bio",
+        "audit-he-cfc-office-20251212",
+        "bg-pang-people-20230807",
+        "bg-wen-gongshi-20211018",
+        "eco-20260920-personnel",
+        "eco-lan-bio",
+        "eco-liuliehong-appoint",
+        "eco-liuliehong-bio",
+        "eco-wangyi-2018",
+        "eco-wangyi-bio",
+        "hist-deng-biography",
+        "hist-deng-timeline-people",
+        "hist-jiang-biography",
+        "hist-zhu-biography",
+        "hist-zhu-mayor-election",
+        "hist-zhu-mayor-years",
+        "hist-zhu-party-appointment",
+        "political_legal_rules",
+        "v3-liqiang-shanghai-end-20221028",
+        "v3-shandong-shanxi-transfer",
+        "v4-jn-election-20220422",
+        "v4-jn-party-election-20220412",
+        "v4-liu-jinan-20220328",
+        "v4-liu-standing-start",
+        "v4-liu-vicegov-end",
+        "v4-shandong-party-election-20220601",
+        "v4-zeng-vicegov-end",
+        "v4-zeng-vicegov-start",
+        "v4pm-chen-ping-aug-current",
+        "v4pm-chen-ping-zaozhuang-end",
+        "v4pm-fu-sd-end",
+        "v4pm-fu-zj-election",
+        "v4pm-gong-sd-party-end",
+        "v4pm-yan-bio-original",
+        "v4pm-zhang-bio",
+        "v4pm-zhu-mof-end",
+        "v8-career-pang-cv-20230807",
+        "v8-career-yu-acting-20210316",
+        "v8-career-yu-transfer-20241202",
+        "wang-qishan-bio-2018",
+        "ying-yong-bio-2020"
+      ],
+      "hosts": [
+        "cpc.people.com.cn",
+        "dangjian.people.com.cn",
+        "dangshi.people.com.cn",
+        "gd.people.com.cn",
+        "leaders.people.com.cn",
+        "lianghui.people.com.cn",
+        "paper.people.com.cn",
+        "politics.people.com.cn",
+        "renshi.people.com.cn",
+        "sd.people.com.cn",
+        "sn.people.com.cn",
+        "world.people.com.cn"
+      ],
+      "groups": [
+        "people.com.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "bg-wen-gongshi-20211018",
+          "title": "广东省管干部任前公示通告",
+          "url": "http://gd.people.com.cn/n2/2021/1018/c123932-34960893.html"
+        },
+        {
+          "source_id": "v8-career-yu-acting-20210316",
+          "title": "于永生任济宁市人民政府副市长、代理市长",
+          "url": "http://sd.people.com.cn/n2/2021/0317/c363933-34625656.html"
         }
       ]
     },
@@ -4237,80 +4451,6 @@
           "source_id": "chen-current",
           "title": "陈文清会见越共中央内政部部长黎明智",
           "url": "https://www.news.cn/20260716/8a972d79bd9b481680a8ca3a9dd242a5/c.html"
-        }
-      ]
-    },
-    {
-      "name": "people.com.cn",
-      "source_count": 38,
-      "unique_url_count": 38,
-      "source_ids": [
-        "audit-he-cefac-bio",
-        "audit-he-cfc-office-20251212",
-        "bg-pang-people-20230807",
-        "bg-wen-gongshi-20211018",
-        "eco-20260920-personnel",
-        "eco-lan-bio",
-        "eco-liuliehong-appoint",
-        "eco-liuliehong-bio",
-        "eco-wangyi-2018",
-        "eco-wangyi-bio",
-        "hist-deng-biography",
-        "hist-deng-timeline-people",
-        "hist-jiang-biography",
-        "hist-zhu-biography",
-        "hist-zhu-mayor-election",
-        "hist-zhu-mayor-years",
-        "hist-zhu-party-appointment",
-        "political_legal_rules",
-        "v3-liqiang-shanghai-end-20221028",
-        "v3-shandong-shanxi-transfer",
-        "v4-jn-election-20220422",
-        "v4-jn-party-election-20220412",
-        "v4-liu-jinan-20220328",
-        "v4-liu-standing-start",
-        "v4-liu-vicegov-end",
-        "v4-shandong-party-election-20220601",
-        "v4-zeng-vicegov-end",
-        "v4-zeng-vicegov-start",
-        "v4pm-chen-ping-aug-current",
-        "v4pm-chen-ping-zaozhuang-end",
-        "v4pm-fu-sd-end",
-        "v4pm-fu-zj-election",
-        "v4pm-gong-sd-party-end",
-        "v4pm-yan-bio-original",
-        "v4pm-zhang-bio",
-        "v4pm-zhu-mof-end",
-        "wang-qishan-bio-2018",
-        "ying-yong-bio-2020"
-      ],
-      "hosts": [
-        "cpc.people.com.cn",
-        "dangjian.people.com.cn",
-        "dangshi.people.com.cn",
-        "gd.people.com.cn",
-        "leaders.people.com.cn",
-        "lianghui.people.com.cn",
-        "paper.people.com.cn",
-        "politics.people.com.cn",
-        "renshi.people.com.cn",
-        "sd.people.com.cn",
-        "sn.people.com.cn",
-        "world.people.com.cn"
-      ],
-      "groups": [
-        "people.com.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "bg-wen-gongshi-20211018",
-          "title": "广东省管干部任前公示通告",
-          "url": "http://gd.people.com.cn/n2/2021/1018/c123932-34960893.html"
-        },
-        {
-          "source_id": "bg-pang-people-20230807",
-          "title": "庞建栋已任济宁市委常委、组织部部长、统战部部长",
-          "url": "http://sd.people.com.cn/n2/2023/0807/c363933-40522188.html"
         }
       ]
     },
@@ -5126,6 +5266,35 @@
       ]
     },
     {
+      "name": "dzng.com",
+      "source_count": 3,
+      "unique_url_count": 2,
+      "source_ids": [
+        "v4-jining-guo-prior-careers",
+        "v8-career-guo-cv-20260810",
+        "v8-career-yu-appoint-20250118"
+      ],
+      "hosts": [
+        "dzrb.dzng.com",
+        "m.dzplus.dzng.com"
+      ],
+      "groups": [
+        "dzng.com"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v8-career-yu-appoint-20250118",
+          "title": "山东省人民代表大会常务委员会公告（第77号）",
+          "url": "https://dzrb.dzng.com/general/0/NEWS2088408MLMYGSZDEVUYE"
+        },
+        {
+          "source_id": "v4-jining-guo-prior-careers",
+          "title": "潍坊市委副书记郭飞，已任济宁市代市长",
+          "url": "https://m.dzplus.dzng.com/share/general/0/NEWS3597072BRBQALVQHRZEQ"
+        }
+      ]
+    },
+    {
       "name": "ifeng.com",
       "source_count": 3,
       "unique_url_count": 3,
@@ -5298,6 +5467,34 @@
       ]
     },
     {
+      "name": "shandong.gov.cn",
+      "source_count": 3,
+      "unique_url_count": 3,
+      "source_ids": [
+        "v8-career-yu-current-20260915",
+        "v8-career-yu-directory-20250118",
+        "v8-career-yu-party-current-20260910"
+      ],
+      "hosts": [
+        "jtt.shandong.gov.cn"
+      ],
+      "groups": [
+        "shandong.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v8-career-yu-directory-20250118",
+          "title": "党组书记、厅长：于永生",
+          "url": "https://jtt.shandong.gov.cn/art/2025/1/18/art_100458_10322270.html"
+        },
+        {
+          "source_id": "v8-career-yu-party-current-20260910",
+          "title": "省委第三巡视组巡视省交通运输厅党组工作动员会召开",
+          "url": "https://jtt.shandong.gov.cn/art/2026/9/10/art_12459_10333175.html"
+        }
+      ]
+    },
+    {
       "name": "shanghai.gov.cn",
       "source_count": 3,
       "unique_url_count": 3,
@@ -5378,6 +5575,28 @@
           "source_id": "v4-sun-credit-bio",
           "title": "山东省联社党委书记、理事长孙开连履新山东省委组织部副部长",
           "url": "https://www.thepaper.cn/newsDetail_forward_19651631"
+        }
+      ]
+    },
+    {
+      "name": "bjnews.com.cn",
+      "source_count": 2,
+      "unique_url_count": 1,
+      "source_ids": [
+        "bg-wen-bjnews-20211028",
+        "v8-career-wen-cv-20211028"
+      ],
+      "hosts": [
+        "m.bjnews.com.cn"
+      ],
+      "groups": [
+        "bjnews.com.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "bg-wen-bjnews-20211028",
+          "title": "温金荣任惠州市代市长",
+          "url": "https://m.bjnews.com.cn/detail/163539809614268.html"
         }
       ]
     },
@@ -5807,27 +6026,6 @@
       ]
     },
     {
-      "name": "bjnews.com.cn",
-      "source_count": 1,
-      "unique_url_count": 1,
-      "source_ids": [
-        "bg-wen-bjnews-20211028"
-      ],
-      "hosts": [
-        "m.bjnews.com.cn"
-      ],
-      "groups": [
-        "bjnews.com.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "bg-wen-bjnews-20211028",
-          "title": "温金荣任惠州市代市长",
-          "url": "https://m.bjnews.com.cn/detail/163539809614268.html"
-        }
-      ]
-    },
-    {
       "name": "cgs.gov.cn",
       "source_count": 1,
       "unique_url_count": 1,
@@ -5929,27 +6127,6 @@
           "source_id": "v4-meng-current-20260914",
           "title": "市政协党组扩大会议召开，孟庆斌主持会议并讲话",
           "url": "https://www.dailyqd.com/guanhai/473048_1.html"
-        }
-      ]
-    },
-    {
-      "name": "dzng.com",
-      "source_count": 1,
-      "unique_url_count": 1,
-      "source_ids": [
-        "v4-jining-guo-prior-careers"
-      ],
-      "hosts": [
-        "m.dzplus.dzng.com"
-      ],
-      "groups": [
-        "dzng.com"
-      ],
-      "representative_links": [
-        {
-          "source_id": "v4-jining-guo-prior-careers",
-          "title": "潍坊市委副书记郭飞，已任济宁市代市长",
-          "url": "https://m.dzplus.dzng.com/share/general/0/NEWS3597072BRBQALVQHRZEQ"
         }
       ]
     },
@@ -6584,6 +6761,48 @@
       ]
     },
     {
+      "name": "sdpu.edu.cn",
+      "source_count": 1,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v8-dept-market-hu-college"
+      ],
+      "hosts": [
+        "www.sdpu.edu.cn"
+      ],
+      "groups": [
+        "sdpu.edu.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v8-dept-market-hu-college",
+          "title": "济宁市市场监督管理局党组成员、副局长胡国梁一行到我校调研指导",
+          "url": "https://www.sdpu.edu.cn/info/1409/11607.htm"
+        }
+      ]
+    },
+    {
+      "name": "shm.com.cn",
+      "source_count": 1,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v8-career-yu-cv-20210430"
+      ],
+      "hosts": [
+        "news.shm.com.cn"
+      ],
+      "groups": [
+        "shm.com.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v8-career-yu-cv-20210430",
+          "title": "于永生当选济宁市市长",
+          "url": "https://news.shm.com.cn/2021-04/30/content_5205603.htm"
+        }
+      ]
+    },
+    {
       "name": "sohu.com",
       "source_count": 1,
       "unique_url_count": 1,
@@ -6842,31 +7061,42 @@
     "established_media": 2,
     "existing_atlas_reference": 5,
     "leadership_page": 1,
-    "official": 37,
+    "official": 42,
     "official_directory": 1,
     "official_election": 1,
     "official_institution": 1,
     "official_media_republication": 1,
     "official_news": 16,
+    "official_notice_reprint": 2,
     "official_notice_republished": 1,
     "official_or_official_media": 32,
+    "official_original": 16,
+    "state_media": 2,
+    "state_media_reprint": 3,
     "unclassified": 323,
-    "university_official": 2
+    "university_official": 3
   },
   "tag_counts": {
     "academic_institution_news": 4,
     "academic_method_or_catalog": 3,
-    "appointment_or_election": 87,
-    "government_directory": 25,
-    "institutional_rules": 21,
+    "appointment_or_election": 97,
+    "government_directory": 26,
+    "institutional_rules": 22,
     "judiciary": 16,
-    "named_public_activity": 153,
-    "news_media": 119,
-    "npc": 57,
-    "organization_department": 9,
-    "other_public_reference": 130
+    "named_public_activity": 161,
+    "news_media": 122,
+    "npc": 58,
+    "organization_department": 10,
+    "other_public_reference": 136
   },
   "duplicate_url_groups": [
+    {
+      "canonical_url": "http://sd.people.com.cn/n2/2023/0807/c363933-40522188.html",
+      "source_ids": [
+        "bg-pang-people-20230807",
+        "v8-career-pang-cv-20230807"
+      ]
+    },
     {
       "canonical_url": "https://jiningrenda.jining.gov.cn/art/2022/1/19/art_31314_2703745.html",
       "source_ids": [
@@ -6900,6 +7130,20 @@
       "source_ids": [
         "jining-proc-news-20260904",
         "v4-jining-zhang-dayong-current-20260904"
+      ]
+    },
+    {
+      "canonical_url": "https://m.bjnews.com.cn/detail/163539809614268.html",
+      "source_ids": [
+        "bg-wen-bjnews-20211028",
+        "v8-career-wen-cv-20211028"
+      ]
+    },
+    {
+      "canonical_url": "https://m.dzplus.dzng.com/share/general/0/NEWS3597072BRBQALVQHRZEQ",
+      "source_ids": [
+        "v4-jining-guo-prior-careers",
+        "v8-career-guo-cv-20260810"
       ]
     },
     {
@@ -7095,7 +7339,8 @@
       "accessed_at": "2026-09-21",
       "has_local_evidence": true,
       "same_url_source_ids": [
-        "bg-pang-people-20230807"
+        "bg-pang-people-20230807",
+        "v8-career-pang-cv-20230807"
       ]
     },
     {
@@ -7114,7 +7359,8 @@
       "accessed_at": "2026-09-21",
       "has_local_evidence": true,
       "same_url_source_ids": [
-        "bg-wen-bjnews-20211028"
+        "bg-wen-bjnews-20211028",
+        "v8-career-wen-cv-20211028"
       ]
     },
     {
@@ -12217,7 +12463,8 @@
       "accessed_at": "2026-09-21",
       "has_local_evidence": true,
       "same_url_source_ids": [
-        "v4-jining-guo-prior-careers"
+        "v4-jining-guo-prior-careers",
+        "v8-career-guo-cv-20260810"
       ]
     },
     {
@@ -15784,6 +16031,562 @@
       "has_local_evidence": true,
       "same_url_source_ids": [
         "v7-jn-dept-urban2026"
+      ]
+    },
+    {
+      "source_id": "v8-career-guo-cv-20260810",
+      "title": "潍坊市委副书记郭飞，已任济宁市代市长",
+      "url": "https://m.dzplus.dzng.com/share/general/0/NEWS3597072BRBQALVQHRZEQ",
+      "canonical_url": "https://m.dzplus.dzng.com/share/general/0/NEWS3597072BRBQALVQHRZEQ",
+      "host": "m.dzplus.dzng.com",
+      "group": "dzng.com",
+      "type": "state_media",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-08-10",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v4-jining-guo-prior-careers",
+        "v8-career-guo-cv-20260810"
+      ]
+    },
+    {
+      "source_id": "v8-career-pang-cv-20230807",
+      "title": "庞建栋已任济宁市委常委、组织部部长、统战部部长",
+      "url": "http://sd.people.com.cn/n2/2023/0807/c363933-40522188.html",
+      "canonical_url": "http://sd.people.com.cn/n2/2023/0807/c363933-40522188.html",
+      "host": "sd.people.com.cn",
+      "group": "people.com.cn",
+      "type": "state_media_reprint",
+      "category_tags": [
+        "organization_department",
+        "news_media"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2023-08-07",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "bg-pang-people-20230807",
+        "v8-career-pang-cv-20230807"
+      ]
+    },
+    {
+      "source_id": "v8-career-wen-cv-20211028",
+      "title": "温金荣任惠州市代市长",
+      "url": "https://m.bjnews.com.cn/detail/163539809614268.html",
+      "canonical_url": "https://m.bjnews.com.cn/detail/163539809614268.html",
+      "host": "m.bjnews.com.cn",
+      "group": "bjnews.com.cn",
+      "type": "state_media",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2021-10-28",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "bg-wen-bjnews-20211028",
+        "v8-career-wen-cv-20211028"
+      ]
+    },
+    {
+      "source_id": "v8-career-yu-acting-20210316",
+      "title": "于永生任济宁市人民政府副市长、代理市长",
+      "url": "http://sd.people.com.cn/n2/2021/0317/c363933-34625656.html",
+      "canonical_url": "http://sd.people.com.cn/n2/2021/0317/c363933-34625656.html",
+      "host": "sd.people.com.cn",
+      "group": "people.com.cn",
+      "type": "official_notice_reprint",
+      "category_tags": [
+        "news_media"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2021-03-17",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-career-yu-acting-20210316"
+      ]
+    },
+    {
+      "source_id": "v8-career-yu-appoint-20250118",
+      "title": "山东省人民代表大会常务委员会公告（第77号）",
+      "url": "https://dzrb.dzng.com/general/0/NEWS2088408MLMYGSZDEVUYE",
+      "canonical_url": "https://dzrb.dzng.com/general/0/NEWS2088408MLMYGSZDEVUYE",
+      "host": "dzrb.dzng.com",
+      "group": "dzng.com",
+      "type": "official_notice_reprint",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2025-01-19",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-career-yu-appoint-20250118"
+      ]
+    },
+    {
+      "source_id": "v8-career-yu-current-20260915",
+      "title": "省交通运输厅召开全省交通运输行业安全生产视频会议暨厅安委会会议",
+      "url": "https://jtt.shandong.gov.cn/art/2026/9/16/art_15690_10333835.html",
+      "canonical_url": "https://jtt.shandong.gov.cn/art/2026/9/16/art_15690_10333835.html",
+      "host": "jtt.shandong.gov.cn",
+      "group": "shandong.gov.cn",
+      "type": "official",
+      "category_tags": [
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-09-16",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-career-yu-current-20260915"
+      ]
+    },
+    {
+      "source_id": "v8-career-yu-cv-20210430",
+      "title": "于永生当选济宁市市长",
+      "url": "https://news.shm.com.cn/2021-04/30/content_5205603.htm",
+      "canonical_url": "https://news.shm.com.cn/2021-04/30/content_5205603.htm",
+      "host": "news.shm.com.cn",
+      "group": "shm.com.cn",
+      "type": "state_media_reprint",
+      "category_tags": [
+        "appointment_or_election"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2021-04-30",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-career-yu-cv-20210430"
+      ]
+    },
+    {
+      "source_id": "v8-career-yu-directory-20250118",
+      "title": "党组书记、厅长：于永生",
+      "url": "https://jtt.shandong.gov.cn/art/2025/1/18/art_100458_10322270.html",
+      "canonical_url": "https://jtt.shandong.gov.cn/art/2025/1/18/art_100458_10322270.html",
+      "host": "jtt.shandong.gov.cn",
+      "group": "shandong.gov.cn",
+      "type": "official",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2025-01-18",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-career-yu-directory-20250118"
+      ]
+    },
+    {
+      "source_id": "v8-career-yu-gazette-202105",
+      "title": "济宁市人民政府公报2021年第5期：2021年4月27日大事记",
+      "url": "https://www.jining.gov.cn/attach/0/0e345f752f8543e586cb20d4d894e315.pdf",
+      "canonical_url": "https://www.jining.gov.cn/attach/0/0e345f752f8543e586cb20d4d894e315.pdf",
+      "host": "www.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2021-05-31",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-career-yu-gazette-202105"
+      ]
+    },
+    {
+      "source_id": "v8-career-yu-party-current-20260910",
+      "title": "省委第三巡视组巡视省交通运输厅党组工作动员会召开",
+      "url": "https://jtt.shandong.gov.cn/art/2026/9/10/art_12459_10333175.html",
+      "canonical_url": "https://jtt.shandong.gov.cn/art/2026/9/10/art_12459_10333175.html",
+      "host": "jtt.shandong.gov.cn",
+      "group": "shandong.gov.cn",
+      "type": "official",
+      "category_tags": [
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-09-10",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-career-yu-party-current-20260910"
+      ]
+    },
+    {
+      "source_id": "v8-career-yu-resign-20241203",
+      "title": "济宁市人大常委会关于接受于永生请求辞去济宁市人民政府市长职务的决定",
+      "url": "https://jiningrenda.jining.gov.cn/art/2024/12/5/art_31313_2705470.html",
+      "canonical_url": "https://jiningrenda.jining.gov.cn/art/2024/12/5/art_31313_2705470.html",
+      "host": "jiningrenda.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official",
+      "category_tags": [
+        "npc",
+        "appointment_or_election"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2024-12-05",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-career-yu-resign-20241203"
+      ]
+    },
+    {
+      "source_id": "v8-career-yu-transfer-20241202",
+      "title": "空缺10个多月后，山东省交通运输厅迎来新任“一把手”",
+      "url": "http://sd.people.com.cn/n2/2024/1202/c166192-41061522.html",
+      "canonical_url": "http://sd.people.com.cn/n2/2024/1202/c166192-41061522.html",
+      "host": "sd.people.com.cn",
+      "group": "people.com.cn",
+      "type": "state_media_reprint",
+      "category_tags": [
+        "news_media"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2024-12-02",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-career-yu-transfer-20241202"
+      ]
+    },
+    {
+      "source_id": "v8-dept-emergency-jul3",
+      "title": "树牢正确政绩观 坚守安全生命线 以实干实绩护航全市高质量发展大局——市应急局开展书记讲党课活动",
+      "url": "https://safety.jining.gov.cn/art/2026/7/3/art_9586_2709693.html",
+      "canonical_url": "https://safety.jining.gov.cn/art/2026/7/3/art_9586_2709693.html",
+      "host": "safety.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-07-03",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-emergency-jul3"
+      ]
+    },
+    {
+      "source_id": "v8-dept-emergency-june16",
+      "title": "济宁市“安全生产月”宣传咨询日活动火热开展",
+      "url": "https://safety.jining.gov.cn/art/2026/6/16/art_9636_2709671.html",
+      "canonical_url": "https://safety.jining.gov.cn/art/2026/6/16/art_9636_2709671.html",
+      "host": "safety.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-06-16",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-emergency-june16"
+      ]
+    },
+    {
+      "source_id": "v8-dept-gov-2020-6",
+      "title": "济政任〔2020〕6号 关于任免薛建民等工作人员职务的通知",
+      "url": "https://www.jining.gov.cn/art/2020/5/28/art_33387_2605136.html",
+      "canonical_url": "https://www.jining.gov.cn/art/2020/5/28/art_33387_2605136.html",
+      "host": "www.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "appointment_or_election"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2020-05-28",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-gov-2020-6"
+      ]
+    },
+    {
+      "source_id": "v8-dept-gov-notice-15432",
+      "title": "济宁市人民政府关于公布任免市政府组成人员职务的通知（济政任〔2023〕7号）",
+      "url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=15432",
+      "canonical_url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=15432",
+      "host": "www.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "appointment_or_election"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2023-06-30",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-gov-notice-15432"
+      ]
+    },
+    {
+      "source_id": "v8-dept-gov-notice-17849",
+      "title": "济宁市人民政府关于任免仲波等工作人员职务的通知（济政任〔2023〕12号）",
+      "url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=17849",
+      "canonical_url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=17849",
+      "host": "www.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "appointment_or_election"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2023-12-14",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-gov-notice-17849"
+      ]
+    },
+    {
+      "source_id": "v8-dept-gov-notice-17894",
+      "title": "济宁市人民政府关于任免邱乃礼等工作人员职务的通知（济政任〔2024〕2号）",
+      "url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=17894",
+      "canonical_url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=17894",
+      "host": "www.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "appointment_or_election"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2024-01-12",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-gov-notice-17894"
+      ]
+    },
+    {
+      "source_id": "v8-dept-gov-notice-19797",
+      "title": "济宁市人民政府关于公布任免市政府组成人员职务的通知（济政任〔2025〕11号）",
+      "url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=19797",
+      "canonical_url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=19797",
+      "host": "www.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "appointment_or_election"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2025-06-16",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-gov-notice-19797"
+      ]
+    },
+    {
+      "source_id": "v8-dept-gov-notice-19798",
+      "title": "济宁市人民政府关于张华山任职的通知（济政任〔2025〕12号）",
+      "url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=19798",
+      "canonical_url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=19798",
+      "host": "www.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2025-06-20",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-gov-notice-19798"
+      ]
+    },
+    {
+      "source_id": "v8-dept-gov-notice-19896",
+      "title": "济宁市人民政府关于任免刘兵等工作人员职务的通知（济政任〔2025〕16号）",
+      "url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=19896",
+      "canonical_url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=19896",
+      "host": "www.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "appointment_or_election"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2025-08-01",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-gov-notice-19896"
+      ]
+    },
+    {
+      "source_id": "v8-dept-gov-notice-19897",
+      "title": "济宁市人民政府关于任免鹿剑林等工作人员职务的通知（济政任〔2025〕13号）",
+      "url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=19897",
+      "canonical_url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=19897",
+      "host": "www.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "appointment_or_election"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2025-07-18",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-gov-notice-19897"
+      ]
+    },
+    {
+      "source_id": "v8-dept-hu-land-profile",
+      "title": "胡国梁｜济宁市自然资源和规划局领导信息",
+      "url": "https://nrp.jining.gov.cn/art/2026/5/22/art_60567_2738114.html",
+      "canonical_url": "https://nrp.jining.gov.cn/art/2026/5/22/art_60567_2738114.html",
+      "host": "nrp.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "government_directory"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-05-22",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-hu-land-profile"
+      ]
+    },
+    {
+      "source_id": "v8-dept-hu-transfer-official",
+      "title": "济宁市人民政府关于任免胡国梁等工作人员职务的通知（济政任〔2026〕20号）",
+      "url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=20425",
+      "canonical_url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=20425",
+      "host": "www.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "appointment_or_election"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-05-26",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-hu-transfer-official"
+      ]
+    },
+    {
+      "source_id": "v8-dept-market-aug20-food",
+      "title": "我市召开食品安全领域突出问题专项整治暨“互联网+AI监管”工作推进会议",
+      "url": "https://amr.jining.gov.cn/art/2026/8/20/art_31585_2708618.html",
+      "canonical_url": "https://amr.jining.gov.cn/art/2026/8/20/art_31585_2708618.html",
+      "host": "amr.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-08-20",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-market-aug20-food"
+      ]
+    },
+    {
+      "source_id": "v8-dept-market-aug3-ip",
+      "title": "济宁组织召开2026年全市知识产权工作推进会",
+      "url": "https://amr.jining.gov.cn/art/2026/8/3/art_31585_2708602.html",
+      "canonical_url": "https://amr.jining.gov.cn/art/2026/8/3/art_31585_2708602.html",
+      "host": "amr.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-08-03",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-market-aug3-ip"
+      ]
+    },
+    {
+      "source_id": "v8-dept-market-hu-college",
+      "title": "济宁市市场监督管理局党组成员、副局长胡国梁一行到我校调研指导",
+      "url": "https://www.sdpu.edu.cn/info/1409/11607.htm",
+      "canonical_url": "https://www.sdpu.edu.cn/info/1409/11607.htm",
+      "host": "www.sdpu.edu.cn",
+      "group": "sdpu.edu.cn",
+      "type": "university_official",
+      "category_tags": [
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-04-15",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-market-hu-college"
+      ]
+    },
+    {
+      "source_id": "v8-dept-market-jul22-drugs",
+      "title": "济宁市举办新修订《药品管理法实施条例》宣贯培训筑牢全市药品安全监管防线",
+      "url": "https://amr.jining.gov.cn/art/2026/7/22/art_31585_2708595.html",
+      "canonical_url": "https://amr.jining.gov.cn/art/2026/7/22/art_31585_2708595.html",
+      "host": "amr.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "institutional_rules"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-07-22",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-market-jul22-drugs"
+      ]
+    },
+    {
+      "source_id": "v8-dept-market-jun29-traffic",
+      "title": "市低速电动车管理工作专班市场秩序监管组召开市场整治工作推进会",
+      "url": "https://amr.jining.gov.cn/art/2026/6/29/art_31585_2708583.html",
+      "canonical_url": "https://amr.jining.gov.cn/art/2026/6/29/art_31585_2708583.html",
+      "host": "amr.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-06-29",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v8-dept-market-jun29-traffic"
       ]
     },
     {

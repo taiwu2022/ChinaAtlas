@@ -72,3 +72,12 @@ main{padding-top:28px}main>header{margin-bottom:20px}main>header h1{font-size:1.
 .profile-fact>p{margin:7px 0 10px;line-height:1.65}.profile-fact summary{font-size:12px;color:var(--muted,#69746c);cursor:pointer}
 .profile-fact blockquote{font-size:13px;margin:12px 0;padding:0 0 0 12px}.profile-fact .note{font-size:12px}.profile-facts .section-title{align-items:center}
 @media(max-width:600px){.fact-grid{grid-template-columns:1fr}.profile-fact{padding:12px}}
+
+/* Compare sourced careers without turning common places into private ties. */
+.network-compare{margin:16px 0;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--paper,#fff)}
+.network-compare summary{cursor:pointer;font-weight:600}.compare-controls{display:flex;gap:12px;align-items:end;margin-top:14px}.compare-controls label{flex:1;min-width:0}.compare-controls select{width:100%;max-width:100%}.compare-controls button{min-height:44px;flex-shrink:0}
+.comparison-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.comparison-person{min-width:0}.comparison-person>button h3{margin:8px 0}.comparison-post{min-width:0;border-left:3px solid transparent;padding-left:9px}.comparison-post.shared-post{border-color:#b79d61}.comparison-post .career-post>div{display:block}.comparison-post time{display:block;margin-top:6px}.comparison-links{display:grid;gap:8px;margin:20px 0}.comparison-links>button{display:flex;flex-wrap:wrap;text-align:left;align-items:center;gap:8px 12px;min-height:48px;padding:12px;max-width:100%;overflow-wrap:anywhere}.comparison-links strong{font-weight:500}.comparison-links small{display:block;width:100%;color:var(--muted)}
+.profile-careers .career-post{margin:12px 0}.profile-careers .career-post>div{flex-wrap:wrap;gap:8px}.comparison-person .career-post,.profile-careers .career-post{overflow-wrap:anywhere;min-width:0}
+@media(max-width:600px){.compare-controls{display:grid;grid-template-columns:minmax(0,1fr)}.compare-controls button{width:100%}.comparison-grid{grid-template-columns:minmax(0,1fr)}.comparison-person+section{border-top:1px solid var(--line);padding-top:14px}.network-compare{padding:14px}}
+
+.compare-search{display:block;margin-top:14px;font-size:12px;color:var(--muted)}.compare-search input{display:block;width:100%;max-width:100%;min-height:44px;margin-top:6px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:transparent;color:inherit;font:inherit}

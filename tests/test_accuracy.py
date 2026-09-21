@@ -46,6 +46,20 @@ class AccuracyTests(unittest.TestCase):
         report = self.report() if report is None else report
         return [issue for issue in report['issues'] if issue['code'] == code]
 
+    def add_network(self, kind='co_service'):
+        self.data['people'].append({'id': 'person-b', 'name': '测试乙', 'roles': []})
+        self.data['career_posts'] = [{
+            'id': f'post-{suffix}', 'person_id': f'person-{suffix}', 'organization_id': 'office',
+            'start': '2025-01-01', 'end': '2026-09-01', 'status': 'former', 'is_current': False,
+            'verification_status': 'historical_only', 'source_ids': ['source-a'], 'location_ids': ['city'],
+        } for suffix in ('a', 'b')]
+        link = {'id': 'link-a-b', 'type': kind, 'from': 'person-a', 'to': 'person-b',
+                'organization_id': 'office', 'post_ids': ['post-a', 'post-b'],
+                'source_ids': ['source-a'], 'location_ids': ['city'],
+                'start': '2025-01-01', 'end': '2026-09-01'}
+        self.data['career_links'] = [link]
+        return link, self.data['career_posts']
+
     def test_clean_fixture_has_no_errors_or_gaps(self):
         self.assertEqual(self.report()['totals'], {'error': 0, 'review': 0, 'gap': 0, 'info': 0})
 
@@ -227,6 +241,201 @@ class AccuracyTests(unittest.TestCase):
         issues = self.issues('current_uncertain')
         self.assertTrue(any(i['entity_type'] == 'career_posts' and i['level'] == 'error' for i in issues),
                         'A career row drives the network and must not promote an unverified lead to current.')
+
+    def test_office_status_typos_and_contradictory_post_flags_are_errors(self):
+        self.role['status'] = 'curent'
+        self.assertTrue(self.issues('unknown_status'))
+        self.role['status'] = 'current'
+        _, posts = self.add_network()
+        posts[0].update(status='current', is_current=False, verification_status='verified_current')
+        self.assertEqual(self.issues('office_status_mismatch')[0]['level'], 'error')
+        posts[0].update(status='former', is_current=False, verification_status='verifed_former')
+        self.assertEqual(self.issues('unknown_status')[0]['level'], 'error')
+
+    def test_current_career_requires_its_own_evidence_date(self):
+        _, posts = self.add_network()
+        posts[0].update(end=None, is_current=True, status='current', verification_status='verified_current',
+                        checked_at=AS_OF)
+        before = copy.deepcopy(self.data)
+        report = self.report()
+        self.assertTrue(any(i['entity_type'] == 'career_posts' for i in self.issues('missing_current_date', report)))
+        self.assertEqual(self.issues('network_unbounded_post', report)[0]['level'], 'gap')
+        self.assertEqual(report['totals']['error'], 0)
+        self.assertEqual(self.data, before)
+
+    def test_current_career_staleness_never_infers_departure(self):
+        _, posts = self.add_network('same_place')
+        posts[0].update(end=None, is_current=True, status='current', verification_status='verified_current',
+                        as_of_date='2026-01-01', checked_at=AS_OF)
+        before = copy.deepcopy(self.data)
+        self.assertTrue(any(i['entity_type'] == 'career_posts' and i['level'] == 'review'
+                            for i in self.issues('stale_current')))
+        self.assertEqual(self.data, before)
+        self.assertIsNone(posts[0]['end'])
+
+    def test_all_explicit_career_evidence_dates_are_validated(self):
+        _, posts = self.add_network()
+        posts[0].update(as_of_date='2026-09-01', latest_confirmed_at='2026-02-30')
+        self.assertTrue(any(i['entity_type'] == 'career_posts' for i in self.issues('invalid_date')))
+
+    def test_network_references_cover_people_posts_institutions_sources_and_places(self):
+        link, _ = self.add_network()
+        for field, value in [('from', 'missing'), ('to', 'missing'), ('post_ids', ['missing']),
+                             ('organization_id', 'missing'), ('source_ids', ['missing']),
+                             ('location_ids', ['missing'])]:
+            with self.subTest(field=field):
+                before = link[field]
+                link[field] = value
+                self.assertTrue(any(i['entity_type'] == 'career_links' and i['level'] == 'error'
+                                    for i in self.issues('broken_reference')))
+                link[field] = before
+
+    def test_duplicate_network_ids_are_not_silently_replaced(self):
+        link, _ = self.add_network()
+        self.data['career_links'].append(copy.deepcopy(link))
+        self.assertEqual(self.issues('duplicate_id')[0]['level'], 'error')
+
+    def test_network_posts_must_belong_to_both_endpoints_and_same_institution(self):
+        _, posts = self.add_network()
+        posts[1]['person_id'] = 'person-a'
+        self.assertEqual(self.issues('network_identity_mismatch')[0]['level'], 'error')
+        posts[1]['person_id'] = 'person-b'
+        self.data['institutions'].append({'id': 'different-office'})
+        posts[1]['organization_id'] = 'different-office'
+        self.assertEqual(self.issues('network_identity_mismatch')[0]['level'], 'error')
+
+    def test_unverified_or_conflicting_posts_cannot_support_network(self):
+        _, posts = self.add_network()
+        for status in ('unverified', 'conflicting'):
+            with self.subTest(status=status):
+                posts[0]['verification_status'] = status
+                self.assertEqual(self.issues('network_uncertain_post')[0]['level'], 'error')
+
+    def test_same_place_does_not_require_temporal_overlap(self):
+        link, posts = self.add_network('same_place')
+        link.pop('start'); link.pop('end'); link.pop('organization_id')
+        posts[0].update(start='1980', end='1981')
+        posts[1].update(start='2026-01', end=None, is_current=False, status='historical')
+        report = self.report()
+        self.assertEqual(report['totals']['error'], 0)
+        for code in ('network_unbounded_post', 'network_precision', 'network_impossible_period'):
+            self.assertEqual(self.issues(code, report), [])
+
+    def test_historical_co_service_does_not_require_fresh_current_evidence(self):
+        link, posts = self.add_network()
+        for post in posts:
+            post.update(start='1980-01-01', end='1981-01-01')
+        link.update(start='1980-01-01', end='1981-01-01')
+        self.assertEqual(self.report()['totals']['error'], 0)
+        self.assertEqual(self.issues('stale_current'), [])
+        self.assertEqual(self.issues('network_unbounded_post'), [])
+
+    def test_month_handover_is_possible_but_not_definite_co_service(self):
+        link, posts = self.add_network('possible_overlap')
+        posts[0].update(start='1981-06', end='1989-11')
+        posts[1].update(start='1989-11', end='2004-09')
+        link.update(start='1989-11-01', end='1989-11-30')
+        self.assertEqual(self.issues('network_precision'), [])
+        self.assertEqual(self.report()['totals']['error'], 0)
+        link['type'] = 'co_service'
+        self.assertEqual(self.issues('network_precision')[0]['level'], 'review')
+        self.assertEqual(self.report()['totals']['error'], 0)
+
+    def test_same_day_handover_is_not_confirmed_co_service(self):
+        link, posts = self.add_network()
+        posts[0]['end'] = posts[1]['start'] = '2026-04-01'
+        link.update(start='2026-04-01', end='2026-04-01')
+        self.assertEqual(self.issues('network_precision')[0]['level'], 'review')
+        self.assertEqual(self.report()['totals']['error'], 0)
+
+    def test_known_closed_disjoint_terms_are_an_error(self):
+        link, posts = self.add_network()
+        posts[0]['end'] = '2025-12'
+        posts[1]['start'] = '2026-01'
+        link.update(start='2025-12-31', end='2026-01-01')
+        self.assertEqual(self.issues('network_impossible_period')[0]['level'], 'error')
+
+    def test_network_evidence_horizon_is_not_a_known_departure(self):
+        link, posts = self.add_network()
+        posts[0].update(end=None, status='current', is_current=True,
+                        verification_status='verified_current', as_of_date='2026-01-01', checked_at=AS_OF)
+        posts[1]['start'] = '2026-02-01'
+        link.update(start='2026-02-01', end='2026-09-01')
+        before = copy.deepcopy(self.data)
+        report = self.report()
+        self.assertEqual(self.issues('network_evidence_overrun', report)[0]['level'], 'review')
+        self.assertEqual(self.issues('network_impossible_period', report), [])
+        self.assertEqual(report['totals']['error'], 0)
+        self.assertEqual(self.data, before)
+
+    def test_public_contact_date_is_event_specific_and_future_is_review(self):
+        self.data['people'].append({'id': 'person-b', 'roles': []})
+        contact = {'id': 'meeting', 'type': 'public_contact', 'from': 'person-a', 'to': 'person-b',
+                   'source_ids': ['source-a']}
+        self.data['person_connections'] = [contact]
+        self.assertEqual(self.issues('missing_contact_date')[0]['level'], 'gap')
+        contact['date'] = '2026-10-01'
+        self.assertEqual(self.issues('future_evidence')[0]['level'], 'review')
+        contact['date'] = '2026-09'
+        self.assertEqual(self.issues('future_evidence'), [])
+
+    def test_event_and_place_group_references_are_checked(self):
+        self.data['events'] = [{'id': 'appointment', 'person_ids': ['missing'], 'org_ids': ['office'],
+                                'source_ids': ['source-a'], 'date': '2026-02-30'}]
+        self.data['place_groups'] = [{'id': 'group', 'location_id': 'missing', 'post_ids': ['missing'],
+                                      'person_ids': ['person-a'], 'source_ids': ['source-a']}]
+        self.assertTrue(self.issues('invalid_date'))
+        self.assertEqual({i['entity_type'] for i in self.issues('broken_reference')}, {'events', 'place_groups'})
+
+    def test_source_dates_preserve_precision_and_order_is_review(self):
+        source = self.data['sources'][0]
+        source.update(published_at='2026-09', accessed_at='2026-09-01')
+        self.assertEqual(self.issues('source_date_order'), [])
+        source['published_at'] = '2026-09-02'
+        self.assertEqual(self.issues('source_date_order')[0]['level'], 'review')
+        self.assertEqual(self.report()['totals']['error'], 0)
+        source['published_at'] = '2026-02-30'
+        self.assertEqual(self.issues('invalid_date')[0]['level'], 'error')
+
+    def test_future_source_or_excerpt_date_is_review_only(self):
+        self.data['sources'][0]['published_at'] = '2026-10-01'
+        self.evidence['source-a']['event_date'] = '2026-10-01'
+        issues = self.issues('future_evidence')
+        self.assertEqual({i['entity_type'] for i in issues}, {'sources', 'evidence'})
+        self.assertTrue(all(i['level'] == 'review' for i in issues))
+        self.assertEqual(self.report()['totals']['error'], 0)
+
+    def test_orphan_or_misidentified_excerpt_is_an_error(self):
+        self.evidence['source-a']['id'] = 'different-source'
+        self.assertEqual(self.issues('broken_reference')[0]['level'], 'error')
+        self.evidence['source-a']['id'] = 'source-a'
+        self.evidence['missing-source'] = {'id': 'missing-source', 'evidence_excerpt': '其他摘录'}
+        self.assertEqual(self.issues('broken_reference')[0]['level'], 'error')
+
+    def test_source_reprint_reference_must_exist(self):
+        self.data['sources'][0]['repost_of'] = 'missing-original'
+        self.assertEqual(self.issues('broken_reference')[0]['level'], 'error')
+
+    def test_excerpt_publication_dates_compare_precision_not_event_dates(self):
+        self.data['sources'][0]['published_at'] = '2026-09'
+        self.evidence['source-a'].update(published_at='2026-09-01', event_date='2026-08-20')
+        self.assertEqual(self.issues('source_metadata_mismatch'), [])
+        self.evidence['source-a']['published_at'] = '2026-08-31'
+        self.assertEqual(self.issues('source_metadata_mismatch')[0]['level'], 'review')
+        self.assertEqual(self.report()['totals']['error'], 0)
+
+    def test_excerpt_url_difference_is_review_and_keeps_query_and_fragment_rules(self):
+        self.evidence['source-a']['url'] = 'https://EXAMPLE.org/news?id=1#fragment'
+        self.assertEqual(self.issues('source_metadata_mismatch'), [])
+        self.evidence['source-a']['url'] = 'https://example.org/news?id=2'
+        self.assertEqual(self.issues('source_metadata_mismatch')[0]['level'], 'review')
+        self.assertEqual(self.report()['totals']['error'], 0)
+
+    def test_invalid_source_url_reports_error_without_network_requests(self):
+        for url in ('', 'https://[bad-address', 'javascript:alert(1)', 'https://user:password@example.org/'):
+            with self.subTest(url=url):
+                self.data['sources'][0]['url'] = url
+                self.assertEqual(self.issues('invalid_source_url')[0]['level'], 'error')
 
     def test_reproducible_report_does_not_mutate_inputs(self):
         before = copy.deepcopy((self.data, self.evidence))

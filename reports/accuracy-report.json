@@ -1,37 +1,24 @@
 {
   "schema_version": "china-atlas-accuracy-report-v1",
   "as_of_date": "2026-09-21",
-  "input_sha256": "e338381c03880acadddeb4b4142331681dd8f677e67067c6621688a6e5c604d0",
-  "evidence_sha256": "4b7dbba0f32d28aaf0b0bc84bc2812a817a1834eacd44d6818a23cacdf081e76",
+  "input_sha256": "049af404f2192aec7ea5a5a60e5179e3a0c5a3df28e317eae31a6685941b6ae2",
+  "evidence_sha256": "8c4fe46e3c360dc9b5c510807a7c1067841dc6b80397e5b7182f93ad0cd69ace",
   "stale_after_days": 180,
   "scope": "只读一致性与证据缺口检查；未联网、未逐条重读原文，也不证明未标记资料必然正确。",
   "counts": {
-    "people": 665,
-    "career_posts": 919,
-    "sources": 461,
-    "profile_facts": 24
+    "people": 681,
+    "career_posts": 992,
+    "sources": 490,
+    "profile_facts": 33
   },
-  "unique_source_urls": 433,
+  "unique_source_urls": 459,
   "totals": {
     "error": 0,
-    "review": 30,
-    "gap": 819,
-    "info": 14
+    "review": 29,
+    "gap": 837,
+    "info": 17
   },
   "issues": [
-    {
-      "level": "review",
-      "code": "explicit_conflict",
-      "entity_type": "roles",
-      "entity_id": "jining-fb909af73d7a/roles/0",
-      "person_id": "jining-fb909af73d7a",
-      "message": "单位归属/同名待核：自然资源领导目录列此职务，2026-04-23法院会议报道另称“市市场监督管理局党组成员、副局长胡国梁”。尚未核准为同一人、何时转任或报道沿用旧称，不能据此确认调任。",
-      "source_ids": [
-        "v7-jn-dept-all-20",
-        "v7-jn-dept-land",
-        "v7-jn-dept-hu-guoliang-conflict"
-      ]
-    },
     {
       "level": "review",
       "code": "explicit_conflict",
@@ -351,6 +338,168 @@
       "entity_id": "cai-qi/roles/4",
       "person_id": "cai-qi",
       "message": "中央财经委员会委员",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-han-jinfeng-jinan-npc-2022-04-22",
+      "person_id": "han-jinfeng",
+      "message": "济南市人大常委会主任",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-lin-wu-shandong-party-2022-12-29",
+      "person_id": "lin-wu",
+      "message": "山东省委书记",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-liu-qiang-jinan-jinan-party-2022-03",
+      "person_id": "liu-qiang-jinan",
+      "message": "济南市委书记",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-liu-qiang-jinan-shandong-party-2020-05",
+      "person_id": "liu-qiang-jinan",
+      "message": "山东省委常委，2026年7月任省委副书记",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-mei-jianhua-qingdao-npc-2025-02-11",
+      "person_id": "mei-jianhua",
+      "message": "青岛市人大常委会主任",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-meng-qingbin-qingdao-cppcc-2024-01-31",
+      "person_id": "meng-qingbin",
+      "message": "青岛市政协主席",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-ren-gang-qingdao-government-2025-02-11",
+      "person_id": "ren-gang",
+      "message": "青岛市市长",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-ren-gang-qingdao-party-2025-01",
+      "person_id": "ren-gang",
+      "message": "青岛市委副书记",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-sun-kailian-jinan-cppcc-2026-01-21",
+      "person_id": "sun-kailian",
+      "message": "济南市政协主席",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-yang-feng-jinan-jinan-party-2022-04-12",
+      "person_id": "yang-feng-jinan",
+      "message": "济南市委副书记",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-yu-haitian-jinan-government-2022-04-22",
+      "person_id": "yu-haitian",
+      "message": "济南市市长",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-yu-haitian-jinan-party-2022-04-12",
+      "person_id": "yu-haitian",
+      "message": "济南市委副书记",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-zeng-zanrong-qingdao-party-2023-12",
+      "person_id": "zeng-zanrong",
+      "message": "青岛市委书记",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-zeng-zanrong-shandong-party-2022-06-01",
+      "person_id": "zeng-zanrong",
+      "message": "山东省委常委",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-zhang-hui-qingdao-party-2023-07",
+      "person_id": "zhang-hui",
+      "message": "青岛市委副书记",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-zhang-hui-qingdao-party-publicity-2026-04-30",
+      "person_id": "zhang-hui",
+      "message": "青岛市委宣传部部长",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-zhou-naixiang-shandong-government-2021-10-27",
+      "person_id": "zhou-naixiang",
+      "message": "山东省省长",
+      "source_ids": []
+    },
+    {
+      "level": "gap",
+      "code": "missing_current_date",
+      "entity_type": "career_posts",
+      "entity_id": "career-zhou-naixiang-shandong-party-2021-09-30",
+      "person_id": "zhou-naixiang",
+      "message": "山东省委副书记",
       "source_ids": []
     },
     {
@@ -8757,6 +8906,30 @@
       "level": "info",
       "code": "duplicate_url",
       "entity_type": "sources",
+      "entity_id": "bg-pang-people-20230807",
+      "person_id": null,
+      "message": "http://sd.people.com.cn/n2/2023/0807/c363933-40522188.html；可以分段引用，只计一个网页来源",
+      "source_ids": [
+        "bg-pang-people-20230807",
+        "v8-career-pang-cv-20230807"
+      ]
+    },
+    {
+      "level": "info",
+      "code": "duplicate_url",
+      "entity_type": "sources",
+      "entity_id": "bg-wen-bjnews-20211028",
+      "person_id": null,
+      "message": "https://m.bjnews.com.cn/detail/163539809614268.html；可以分段引用，只计一个网页来源",
+      "source_ids": [
+        "bg-wen-bjnews-20211028",
+        "v8-career-wen-cv-20211028"
+      ]
+    },
+    {
+      "level": "info",
+      "code": "duplicate_url",
+      "entity_type": "sources",
       "entity_id": "eco-nda-rank",
       "person_id": null,
       "message": "https://www.nda.gov.cn/sjj/jgsz/gjsjj/1212/20241212111533730775955_pc.html；可以分段引用，只计一个网页来源",
@@ -8835,6 +9008,18 @@
       "source_ids": [
         "v4-jining-deputies-start-20220118",
         "jining-renda-2703745"
+      ]
+    },
+    {
+      "level": "info",
+      "code": "duplicate_url",
+      "entity_type": "sources",
+      "entity_id": "v4-jining-guo-prior-careers",
+      "person_id": null,
+      "message": "https://m.dzplus.dzng.com/share/general/0/NEWS3597072BRBQALVQHRZEQ；可以分段引用，只计一个网页来源",
+      "source_ids": [
+        "v4-jining-guo-prior-careers",
+        "v8-career-guo-cv-20260810"
       ]
     },
     {

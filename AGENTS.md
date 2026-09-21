@@ -22,3 +22,9 @@
 
 - Evidence upkeep: docs/SOURCE_SEARCH_METHODS.md lists actual research methods; data/source-catalog.json is a discovery configuration, not a running crawler. Regenerate source_inventory.py and accuracy_report.py with the actual research date after changing data. Reports are read-only and no error count certifies factual truth. Preserve legacy unknowns and recorded conflicts.
 - profile_facts stores sourced public background by stable person ID, field/value and evidence dates. Facts do not refresh offices or automatically create career links. Include them in both regional exports; run accuracy, export and frontend regression tests.
+
+
+## Career review maintenance
+- Open career intervals require as_of_date/latest_confirmed_at/current_evidence_date; never use checked_at as a term boundary. A CV stage boundary is not proof an overlapping Party office ended.
+- reviewed_updates uses exact before/set preconditions and supporting sources; stale values reject the whole packet. Keep data_merge.py mirrored with the public scripts/data_merge.py and preserve correction packets. Never apply seed research over SQLite overlays or notes.
+- Two-person comparison is unfiltered evidence inspection: same-place experience and dated co-service remain distinct. Preserve comparison deep links and unsaved drafts on Back.

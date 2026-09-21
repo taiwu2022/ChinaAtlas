@@ -87,7 +87,7 @@ function fixture(start = '#people') {
     person: id => people.get(id), org: id => id === 'org-a' ? { id } : null,
     showPerson: id => draw('person', id), showOrg: id => draw('org', id), showGuide: id => draw('guide', id),
     findNetworkLink: id => context.atlas.career_links.find(l=>l.id===id),
-    showDocument: id => draw('document', id), showLink: id => draw('link', id), showPersonMap: id => draw('roles', id),
+    showDocument: id => draw('document', id), showLink: id => draw('link', id), showComparison: id => draw('compare', id), showPersonMap: id => draw('roles', id),
     showEvidence: e => draw('evidence', e.id), showDeviceNotes: () => draw('notes', 'device'),
     showAsk: (kind, id) => draw('ask', kind + ':' + id), showAddProfile: () => draw('add', 'profile'),
     showDetail: (_, kind) => draw(kind, 'loading'),
@@ -205,3 +205,27 @@ test('Close then a fresh profile click intentionally uses explicitly saved note'
 });
 
 test('legacy saved reading state defaults new evidence filters without hiding the directory',()=>{const f=fixture();f.run("restoreReadingState({query:'old query',peoplePlace:'jining'})");assert.equal(f.context.peopleSector,'all');assert.equal(f.context.peopleVerification,'all');assert.equal(f.context.regionSector,'all');});
+
+
+test('two-person comparison deep link reloads and Back restores an unsaved profile note', async () => {
+  const f=fixture();
+  f.run("showPerson('a')");
+  await f.typeNote('unsaved research question');
+  f.run("showComparison('a~b')");
+  assert.equal(f.params().get('view'),'compare');
+  await f.browserNavigationEvents();
+  assert.equal(f.log.draws.at(-1),'compare:a~b');
+  await f.traverse('back');
+  assert.equal(f.elements['person-note'].value,'unsaved research question');
+  const direct=fixture('#network?view=compare&id=a~b');
+  await tick();
+  assert.equal(direct.log.draws.at(-1),'compare:a~b');
+});
+test('comparison deep links reject missing people and self comparison', async () => {
+  for(const id of ['a~missing','a~a','a~b~a']){
+    const f=fixture('#network?view=compare&id='+id);
+    await tick();
+    assert.equal(f.log.draws.some(d=>d.startsWith('compare:')),false);
+    assert.equal(f.elements.detail.open,false);
+  }
+});

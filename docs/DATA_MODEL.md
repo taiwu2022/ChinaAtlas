@@ -55,3 +55,14 @@ A refresh is a new reviewed snapshot. The website does not automatically rewrite
 Both public and maintenance regional exports include only their selected people's facts and the required sources. The public whitelist removes local archive paths and private notes. SQLite overlays and review history remain unchanged.
 
 New sources may add `canonical_document_id`, `original_publisher`, and `repost_of` for explicit provenance; old sources have not been fully backfilled. A duplicate URL is a citation identity issue, not proof that the two entries are wrong. The read-only audit identifies evidence gaps; see [accuracy method](ACCURACY_METHOD.md) and [source methods](SOURCE_SEARCH_METHODS.md).
+
+
+## Guarded corrections and career evidence horizons
+
+New reviewed packets may include `reviewed_updates`: stable correction ID, collection, record ID, exact `before` values, matching `set` keys, supporting source IDs, review date and reason. The shared `scripts/data_merge.py` primitive validates all preconditions after additions, applies corrections in memory, and rejects the entire packet on any stale field or unknown source. Missing fields compare as null; record IDs cannot change. The maintenance copy uses the same implementation. It does not write SQLite or override personal notes. Old packets and the guarded before-values preserve the research trail; public exports contain only reviewed facts.
+
+Open career intervals require a separately recorded `as_of_date`, `latest_confirmed_at` or `current_evidence_date`. A retrieval-only `checked_at` never supplies an interval endpoint. Missing evidence stops time-based link generation; the career and same-place record remain available. Historical biography stages are not automatic departure dates.
+
+The legacy `shandong-party-organization` institution ID remains addressable, while its three employment references now use `shandong-organization-department`, the same explicitly named provincial Organization Department. Original career IDs and sources remain unchanged. This is a reviewed identity correction, not fuzzy matching of similar agency names.
+
+Two-person comparison uses all recorded direct links and the two selected members of large place groups, regardless of the browsing filter. It keeps co-service, possible overlap, public events and same-place experience separate. No matching record means no recorded evidence, not proof of no relationship.

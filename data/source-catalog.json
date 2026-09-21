@@ -51,6 +51,19 @@
       "review_required": true
     },
     {
+      "id": "jining-policy-platform",
+      "name": "济宁市人民政府统一政策文件平台",
+      "entry_url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/list",
+      "group": "jining.gov.cn",
+      "category": "government_appointments",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "本轮已人工读取新平台任免原文。使用页面公开检索与detail?iid正文；搜索createdate可能是系统时间，任免决定日、正文落款与发布日期分别核准。旧栏目可能缺少迁移后的文件。尚未部署自动采集。",
+      "review_required": true
+    },
+    {
       "id": "jining-government-directory",
       "name": "济宁市政府机构职能与领导信息",
       "entry_url": "https://www.jining.gov.cn/col/col74032/",

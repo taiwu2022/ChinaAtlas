@@ -45,7 +45,7 @@ def date_bounds(value):
 def interval(post):
     start=date_bounds(post.get('start'))
     if post.get('end'):end=date_bounds(post['end'])
-    elif post.get('is_current'):end=date_bounds(post.get('as_of_date') or post.get('latest_confirmed_at') or post.get('current_evidence_date') or post.get('checked_at'))
+    elif post.get('is_current'):end=date_bounds(post.get('as_of_date') or post.get('latest_confirmed_at') or post.get('current_evidence_date'))
     else:end=None
     if not start or not end or start[0]>end[1]:return None
     return start,end

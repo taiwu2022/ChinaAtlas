@@ -12,9 +12,13 @@ class ExpansionTests(unittest.TestCase):
   post={'start':None,'end':None,'is_current':False,'checked_at':'2026-09-21'}
   self.assertIsNone(n.overlap(post,post))
  def test_current_interval_stops_at_evidence_date(self):
-  a={'start':'2024','end':None,'is_current':True,'checked_at':'2026-03-26'}
+  a={'start':'2024','end':None,'is_current':True,'checked_at':'2026-09-21','as_of_date':'2026-03-26'}
   b={'start':'2026-04-01','end':'2026-08-01'}
   self.assertIsNone(n.overlap(a,b))
+ def test_retrieval_date_never_supplies_an_open_career_boundary(self):
+  a={'start':'2024','end':None,'is_current':True,'checked_at':'2026-09-21'}
+  self.assertIsNone(n.interval(a))
+  self.assertIsNone(n.overlap(a,{'start':'2025','end':'2026'}))
  def test_explicit_evidence_date_overrides_later_retrieval(self):
   a={'start':'2024','end':None,'is_current':True,'checked_at':'2026-09-21','latest_confirmed_at':'2026-09-16'}
   b={'start':'2026-09-17','end':'2026-09-20'}

@@ -33,6 +33,7 @@ async function handleAtlasNavigation(){
   else if(view==='org'&&org(id))showOrg(id);
   else if(view==='guide'&&atlas.guides.some(g=>g.id===id))showGuide(id);
   else if(view==='document'&&!isPublicAtlas()&&atlas.documents.some(d=>d.id===id))showDocument(id);
+  else if(view==='compare'&&id?.split('~').length===2&&id.split('~').every(person)&&id.split('~')[0]!==id.split('~')[1])showComparison(id);
   else if(view==='link'&&findNetworkLink(id))showLink(id);
   else if(view==='roles'&&person(id))showPersonMap(id);
   else if(view==='evidence')showEvidence(evidence);
@@ -49,7 +50,7 @@ async function handleAtlasNavigation(){
 }
 function installAtlasNavigation(){
  const wrap=(original,kind)=>(id)=>navigateModal(kind,id,()=>original(id));
- showPerson=wrap(showPerson,'person');showOrg=wrap(showOrg,'org');showGuide=wrap(showGuide,'guide');showDocument=wrap(showDocument,'document');showLink=wrap(showLink,'link');showPersonMap=wrap(showPersonMap,'roles');
+ showPerson=wrap(showPerson,'person');showOrg=wrap(showOrg,'org');showGuide=wrap(showGuide,'guide');showDocument=wrap(showDocument,'document');showLink=wrap(showLink,'link');showComparison=wrap(showComparison,'compare');showPersonMap=wrap(showPersonMap,'roles');
  const evidence=showEvidence;showEvidence=e=>navigateModal('evidence',e.id,()=>evidence(e));
  const notes=showDeviceNotes;showDeviceNotes=()=>navigateModal('notes','device',notes);
  const ask=showAsk;showAsk=(kind,id)=>navigateModal('ask',kind+':'+id,()=>ask(kind,id));

@@ -14,7 +14,7 @@ run("peoplePlace='shandong'");test("[\"李干杰\",\"林武\",\"周乃翔\"].eve
 run("peoplePlace='all';peopleStatus='historical'");test("drawPeople().includes('朱镕基')",true);
 run("focus='economy';peopleStatus='historical'");test("drawPeople().includes('朱镕基')",true);run("focus='all'");
 run("networkPerson='xi-jinping';networkPlace='all';networkKind='all'");test("drawNetwork().includes('李强')",true);test("networkLinks('xi-jinping').some(l=>l.type==='co_service'&&l.to==='cai-qi')",false);
-run("networkPerson='li-ganjie';networkPlace='shandong';networkKind='co_service'");test("networkLinks('li-ganjie').filter(l=>l.type==='possible_overlap').length",2);
+run("networkPerson='li-ganjie';networkPlace='shandong';networkKind='co_service'");test("networkLinks('li-ganjie').filter(l=>l.type==='possible_overlap').length",1);
 test("T(atlas.guides.find(g=>g.id==='party_vs_state'),'title')",'党内决策与国家程序');
 test("atlas.documents.length",0);
 run("regionId='shandong';regionService='current';regionDepth='direct';query=''");test("drawRegions().includes('地方')||drawRegions().includes('林武')",true);test("regionPeople('shandong','current',false).some(p=>p.id==='li-ganjie')",false);
@@ -59,7 +59,29 @@ run("atlas.profile_facts.push({id:'unsafe-test',person_id:'wen-jinrong',field:'e
 test("profileFacts(person('wen-jinrong')).includes('<script>unsafe()')",false);
 test("profileFacts(person('wen-jinrong')).includes('未核实')",true);
 run("atlas.profile_facts.pop();regionDepth='all';regionService='all';regionSector=regionVerification='all';query=''");
-test("publicRegionExport('jining').profile_facts.length",24);
+test("publicRegionExport('jining').profile_facts.length",33);
 test("publicRegionExport('shanghai').profile_facts.length",0);
 test("drawPublicGuide().includes('SOURCE_SEARCH_METHODS.md')",true);
 console.log('Background facts, escaping and regional export checks passed');
+
+// Unverified leads must never become a confirmed departure in cards or filters.
+test("roleEvidence({status:'former',verification_status:'unverified'})",'unverified');
+test("verificationSummary({roles:[{status:'historical',verification_status:'unverified'}]}).includes('线索待核')",true);
+test("verificationSummary({roles:[{status:'historical',verification_status:'unverified'}]}).includes('已核离任')",false);
+test("verificationSummary({roles:[]}).includes('已核离任')",false);
+test("verificationSummary({roles:[{status:'former'}]}).includes('已核离任')",true);
+// Pair lookup ignores the current browsing filters, and never fabricates a tie.
+run("networkPlace='shanghai';networkKind='public_contact';query='no matching person'");
+test("pairLinks('xi-jinping','li-qiang').some(l=>l.type==='co_service')",true);
+test("pairLinks('xi-jinping','xi-jinping').length",0);
+test("pairLinks('xi-jinping','missing-person').length",0);
+test("pairLinks('wen-jinrong','guo-fei').some(l=>l.type==='same_place')",true);
+test("comparisonBody('wen-jinrong','guo-fei').includes('同地不等于同期')",true);
+test("profileCareerTimeline(person('wen-jinrong')).includes('任职时间轴')",true);
+run("atlas.people.push({id:'empty-test',name:'<img src=x onerror=bad()>',roles:[],bio:[]})");
+test("comparisonBody('empty-test','xi-jinping').includes('不能据此判断两人没有联系')",true);
+test("comparisonBody('empty-test','xi-jinping').includes('<img src=x onerror=bad()>')",false);
+run("atlas.people.pop();query='';networkPlace='all';networkKind='all'");
+console.log('Evidence-state, pair comparison and profile timeline regression checks passed');
+
+test("profileHeading({id:'unknown-profile',name:'待核人物',roles:[{status:'historical',verification_status:'unverified'}]}).includes('任职状态待复核')",true);
