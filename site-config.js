@@ -1,1 +1,1 @@
-window.ATLAS_CONFIG={"mode": "public", "dataVersion": "9cc937eb47f4", "portraitVersion": "f0391a76b983"};
+window.ATLAS_CONFIG={"mode": "public", "dataVersion": "8e1aea5a8b45", "portraitVersion": "f0391a76b983"};
