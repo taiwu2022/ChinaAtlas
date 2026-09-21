@@ -8,6 +8,7 @@ import json
 import re
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
+from status_events import status_event_issues
 
 ROOT = Path(__file__).resolve().parents[1]
 ROLE_STATES = {'verified_current', 'verified_former', 'historical_only', 'directory_only', 'unverified', 'conflicting'}
@@ -31,6 +32,8 @@ RULES = {
     'network_uncertain_post': '关系引用了未核实或冲突履历', 'network_unbounded_post': '共事区间缺少任期证据边界',
     'network_impossible_period': '关系时间与已记录任期无交集', 'network_precision': '确定共事超出日期精度支持',
     'network_evidence_overrun': '关系延伸超过具名证据时点', 'missing_contact_date': '公开联系缺少事件日期',
+    'invalid_status_event': '人物状态事件字段无效', 'invalid_status_event_type': '人物状态事件分类与动作不匹配',
+    'status_event_date_order': '人物状态事件公告与核对日期矛盾', 'invalid_status_supersession': '人物状态更正链无效',
 }
 
 
@@ -296,6 +299,7 @@ def analyze(data, evidence, as_of, stale_days=180):
             emit('review', 'fact_conflict', 'people', pid, field + '：' + ' / '.join(f['value'] for f in facts) + '；可能是精度或表述差异，需对照原文', pid,
                  sorted({s for f in facts for s in f.get('source_ids', [])}))
 
+    issues.extend(status_event_issues(data, as_of))
     issues.sort(key=lambda i: (['error', 'review', 'gap', 'info'].index(i['level']), i['code'], i['entity_id']))
     return {
         'schema_version': 'china-atlas-accuracy-report-v1', 'as_of_date': as_of,
@@ -303,7 +307,7 @@ def analyze(data, evidence, as_of, stale_days=180):
         'evidence_sha256': hashlib.sha256(json.dumps(evidence, ensure_ascii=False, sort_keys=True).encode()).hexdigest(),
         'stale_after_days': stale_days,
         'scope': '只读一致性与证据缺口检查；未联网、未逐条重读原文，也不证明未标记资料必然正确。',
-        'counts': {k: len(data.get(k, [])) for k in ['people', 'career_posts', 'sources', 'profile_facts']},
+        'counts': {k: len(data.get(k, [])) for k in ['people', 'career_posts', 'sources', 'profile_facts', 'status_events']},
         'unique_source_urls': len(url_groups),
         'totals': {level: sum(i['level'] == level for i in issues) for level in ['error', 'review', 'gap', 'info']},
         'issues': issues,

@@ -2,8 +2,9 @@
 import copy
 import datetime as dt
 import re
+from status_events import validate_status_events
 ALIASES={'shanghai-party':'shanghai_party_committee','shanghai-government':'shanghai_government'}
-UPDATE_COLLECTIONS={'people','career_posts','institutions','sources','profile_facts'}
+UPDATE_COLLECTIONS={'people','career_posts','institutions','sources','profile_facts','status_events'}
 UPDATE_FIELDS={'id','collection','record_id','before','set','source_ids','reviewed_at','reason'}
 
 def canonicalize(value):
@@ -79,21 +80,24 @@ def _apply_reviewed_updates(data,updates):
 def merge_packet(data,packet):
     """Merge additions, then guarded corrections, without writing any files or SQLite.
 
-    A packet containing corrections is atomic in memory: a rejected correction
-    leaves the caller's data and source packet unchanged, including its additions.
+    A packet containing corrections or status events is atomic in memory: a
+    rejected correction/event leaves the caller's data and source packet unchanged,
+    including its additions.
     Reapplying an already changed value is intentionally a stale-precondition error.
     """
     updates=packet.get('reviewed_updates',[])
     if not isinstance(updates,list):raise ValueError('reviewed_updates must be a list')
     additions=canonicalize(copy.deepcopy({k:v for k,v in packet.items() if k!='reviewed_updates'}))
-    working=copy.deepcopy(data) if updates else data
+    atomic=bool(updates or 'status_events' in additions)
+    working=copy.deepcopy(data) if atomic else data
     _merge_additions(working,additions)
     _apply_reviewed_updates(working,updates)
-    if updates:
+    validate_status_events(working)
+    if atomic:
         data.clear();data.update(working)
 
 def _merge_additions(data,packet):
-    for kind in ('sources','locations','institutions','people','career_posts','person_connections','events','guides','regional_coverage','research_coverage','profile_facts'):
+    for kind in ('sources','locations','institutions','people','career_posts','person_connections','events','guides','regional_coverage','research_coverage','profile_facts','status_events'):
         values={v['id']:v for v in data.setdefault(kind,[])}
         for item in packet.get(kind,[]):
             old=values.get(item['id'])

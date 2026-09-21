@@ -13,6 +13,7 @@ const navigationSource = read('navigation.js');
 const appLines = read('app.js').split('\n');
 const networkLines = read('network.js').split('\n');
 const regionLines = read('regions.js').split('\n');
+const departmentSource = read('departments.js');
 function productionLine(lines, prefix) {
   const line = lines.find(line => line.startsWith(prefix));
   assert.ok(line, 'Production code entrypoint exists: ' + prefix);
@@ -80,7 +81,7 @@ function fixture(start = '#people') {
     $: id => elements[id] || null,
     atlas: { people: [...people.values()], guides: [{ id: 'guide-a' }], career_links: [] },
     query: '', focus: 'all', peopleLevel: 'all', peopleTrack: 'all', peopleStatus: 'all', peopleOrg: 'all',
-    peopleSector:'all',peopleVerification:'all',regionSector:'all',regionVerification:'all',
+    peopleSector:'all',peopleVerification:'all',peopleEvent:'all',regionSector:'all',regionVerification:'all',
     peoplePlace: 'all', peopleRegionMode: 'any', regionId: 'jining', regionService: 'current', regionDepth: 'direct',
     networkPerson: 'a', networkPlace: 'all', networkKind: 'all', networkTrail: [], graphMode: 'dual', graphRelation: 'all', route: 'people',
     place: id => ['jining', 'jinan', 'shandong'].includes(id) ? { id } : null,
@@ -100,6 +101,7 @@ function fixture(start = '#people') {
   vm.createContext(context);
   const run = source => vm.runInContext(source, context);
   run(navigationSource);
+  run(departmentSource);
   ['Map', 'People', 'Changes', 'Guide', 'Network', 'Regions'].forEach(name => context['draw' + name] = () => {
     log.renders.push({ route: context.route, query: context.query, place: context.peoplePlace, region: context.regionId, service: context.regionService }); return '';
   });
@@ -228,4 +230,23 @@ test('comparison deep links reject missing people and self comparison', async ()
     assert.equal(f.log.draws.some(d=>d.startsWith('compare:')),false);
     assert.equal(f.elements.detail.open,false);
   }
+});
+
+test('department deep link and person draft survive source drilldown and Back', async () => {
+ const f=fixture('#people?browse=departments&department=org-a&area=jining&group=organization&service=past&event=retired');
+ assert.equal(f.run('departmentId'),'org-a');assert.equal(f.run('departmentService'),'past');
+ assert.equal(f.context.peopleEvent,'retired');
+ f.run("showPerson('a')");await f.typeNote('department research draft');
+ f.context.api=async()=>({id:'source-a'});await f.click({evidence:'source-a'});await tick();
+ await f.traverse('back');assert.equal(f.elements['person-note'].value,'department research draft');
+ await f.traverse('back');
+ assert.equal(f.run('peopleBrowse'),'departments');assert.equal(f.run('departmentPlace'),'jining');assert.equal(f.run('departmentService'),'past');
+ assert.equal(f.params().get('department'),'org-a');
+});
+test('institution roster entry opens a clean department view and invalid department links are ignored', async () => {
+ const f=fixture();await f.click({viewOrgPeople:'org-a'});
+ assert.equal(f.params().get('department'),'org-a');assert.equal(f.params().get('browse'),'departments');
+ assert.equal(f.params().has('view'),false);assert.equal(f.run('departmentService'),'all');
+ const invalid=fixture('#people?browse=departments&department=missing&area=missing&service=invalid');
+ assert.equal(invalid.run('departmentId'),'all');assert.equal(invalid.run('departmentPlace'),'all');assert.equal(invalid.run('departmentService'),'all');
 });

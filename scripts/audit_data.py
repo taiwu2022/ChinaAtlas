@@ -2,6 +2,7 @@
 import datetime,json
 from pathlib import Path
 from export_public import validate
+from career_network import date_bounds, interval
 
 def audit(data):
  validate(data)
@@ -16,7 +17,9 @@ def audit(data):
     if r['verification_status'] in ['directory_only','unverified']:assert r['status']!='current',(p['id'],'unchecked current claim')
  for post in data['career_posts']:
   assert post['organization_id'] in orgs and set(post.get('location_ids',[]))<=places
-  if post.get('is_current') and post.get('as_of_date'):assert post['checked_at']==post['as_of_date'],('retrieval date used as interval endpoint',post['id'])
+  if post.get('is_current') and not post.get('end'):
+   bounds=interval(post)
+   if bounds:assert bounds[1]==date_bounds(post.get('as_of_date') or post.get('latest_confirmed_at') or post.get('current_evidence_date')),('interval exceeds independent evidence date',post['id'])
  for o in orgs.values():assert set(o.get('location_ids',[]))<=places
  for group in data.get('place_groups',[]):
   post_ids=set(group['post_ids']);actual={p['person_id'] for p in data['career_posts'] if p['id'] in post_ids};assert actual==set(group['person_ids'])

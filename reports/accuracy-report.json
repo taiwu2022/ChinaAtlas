@@ -1,22 +1,23 @@
 {
   "schema_version": "china-atlas-accuracy-report-v1",
   "as_of_date": "2026-09-21",
-  "input_sha256": "049af404f2192aec7ea5a5a60e5179e3a0c5a3df28e317eae31a6685941b6ae2",
-  "evidence_sha256": "8c4fe46e3c360dc9b5c510807a7c1067841dc6b80397e5b7182f93ad0cd69ace",
+  "input_sha256": "dd6d8edafaa8248a7414c61adb65b2d15766a373f85113f623854e89bb982988",
+  "evidence_sha256": "b76bafd6308cf74cc4d9272f937a974838ee4c4c507c560332c6300c62a470f9",
   "stale_after_days": 180,
   "scope": "只读一致性与证据缺口检查；未联网、未逐条重读原文，也不证明未标记资料必然正确。",
   "counts": {
-    "people": 681,
-    "career_posts": 992,
-    "sources": 490,
-    "profile_facts": 33
+    "people": 697,
+    "career_posts": 1028,
+    "sources": 511,
+    "profile_facts": 33,
+    "status_events": 16
   },
-  "unique_source_urls": 459,
+  "unique_source_urls": 478,
   "totals": {
     "error": 0,
     "review": 29,
-    "gap": 837,
-    "info": 17
+    "gap": 848,
+    "info": 19
   },
   "issues": [
     {
@@ -3543,6 +3544,127 @@
       "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
       "source_ids": [
         "v4-ucsd-elite-portal-method"
+      ]
+    },
+    {
+      "level": "gap",
+      "code": "missing_excerpt",
+      "entity_type": "sources",
+      "entity_id": "v9-status-expulsion-army-20260921",
+      "person_id": null,
+      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
+      "source_ids": [
+        "v9-status-expulsion-army-20260921"
+      ]
+    },
+    {
+      "level": "gap",
+      "code": "missing_excerpt",
+      "entity_type": "sources",
+      "entity_id": "v9-status-investigation-20260124",
+      "person_id": null,
+      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
+      "source_ids": [
+        "v9-status-investigation-20260124"
+      ]
+    },
+    {
+      "level": "gap",
+      "code": "missing_excerpt",
+      "entity_type": "sources",
+      "entity_id": "v9-status-party-appointment-20221023",
+      "person_id": null,
+      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
+      "source_ids": [
+        "v9-status-party-appointment-20221023"
+      ]
+    },
+    {
+      "level": "gap",
+      "code": "missing_excerpt",
+      "entity_type": "sources",
+      "entity_id": "v9-status-rules-criminal-2018",
+      "person_id": null,
+      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
+      "source_ids": [
+        "v9-status-rules-criminal-2018"
+      ]
+    },
+    {
+      "level": "gap",
+      "code": "missing_excerpt",
+      "entity_type": "sources",
+      "entity_id": "v9-status-rules-organization-2021",
+      "person_id": null,
+      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
+      "source_ids": [
+        "v9-status-rules-organization-2021"
+      ]
+    },
+    {
+      "level": "gap",
+      "code": "missing_excerpt",
+      "entity_type": "sources",
+      "entity_id": "v9-status-rules-party-2023",
+      "person_id": null,
+      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
+      "source_ids": [
+        "v9-status-rules-party-2023"
+      ]
+    },
+    {
+      "level": "gap",
+      "code": "missing_excerpt",
+      "entity_type": "sources",
+      "entity_id": "v9-status-rules-party-charter-2022",
+      "person_id": null,
+      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
+      "source_ids": [
+        "v9-status-rules-party-charter-2022"
+      ]
+    },
+    {
+      "level": "gap",
+      "code": "missing_excerpt",
+      "entity_type": "sources",
+      "entity_id": "v9-status-rules-pla-2025",
+      "person_id": null,
+      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
+      "source_ids": [
+        "v9-status-rules-pla-2025"
+      ]
+    },
+    {
+      "level": "gap",
+      "code": "missing_excerpt",
+      "entity_type": "sources",
+      "entity_id": "v9-status-rules-public-2020",
+      "person_id": null,
+      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
+      "source_ids": [
+        "v9-status-rules-public-2020"
+      ]
+    },
+    {
+      "level": "gap",
+      "code": "missing_excerpt",
+      "entity_type": "sources",
+      "entity_id": "v9-status-state-appointment-20230311",
+      "person_id": null,
+      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
+      "source_ids": [
+        "v9-status-state-appointment-20230311"
+      ]
+    },
+    {
+      "level": "gap",
+      "code": "missing_excerpt",
+      "entity_type": "sources",
+      "entity_id": "v9-status-state-removal-20260828",
+      "person_id": null,
+      "message": "缺少便于逐字复查的公开短摘录；有链接不等于已证明",
+      "source_ids": [
+        "v9-status-state-removal-20260828"
       ]
     },
     {
@@ -8966,6 +9088,18 @@
       "level": "info",
       "code": "duplicate_url",
       "entity_type": "sources",
+      "entity_id": "party-election-2022",
+      "person_id": null,
+      "message": "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml；可以分段引用，只计一个网页来源",
+      "source_ids": [
+        "party-election-2022",
+        "v9-status-party-appointment-20221023"
+      ]
+    },
+    {
+      "level": "info",
+      "code": "duplicate_url",
+      "entity_type": "sources",
       "entity_id": "ranks",
       "person_id": null,
       "message": "https://www.jszzb.gov.cn/zcfg/zyzyzzbwj/art/2020/art_933077a2be1c4089a9a4660e6553d98f.html；可以分段引用，只计一个网页来源",
@@ -9118,6 +9252,18 @@
       "source_ids": [
         "v7-jn-dept-june-appointments2026",
         "jining-renda-2706072"
+      ]
+    },
+    {
+      "level": "info",
+      "code": "duplicate_url",
+      "entity_type": "sources",
+      "entity_id": "v7-jn-dept-opc2026",
+      "person_id": null,
+      "message": "https://www.jining.gov.cn/art/2026/8/19/art_106010_2938779.html；可以分段引用，只计一个网页来源",
+      "source_ids": [
+        "v7-jn-dept-opc2026",
+        "v9-department-org-liu-aug17"
       ]
     }
   ]

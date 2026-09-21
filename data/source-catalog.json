@@ -256,6 +256,32 @@
       "status": "proposed_manual_review",
       "scope": "身份和原引用发现；保留版本、限定符与原references，不自动作为事实确认。",
       "review_required": true
+    },
+    {
+      "id": "jining-ccdi-leadership",
+      "name": "济宁市纪委监委领导机构",
+      "entry_url": "http://jnjjjc.jndq.gov.cn/col/col35838/index.html",
+      "group": "jndq.gov.cn",
+      "category": "discipline_leadership",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "已核对可见正文发布日期与任免原文。旧入口和搜索缓存可能仍为旧名册，跟随公开跳转后重新读原页；目录日期不是任命日期。",
+      "review_required": true
+    },
+    {
+      "id": "mod-official-releases",
+      "name": "国防部权威发布",
+      "entry_url": "http://www.mod.gov.cn/",
+      "group": "mod.gov.cn",
+      "category": "military_personnel_discovery",
+      "region_ids": [
+        "central"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "查阅正式涉军通报；党籍、军籍、军衔、党和国家两个军委岗位及移送审查起诉分开。转载新华社的同稿不算独立证据。",
+      "review_required": true
     }
   ]
 }

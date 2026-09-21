@@ -2,12 +2,12 @@
   "schema_version": 1,
   "inventory_date": "2026-09-21",
   "dataset": "data/atlas.json",
-  "dataset_sha256": "8e1aea5a8b45874cc15698cbb70a40a638b86d487eb30fa38b1253c5356c92c0",
-  "source_count": 490,
-  "unique_url_count": 459,
-  "unique_host_count": 165,
-  "site_group_count": 105,
-  "has_local_evidence_count": 283,
+  "dataset_sha256": "704d346f27193768052996a3869b7f335d7528333962d3d92fb36f52deccf0b8",
+  "source_count": 511,
+  "unique_url_count": 478,
+  "unique_host_count": 169,
+  "site_group_count": 106,
+  "has_local_evidence_count": 304,
   "notes": [
     "Read-only metadata inventory; no pages fetched and no facts independently reverified.",
     "Unique URLs remove only fragments. Query strings, HTTP/HTTPS, case and trailing slashes remain distinct.",
@@ -19,7 +19,7 @@
   "host_stats": [
     {
       "name": "www.jining.gov.cn",
-      "source_count": 50,
+      "source_count": 51,
       "unique_url_count": 35,
       "source_ids": [
         "jining-counties-jiaxiang-mayor",
@@ -71,7 +71,8 @@
         "v8-dept-gov-notice-19798",
         "v8-dept-gov-notice-19896",
         "v8-dept-gov-notice-19897",
-        "v8-dept-hu-transfer-official"
+        "v8-dept-hu-transfer-official",
+        "v9-department-org-liu-aug17"
       ],
       "hosts": [
         "www.jining.gov.cn"
@@ -94,8 +95,8 @@
     },
     {
       "name": "jiningrenda.jining.gov.cn",
-      "source_count": 44,
-      "unique_url_count": 40,
+      "source_count": 46,
+      "unique_url_count": 42,
       "source_ids": [
         "jining-renda-2703745",
         "jining-renda-2703765",
@@ -140,7 +141,9 @@
         "v4-jining-zhang-haibo-end-20260721",
         "v6-jn-npc",
         "v7-jn-dept-june-appointments2026",
-        "v8-career-yu-resign-20241203"
+        "v8-career-yu-resign-20241203",
+        "v9-department-li-acting-decision",
+        "v9-department-zhu-resignation"
       ],
       "hosts": [
         "jiningrenda.jining.gov.cn"
@@ -219,8 +222,8 @@
     },
     {
       "name": "www.12371.cn",
-      "source_count": 17,
-      "unique_url_count": 17,
+      "source_count": 18,
+      "unique_url_count": 18,
       "source_ids": [
         "cai-bio",
         "civil-service-ranks-2019",
@@ -237,6 +240,7 @@
         "personnel_feed",
         "premier-election-2023",
         "shi-org-2025",
+        "v9-status-rules-organization-2021",
         "wang-huning-bio",
         "zhao-bio"
       ],
@@ -328,6 +332,40 @@
           "source_id": "hist-deng-1971-1980",
           "title": "邓小平生平年表·1971—1980",
           "url": "https://news.12371.cn/2014/08/21/ARTI1408604592052720.shtml"
+        }
+      ]
+    },
+    {
+      "name": "www.npc.gov.cn",
+      "source_count": 9,
+      "unique_url_count": 8,
+      "source_ids": [
+        "civil_service_law",
+        "han-zheng-vp-election-2023",
+        "judicial-election-2023",
+        "npc-2026",
+        "nsc_law",
+        "reform_decision",
+        "state-election-2023",
+        "v9-status-rules-criminal-2018",
+        "v9-status-rules-public-2020"
+      ],
+      "hosts": [
+        "www.npc.gov.cn"
+      ],
+      "groups": [
+        "npc.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v9-status-rules-criminal-2018",
+          "title": "中华人民共和国刑事诉讼法（2018年修正）",
+          "url": "http://www.npc.gov.cn/c2/c12435/201905/t20190521_276591.html"
+        },
+        {
+          "source_id": "v9-status-rules-public-2020",
+          "title": "中华人民共和国公职人员政务处分法",
+          "url": "http://www.npc.gov.cn/npc/c2/c30834/202006/t20200620_306633.html"
         }
       ]
     },
@@ -427,6 +465,71 @@
           "source_id": "miit_adjust_2015",
           "title": "中央编办关于工业和信息化部有关职责和机构调整的通知",
           "url": "https://www.miit.gov.cn/gyhxxhb/jgzz/art/2020/art_4a8ec0f5dc754b30be418107d0de6c1b.html"
+        }
+      ]
+    },
+    {
+      "name": "www.mod.gov.cn",
+      "source_count": 8,
+      "unique_url_count": 8,
+      "source_ids": [
+        "cmc_joint",
+        "defense_law",
+        "party_constitution",
+        "v9-status-expulsion-20260921",
+        "v9-status-investigation-20260124",
+        "v9-status-rules-pla-2025",
+        "wang-minister-2022",
+        "zhang-cmc-current"
+      ],
+      "hosts": [
+        "www.mod.gov.cn"
+      ],
+      "groups": [
+        "mod.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v9-status-rules-pla-2025",
+          "title": "中国人民解放军纪律条令（2025）",
+          "url": "http://www.mod.gov.cn/gfbw/fgwx/16372284.html"
+        },
+        {
+          "source_id": "v9-status-investigation-20260124",
+          "title": "张又侠、刘振立涉嫌严重违纪违法被立案审查调查",
+          "url": "http://www.mod.gov.cn/gfbw/qwfb/16439106.html"
+        }
+      ]
+    },
+    {
+      "name": "dlrk.jining.gov.cn",
+      "source_count": 7,
+      "unique_url_count": 7,
+      "source_ids": [
+        "jining-counties-liangshan-mayor",
+        "jining-counties-qufu-mayor-election",
+        "jining-yanzhou-two-courts-20260205",
+        "v4-jining-zhang-haibo-identity",
+        "v6-jn-parties",
+        "v7-jn-dept-police2026",
+        "v9-department-li-election"
+      ],
+      "hosts": [
+        "dlrk.jining.gov.cn"
+      ],
+      "groups": [
+        "jining.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "jining-counties-liangshan-mayor",
+          "title": "梁山县人民政府全体（扩大）会议召开",
+          "url": "https://dlrk.jining.gov.cn/art/2026/2/28/art_183_2923171.html"
+        },
+        {
+          "source_id": "jining-yanzhou-two-courts-20260205",
+          "title": "兖州区政协十五届五次会议隆重开幕",
+          "url": "https://dlrk.jining.gov.cn/art/2026/2/5/art_183_2922188.html"
         }
       ]
     },
@@ -591,38 +694,6 @@
       ]
     },
     {
-      "name": "www.npc.gov.cn",
-      "source_count": 7,
-      "unique_url_count": 6,
-      "source_ids": [
-        "civil_service_law",
-        "han-zheng-vp-election-2023",
-        "judicial-election-2023",
-        "npc-2026",
-        "nsc_law",
-        "reform_decision",
-        "state-election-2023"
-      ],
-      "hosts": [
-        "www.npc.gov.cn"
-      ],
-      "groups": [
-        "npc.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "civil_service_law",
-          "title": "中华人民共和国公务员法",
-          "url": "https://www.npc.gov.cn/c2/c12435/c12488/201905/t20190521_273712.html"
-        },
-        {
-          "source_id": "nsc_law",
-          "title": "中华人民共和国监察法（2024年修正）",
-          "url": "https://www.npc.gov.cn/c2/c30834/202502/t20250205_442676.html"
-        }
-      ]
-    },
-    {
       "name": "amr.jining.gov.cn",
       "source_count": 6,
       "unique_url_count": 6,
@@ -650,37 +721,6 @@
           "source_id": "v8-dept-market-jun29-traffic",
           "title": "市低速电动车管理工作专班市场秩序监管组召开市场整治工作推进会",
           "url": "https://amr.jining.gov.cn/art/2026/6/29/art_31585_2708583.html"
-        }
-      ]
-    },
-    {
-      "name": "dlrk.jining.gov.cn",
-      "source_count": 6,
-      "unique_url_count": 6,
-      "source_ids": [
-        "jining-counties-liangshan-mayor",
-        "jining-counties-qufu-mayor-election",
-        "jining-yanzhou-two-courts-20260205",
-        "v4-jining-zhang-haibo-identity",
-        "v6-jn-parties",
-        "v7-jn-dept-police2026"
-      ],
-      "hosts": [
-        "dlrk.jining.gov.cn"
-      ],
-      "groups": [
-        "jining.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "jining-counties-liangshan-mayor",
-          "title": "梁山县人民政府全体（扩大）会议召开",
-          "url": "https://dlrk.jining.gov.cn/art/2026/2/28/art_183_2923171.html"
-        },
-        {
-          "source_id": "jining-yanzhou-two-courts-20260205",
-          "title": "兖州区政协十五届五次会议隆重开幕",
-          "url": "https://dlrk.jining.gov.cn/art/2026/2/5/art_183_2922188.html"
         }
       ]
     },
@@ -777,32 +817,32 @@
       ]
     },
     {
-      "name": "www.mod.gov.cn",
+      "name": "www.gov.cn",
       "source_count": 5,
       "unique_url_count": 5,
       "source_ids": [
-        "cmc_joint",
-        "defense_law",
-        "party_constitution",
-        "wang-minister-2022",
-        "zhang-cmc-current"
+        "eco-lichenggang-gazette",
+        "eco-nfra-rank",
+        "nfra_rules",
+        "v9-status-state-appointment-20230311",
+        "wang-deputy-2016"
       ],
       "hosts": [
-        "www.mod.gov.cn"
+        "www.gov.cn"
       ],
       "groups": [
-        "mod.gov.cn"
+        "www.gov.cn"
       ],
       "representative_links": [
         {
-          "source_id": "defense_law",
-          "title": "中华人民共和国国防法（2020年修订）",
-          "url": "https://www.mod.gov.cn/gfbw/fgwx/flfg/4876050.html?big=fan"
+          "source_id": "eco-lichenggang-gazette",
+          "title": "国务院公报：2025年3月31日任命李成钢",
+          "url": "https://www.gov.cn/gongbao/2025/issue_12026/202505/content_7022571.html"
         },
         {
-          "source_id": "cmc_joint",
-          "title": "铸牢人民军队的建军之本强军之魂",
-          "url": "https://www.mod.gov.cn/gfbw/jmsd/4850796.html"
+          "source_id": "wang-deputy-2016",
+          "title": "国务院任免国家工作人员（2016年5月20日）",
+          "url": "https://www.gov.cn/xinwen/2016-05/20/content_5074944.htm"
         }
       ]
     },
@@ -863,6 +903,35 @@
           "source_id": "jining-court-qufu-20260206",
           "title": "葛传伟院长在曲阜市人大会议作法院工作报告",
           "url": "https://www.sdcourt.gov.cn/jningqffy/385482/385446/44522838/index.html"
+        }
+      ]
+    },
+    {
+      "name": "app.www.gov.cn",
+      "source_count": 4,
+      "unique_url_count": 4,
+      "source_ids": [
+        "pboc_change",
+        "reform_2023",
+        "sc_org",
+        "v9-status-rules-party-2023"
+      ],
+      "hosts": [
+        "app.www.gov.cn"
+      ],
+      "groups": [
+        "www.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "reform_2023",
+          "title": "中共中央 国务院印发《党和国家机构改革方案》",
+          "url": "https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html"
+        },
+        {
+          "source_id": "sc_org",
+          "title": "国务院关于机构设置的通知（国发〔2023〕5号）",
+          "url": "https://app.www.gov.cn/govdata/gov/202303/20/498124/article.html"
         }
       ]
     },
@@ -1012,35 +1081,6 @@
       ]
     },
     {
-      "name": "www.gov.cn",
-      "source_count": 4,
-      "unique_url_count": 4,
-      "source_ids": [
-        "eco-lichenggang-gazette",
-        "eco-nfra-rank",
-        "nfra_rules",
-        "wang-deputy-2016"
-      ],
-      "hosts": [
-        "www.gov.cn"
-      ],
-      "groups": [
-        "www.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "eco-lichenggang-gazette",
-          "title": "国务院公报：2025年3月31日任命李成钢",
-          "url": "https://www.gov.cn/gongbao/2025/issue_12026/202505/content_7022571.html"
-        },
-        {
-          "source_id": "wang-deputy-2016",
-          "title": "国务院任免国家工作人员（2016年5月20日）",
-          "url": "https://www.gov.cn/xinwen/2016-05/20/content_5074944.htm"
-        }
-      ]
-    },
-    {
       "name": "www.nda.gov.cn",
       "source_count": 4,
       "unique_url_count": 3,
@@ -1099,30 +1139,58 @@
       ]
     },
     {
-      "name": "app.www.gov.cn",
+      "name": "jnjjjc.jndq.gov.cn",
       "source_count": 3,
       "unique_url_count": 3,
       "source_ids": [
-        "pboc_change",
-        "reform_2023",
-        "sc_org"
+        "v6-jn-inspection",
+        "v9-department-discipline-aug26",
+        "v9-department-discipline-open"
       ],
       "hosts": [
-        "app.www.gov.cn"
+        "jnjjjc.jndq.gov.cn"
       ],
       "groups": [
-        "www.gov.cn"
+        "jndq.gov.cn"
       ],
       "representative_links": [
         {
-          "source_id": "reform_2023",
-          "title": "中共中央 国务院印发《党和国家机构改革方案》",
-          "url": "https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html"
+          "source_id": "v6-jn-inspection",
+          "title": "十四届济宁市委第九轮巡察工作动员部署会召开",
+          "url": "http://jnjjjc.jndq.gov.cn/art/2026/3/4/art_35836_2713645.html"
         },
         {
-          "source_id": "sc_org",
-          "title": "国务院关于机构设置的通知（国发〔2023〕5号）",
-          "url": "https://app.www.gov.cn/govdata/gov/202303/20/498124/article.html"
+          "source_id": "v9-department-discipline-aug26",
+          "title": "市纪委常委会召开会议：李增民主持",
+          "url": "http://jnjjjc.jndq.gov.cn/art/2026/8/26/art_35836_2714201.html"
+        }
+      ]
+    },
+    {
+      "name": "jnszjj.jining.gov.cn",
+      "source_count": 3,
+      "unique_url_count": 3,
+      "source_ids": [
+        "v4-jining-gong-current-20260829",
+        "v7-jn-dept-housing2026",
+        "v9-department-housing-heat-sep4"
+      ],
+      "hosts": [
+        "jnszjj.jining.gov.cn"
+      ],
+      "groups": [
+        "jining.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v7-jn-dept-housing2026",
+          "title": "访市住房城乡建设局党组书记、局长薛聪",
+          "url": "https://jnszjj.jining.gov.cn/art/2026/1/14/art_7613_2707586.html"
+        },
+        {
+          "source_id": "v4-jining-gong-current-20260829",
+          "title": "全省住建系统行业作风暨精神文明建设工作会议在济宁召开",
+          "url": "https://jnszjj.jining.gov.cn/art/2026/8/29/art_7604_2707753.html"
         }
       ]
     },
@@ -1263,6 +1331,34 @@
           "source_id": "v4pm-zhou-cscec-end",
           "title": "中国建筑关于董事长辞任的公告（临2021-069）",
           "url": "https://www.cscec.com/tzzgxnew/tzgg_new/gsgg2021/202111/P020211126689980383345.pdf"
+        }
+      ]
+    },
+    {
+      "name": "www.fmprc.gov.cn",
+      "source_count": 3,
+      "unique_url_count": 2,
+      "source_ids": [
+        "cai-current",
+        "party-election-2022",
+        "v9-status-party-appointment-20221023"
+      ],
+      "hosts": [
+        "www.fmprc.gov.cn"
+      ],
+      "groups": [
+        "fmprc.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "cai-current",
+          "title": "习近平离京赴新德里出席金砖国家领导人第十八次会晤",
+          "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677220/xgxw_677226/202609/t20260912_12021080.shtml"
+        },
+        {
+          "source_id": "party-election-2022",
+          "title": "中国共产党第二十届中央委员会第一次全体会议公报",
+          "url": "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml"
         }
       ]
     },
@@ -1511,33 +1607,6 @@
           "source_id": "v6-jn-org-school",
           "title": "济宁市委组织部：市委党校2026年秋季学期开学典礼",
           "url": "http://jnswzzb.jndq.gov.cn/art/2026/9/11/art_51280_2708481.html"
-        }
-      ]
-    },
-    {
-      "name": "jnszjj.jining.gov.cn",
-      "source_count": 2,
-      "unique_url_count": 2,
-      "source_ids": [
-        "v4-jining-gong-current-20260829",
-        "v7-jn-dept-housing2026"
-      ],
-      "hosts": [
-        "jnszjj.jining.gov.cn"
-      ],
-      "groups": [
-        "jining.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "v7-jn-dept-housing2026",
-          "title": "访市住房城乡建设局党组书记、局长薛聪",
-          "url": "https://jnszjj.jining.gov.cn/art/2026/1/14/art_7613_2707586.html"
-        },
-        {
-          "source_id": "v4-jining-gong-current-20260829",
-          "title": "全省住建系统行业作风暨精神文明建设工作会议在济宁召开",
-          "url": "https://jnszjj.jining.gov.cn/art/2026/8/29/art_7604_2707753.html"
         }
       ]
     },
@@ -1829,33 +1898,6 @@
       ]
     },
     {
-      "name": "www.fmprc.gov.cn",
-      "source_count": 2,
-      "unique_url_count": 2,
-      "source_ids": [
-        "cai-current",
-        "party-election-2022"
-      ],
-      "hosts": [
-        "www.fmprc.gov.cn"
-      ],
-      "groups": [
-        "fmprc.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "cai-current",
-          "title": "习近平离京赴新德里出席金砖国家领导人第十八次会晤",
-          "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677220/xgxw_677226/202609/t20260912_12021080.shtml"
-        },
-        {
-          "source_id": "party-election-2022",
-          "title": "中国共产党第二十届中央委员会第一次全体会议公报",
-          "url": "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml"
-        }
-      ]
-    },
-    {
       "name": "www.hnrd.gov.cn",
       "source_count": 2,
       "unique_url_count": 2,
@@ -1906,6 +1948,33 @@
           "source_id": "v4-yu-current-20260918",
           "title": "于海田主持召开市政府常务会议",
           "url": "https://www.jinan.gov.cn/col/col52/art/2026/art_d4c85559a93f421686239bb7e31efe75.html"
+        }
+      ]
+    },
+    {
+      "name": "www.jnhn.gov.cn",
+      "source_count": 2,
+      "unique_url_count": 2,
+      "source_ids": [
+        "jining-counties-hightech-current",
+        "v9-department-org-zhu-jul3"
+      ],
+      "hosts": [
+        "www.jnhn.gov.cn"
+      ],
+      "groups": [
+        "jnhn.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "jining-counties-hightech-current",
+          "title": "济宁高新区官网近期具名动态",
+          "url": "https://www.jnhn.gov.cn/"
+        },
+        {
+          "source_id": "v9-department-org-zhu-jul3",
+          "title": "强中层、提效能、勇担当：济宁高新区中层干部专题培训班举办",
+          "url": "https://www.jnhn.gov.cn/art/2026/7/6/art_23981_2825601.html"
         }
       ]
     },
@@ -2265,6 +2334,27 @@
           "source_id": "hist-zhu-mayor-years",
           "title": "《朱镕基讲话实录》专题：上海市长1988—1991年",
           "url": "https://dangshi.people.com.cn/GB/146570/238288/index.html"
+        }
+      ]
+    },
+    {
+      "name": "djyj.12371.cn",
+      "source_count": 1,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v9-status-rules-party-charter-2022"
+      ],
+      "hosts": [
+        "djyj.12371.cn"
+      ],
+      "groups": [
+        "12371.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v9-status-rules-party-charter-2022",
+          "title": "中国共产党章程（2022年10月22日通过）",
+          "url": "https://djyj.12371.cn/2022/11/10/ARTI1668074243471682.shtml"
         }
       ]
     },
@@ -2689,27 +2779,6 @@
       ]
     },
     {
-      "name": "jnjjjc.jndq.gov.cn",
-      "source_count": 1,
-      "unique_url_count": 1,
-      "source_ids": [
-        "v6-jn-inspection"
-      ],
-      "hosts": [
-        "jnjjjc.jndq.gov.cn"
-      ],
-      "groups": [
-        "jndq.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "v6-jn-inspection",
-          "title": "十四届济宁市委第九轮巡察工作动员部署会召开",
-          "url": "http://jnjjjc.jndq.gov.cn/art/2026/3/4/art_35836_2713645.html"
-        }
-      ]
-    },
-    {
       "name": "jnjt.jining.gov.cn",
       "source_count": 1,
       "unique_url_count": 1,
@@ -2790,6 +2859,27 @@
           "source_id": "v4pm-bj-current",
           "title": "市委教育科技人才工作领导小组会议召开",
           "url": "https://jw.beijing.gov.cn/jyzy/gwyxx/202609/t20260918_4869535.html"
+        }
+      ]
+    },
+    {
+      "name": "jxjy.sdpu.edu.cn",
+      "source_count": 1,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v9-department-org-yang-exam"
+      ],
+      "hosts": [
+        "jxjy.sdpu.edu.cn"
+      ],
+      "groups": [
+        "sdpu.edu.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v9-department-org-yang-exam",
+          "title": "学校圆满完成2026年度省考及选调生笔试承办任务",
+          "url": "https://jxjy.sdpu.edu.cn/info/1054/2779.htm"
         }
       ]
     },
@@ -3319,6 +3409,27 @@
       ]
     },
     {
+      "name": "www.81.cn",
+      "source_count": 1,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v9-status-expulsion-army-20260921"
+      ],
+      "hosts": [
+        "www.81.cn"
+      ],
+      "groups": [
+        "81.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v9-status-expulsion-army-20260921",
+          "title": "张又侠、刘振立严重违纪违法被开除党籍军籍",
+          "url": "http://www.81.cn/yw_208727/16488071.html"
+        }
+      ]
+    },
+    {
       "name": "www.93.gov.cn",
       "source_count": 1,
       "unique_url_count": 1,
@@ -3609,27 +3720,6 @@
           "source_id": "v4-jining-zhang-haibo-weihai-start-20260717",
           "title": "张海波任威海市委书记",
           "url": "https://www.jinantimes.com.cn/news-38-5289923.html"
-        }
-      ]
-    },
-    {
-      "name": "www.jnhn.gov.cn",
-      "source_count": 1,
-      "unique_url_count": 1,
-      "source_ids": [
-        "jining-counties-hightech-current"
-      ],
-      "hosts": [
-        "www.jnhn.gov.cn"
-      ],
-      "groups": [
-        "jnhn.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "jining-counties-hightech-current",
-          "title": "济宁高新区官网近期具名动态",
-          "url": "https://www.jnhn.gov.cn/"
         }
       ]
     },
@@ -4075,6 +4165,27 @@
       ]
     },
     {
+      "name": "www1.xinhuanet.com",
+      "source_count": 1,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v9-status-state-removal-20260828"
+      ],
+      "hosts": [
+        "www1.xinhuanet.com"
+      ],
+      "groups": [
+        "xinhua-news"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v9-status-state-removal-20260828",
+          "title": "受权发布丨全国人民代表大会常务委员会决定免职的名单",
+          "url": "https://www1.xinhuanet.com/politics/20260828/9f7a67c5059e4e7b8a45a8353c5688c8/c.html"
+        }
+      ]
+    },
+    {
       "name": "www3.xinhuanet.com",
       "source_count": 1,
       "unique_url_count": 1,
@@ -4141,8 +4252,8 @@
   "group_stats": [
     {
       "name": "jining.gov.cn",
-      "source_count": 131,
-      "unique_url_count": 111,
+      "source_count": 136,
+      "unique_url_count": 115,
       "source_ids": [
         "jining-counties-economic-zone-june",
         "jining-counties-jiaxiang-mayor",
@@ -4274,7 +4385,12 @@
         "v8-dept-market-aug20-food",
         "v8-dept-market-aug3-ip",
         "v8-dept-market-jul22-drugs",
-        "v8-dept-market-jun29-traffic"
+        "v8-dept-market-jun29-traffic",
+        "v9-department-housing-heat-sep4",
+        "v9-department-li-acting-decision",
+        "v9-department-li-election",
+        "v9-department-org-liu-aug17",
+        "v9-department-zhu-resignation"
       ],
       "hosts": [
         "amr.jining.gov.cn",
@@ -4390,8 +4506,8 @@
     },
     {
       "name": "xinhua-news",
-      "source_count": 39,
-      "unique_url_count": 38,
+      "source_count": 40,
+      "unique_url_count": 39,
       "source_ids": [
         "audit-cfc-li-20231120",
         "chen-current",
@@ -4426,6 +4542,7 @@
         "v4pm-lin-bio-accessible",
         "v4pm-yin-li-bj",
         "v4pm-yin-li-fujian-end",
+        "v9-status-state-removal-20260828",
         "wang-current",
         "wang-police-2026",
         "wang-qishan-bio-2012",
@@ -4436,6 +4553,7 @@
       "hosts": [
         "www.news.cn",
         "www.xinhuanet.com",
+        "www1.xinhuanet.com",
         "www3.xinhuanet.com"
       ],
       "groups": [
@@ -4456,8 +4574,8 @@
     },
     {
       "name": "12371.cn",
-      "source_count": 27,
-      "unique_url_count": 27,
+      "source_count": 29,
+      "unique_url_count": 29,
       "source_ids": [
         "cai-bio",
         "chen-minister-2016",
@@ -4484,10 +4602,13 @@
         "shi-bio",
         "shi-org-2025",
         "v3-he-cv-20180314",
+        "v9-status-rules-organization-2021",
+        "v9-status-rules-party-charter-2022",
         "wang-huning-bio",
         "zhao-bio"
       ],
       "hosts": [
+        "djyj.12371.cn",
         "news.12371.cn",
         "www.12371.cn"
       ],
@@ -4496,14 +4617,14 @@
       ],
       "representative_links": [
         {
+          "source_id": "v9-status-rules-party-charter-2022",
+          "title": "中国共产党章程（2022年10月22日通过）",
+          "url": "https://djyj.12371.cn/2022/11/10/ARTI1668074243471682.shtml"
+        },
+        {
           "source_id": "li-shulei-bio",
           "title": "李书磊出任福建省委常委、省委宣传部长",
           "url": "https://news.12371.cn/2014/02/07/ARTI1391764619815207.shtml"
-        },
-        {
-          "source_id": "hist-deng-1971-1980",
-          "title": "邓小平生平年表·1971—1980",
-          "url": "https://news.12371.cn/2014/08/21/ARTI1408604592052720.shtml"
         }
       ]
     },
@@ -4690,6 +4811,108 @@
       ]
     },
     {
+      "name": "npc.gov.cn",
+      "source_count": 9,
+      "unique_url_count": 8,
+      "source_ids": [
+        "civil_service_law",
+        "han-zheng-vp-election-2023",
+        "judicial-election-2023",
+        "npc-2026",
+        "nsc_law",
+        "reform_decision",
+        "state-election-2023",
+        "v9-status-rules-criminal-2018",
+        "v9-status-rules-public-2020"
+      ],
+      "hosts": [
+        "www.npc.gov.cn"
+      ],
+      "groups": [
+        "npc.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v9-status-rules-criminal-2018",
+          "title": "中华人民共和国刑事诉讼法（2018年修正）",
+          "url": "http://www.npc.gov.cn/c2/c12435/201905/t20190521_276591.html"
+        },
+        {
+          "source_id": "v9-status-rules-public-2020",
+          "title": "中华人民共和国公职人员政务处分法",
+          "url": "http://www.npc.gov.cn/npc/c2/c30834/202006/t20200620_306633.html"
+        }
+      ]
+    },
+    {
+      "name": "www.gov.cn",
+      "source_count": 9,
+      "unique_url_count": 9,
+      "source_ids": [
+        "eco-lichenggang-gazette",
+        "eco-nfra-rank",
+        "nfra_rules",
+        "pboc_change",
+        "reform_2023",
+        "sc_org",
+        "v9-status-rules-party-2023",
+        "v9-status-state-appointment-20230311",
+        "wang-deputy-2016"
+      ],
+      "hosts": [
+        "app.www.gov.cn",
+        "www.gov.cn"
+      ],
+      "groups": [
+        "www.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "reform_2023",
+          "title": "中共中央 国务院印发《党和国家机构改革方案》",
+          "url": "https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html"
+        },
+        {
+          "source_id": "sc_org",
+          "title": "国务院关于机构设置的通知（国发〔2023〕5号）",
+          "url": "https://app.www.gov.cn/govdata/gov/202303/20/498124/article.html"
+        }
+      ]
+    },
+    {
+      "name": "mod.gov.cn",
+      "source_count": 8,
+      "unique_url_count": 8,
+      "source_ids": [
+        "cmc_joint",
+        "defense_law",
+        "party_constitution",
+        "v9-status-expulsion-20260921",
+        "v9-status-investigation-20260124",
+        "v9-status-rules-pla-2025",
+        "wang-minister-2022",
+        "zhang-cmc-current"
+      ],
+      "hosts": [
+        "www.mod.gov.cn"
+      ],
+      "groups": [
+        "mod.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v9-status-rules-pla-2025",
+          "title": "中国人民解放军纪律条令（2025）",
+          "url": "http://www.mod.gov.cn/gfbw/fgwx/16372284.html"
+        },
+        {
+          "source_id": "v9-status-investigation-20260124",
+          "title": "张又侠、刘振立涉嫌严重违纪违法被立案审查调查",
+          "url": "http://www.mod.gov.cn/gfbw/qwfb/16439106.html"
+        }
+      ]
+    },
+    {
       "name": "ccdi.gov.cn",
       "source_count": 7,
       "unique_url_count": 7,
@@ -4786,67 +5009,35 @@
       ]
     },
     {
-      "name": "npc.gov.cn",
-      "source_count": 7,
+      "name": "jndq.gov.cn",
+      "source_count": 6,
       "unique_url_count": 6,
       "source_ids": [
-        "civil_service_law",
-        "han-zheng-vp-election-2023",
-        "judicial-election-2023",
-        "npc-2026",
-        "nsc_law",
-        "reform_decision",
-        "state-election-2023"
+        "v6-jn-establishment",
+        "v6-jn-inspection",
+        "v6-jn-org-school",
+        "v6-jn-organization",
+        "v9-department-discipline-aug26",
+        "v9-department-discipline-open"
       ],
       "hosts": [
-        "www.npc.gov.cn"
+        "jnjgbz.jndq.gov.cn",
+        "jnjjjc.jndq.gov.cn",
+        "jnswzzb.jndq.gov.cn"
       ],
       "groups": [
-        "npc.gov.cn"
+        "jndq.gov.cn"
       ],
       "representative_links": [
         {
-          "source_id": "civil_service_law",
-          "title": "中华人民共和国公务员法",
-          "url": "https://www.npc.gov.cn/c2/c12435/c12488/201905/t20190521_273712.html"
+          "source_id": "v6-jn-establishment",
+          "title": "市委编办召开全体人员会议暨2026年重点工作部署会议",
+          "url": "http://jnjgbz.jndq.gov.cn/art/2026/2/27/art_36057_2705884.html"
         },
         {
-          "source_id": "nsc_law",
-          "title": "中华人民共和国监察法（2024年修正）",
-          "url": "https://www.npc.gov.cn/c2/c30834/202502/t20250205_442676.html"
-        }
-      ]
-    },
-    {
-      "name": "www.gov.cn",
-      "source_count": 7,
-      "unique_url_count": 7,
-      "source_ids": [
-        "eco-lichenggang-gazette",
-        "eco-nfra-rank",
-        "nfra_rules",
-        "pboc_change",
-        "reform_2023",
-        "sc_org",
-        "wang-deputy-2016"
-      ],
-      "hosts": [
-        "app.www.gov.cn",
-        "www.gov.cn"
-      ],
-      "groups": [
-        "www.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "reform_2023",
-          "title": "中共中央 国务院印发《党和国家机构改革方案》",
-          "url": "https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html"
-        },
-        {
-          "source_id": "sc_org",
-          "title": "国务院关于机构设置的通知（国发〔2023〕5号）",
-          "url": "https://app.www.gov.cn/govdata/gov/202303/20/498124/article.html"
+          "source_id": "v6-jn-inspection",
+          "title": "十四届济宁市委第九轮巡察工作动员部署会召开",
+          "url": "http://jnjjjc.jndq.gov.cn/art/2026/3/4/art_35836_2713645.html"
         }
       ]
     },
@@ -4878,36 +5069,6 @@
           "source_id": "v4-zeng-qingdao-start",
           "title": "青岛市领导干部会议召开 宣布中央、省委关于青岛市委主要负责同志职务调整的决定",
           "url": "https://www.qingdao.gov.cn/ywdt/zwyw/202312/t20231224_7739648.shtml"
-        }
-      ]
-    },
-    {
-      "name": "mod.gov.cn",
-      "source_count": 5,
-      "unique_url_count": 5,
-      "source_ids": [
-        "cmc_joint",
-        "defense_law",
-        "party_constitution",
-        "wang-minister-2022",
-        "zhang-cmc-current"
-      ],
-      "hosts": [
-        "www.mod.gov.cn"
-      ],
-      "groups": [
-        "mod.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "defense_law",
-          "title": "中华人民共和国国防法（2020年修订）",
-          "url": "https://www.mod.gov.cn/gfbw/fgwx/flfg/4876050.html?big=fan"
-        },
-        {
-          "source_id": "cmc_joint",
-          "title": "铸牢人民军队的建军之本强军之魂",
-          "url": "https://www.mod.gov.cn/gfbw/jmsd/4850796.html"
         }
       ]
     },
@@ -5028,37 +5189,6 @@
           "source_id": "csrc_duties",
           "title": "证监会介绍与主要职责",
           "url": "https://www.csrc.gov.cn/csrc/c100002/common_zcnr.shtml"
-        }
-      ]
-    },
-    {
-      "name": "jndq.gov.cn",
-      "source_count": 4,
-      "unique_url_count": 4,
-      "source_ids": [
-        "v6-jn-establishment",
-        "v6-jn-inspection",
-        "v6-jn-org-school",
-        "v6-jn-organization"
-      ],
-      "hosts": [
-        "jnjgbz.jndq.gov.cn",
-        "jnjjjc.jndq.gov.cn",
-        "jnswzzb.jndq.gov.cn"
-      ],
-      "groups": [
-        "jndq.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "v6-jn-establishment",
-          "title": "市委编办召开全体人员会议暨2026年重点工作部署会议",
-          "url": "http://jnjgbz.jndq.gov.cn/art/2026/2/27/art_36057_2705884.html"
-        },
-        {
-          "source_id": "v6-jn-inspection",
-          "title": "十四届济宁市委第九轮巡察工作动员部署会召开",
-          "url": "http://jnjjjc.jndq.gov.cn/art/2026/3/4/art_35836_2713645.html"
         }
       ]
     },
@@ -5295,6 +5425,34 @@
       ]
     },
     {
+      "name": "fmprc.gov.cn",
+      "source_count": 3,
+      "unique_url_count": 2,
+      "source_ids": [
+        "cai-current",
+        "party-election-2022",
+        "v9-status-party-appointment-20221023"
+      ],
+      "hosts": [
+        "www.fmprc.gov.cn"
+      ],
+      "groups": [
+        "fmprc.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "cai-current",
+          "title": "习近平离京赴新德里出席金砖国家领导人第十八次会晤",
+          "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677220/xgxw_677226/202609/t20260912_12021080.shtml"
+        },
+        {
+          "source_id": "party-election-2022",
+          "title": "中国共产党第二十届中央委员会第一次全体会议公报",
+          "url": "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml"
+        }
+      ]
+    },
+    {
       "name": "ifeng.com",
       "source_count": 3,
       "unique_url_count": 3,
@@ -5349,6 +5507,35 @@
           "source_id": "v4-jinan-city-status",
           "title": "历史沿革",
           "url": "https://www.jinan.gov.cn/col/col24703/art/2026/art_ec49a3816be14e7aaf564c20941f3fbf.html"
+        }
+      ]
+    },
+    {
+      "name": "jnhn.gov.cn",
+      "source_count": 3,
+      "unique_url_count": 3,
+      "source_ids": [
+        "jining-counties-hightech-current",
+        "jining-court-president-20260811",
+        "v9-department-org-zhu-jul3"
+      ],
+      "hosts": [
+        "jnhn.gov.cn",
+        "www.jnhn.gov.cn"
+      ],
+      "groups": [
+        "jnhn.gov.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "jining-court-president-20260811",
+          "title": "市十八届人大常委会第三十五次会议举行",
+          "url": "https://jnhn.gov.cn/art/2026/8/11/art_32926_2829746.html"
+        },
+        {
+          "source_id": "jining-counties-hightech-current",
+          "title": "济宁高新区官网近期具名动态",
+          "url": "https://www.jnhn.gov.cn/"
         }
       ]
     },
@@ -5655,33 +5842,6 @@
       ]
     },
     {
-      "name": "fmprc.gov.cn",
-      "source_count": 2,
-      "unique_url_count": 2,
-      "source_ids": [
-        "cai-current",
-        "party-election-2022"
-      ],
-      "hosts": [
-        "www.fmprc.gov.cn"
-      ],
-      "groups": [
-        "fmprc.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "cai-current",
-          "title": "习近平离京赴新德里出席金砖国家领导人第十八次会晤",
-          "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677220/xgxw_677226/202609/t20260912_12021080.shtml"
-        },
-        {
-          "source_id": "party-election-2022",
-          "title": "中国共产党第二十届中央委员会第一次全体会议公报",
-          "url": "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml"
-        }
-      ]
-    },
-    {
       "name": "hnrd.gov.cn",
       "source_count": 2,
       "unique_url_count": 2,
@@ -5705,34 +5865,6 @@
           "source_id": "local_law",
           "title": "中华人民共和国地方各级人民代表大会和地方各级人民政府组织法（2022年修正）",
           "url": "https://www.hnrd.gov.cn/content/2022/03/15/11012496.html"
-        }
-      ]
-    },
-    {
-      "name": "jnhn.gov.cn",
-      "source_count": 2,
-      "unique_url_count": 2,
-      "source_ids": [
-        "jining-counties-hightech-current",
-        "jining-court-president-20260811"
-      ],
-      "hosts": [
-        "jnhn.gov.cn",
-        "www.jnhn.gov.cn"
-      ],
-      "groups": [
-        "jnhn.gov.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "jining-court-president-20260811",
-          "title": "市十八届人大常委会第三十五次会议举行",
-          "url": "https://jnhn.gov.cn/art/2026/8/11/art_32926_2829746.html"
-        },
-        {
-          "source_id": "jining-counties-hightech-current",
-          "title": "济宁高新区官网近期具名动态",
-          "url": "https://www.jnhn.gov.cn/"
         }
       ]
     },
@@ -5923,6 +6055,34 @@
       ]
     },
     {
+      "name": "sdpu.edu.cn",
+      "source_count": 2,
+      "unique_url_count": 2,
+      "source_ids": [
+        "v8-dept-market-hu-college",
+        "v9-department-org-yang-exam"
+      ],
+      "hosts": [
+        "jxjy.sdpu.edu.cn",
+        "www.sdpu.edu.cn"
+      ],
+      "groups": [
+        "sdpu.edu.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v9-department-org-yang-exam",
+          "title": "学校圆满完成2026年度省考及选调生笔试承办任务",
+          "url": "https://jxjy.sdpu.edu.cn/info/1054/2779.htm"
+        },
+        {
+          "source_id": "v8-dept-market-hu-college",
+          "title": "济宁市市场监督管理局党组成员、副局长胡国梁一行到我校调研指导",
+          "url": "https://www.sdpu.edu.cn/info/1409/11607.htm"
+        }
+      ]
+    },
+    {
       "name": "sh.gov.cn",
       "source_count": 2,
       "unique_url_count": 2,
@@ -6001,6 +6161,27 @@
           "source_id": "v4pm-fu-zj-earliest",
           "title": "傅明先赴嘉兴瞻仰南湖红船 调研清廉村居建设",
           "url": "https://www.zjsjw.gov.cn/toutiao/202210/t20221001_7075106.shtml"
+        }
+      ]
+    },
+    {
+      "name": "81.cn",
+      "source_count": 1,
+      "unique_url_count": 1,
+      "source_ids": [
+        "v9-status-expulsion-army-20260921"
+      ],
+      "hosts": [
+        "www.81.cn"
+      ],
+      "groups": [
+        "81.cn"
+      ],
+      "representative_links": [
+        {
+          "source_id": "v9-status-expulsion-army-20260921",
+          "title": "张又侠、刘振立严重违纪违法被开除党籍军籍",
+          "url": "http://www.81.cn/yw_208727/16488071.html"
         }
       ]
     },
@@ -6761,27 +6942,6 @@
       ]
     },
     {
-      "name": "sdpu.edu.cn",
-      "source_count": 1,
-      "unique_url_count": 1,
-      "source_ids": [
-        "v8-dept-market-hu-college"
-      ],
-      "hosts": [
-        "www.sdpu.edu.cn"
-      ],
-      "groups": [
-        "sdpu.edu.cn"
-      ],
-      "representative_links": [
-        {
-          "source_id": "v8-dept-market-hu-college",
-          "title": "济宁市市场监督管理局党组成员、副局长胡国梁一行到我校调研指导",
-          "url": "https://www.sdpu.edu.cn/info/1409/11607.htm"
-        }
-      ]
-    },
-    {
       "name": "shm.com.cn",
       "source_count": 1,
       "unique_url_count": 1,
@@ -7062,32 +7222,37 @@
     "existing_atlas_reference": 5,
     "leadership_page": 1,
     "official": 42,
+    "official_authorized_release": 1,
     "official_directory": 1,
     "official_election": 1,
     "official_institution": 1,
+    "official_law": 2,
     "official_media_republication": 1,
     "official_news": 16,
     "official_notice_reprint": 2,
     "official_notice_republished": 1,
     "official_or_official_media": 32,
-    "official_original": 16,
+    "official_original": 24,
+    "official_republication": 2,
+    "official_rules_reprint": 2,
+    "official_xinhua_reprint": 5,
     "state_media": 2,
     "state_media_reprint": 3,
     "unclassified": 323,
-    "university_official": 3
+    "university_official": 4
   },
   "tag_counts": {
-    "academic_institution_news": 4,
+    "academic_institution_news": 5,
     "academic_method_or_catalog": 3,
-    "appointment_or_election": 97,
+    "appointment_or_election": 100,
     "government_directory": 26,
-    "institutional_rules": 22,
+    "institutional_rules": 25,
     "judiciary": 16,
-    "named_public_activity": 161,
-    "news_media": 122,
-    "npc": 58,
+    "named_public_activity": 165,
+    "news_media": 123,
+    "npc": 62,
     "organization_department": 10,
-    "other_public_reference": 136
+    "other_public_reference": 144
   },
   "duplicate_url_groups": [
     {
@@ -7158,6 +7323,20 @@
       "source_ids": [
         "v3-zhou-cscec-cv",
         "v4pm-zhou-cscec-cv"
+      ]
+    },
+    {
+      "canonical_url": "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml",
+      "source_ids": [
+        "party-election-2022",
+        "v9-status-party-appointment-20221023"
+      ]
+    },
+    {
+      "canonical_url": "https://www.jining.gov.cn/art/2026/8/19/art_106010_2938779.html",
+      "source_ids": [
+        "v7-jn-dept-opc2026",
+        "v9-department-org-liu-aug17"
       ]
     },
     {
@@ -11418,7 +11597,8 @@
       "accessed_at": "2026-09-21",
       "has_local_evidence": true,
       "same_url_source_ids": [
-        "party-election-2022"
+        "party-election-2022",
+        "v9-status-party-appointment-20221023"
       ]
     },
     {
@@ -15935,7 +16115,8 @@
       "accessed_at": "2026-09-21",
       "has_local_evidence": true,
       "same_url_source_ids": [
-        "v7-jn-dept-opc2026"
+        "v7-jn-dept-opc2026",
+        "v9-department-org-liu-aug17"
       ]
     },
     {
@@ -16587,6 +16768,410 @@
       "has_local_evidence": true,
       "same_url_source_ids": [
         "v8-dept-market-jun29-traffic"
+      ]
+    },
+    {
+      "source_id": "v9-department-discipline-aug26",
+      "title": "市纪委常委会召开会议：李增民主持",
+      "url": "http://jnjjjc.jndq.gov.cn/art/2026/8/26/art_35836_2714201.html",
+      "canonical_url": "http://jnjjjc.jndq.gov.cn/art/2026/8/26/art_35836_2714201.html",
+      "host": "jnjjjc.jndq.gov.cn",
+      "group": "jndq.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-08-26",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-department-discipline-aug26"
+      ]
+    },
+    {
+      "source_id": "v9-department-discipline-open",
+      "title": "济宁市纪委监委：领导机构（2026-08-24更新）",
+      "url": "http://jnjjjc.jndq.gov.cn/col/col35838/index.html",
+      "canonical_url": "http://jnjjjc.jndq.gov.cn/col/col35838/index.html",
+      "host": "jnjjjc.jndq.gov.cn",
+      "group": "jndq.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-08-24",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-department-discipline-open"
+      ]
+    },
+    {
+      "source_id": "v9-department-housing-heat-sep4",
+      "title": "市住房城乡建设局调研组督导调研“邹热入曲”重点民生工程",
+      "url": "https://jnszjj.jining.gov.cn/art/2026/9/4/art_7616_2707758.html",
+      "canonical_url": "https://jnszjj.jining.gov.cn/art/2026/9/4/art_7616_2707758.html",
+      "host": "jnszjj.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-09-04",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-department-housing-heat-sep4"
+      ]
+    },
+    {
+      "source_id": "v9-department-li-acting-decision",
+      "title": "济宁市人大常委会关于李增民代理济宁市监察委员会主任职务的决定",
+      "url": "https://jiningrenda.jining.gov.cn/art/2026/7/21/art_31313_2706089.html",
+      "canonical_url": "https://jiningrenda.jining.gov.cn/art/2026/7/21/art_31313_2706089.html",
+      "host": "jiningrenda.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "npc"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-07-21",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-department-li-acting-decision"
+      ]
+    },
+    {
+      "source_id": "v9-department-li-election",
+      "title": "市十八届人大六次会议胜利闭幕：李增民当选监委主任",
+      "url": "https://dlrk.jining.gov.cn/art/2026/8/25/art_182_2938827.html",
+      "canonical_url": "https://dlrk.jining.gov.cn/art/2026/8/25/art_182_2938827.html",
+      "host": "dlrk.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_republication",
+      "category_tags": [
+        "appointment_or_election",
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-08-25",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-department-li-election"
+      ]
+    },
+    {
+      "source_id": "v9-department-org-liu-aug17",
+      "title": "政策精准赋能 全链护航成长：济宁出台首批OPC创业支持清单",
+      "url": "https://www.jining.gov.cn/art/2026/8/19/art_106010_2938779.html",
+      "canonical_url": "https://www.jining.gov.cn/art/2026/8/19/art_106010_2938779.html",
+      "host": "www.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_republication",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-08-19",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v7-jn-dept-opc2026",
+        "v9-department-org-liu-aug17"
+      ]
+    },
+    {
+      "source_id": "v9-department-org-yang-exam",
+      "title": "学校圆满完成2026年度省考及选调生笔试承办任务",
+      "url": "https://jxjy.sdpu.edu.cn/info/1054/2779.htm",
+      "canonical_url": "https://jxjy.sdpu.edu.cn/info/1054/2779.htm",
+      "host": "jxjy.sdpu.edu.cn",
+      "group": "sdpu.edu.cn",
+      "type": "university_official",
+      "category_tags": [
+        "academic_institution_news"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2025-12-10",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-department-org-yang-exam"
+      ]
+    },
+    {
+      "source_id": "v9-department-org-zhu-jul3",
+      "title": "强中层、提效能、勇担当：济宁高新区中层干部专题培训班举办",
+      "url": "https://www.jnhn.gov.cn/art/2026/7/6/art_23981_2825601.html",
+      "canonical_url": "https://www.jnhn.gov.cn/art/2026/7/6/art_23981_2825601.html",
+      "host": "www.jnhn.gov.cn",
+      "group": "jnhn.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-07-06",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-department-org-zhu-jul3"
+      ]
+    },
+    {
+      "source_id": "v9-department-zhu-resignation",
+      "title": "济宁市人大常委会关于接受朱朝辉请求辞去济宁市监察委员会主任职务的决定",
+      "url": "https://jiningrenda.jining.gov.cn/art/2026/7/1/art_31313_2706073.html",
+      "canonical_url": "https://jiningrenda.jining.gov.cn/art/2026/7/1/art_31313_2706073.html",
+      "host": "jiningrenda.jining.gov.cn",
+      "group": "jining.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "npc",
+        "appointment_or_election"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-07-01",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-department-zhu-resignation"
+      ]
+    },
+    {
+      "source_id": "v9-status-expulsion-20260921",
+      "title": "张又侠、刘振立严重违纪违法被开除党籍军籍",
+      "url": "http://www.mod.gov.cn/gfbw/qwfb/16488072.html",
+      "canonical_url": "http://www.mod.gov.cn/gfbw/qwfb/16488072.html",
+      "host": "www.mod.gov.cn",
+      "group": "mod.gov.cn",
+      "type": "official_xinhua_reprint",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-09-21",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-status-expulsion-20260921"
+      ]
+    },
+    {
+      "source_id": "v9-status-expulsion-army-20260921",
+      "title": "张又侠、刘振立严重违纪违法被开除党籍军籍",
+      "url": "http://www.81.cn/yw_208727/16488071.html",
+      "canonical_url": "http://www.81.cn/yw_208727/16488071.html",
+      "host": "www.81.cn",
+      "group": "81.cn",
+      "type": "official_xinhua_reprint",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-09-21",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-status-expulsion-army-20260921"
+      ]
+    },
+    {
+      "source_id": "v9-status-investigation-20260124",
+      "title": "张又侠、刘振立涉嫌严重违纪违法被立案审查调查",
+      "url": "http://www.mod.gov.cn/gfbw/qwfb/16439106.html",
+      "canonical_url": "http://www.mod.gov.cn/gfbw/qwfb/16439106.html",
+      "host": "www.mod.gov.cn",
+      "group": "mod.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-01-24",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-status-investigation-20260124"
+      ]
+    },
+    {
+      "source_id": "v9-status-party-appointment-20221023",
+      "title": "中国共产党第二十届中央委员会第一次全体会议公报",
+      "url": "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml",
+      "canonical_url": "https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml",
+      "host": "www.fmprc.gov.cn",
+      "group": "fmprc.gov.cn",
+      "type": "official_original",
+      "category_tags": [
+        "named_public_activity"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2022-10-23",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "party-election-2022",
+        "v9-status-party-appointment-20221023"
+      ]
+    },
+    {
+      "source_id": "v9-status-rules-criminal-2018",
+      "title": "中华人民共和国刑事诉讼法（2018年修正）",
+      "url": "http://www.npc.gov.cn/c2/c12435/201905/t20190521_276591.html",
+      "canonical_url": "http://www.npc.gov.cn/c2/c12435/201905/t20190521_276591.html",
+      "host": "www.npc.gov.cn",
+      "group": "npc.gov.cn",
+      "type": "official_law",
+      "category_tags": [
+        "npc"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2018-11-05",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-status-rules-criminal-2018"
+      ]
+    },
+    {
+      "source_id": "v9-status-rules-organization-2021",
+      "title": "中共中央办公厅印发《中国共产党组织处理规定（试行）》",
+      "url": "https://www.12371.cn/2021/03/28/ARTI1616933039479965.shtml",
+      "canonical_url": "https://www.12371.cn/2021/03/28/ARTI1616933039479965.shtml",
+      "host": "www.12371.cn",
+      "group": "12371.cn",
+      "type": "official_xinhua_reprint",
+      "category_tags": [
+        "institutional_rules"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2021-03-28",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-status-rules-organization-2021"
+      ]
+    },
+    {
+      "source_id": "v9-status-rules-party-2023",
+      "title": "中共中央印发《中国共产党纪律处分条例》",
+      "url": "https://app.www.gov.cn/govdata/gov/202312/28/510658/article.html",
+      "canonical_url": "https://app.www.gov.cn/govdata/gov/202312/28/510658/article.html",
+      "host": "app.www.gov.cn",
+      "group": "www.gov.cn",
+      "type": "official_xinhua_reprint",
+      "category_tags": [
+        "institutional_rules"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2023-12-28",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-status-rules-party-2023"
+      ]
+    },
+    {
+      "source_id": "v9-status-rules-party-charter-2022",
+      "title": "中国共产党章程（2022年10月22日通过）",
+      "url": "https://djyj.12371.cn/2022/11/10/ARTI1668074243471682.shtml",
+      "canonical_url": "https://djyj.12371.cn/2022/11/10/ARTI1668074243471682.shtml",
+      "host": "djyj.12371.cn",
+      "group": "12371.cn",
+      "type": "official_rules_reprint",
+      "category_tags": [
+        "institutional_rules"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2022-11",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-status-rules-party-charter-2022"
+      ]
+    },
+    {
+      "source_id": "v9-status-rules-pla-2025",
+      "title": "中国人民解放军纪律条令（2025）",
+      "url": "http://www.mod.gov.cn/gfbw/fgwx/16372284.html",
+      "canonical_url": "http://www.mod.gov.cn/gfbw/fgwx/16372284.html",
+      "host": "www.mod.gov.cn",
+      "group": "mod.gov.cn",
+      "type": "official_rules_reprint",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2025-02-27",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-status-rules-pla-2025"
+      ]
+    },
+    {
+      "source_id": "v9-status-rules-public-2020",
+      "title": "中华人民共和国公职人员政务处分法",
+      "url": "http://www.npc.gov.cn/npc/c2/c30834/202006/t20200620_306633.html",
+      "canonical_url": "http://www.npc.gov.cn/npc/c2/c30834/202006/t20200620_306633.html",
+      "host": "www.npc.gov.cn",
+      "group": "npc.gov.cn",
+      "type": "official_law",
+      "category_tags": [
+        "npc"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2020-06-20",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-status-rules-public-2020"
+      ]
+    },
+    {
+      "source_id": "v9-status-state-appointment-20230311",
+      "title": "中华人民共和国全国人民代表大会公告（第五号）",
+      "url": "https://www.gov.cn/xinwen/2023-03/12/content_5746212.htm",
+      "canonical_url": "https://www.gov.cn/xinwen/2023-03/12/content_5746212.htm",
+      "host": "www.gov.cn",
+      "group": "www.gov.cn",
+      "type": "official_xinhua_reprint",
+      "category_tags": [
+        "other_public_reference"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2023-03-12",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-status-state-appointment-20230311"
+      ]
+    },
+    {
+      "source_id": "v9-status-state-removal-20260828",
+      "title": "受权发布丨全国人民代表大会常务委员会决定免职的名单",
+      "url": "https://www1.xinhuanet.com/politics/20260828/9f7a67c5059e4e7b8a45a8353c5688c8/c.html",
+      "canonical_url": "https://www1.xinhuanet.com/politics/20260828/9f7a67c5059e4e7b8a45a8353c5688c8/c.html",
+      "host": "www1.xinhuanet.com",
+      "group": "xinhua-news",
+      "type": "official_authorized_release",
+      "category_tags": [
+        "appointment_or_election",
+        "news_media"
+      ],
+      "classification_status": "metadata_heuristic_not_verified",
+      "published_at": "2026-08-28",
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true,
+      "same_url_source_ids": [
+        "v9-status-state-removal-20260828"
       ]
     },
     {

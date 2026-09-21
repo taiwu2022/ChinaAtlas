@@ -2,7 +2,7 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
 const root=require('node:path').resolve(__dirname,'..');
 const el={addEventListener(){},value:'',close(){},open:false};
 const ctx=vm.createContext({document:{getElementById:()=>el,addEventListener(){},querySelectorAll:()=>[],querySelector:()=>el},window:{addEventListener(){}},location:{hash:'#map'},console,URL,URLSearchParams,Set,Map,setTimeout,requestAnimationFrame(){}});
-for(const f of ['portable.js','navigation.js','graph.js','registry-ui.js','network.js','regions.js','portraits.js','app.js'])vm.runInContext(fs.readFileSync(root+'/web/'+f,'utf8').replace(/boot\(\);\s*$/,''),ctx);
+for(const f of ['portable.js','navigation.js','graph.js','registry-ui.js','network.js','regions.js','portraits.js','personnel.js','departments.js','app.js'])vm.runInContext(fs.readFileSync(root+'/web/'+f,'utf8').replace(/boot\(\);\s*$/,''),ctx);
 ctx.fixture=JSON.parse(fs.readFileSync(process.argv[2]||root+'/data/atlas.json','utf8'));if(!ctx.fixture.career_links){ctx.fixture.career_links=JSON.parse(require('node:child_process').execFileSync('/opt/homebrew/bin/python3',['-c','import json,sys;from network import build_network;print(json.dumps(build_network(json.load(sys.stdin))))'],{cwd:root,input:JSON.stringify(ctx.fixture),encoding:'utf8'}));}vm.runInContext('atlas=fixture',ctx);
 const run=s=>vm.runInContext(s,ctx);let checks=0;const test=(s,expected)=>{assert.deepEqual(JSON.parse(JSON.stringify(run(s))),expected,s);checks++;};
 test("band(person('lin-wu'))",'ministerial');test("band(person('zhou-naixiang'))",'ministerial');test("band(person('han-zheng'))",'national-unverified');

@@ -8,10 +8,10 @@
 | --- | ---: |
 | error | 0 |
 | review | 29 |
-| gap | 837 |
-| info | 17 |
+| gap | 848 |
+| info | 19 |
 
-现有 490 个来源编号，对应 459 个去片段网址。不同网址仍可能转载同一原文，不能据此计算“独立证据数”。
+现有 511 个来源编号，对应 478 个去片段网址。不同网址仍可能转载同一原文，不能据此计算“独立证据数”。
 
 完整队列见 [accuracy-report.json](../reports/accuracy-report.json)。下列每条规则最多列三个例子。
 
@@ -50,7 +50,7 @@
 - [蔡奇](https://taiwu2022.github.io/ChinaAtlas/#people?view=person&id=cai-qi)：中共中央书记处书记
 - [蔡奇](https://taiwu2022.github.io/ChinaAtlas/#people?view=person&id=cai-qi)：中共中央办公厅主任
 
-## 来源尚无短摘录 · 214
+## 来源尚无短摘录 · 225
 
 - `audit-cefac-20250701`：缺少便于逐字复查的公开短摘录；有链接不等于已证明
 - `audit-cfc-li-20231120`：缺少便于逐字复查的公开短摘录；有链接不等于已证明
@@ -62,7 +62,7 @@
 - `audit-cfc-li-20231120`：旧来源待分类；并非自动降为不可靠
 - `audit-cfc-li-20240521`：旧来源待分类；并非自动降为不可靠
 
-## 多个来源编号指向同一网页 · 17
+## 多个来源编号指向同一网页 · 19
 
 - `bg-pang-people-20230807`：http://sd.people.com.cn/n2/2023/0807/c363933-40522188.html；可以分段引用，只计一个网页来源
 - `bg-wen-bjnews-20211028`：https://m.bjnews.com.cn/detail/163539809614268.html；可以分段引用，只计一个网页来源
@@ -74,4 +74,4 @@
 
 先比较精确岗位、人物身份和事件时间，找到原始任免/简历，再记录更正原因与旧值；网页快照和结构检查均不能替代这一过程。
 
-输入数据 SHA-256：`049af404f2192aec7ea5a5a60e5179e3a0c5a3df28e317eae31a6685941b6ae2`；证据摘录 SHA-256：`8c4fe46e3c360dc9b5c510807a7c1067841dc6b80397e5b7182f93ad0cd69ace`。
+输入数据 SHA-256：`dd6d8edafaa8248a7414c61adb65b2d15766a373f85113f623854e89bb982988`；证据摘录 SHA-256：`b76bafd6308cf74cc4d9272f937a974838ee4c4c507c560332c6300c62a470f9`。

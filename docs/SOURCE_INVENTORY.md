@@ -4,7 +4,7 @@
 
 盘点日期：2026-09-21。来自 `data/atlas.json` 当前快照；本报告没有重新访问网页。
 
-**490 条来源 ID · 459 个唯一 URL · 165 个 host · 105 个维护分组。**
+**511 条来源 ID · 478 个唯一 URL · 169 个 host · 106 个维护分组。**
 
 完整逐条清单见 [source-inventory.json](../reports/source-inventory.json)；检索与取证说明见 [来源维护指南](SOURCE_SEARCH_METHODS.md)，人工入口配置见 [source-catalog.json](../data/source-catalog.json)。
 
@@ -28,43 +28,46 @@ python3 scripts/source_inventory.py
 
 | Host | 来源 ID | 唯一 URL | 维护分组 | 代表链接 |
 | --- | ---: | ---: | --- | --- |
-| www.jining.gov.cn | 50 | 35 | jining.gov.cn | [济宁市人民政府关于公布任免市政府组成人员职务的通知（济政任〔2023〕7号）](<https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=15432>)<br>[济宁市人民政府关于任免仲波等工作人员职务的通知（济政任〔2023〕12号）](<https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=17849>) |
-| jiningrenda.jining.gov.cn | 44 | 40 | jining.gov.cn | [济宁市人大常委会 选举任免 济宁市十七届人大常委会第51次会议任免名单](<https://jiningrenda.jining.gov.cn/art/2022/1/19/art_31314_2703745.html>)<br>[济宁市人大常委会 选举任免 济宁市十八届人大常委会第5次会议任免名单](<https://jiningrenda.jining.gov.cn/art/2022/11/8/art_31314_2704403.html>) |
+| www.jining.gov.cn | 51 | 35 | jining.gov.cn | [济宁市人民政府关于公布任免市政府组成人员职务的通知（济政任〔2023〕7号）](<https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=15432>)<br>[济宁市人民政府关于任免仲波等工作人员职务的通知（济政任〔2023〕12号）](<https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=17849>) |
+| jiningrenda.jining.gov.cn | 46 | 42 | jining.gov.cn | [济宁市人大常委会 选举任免 济宁市十七届人大常委会第51次会议任免名单](<https://jiningrenda.jining.gov.cn/art/2022/1/19/art_31314_2703745.html>)<br>[济宁市人大常委会 选举任免 济宁市十八届人大常委会第5次会议任免名单](<https://jiningrenda.jining.gov.cn/art/2022/11/8/art_31314_2704403.html>) |
 | www.xinhuanet.com | 31 | 30 | xinhua-news | [习近平同志简历](<https://www.xinhuanet.com/18cpcnc/2012-11/15/c_113700271.htm>)<br>[中共十八届中央领导机构成员简历：王岐山](<https://www.xinhuanet.com/18cpcnc/2012-11/15/c_113700513_6.htm>) |
-| www.12371.cn | 17 | 17 | 12371.cn | [赵乐际同志简历](<https://www.12371.cn/2017/10/25/ARTI1508930860285702.shtml>)<br>[王沪宁同志简历](<https://www.12371.cn/2017/10/25/ARTI1508930892116703.shtml>) |
+| www.12371.cn | 18 | 18 | 12371.cn | [赵乐际同志简历](<https://www.12371.cn/2017/10/25/ARTI1508930860285702.shtml>)<br>[王沪宁同志简历](<https://www.12371.cn/2017/10/25/ARTI1508930892116703.shtml>) |
 | sd.people.com.cn | 12 | 11 | people.com.cn | [于永生任济宁市人民政府副市长、代理市长](<http://sd.people.com.cn/n2/2021/0317/c363933-34625656.html>)<br>[庞建栋已任济宁市委常委、组织部部长、统战部部长](<http://sd.people.com.cn/n2/2023/0807/c363933-40522188.html>) |
 | news.12371.cn | 10 | 10 | 12371.cn | [李书磊出任福建省委常委、省委宣传部长](<https://news.12371.cn/2014/02/07/ARTI1391764619815207.shtml>)<br>[邓小平生平年表·1971—1980](<https://news.12371.cn/2014/08/21/ARTI1408604592052720.shtml>) |
+| www.npc.gov.cn | 9 | 8 | npc.gov.cn | [中华人民共和国刑事诉讼法（2018年修正）](<http://www.npc.gov.cn/c2/c12435/201905/t20190521_276591.html>)<br>[中华人民共和国公职人员政务处分法](<http://www.npc.gov.cn/npc/c2/c30834/202006/t20200620_306633.html>) |
 | cpc.people.com.cn | 8 | 8 | people.com.cn | [领袖大事年表：邓小平](<https://cpc.people.com.cn/GB/143527/147177/10536615.html>)<br>[朱镕基：历史简历](<https://cpc.people.com.cn/daohang/n/2013/0226/c357263-20607314.html>) |
 | news.iqilu.com | 8 | 8 | iqilu.com | [任刚任青岛市代理市长](<https://news.iqilu.com/shandong/shandonggedi/20250117/5769457.shtml>)<br>[傅明先同志任济宁市委书记](<https://news.iqilu.com/shandong/zhengwu/rsrm/2018/0408/3879304.shtml>) |
 | www.miit.gov.cn | 8 | 8 | miit.gov.cn | [李乐成：工业和信息化部党组书记、部长](<https://www.miit.gov.cn/gyhxxhb/bld/llc/>)<br>[中央编办关于工业和信息化部有关职责和机构调整的通知](<https://www.miit.gov.cn/gyhxxhb/jgzz/art/2020/art_4a8ec0f5dc754b30be418107d0de6c1b.html>) |
+| www.mod.gov.cn | 8 | 8 | mod.gov.cn | [中国人民解放军纪律条令（2025）](<http://www.mod.gov.cn/gfbw/fgwx/16372284.html>)<br>[张又侠、刘振立涉嫌严重违纪违法被立案审查调查](<http://www.mod.gov.cn/gfbw/qwfb/16439106.html>) |
+| dlrk.jining.gov.cn | 7 | 7 | jining.gov.cn | [梁山县人民政府全体（扩大）会议召开](<https://dlrk.jining.gov.cn/art/2026/2/28/art_183_2923171.html>)<br>[兖州区政协十五届五次会议隆重开幕](<https://dlrk.jining.gov.cn/art/2026/2/5/art_183_2922188.html>) |
 | www.beijing.gov.cn | 7 | 7 | beijing.gov.cn | [尹力会见两岸企业家峰会台湾方面理事长 郭金龙出席会见](<https://www.beijing.gov.cn/gongkai/ldhd/202609/t20260919_4870977.html>)<br>[殷勇：北京市市长现任栏目](<https://www.beijing.gov.cn/gongkai/sld/szfld/sz/202210/t20221028_2847604.html>) |
 | www.ccdi.gov.cn | 7 | 7 | ccdi.gov.cn | [纪法百科丨合署办公](<https://www.ccdi.gov.cn/specialn/jfbk/jjctjfbk/202411/t20241126_390355.html>)<br>[中共二十届中央领导机构成员简历](<https://www.ccdi.gov.cn/toutiaon/202210/t20221023_226539.html>) |
 | www.cppcc.gov.cn | 7 | 7 | cppcc.gov.cn | [中国政协网：机构建设及全国政协领导名单](<https://www.cppcc.gov.cn/jgjs/>)<br>[全国政协机构组成及历届主席](<https://www.cppcc.gov.cn/jgzc/>) |
 | www.mof.gov.cn | 7 | 7 | mof.gov.cn | [蓝佛安同志任财政部党组书记](<https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202309/t20230928_3909788.htm>)<br>[中华人民共和国主席令（第十四号）：任命蓝佛安](<https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202310/t20231024_3912921.htm>) |
 | www.news.cn | 7 | 7 | xinhua-news | [王小洪在全国公安厅局长会议上讲话](<https://www.news.cn/20260126/18c6e0705a834791b734124b582f2ff7/c.html>)<br>[陈文清会见越共中央内政部部长黎明智](<https://www.news.cn/20260716/8a972d79bd9b481680a8ca3a9dd242a5/c.html>) |
-| www.npc.gov.cn | 7 | 6 | npc.gov.cn | [中华人民共和国公务员法](<https://www.npc.gov.cn/c2/c12435/c12488/201905/t20190521_273712.html>)<br>[中华人民共和国监察法（2024年修正）](<https://www.npc.gov.cn/c2/c30834/202502/t20250205_442676.html>) |
 | amr.jining.gov.cn | 6 | 6 | jining.gov.cn | [2026年全市市场监管工作会议](<https://amr.jining.gov.cn/art/2026/1/29/art_31585_2708491.html>)<br>[市低速电动车管理工作专班市场秩序监管组召开市场整治工作推进会](<https://amr.jining.gov.cn/art/2026/6/29/art_31585_2708583.html>) |
-| dlrk.jining.gov.cn | 6 | 6 | jining.gov.cn | [梁山县人民政府全体（扩大）会议召开](<https://dlrk.jining.gov.cn/art/2026/2/28/art_183_2923171.html>)<br>[兖州区政协十五届五次会议隆重开幕](<https://dlrk.jining.gov.cn/art/2026/2/5/art_183_2922188.html>) |
 | sd.dzwww.com | 6 | 5 | dzwww.com | [担当尽责结硕果——梁山县委书记、县人武部党委第一书记谷永强抓武装阵地和民兵队伍建设纪事](<https://sd.dzwww.com/kjww/202602/t20260206_17407172.htm>)<br>[济南六区三县一市新一届党委“一把手”集体亮相](<https://sd.dzwww.com/sdgd/sdgdxw/201112/t20111230_6845521.htm>) |
 | www.qingdao.gov.cn | 6 | 6 | qingdao.gov.cn | [青岛市十七届人大四次会议胜利闭幕](<https://www.qingdao.gov.cn/ywdt/tpxw/202502/t20250212_8939166.shtml>)<br>[青岛市领导干部会议召开 宣布中央、省委关于青岛市委主要负责同志职务调整的决定](<https://www.qingdao.gov.cn/ywdt/zwyw/202312/t20231224_7739648.shtml>) |
 | paper.people.com.cn | 5 | 5 | people.com.cn | [《环球人物》：朱镕基在上海的工作与1989年市委书记任命](<https://paper.people.com.cn/hqrw/html/2013-08/26/content_1300579.htm>)<br>[国务院任免国家工作人员](<https://paper.people.com.cn/rmrb/html/2024-07/24/nw.D110000renmrb_20240724_7-04.htm>) |
-| www.mod.gov.cn | 5 | 5 | mod.gov.cn | [中华人民共和国国防法（2020年修订）](<https://www.mod.gov.cn/gfbw/fgwx/flfg/4876050.html?big=fan>)<br>[铸牢人民军队的建军之本强军之魂](<https://www.mod.gov.cn/gfbw/jmsd/4850796.html>) |
+| www.gov.cn | 5 | 5 | www.gov.cn | [国务院公报：2025年3月31日任命李成钢](<https://www.gov.cn/gongbao/2025/issue_12026/202505/content_7022571.html>)<br>[国务院任免国家工作人员（2016年5月20日）](<https://www.gov.cn/xinwen/2016-05/20/content_5074944.htm>) |
 | www.mofcom.gov.cn | 5 | 5 | mofcom.gov.cn | [王文涛部长与欧委会贸易和经济安全委员谢夫乔维奇举行视频会谈](<https://www.mofcom.gov.cn/syxwfb/art/2026/art_e64496474d964fb1973d1975ba9d4779.html>)<br>[中共中央印发《深化党和国家机构改革方案》](<https://www.mofcom.gov.cn/xxgcxjpxsdzgtsshzysx/zywj/art/2018/art_3fa8291d599c4e959c83947a9900c262.html>) |
 | www.sdcourt.gov.cn | 5 | 4 | sdcourt.gov.cn | [济宁西部知识产权保护工作联席会议在嘉祥召开](<https://www.sdcourt.gov.cn/jningjiaxfy/384894/384921/44572882/index.html>)<br>[葛传伟院长在曲阜市人大会议作法院工作报告](<https://www.sdcourt.gov.cn/jningqffy/385482/385446/44522838/index.html>) |
+| app.www.gov.cn | 4 | 4 | www.gov.cn | [中共中央 国务院印发《党和国家机构改革方案》](<https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html>)<br>[国务院关于机构设置的通知（国发〔2023〕5号）](<https://app.www.gov.cn/govdata/gov/202303/20/498124/article.html>) |
 | jnsjcy.jining.gov.cn | 4 | 3 | jining.gov.cn | [全市检察工作推进会召开](<https://jnsjcy.jining.gov.cn/art/2026/8/18/art_62416_2706994.html>)<br>[全市府检联动联席会议召开](<https://jnsjcy.jining.gov.cn/art/2026/9/4/art_62416_2706997.html>) |
 | politics.people.com.cn | 4 | 4 | people.com.cn | [韩金峰当选济南市人大常委会主任 于海田当选济南市市长](<https://politics.people.com.cn/BIG5/n1/2022/0422/c1001-32406336.html>)<br>[湖北省委主要负责同志职务调整 应勇任湖北省委书记（新华社稿及简历）](<https://politics.people.com.cn/n1/2020/0213/c1001-31585419.html>) |
 | renshi.people.com.cn | 4 | 4 | people.com.cn | [龚正同志不再担任山东省委副书记](<https://renshi.people.com.cn/n1/2020/0321/c139617-31642518.html>)<br>[张海波任山东省威海市委书记（简历）](<https://renshi.people.com.cn/n1/2020/0409/c139617-31666881.html>) |
 | safety.jining.gov.cn | 4 | 4 | jining.gov.cn | [全市安全防范暨“应消合一”工作推进会议召开](<https://safety.jining.gov.cn/art/2026/4/29/art_9636_2709576.html>)<br>[济宁市“安全生产月”宣传咨询日活动火热开展](<https://safety.jining.gov.cn/art/2026/6/16/art_9636_2709671.html>) |
 | www.csrc.gov.cn | 4 | 4 | csrc.gov.cn | [中国证监会机构介绍：国务院直属机构、正部级](<https://www.csrc.gov.cn/>)<br>[证监会介绍与主要职责](<https://www.csrc.gov.cn/csrc/c100002/common_zcnr.shtml>) |
-| www.gov.cn | 4 | 4 | www.gov.cn | [国务院公报：2025年3月31日任命李成钢](<https://www.gov.cn/gongbao/2025/issue_12026/202505/content_7022571.html>)<br>[国务院任免国家工作人员（2016年5月20日）](<https://www.gov.cn/xinwen/2016-05/20/content_5074944.htm>) |
 | www.nda.gov.cn | 4 | 3 | nda.gov.cn | [国家数据局职能配置与内设机构：副部级国家局](<https://www.nda.gov.cn/sjj/jgsz/gjsjj/1212/20241212111533730775955_pc.html>)<br>[刘烈宏：国家数据局党组书记、局长](<https://www.nda.gov.cn/sjj/jgsz/jld/llh/list/index_pc_1.html>) |
 | www.sdxc.gov.cn | 4 | 4 | sdxc.gov.cn | [山东省委宣传部：李干杰当选山东省人民政府省长（附简历）](<https://www.sdxc.gov.cn/jryw/snzdxw/202007/t20200722_11608025.htm>)<br>[新华社：李干杰任山东省委书记](<https://www.sdxc.gov.cn/sdfb/zdzc/202109/t20210930_9235759.htm>) |
-| app.www.gov.cn | 3 | 3 | www.gov.cn | [中共中央 国务院印发《党和国家机构改革方案》](<https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html>)<br>[国务院关于机构设置的通知（国发〔2023〕5号）](<https://app.www.gov.cn/govdata/gov/202303/20/498124/article.html>) |
+| jnjjjc.jndq.gov.cn | 3 | 3 | jndq.gov.cn | [十四届济宁市委第九轮巡察工作动员部署会召开](<http://jnjjjc.jndq.gov.cn/art/2026/3/4/art_35836_2713645.html>)<br>[市纪委常委会召开会议：李增民主持](<http://jnjjjc.jndq.gov.cn/art/2026/8/26/art_35836_2714201.html>) |
+| jnszjj.jining.gov.cn | 3 | 3 | jining.gov.cn | [访市住房城乡建设局党组书记、局长薛聪](<https://jnszjj.jining.gov.cn/art/2026/1/14/art_7613_2707586.html>)<br>[全省住建系统行业作风暨精神文明建设工作会议在济宁召开](<https://jnszjj.jining.gov.cn/art/2026/8/29/art_7604_2707753.html>) |
 | jtt.shandong.gov.cn | 3 | 3 | shandong.gov.cn | [党组书记、厅长：于永生](<https://jtt.shandong.gov.cn/art/2025/1/18/art_100458_10322270.html>)<br>[省委第三巡视组巡视省交通运输厅党组工作动员会召开](<https://jtt.shandong.gov.cn/art/2026/9/10/art_12459_10333175.html>) |
 | m.12371.gov.cn | 3 | 3 | 12371.gov.cn | [七一网：李干杰当选省人大常委会主任、周乃翔当选山东省省长](<https://m.12371.gov.cn/content/2021-10/27/content_403835.html>)<br>[中国航空工业集团一把手调整：程福波过往履历](<https://m.12371.gov.cn/content/2025-07/05/content_494633.html>) |
 | nyj.jining.gov.cn | 3 | 3 | jining.gov.cn | [中俄东线济宁支线开阀通气](<https://nyj.jining.gov.cn/art/2026/1/20/art_4076_2709625.html>)<br>[能源局召开工作例会](<https://nyj.jining.gov.cn/art/2026/6/22/art_7215_2709847.html>) |
 | www.bjrd.gov.cn | 3 | 3 | bjrd.gov.cn | [关于接受殷勇辞去北京市副市长职务请求的决定](<https://www.bjrd.gov.cn/rdzl/rdcwhgb/sswjrdcwhgb202204/202210/t20221025_2843350.html>)<br>[关于接受陈吉宁辞去北京市市长职务请求的决定](<https://www.bjrd.gov.cn/zyfb/hy/cwhhy/202211/t20221109_2854472.html>) |
 | www.cscec.com | 3 | 2 | cscec.com | [中国建筑股份有限公司公告附件：周乃翔简历](<https://www.cscec.com/tzzgxnew/tzgg_new/gsgg2021/202104/P020210425006783529690.pdf>)<br>[中国建筑关于董事长辞任的公告（临2021-069）](<https://www.cscec.com/tzzgxnew/tzgg_new/gsgg2021/202111/P020211126689980383345.pdf>) |
+| www.fmprc.gov.cn | 3 | 2 | fmprc.gov.cn | [习近平离京赴新德里出席金砖国家领导人第十八次会晤](<https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677220/xgxw_677226/202609/t20260912_12021080.shtml>)<br>[中国共产党第二十届中央委员会第一次全体会议公报](<https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml>) |
 | www.ndrc.gov.cn | 3 | 3 | ndrc.gov.cn | [国家发展和改革委员会职能配置、内设机构](<https://www.ndrc.gov.cn/fzggw/bnpz/201906/t20190613_948567.html>)<br>[郑栅洁：国家发展改革委党组书记、主任](<https://www.ndrc.gov.cn/fzggw/wld/zsj/>) |
 | www.nfra.gov.cn | 3 | 3 | nfra.gov.cn | [国家金融监督管理总局官方网站：丁向群书记、局长](<https://www.nfra.gov.cn/>)<br>[丁向群会见香港金管局总裁余伟文和香港银行公会代表团](<https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1260731&itemId=922>) |
 | www.shanghai.gov.cn | 3 | 3 | shanghai.gov.cn | [中共中央批准朱忠明任上海市委副书记](<https://www.shanghai.gov.cn/nw4411/20240720/b4392a03df7240948c3a80510e4e9052.html>)<br>[快讯！朱忠明任上海市副市长、代理市长](<https://www.shanghai.gov.cn/nw4411/20260904/5f02c611b46f459f82968961d57aa37e.html>) |
@@ -74,7 +77,6 @@ python3 scripts/source_inventory.py
 | jining.dzwww.com | 2 | 2 | dzwww.com | [霍媛媛当选济宁市政协主席](<https://jining.dzwww.com/news/jnxw/202202/t20220225_9875100.htm>)<br>[商务局服务新能源产业链](<https://jining.dzwww.com/news/jnxw/202609/t20260901_18075716.htm>) |
 | jkq.jining.gov.cn | 2 | 2 | jining.gov.cn | [2026年第20次区党工委会议](<https://jkq.jining.gov.cn/art/2026/6/24/art_72680_2728140.html>)<br>[市领导来我区督导调研](<https://jkq.jining.gov.cn/art/2026/7/30/art_26270_2727954.html>) |
 | jnswzzb.jndq.gov.cn | 2 | 2 | jndq.gov.cn | [灯塔—济宁党建：济宁市委组织部公开信息入口](<http://jnswzzb.jndq.gov.cn/>)<br>[济宁市委组织部：市委党校2026年秋季学期开学典礼](<http://jnswzzb.jndq.gov.cn/art/2026/9/11/art_51280_2708481.html>) |
-| jnszjj.jining.gov.cn | 2 | 2 | jining.gov.cn | [访市住房城乡建设局党组书记、局长薛聪](<https://jnszjj.jining.gov.cn/art/2026/1/14/art_7613_2707586.html>)<br>[全省住建系统行业作风暨精神文明建设工作会议在济宁召开](<https://jnszjj.jining.gov.cn/art/2026/8/29/art_7604_2707753.html>) |
 | lianghui.people.com.cn | 2 | 2 | people.com.cn | [国务委员简历：王毅](<https://lianghui.people.com.cn/2018npc/BIG5/n1/2018/0319/c417507-29876877-3.html>)<br>[中华人民共和国副主席王岐山简历（新华社北京2018年3月17日电）](<https://lianghui.people.com.cn/2018npc/n1/2018/0318/c417507-29873712.html>) |
 | m.bjnews.com.cn | 2 | 1 | bjnews.com.cn | [温金荣任惠州市代市长](<https://m.bjnews.com.cn/detail/163539809614268.html>) |
 | m.dzplus.dzng.com | 2 | 1 | dzng.com | [潍坊市委副书记郭飞，已任济宁市代市长](<https://m.dzplus.dzng.com/share/general/0/NEWS3597072BRBQALVQHRZEQ>) |
@@ -86,9 +88,9 @@ python3 scripts/source_inventory.py
 | www.cac.gov.cn | 2 | 2 | cac.gov.cn | [习近平主持召开中央财经委员会第六次会议（新华社）](<https://www.cac.gov.cn/2025-07/01/c_1753083520138066.htm>)<br>[全国网信办主任会议在京召开（载李书磊书记处书记、中宣部部长职衔）](<https://www.cac.gov.cn/2026-01/06/c_1769452940955576.htm>) |
 | www.court.gov.cn | 2 | 2 | court.gov.cn | [张军会见萨摩亚首席大法官佩雷斯](<https://www.court.gov.cn/zixun/xiangqing/512201.html>)<br>[张军当选为最高人民检察院检察长（附简历）](<https://www.court.gov.cn/zixun/xiangqing/86012.html>) |
 | www.drc.gov.cn | 2 | 2 | drc.gov.cn | [中共中央印发《中国共产党工作机关条例》（2025年11月28日修订发布；第12—14条）](<https://www.drc.gov.cn/DocView.aspx?chnid=378&docid=2909448&leafid=1333>)<br>[国务院第四次廉政工作会议：李强讲话、丁薛祥主持，何立峰张国清刘国中等出席](<https://www.drc.gov.cn/DocView.aspx?chnid=378&docid=2909587&leafid=1350>) |
-| www.fmprc.gov.cn | 2 | 2 | fmprc.gov.cn | [习近平离京赴新德里出席金砖国家领导人第十八次会晤](<https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/1206_677220/xgxw_677226/202609/t20260912_12021080.shtml>)<br>[中国共产党第二十届中央委员会第一次全体会议公报](<https://www.fmprc.gov.cn/web/wjdt_674879/gjldrhd_674881/202210/t20221024_10791333.shtml>) |
 | www.hnrd.gov.cn | 2 | 2 | hnrd.gov.cn | [关于接受朱忠明辞去湖南省人民政府副省长职务的决定](<https://www.hnrd.gov.cn/content/2021/07/30/9723141.html>)<br>[中华人民共和国地方各级人民代表大会和地方各级人民政府组织法（2022年修正）](<https://www.hnrd.gov.cn/content/2022/03/15/11012496.html>) |
 | www.jinan.gov.cn | 2 | 2 | jinan.gov.cn | [历史沿革](<https://www.jinan.gov.cn/col/col24703/art/2026/art_ec49a3816be14e7aaf564c20941f3fbf.html>)<br>[于海田主持召开市政府常务会议](<https://www.jinan.gov.cn/col/col52/art/2026/art_d4c85559a93f421686239bb7e31efe75.html>) |
+| www.jnhn.gov.cn | 2 | 2 | jnhn.gov.cn | [济宁高新区官网近期具名动态](<https://www.jnhn.gov.cn/>)<br>[强中层、提效能、勇担当：济宁高新区中层干部专题培训班举办](<https://www.jnhn.gov.cn/art/2026/7/6/art_23981_2825601.html>) |
 | www.jszzb.gov.cn | 2 | 1 | jszzb.gov.cn | [公务员职务、职级与级别管理办法](<https://www.jszzb.gov.cn/zcfg/zyzyzzbwj/art/2020/art_933077a2be1c4089a9a4660e6553d98f.html>) |
 | www.mee.gov.cn | 2 | 2 | mee.gov.cn | [长江生态环境保护民主监督工作座谈会；李干杰以中央统战部部长身份主持](<https://www.mee.gov.cn/ywdt/szyw/202504/t20250403_1106389.shtml>)<br>[中华人民共和国国务院组织法（2024年修订）](<https://www.mee.gov.cn/zcwj/gwywj/202403/t20240312_1068167.shtml>) |
 | www.mfa.gov.cn | 2 | 2 | mfa.gov.cn | [王毅同志简历](<https://www.mfa.gov.cn/web/wjbz_673089/grjl_673095/>)<br>[中华人民共和国外交部主要职责](<https://www.mfa.gov.cn/wjb_673085/zyzz_673087/>) |
@@ -104,6 +106,7 @@ python3 scripts/source_inventory.py
 | csgl.jining.gov.cn | 1 | 1 | jining.gov.cn | [住建部城市管理监督局来济调研](<https://csgl.jining.gov.cn/art/2026/3/23/art_71056_2712203.html>) |
 | dangjian.people.com.cn | 1 | 1 | people.com.cn | [中共中央印发《中国共产党政法工作条例》（第三、十一、十二条）](<https://dangjian.people.com.cn/n1/2019/0121/c117092-30579948.html>) |
 | dangshi.people.com.cn | 1 | 1 | people.com.cn | [《朱镕基讲话实录》专题：上海市长1988—1991年](<https://dangshi.people.com.cn/GB/146570/238288/index.html>) |
+| djyj.12371.cn | 1 | 1 | 12371.cn | [中国共产党章程（2022年10月22日通过）](<https://djyj.12371.cn/2022/11/10/ARTI1668074243471682.shtml>) |
 | dzrb.dzng.com | 1 | 1 | dzng.com | [山东省人民代表大会常务委员会公告（第77号）](<https://dzrb.dzng.com/general/0/NEWS2088408MLMYGSZDEVUYE>) |
 | edu.zibo.gov.cn | 1 | 1 | zibo.gov.cn | [淄博市特教中心亮相全国残疾人职业教育成果交流活动](<https://edu.zibo.gov.cn/art/2026/9/16/art_225_3021702.html>) |
 | egov.mofcom.gov.cn | 1 | 1 | mofcom.gov.cn | [商务部领导名单（子站页，需交叉核对）](<https://egov.mofcom.gov.cn/>) |
@@ -124,11 +127,11 @@ python3 scripts/source_inventory.py
 | jnhj.jining.gov.cn | 1 | 1 | jining.gov.cn | [济宁市生态环境局局长做客政风行风热线](<https://jnhj.jining.gov.cn/art/2026/6/17/art_18551_2712855.html>) |
 | jnhn.gov.cn | 1 | 1 | jnhn.gov.cn | [市十八届人大常委会第三十五次会议举行](<https://jnhn.gov.cn/art/2026/8/11/art_32926_2829746.html>) |
 | jnjgbz.jndq.gov.cn | 1 | 1 | jndq.gov.cn | [市委编办召开全体人员会议暨2026年重点工作部署会议](<http://jnjgbz.jndq.gov.cn/art/2026/2/27/art_36057_2705884.html>) |
-| jnjjjc.jndq.gov.cn | 1 | 1 | jndq.gov.cn | [十四届济宁市委第九轮巡察工作动员部署会召开](<http://jnjjjc.jndq.gov.cn/art/2026/3/4/art_35836_2713645.html>) |
 | jnjt.jining.gov.cn | 1 | 1 | jining.gov.cn | [全市交通运输半年工作会议](<https://jnjt.jining.gov.cn/art/2026/8/17/art_6312_2708867.html>) |
 | jntzcjj.jinan.gov.cn | 1 | 1 | jinan.gov.cn | [全市服务业大会召开 刘强讲话 于海田主持 韩金峰孙开连杨峰出席](<https://jntzcjj.jinan.gov.cn/col/col88375/art/2026/art_d711b6eef62146998908c582767454a5.html>) |
 | jrb.hubei.gov.cn | 1 | 1 | hubei.gov.cn | [何立峰在金融系统党的建设工作会议上讲话（新华社稿）](<https://jrb.hubei.gov.cn/hbjr/202607/t20260702_5969667.shtml>) |
 | jw.beijing.gov.cn | 1 | 1 | beijing.gov.cn | [市委教育科技人才工作领导小组会议召开](<https://jw.beijing.gov.cn/jyzy/gwyxx/202609/t20260918_4869535.html>) |
+| jxjy.sdpu.edu.cn | 1 | 1 | sdpu.edu.cn | [学校圆满完成2026年度省考及选调生笔试承办任务](<https://jxjy.sdpu.edu.cn/info/1054/2779.htm>) |
 | jypxzx.qdu.edu.cn | 1 | 1 | qdu.edu.cn | [梁山县县乡人大换届及代表履职能力提升培训班在青岛大学开班](<https://jypxzx.qdu.edu.cn/info/1184/2758.htm>) |
 | kab.sww.sh.gov.cn | 1 | 1 | sh.gov.cn | [上海市政府部门转载：“上海是党的诞生地，要牢记历史使命”](<https://kab.sww.sh.gov.cn/xwzx/001001/20170928/66a7a4b1-c834-496f-abf0-0c995378b01b.html>) |
 | leaders.iqilu.com | 1 | 1 | iqilu.com | [山东广播电视台齐鲁网：山东省领导活动视频集](<https://leaders.iqilu.com/shandong/>) |
@@ -154,6 +157,7 @@ python3 scripts/source_inventory.py
 | world.people.com.cn | 1 | 1 | people.com.cn | [外交部部长王毅简历](<https://world.people.com.cn/n/2013/0704/c203635-22077308.html>) |
 | wsb.sh.gov.cn | 1 | 1 | sh.gov.cn | [上海市外办：上海与圣彼得堡结好经过](<https://wsb.sh.gov.cn/ztzl/gjyc/sjyhcs/20231215/1cedd5f9e29c4baa9a0a03194b713c92.html>) |
 | www.12371.gov.cn | 1 | 1 | 12371.gov.cn | [吴清任上海市委常委（组织人事履历）](<https://www.12371.gov.cn/web/article/1438313076419854336/web/content_1438313076419854336.html>) |
+| www.81.cn | 1 | 1 | 81.cn | [张又侠、刘振立严重违纪违法被开除党籍军籍](<http://www.81.cn/yw_208727/16488071.html>) |
 | www.93.gov.cn | 1 | 1 | 93.gov.cn | [九三学社山东省16个市级组织换届工作圆满完成](<https://www.93.gov.cn/m/site/content.do?id=784881>) |
 | www.cgs.gov.cn | 1 | 1 | cgs.gov.cn | [何立峰出席矿业国际合作部长论坛暨2026中国国际矿业大会开幕式并在天津调研](<https://www.cgs.gov.cn/ywdt/ddyw/202609/t20260911_868330.html>) |
 | www.chinatax.gov.cn | 1 | 1 | chinatax.gov.cn | [国家税务总局主要职能](<https://www.chinatax.gov.cn/chinatax/n810209/n810580/index.html>) |
@@ -168,7 +172,6 @@ python3 scripts/source_inventory.py
 | www.jdjt.com | 1 | 1 | jdjt.com | [于长海区长调研经典集团](<https://www.jdjt.com/public/index.php/news/843.html>) |
 | www.jfdaily.com | 1 | 1 | jfdaily.com | [孙开连晋升副部，此前任职省委组织部](<https://www.jfdaily.com/wx/detail.do?id=1055846>) |
 | www.jinantimes.com.cn | 1 | 1 | jinantimes.com.cn | [张海波任威海市委书记](<https://www.jinantimes.com.cn/news-38-5289923.html>) |
-| www.jnhn.gov.cn | 1 | 1 | jnhn.gov.cn | [济宁高新区官网近期具名动态](<https://www.jnhn.gov.cn/>) |
 | www.jnmc.edu.cn | 1 | 1 | jnmc.edu.cn | [任城区委书记张令华一行来校调研交流](<https://www.jnmc.edu.cn/2026/0612/c4614a181804/page.htm>) |
 | www.jnzx.gov.cn | 1 | 1 | jnzx.gov.cn | [济南市政协十五届五次会议闭幕 选举孙开连为市政协主席](<https://www.jnzx.gov.cn/static/html_static/2026/01/21/1618494.html>) |
 | www.ln.gov.cn | 1 | 1 | ln.gov.cn | [李乐成同志简历（辽宁省政府2023年两会页面）](<https://www.ln.gov.cn/web/qmzx/2023lnlh/spxx/2023020210533194951/index.shtml>) |
@@ -190,14 +193,15 @@ python3 scripts/source_inventory.py
 | www.xmrd.gov.cn | 1 | 1 | xmrd.gov.cn | [尹力当选省人大常委会主任及主要简历](<https://www.xmrd.gov.cn/xwzx/rdsd/202101/t20210128_284728.htm>) |
 | www.yantai.gov.cn | 1 | 1 | yantai.gov.cn | [山东省召开全省领导干部会议：宣布林武任省委书记、李干杰不再兼任](<https://www.yantai.gov.cn/art/2022/12/29/art_64101_3096311.html>) |
 | www.yuncheng.gov.cn | 1 | 1 | yuncheng.gov.cn | [新任山西省委书记蓝佛安：过往履历](<https://www.yuncheng.gov.cn/doc/2023/01/13/310180.shtml>) |
+| www1.xinhuanet.com | 1 | 1 | xinhua-news | [受权发布丨全国人民代表大会常务委员会决定免职的名单](<https://www1.xinhuanet.com/politics/20260828/9f7a67c5059e4e7b8a45a8353c5688c8/c.html>) |
 | www3.xinhuanet.com | 1 | 1 | xinhua-news | [国务院任免国家工作人员（2026年6月5日，人社部原稿）](<https://www3.xinhuanet.com/politics/20260605/b2ca6f4243254789841f0feeec27fc79/c.html>) |
 | xxdj.sdlvtc.cn | 1 | 1 | sdlvtc.cn | [山东省政协十二届常委会第二十二次会议召开（大众日报转载）](<https://xxdj.sdlvtc.cn/info/1002/1944.htm>) |
 | xzfg.moj.gov.cn | 1 | 1 | moj.gov.cn | [公安机关组织管理条例（国家行政法规库；第三条）](<https://xzfg.moj.gov.cn/front/law/detail?LawID=1554&Query=%E5%85%AC%E5%AE%89>) |
 
 ## 统计口径与变化
 
-输入快照 SHA-256：`8e1aea5a8b45874cc15698cbb70a40a638b86d487eb30fa38b1253c5356c92c0`。
+输入快照 SHA-256：`704d346f27193768052996a3869b7f335d7528333962d3d92fb36f52deccf0b8`。
 
-本次有 17 组 URL 被多个 source ID 引用；旧 ID 为维持现有人物引用而保留，详见 JSON 的 `duplicate_url_groups`。
+本次有 19 组 URL 被多个 source ID 引用；旧 ID 为维持现有人物引用而保留，详见 JSON 的 `duplicate_url_groups`。
 
 新增来源后重跑即可更新；单次抓取失败、目录删除或来源减少均不能自动解释为官员离任。清单只盘点本库已经引用的资料，不代表整个网站已被采集。

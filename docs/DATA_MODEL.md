@@ -2,6 +2,8 @@
 
 The database separates people, institutions, public posts, locations and sources. It is a reading collection, not a complete civil-service roster. Membership of a people's congress or political party does not by itself establish civil-service employment or personal administrative rank.
 
+Sourced atomic personnel history is stored separately in `status_events`; see [personnel status model and controlled vocabulary](PERSONNEL_STATUS_MODEL.md). Disciplinary, military, investigative and judicial actions never automatically rewrite offices, careers, ranks or guilt. All events require sources and separate announcement/review dates; legacy datasets may omit the collection. Public exports use a whitelist and both regional exports retain selected people's full event history.
+
 ## Identity and geography
 
 - Person IDs remain stable when an office changes. Names alone are never an identity key. Cross-agency homonyms stay separate until a biography or explicit transfer connects them; `possible_identity_ids` records review candidates, not social relationships.

@@ -28,3 +28,9 @@
 - Open career intervals require as_of_date/latest_confirmed_at/current_evidence_date; never use checked_at as a term boundary. A CV stage boundary is not proof an overlapping Party office ended.
 - reviewed_updates uses exact before/set preconditions and supporting sources; stale values reject the whole packet. Keep data_merge.py mirrored with the public scripts/data_merge.py and preserve correction packets. Never apply seed research over SQLite overlays or notes.
 - Two-person comparison is unfiltered evidence inspection: same-place experience and dated co-service remain distinct. Preserve comparison deep links and unsaved drafts on Back.
+
+## Personnel events and departments
+- status_events stores separately sourced actions, not an inferred current verdict. Follow docs/PERSONNEL_STATUS_MODEL.md; unknown effective dates stay null and explicit supersession never deletes history. Investigation, expulsion, public-office removal, prosecution and conviction are separate. An unrecorded event means unknown, never a clean bill.
+- Party and state CMC careers and representation qualifications stay separate. A pending ratification must remain visible; "previously" is not the publication date. Do not infer an individual removal date from general disciplinary rules.
+- Department browsing includes role and career-only records, scopes service to the exact institution, and preserves deep links and notes. Themes are navigation groups, not chains of command or grades. Run tests/personnel.cjs with navigation/frontend/portable tests.
+- Biography snippets must label evidence dates as evidence; a directory publication or activity date is not an appointment date. Keep source excerpts and the normalized short factual summaries readable in both editions.

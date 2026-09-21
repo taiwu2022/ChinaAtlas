@@ -2,6 +2,7 @@
 import argparse,copy,datetime,importlib,ipaddress,json,re,sys
 from pathlib import Path
 from urllib.parse import urlsplit
+from status_events import STATUS_EVENT_FIELDS, validate_status_events
 
 def fields(text):
  keys=text.split();return set(keys+[k+suffix for k in keys for suffix in ('_en','_zh')])
@@ -12,6 +13,7 @@ SCHEMAS={
  'institutions':fields('id name kind parent_id level_label duties authority limits source_ids location_ids territorial_level hierarchy_annotation sector'),
  'sources':fields('id url title published_at accessed_at source_type basis note evidence_summary availability_note canonical_document_id original_publisher repost_of'),
  'profile_facts':fields('id person_id field label value evidence_status source_ids evidence_excerpt as_of_date reviewed_at note'),
+ 'status_events':fields(STATUS_EVENT_FIELDS),
  'relations':fields('from to type label source_ids'),
  'career_posts':fields('id person_id organization_id organization_name location_ids start end title source_ids note start_precision end_precision is_current checked_at date_note interval_basis known_through end_by latest_confirmed_at status current_evidence_date verification_status as_of_date'),
  'career_links':fields('id from to type start end precision_note organization_id organization_name post_ids location_ids source_ids label description date'),
@@ -24,6 +26,7 @@ SCHEMAS={
  'rank_mapping':fields('id sort_order label definition_source_ids usual_office_examples example_source_ids example_basis person_rank_rule'),
  'guides':fields('id title body source_ids learning_question historical_note')}
 PUBLIC_GUIDES=set('read_edges party_vs_state rank_ladder rank_not_membership power_tools appointments tiaokuai vertical_contrast finance_map foreign_affairs_map joint_names budget_chain updates reading-career-networks researching-political-careers accuracy-methodology'.split())
+PUBLIC_GUIDES.add('personnel-status-labels')
 BANNED=re.compile(r'/Users/|/home/|file://|127\.0\.0\.1|localhost|COMPANION_|API_KEY|BEGIN [A-Z ]*PRIVATE KEY|Oxford Political Summer Course',re.I)
 
 def plain_value(value):
@@ -106,6 +109,7 @@ def validate(data):
   assert set(group['post_ids'])<=ids['career_posts']
  for post in data['career_posts']:assert post['person_id'] in ids['people']
  facts=data.get('profile_facts',[])
+ validate_status_events(data)
  assert len({f['id'] for f in facts})==len(facts),'Duplicate profile fact'
  for fact in facts:
   assert fact['person_id'] in ids['people'] and fact.get('source_ids'),'Unsourced or unknown fact identity'
