@@ -48080,6 +48080,93 @@
       ]
     },
     {
+      "id": "nbs",
+      "name": "国家统计局",
+      "name_en": "National Bureau of Statistics",
+      "kind": "state",
+      "parent_id": "state_council",
+      "level_label": "国务院直属机构",
+      "level_label_en": "Institution directly under the State Council",
+      "location_ids": [
+        "china"
+      ],
+      "sector": "economy",
+      "duties": [
+        "组织全国统计调查和重大国情国力普查",
+        "开展国民经济核算并发布全国统计资料",
+        "制定统计制度标准并开展统计监督"
+      ],
+      "duties_en": [
+        "Organize national statistical surveys and major national censuses",
+        "Compile national accounts and publish national statistics",
+        "Set statistical systems and standards and conduct statistical supervision"
+      ],
+      "authority": [
+        "依法审批或备案统计调查项目",
+        "组织统计执法检查并查处重大统计违法行为"
+      ],
+      "authority_en": [
+        "Approve or record statistical survey programmes as prescribed by law",
+        "Organize statistical enforcement inspections and investigate major statistical violations"
+      ],
+      "limits": [
+        "统计业务指导、直属调查队管理和地方统计机关行政领导是不同关系；本页不据一个部门名称推断完整垂直管理链。",
+        "本轮补机构，不把无日期职责网页当作现任领导核实。"
+      ],
+      "limits_en": [
+        "Statistical guidance, management of directly affiliated survey teams, and administrative leadership of local statistics bureaus are distinct relationships.",
+        "This review adds institutional facts; an undated duties page does not verify current officeholders."
+      ],
+      "source_ids": [
+        "sc_org",
+        "v10-nbs-functions"
+      ]
+    },
+    {
+      "id": "safe",
+      "name": "国家外汇管理局",
+      "name_en": "State Administration of Foreign Exchange",
+      "kind": "state",
+      "parent_id": "pboc",
+      "level_label": "中国人民银行管理的国家局；副部级（官网明确）",
+      "level_label_en": "National administration managed by the PBOC; vice-ministerial institutional level stated on its official website",
+      "location_ids": [
+        "china"
+      ],
+      "sector": "finance",
+      "duties": [
+        "统计监测国际收支、对外债权债务和跨境资金流动",
+        "管理外汇市场、经常项目和资本项目相关外汇业务",
+        "经营管理国家外汇储备、黄金储备和其他外汇资产"
+      ],
+      "duties_en": [
+        "Compile and monitor balance-of-payments, external claims and liabilities, and cross-border flows",
+        "Regulate foreign-exchange markets and foreign-exchange business under current and capital accounts",
+        "Manage national foreign-exchange reserves, gold reserves and other foreign-exchange assets"
+      ],
+      "authority": [
+        "依法开展外汇监督检查并处罚外汇违法行为",
+        "向人民银行提供人民币汇率政策建议和依据"
+      ],
+      "authority_en": [
+        "Conduct foreign-exchange inspections and sanction foreign-exchange violations under law",
+        "Provide advice and supporting information to the PBOC on renminbi exchange-rate policy"
+      ],
+      "limits": [
+        "由人民银行管理的国家局，不是人民银行内设司，也不是国务院组成部门。",
+        "机关规格不等于个人级别；本轮未核实该局最新完整领导名单。"
+      ],
+      "limits_en": [
+        "A national administration managed by the PBOC, not an internal PBOC department or a constituent department of the State Council.",
+        "Institutional level is distinct from individual grade; the current complete leadership roster was not reviewed in this packet."
+      ],
+      "source_ids": [
+        "v10-managed-national-bureaus",
+        "v10-safe-functions",
+        "v10-safe-structure"
+      ]
+    },
+    {
       "authority": [],
       "authority_en": [],
       "duties": [],
@@ -48242,14 +48329,16 @@
       "url": "https://app.www.gov.cn/govdata/gov/202303/16/498041/article.html",
       "title": "中共中央 国务院印发《党和国家机构改革方案》",
       "published_at": "2023-03-16",
-      "accessed_at": "2026-09-21"
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true
     },
     {
       "id": "reform_2018",
       "url": "https://www.mofcom.gov.cn/xxgcxjpxsdzgtsshzysx/zywj/art/2018/art_3fa8291d599c4e959c83947a9900c262.html",
       "title": "中共中央印发《深化党和国家机构改革方案》",
       "published_at": "2018-03-21",
-      "accessed_at": "2026-09-21"
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true
     },
     {
       "id": "reform_decision",
@@ -48279,7 +48368,8 @@
       "url": "https://app.www.gov.cn/govdata/gov/202303/20/498124/article.html",
       "title": "国务院关于机构设置的通知（国发〔2023〕5号）",
       "published_at": "2023-03-20",
-      "accessed_at": "2026-09-21"
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true
     },
     {
       "id": "civil_service_law",
@@ -49414,21 +49504,24 @@
       "url": "https://www.drc.gov.cn/DocView.aspx?chnid=378&docid=2909448&leafid=1333",
       "title": "中共中央印发《中国共产党工作机关条例》（2025年11月28日修订发布；第12—14条）",
       "published_at": "2025-12-08",
-      "accessed_at": "2026-09-21"
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true
     },
     {
       "id": "publicity_rules_qa",
       "url": "https://www.pdsjjw.gov.cn/sitesources/xxjjjcw/page_pc/gcsd/article28511629fd5f4b63b0a48a43d1ed1f6b.html",
       "title": "中央宣传部负责人就《中国共产党宣传工作条例》答记者问（新华社；官方纪委网站转载）",
       "published_at": "2019-09-02",
-      "accessed_at": "2026-09-21"
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true
     },
     {
       "id": "united_front_rules",
       "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202101/t20210106_2199003.html",
       "title": "中国共产党统一战线工作条例（第九条统战部设置与职责）",
       "published_at": "2021-01-06",
-      "accessed_at": "2026-09-21"
+      "accessed_at": "2026-09-21",
+      "has_local_evidence": true
     },
     {
       "id": "political_legal_rules",
@@ -52618,6 +52711,56 @@
       "has_local_evidence": true
     },
     {
+      "id": "v10-managed-national-bureaus",
+      "url": "https://app.www.gov.cn/govdata/gov/202303/20/498123/article.html",
+      "title": "国务院关于部委管理的国家局设置的通知（国发〔2023〕6号）",
+      "published_at": "2023-03-20",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "basis": "机构制度或职责材料；网页读取日不代表机构设立或人员任职日期。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v10-nbs-functions",
+      "url": "https://www.stats.gov.cn/jg/jgzn/",
+      "title": "国家统计局：机构职能",
+      "published_at": null,
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "basis": "机构制度或职责材料；网页读取日不代表机构设立或人员任职日期。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v10-safe-functions",
+      "url": "https://www.safe.gov.cn/safe/jbzn/index.html",
+      "title": "国家外汇管理局：基本职能",
+      "published_at": null,
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "basis": "机构制度或职责材料；网页读取日不代表机构设立或人员任职日期。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v10-safe-structure",
+      "url": "https://www.safe.gov.cn/safe/jgsz/index.html",
+      "title": "国家外汇管理局：机构设置",
+      "published_at": null,
+      "accessed_at": "2026-09-21",
+      "source_type": "official_original",
+      "basis": "机构制度或职责材料；网页读取日不代表机构设立或人员任职日期。",
+      "has_local_evidence": true
+    },
+    {
+      "id": "v10-political-legal-rules",
+      "url": "https://www.nea.gov.cn/2019-02/01/c_137792155.htm",
+      "title": "中共中央印发《中国共产党政法工作条例》（国家能源局转载）",
+      "published_at": "2019-02-01",
+      "accessed_at": "2026-09-21",
+      "source_type": "official_reprint",
+      "basis": "机构制度或职责材料；网页读取日不代表机构设立或人员任职日期。",
+      "has_local_evidence": true
+    },
+    {
       "accessed_at": "2026-09-20",
       "id": "notice-2167d36cbdde87a9842a",
       "published_at": "2026-09-20",
@@ -54051,6 +54194,137 @@
         "pboc_law"
       ],
       "label_zh": "货币政策工具，包括准备金要求、央行贷款"
+    },
+    {
+      "from": "state_council",
+      "to": "nbs",
+      "type": "administrative_leadership",
+      "label": "国务院直属机构",
+      "label_en": "Institution directly under the State Council",
+      "source_ids": [
+        "sc_org",
+        "v10-nbs-functions"
+      ]
+    },
+    {
+      "from": "pboc",
+      "to": "safe",
+      "type": "administrative_leadership",
+      "label": "中国人民银行管理的国家局",
+      "label_en": "National administration managed by the PBOC",
+      "source_ids": [
+        "v10-managed-national-bureaus"
+      ]
+    },
+    {
+      "from": "state_council",
+      "to": "ministry-public-security",
+      "type": "administrative_leadership",
+      "label": "国务院组成部门",
+      "label_en": "Constituent department of the State Council",
+      "source_ids": [
+        "sc_org"
+      ]
+    },
+    {
+      "from": "central_committee",
+      "to": "cpc-organization-department",
+      "type": "party_leadership",
+      "label": "党中央职能部门",
+      "label_en": "Functional department of the CPC Central Committee",
+      "source_ids": [
+        "organization_rules"
+      ]
+    },
+    {
+      "from": "central_committee",
+      "to": "cpc-publicity-department",
+      "type": "party_leadership",
+      "label": "党中央职能部门",
+      "label_en": "Functional department of the CPC Central Committee",
+      "source_ids": [
+        "publicity_rules_qa"
+      ]
+    },
+    {
+      "from": "central_committee",
+      "to": "cpc-united-front-department",
+      "type": "party_leadership",
+      "label": "党中央职能部门",
+      "label_en": "Functional department of the CPC Central Committee",
+      "source_ids": [
+        "united_front_rules"
+      ]
+    },
+    {
+      "from": "central_committee",
+      "to": "cpc-general-office",
+      "type": "party_leadership",
+      "label": "党中央综合部门（办公厅）",
+      "label_en": "General Office of the CPC Central Committee",
+      "source_ids": [
+        "work_org_rules_2025"
+      ]
+    },
+    {
+      "from": "central_committee",
+      "to": "cpc-political-legal-commission",
+      "type": "party_leadership",
+      "label": "党中央职能部门",
+      "label_en": "Functional department of the CPC Central Committee",
+      "source_ids": [
+        "v10-political-legal-rules"
+      ]
+    },
+    {
+      "from": "central_committee",
+      "to": "central-state-organs-work-committee",
+      "type": "party_leadership",
+      "label": "党中央派出机关",
+      "label_en": "Agency dispatched by the CPC Central Committee",
+      "source_ids": [
+        "reform_2018"
+      ]
+    },
+    {
+      "from": "central_committee",
+      "to": "central_financial_commission",
+      "type": "party_leadership",
+      "label": "党中央决策议事协调机构",
+      "label_en": "CPC Central Committee decision-making and coordinating body",
+      "source_ids": [
+        "reform_2023"
+      ]
+    },
+    {
+      "from": "central_committee",
+      "to": "central_financial_economic_commission",
+      "type": "party_leadership",
+      "label": "加强党中央对相关工作的集中统一领导",
+      "label_en": "Strengthens centralized and unified CPC Central Committee leadership over the relevant work",
+      "source_ids": [
+        "reform_2018"
+      ]
+    },
+    {
+      "from": "central_committee",
+      "to": "deepening_reform",
+      "type": "party_leadership",
+      "label": "加强党中央对相关工作的集中统一领导",
+      "label_en": "Strengthens centralized and unified CPC Central Committee leadership over the relevant work",
+      "source_ids": [
+        "reform_2018"
+      ]
+    },
+    {
+      "from": "central_committee",
+      "to": "foreign_affairs",
+      "type": "party_leadership",
+      "label": "加强党中央对相关工作的集中统一领导",
+      "label_en": "Strengthens centralized and unified CPC Central Committee leadership over the relevant work",
+      "source_ids": [
+        "reform_2018"
+      ]
     }
   ],
   "career_posts": [
