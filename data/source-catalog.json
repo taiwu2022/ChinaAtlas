@@ -1,0 +1,620 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-21",
+  "purpose": "人工维护的发现入口。与 data/atlas.json 中支持具体事实的 sources 分开；此文件尚未接入采集执行器。",
+  "status_definitions": {
+    "existing_on_use": "维护版服务器已有按启动或使用触发的标题刷新；不是定时任务，也不自动改写人物。",
+    "proposed_manual_review": "建议保留的人工发现入口，尚无该入口的自动采集或定时调度；每条事实仍需读取原文核验。",
+    "commercial_pending": "真实存在但尚未评估交付质量、覆盖和许可的商业产品；未购买或导入，不作为自动事实来源。"
+  },
+  "notes": [
+    "下列来源家族和类型用于导航，不以域名判断权威性。",
+    "入口被列入清单不表示该网站已被完整采集，也不表示历史网页证明现任职务。",
+    "正文日期、事件日期和访问日期分别保留；同源转载不能算独立验证。",
+    "学术目录只作发现和方法参考，未自动下载、导入其数据。",
+    "2026-09-21对用户提供的DeepSeek线索作分项核查，详见docs/SOURCE_CHANNEL_REVIEW_2026-09-21.md；不将模型回答直接变为人物事实。",
+    "verification只描述入口核查，不是人物职务认证；未带此字段的旧入口不表示本轮重查过。",
+    "entry_kind为publisher_reference时，entry_url是身份或转载佐证页，不是微信账号主页；商业候选与公开任免渠道分开。"
+  ],
+  "entries": [
+    {
+      "id": "12371-personnel-news",
+      "name": "共产党员网人事任免",
+      "entry_url": "https://www.12371.cn/special/rsrm/",
+      "group": "12371.cn",
+      "category": "appointment_discovery",
+      "region_ids": [],
+      "status": "existing_on_use",
+      "scope": "提取有日期的文章标题和链接；普通刷新按上次尝试起 24 小时节流，强制刷新 30 秒节流。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "original_page_read",
+        "evidence_urls": [
+          "https://www.12371.cn/special/rsrm/"
+        ],
+        "access_note": "本轮由首页导航确认人事任免入口并读取列表。未重新逐篇验证全部历史内容。"
+      }
+    },
+    {
+      "id": "jining-organization",
+      "name": "济宁市委组织部／灯塔济宁党建",
+      "entry_url": "http://jnswzzb.jndq.gov.cn/",
+      "group": "jndq.gov.cn",
+      "category": "organization_department",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "干部公示、任免宣布、组织工作活动；公示与正式任职分别记录。",
+      "review_required": true
+    },
+    {
+      "id": "jining-npc",
+      "name": "济宁市人大常委会",
+      "entry_url": "https://jiningrenda.jining.gov.cn/",
+      "group": "jining.gov.cn",
+      "category": "npc_appointments",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "选举任免、辞职、组成人员；栏目抓取规则待实现，以具体决定原文为证据。区分人大选举、常委会依法任免与代理正职决定。",
+      "review_required": true
+    },
+    {
+      "id": "jining-policy-platform",
+      "name": "济宁市人民政府统一政策文件平台",
+      "entry_url": "https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/list",
+      "group": "jining.gov.cn",
+      "category": "government_appointments",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "本轮已人工读取新平台任免原文。使用页面公开检索与detail?iid正文；搜索createdate可能是系统时间，任免决定日、正文落款与发布日期分别核准。旧栏目可能缺少迁移后的文件。尚未部署自动采集。政府公布的人大常委会决定与政府自行任免分开；文号和发布网站不能代替决定机关。",
+      "review_required": true
+    },
+    {
+      "id": "jining-government-directory",
+      "name": "济宁市政府机构职能与领导信息",
+      "entry_url": "https://www.jining.gov.cn/col/col74032/",
+      "group": "jining.gov.cn",
+      "category": "government_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "部门和领导发现入口；旧机构、无更新日期目录不能整体认证为现任。",
+      "review_required": true
+    },
+    {
+      "id": "jining-emergency-leaders",
+      "name": "济宁市应急管理局领导介绍",
+      "entry_url": "https://safety.jining.gov.cn/col/col9596/index.html",
+      "group": "jining.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "应急管理班子与分工，另查具名活动；消防第一政治委员等兼任单独核验。",
+      "review_required": true
+    },
+    {
+      "id": "jining-commerce-leaders",
+      "name": "济宁市商务局领导信息",
+      "entry_url": "https://business.jining.gov.cn/col/col6718/index.html",
+      "group": "jining.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "班子与分工、商业流通业务；无日期目录另查近期履职。",
+      "review_required": true
+    },
+    {
+      "id": "jining-market-leaders",
+      "name": "济宁市市场监管局市局领导",
+      "entry_url": "https://amr.jining.gov.cn/col/col31586/index.html",
+      "group": "jining.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "市局班子与分工；知识产权等兼任须独立证据，网页创建日不作为任职起点。",
+      "review_required": true
+    },
+    {
+      "id": "jining-land-institutions",
+      "name": "济宁市自然资源和规划局组织机构",
+      "entry_url": "https://nrp.jining.gov.cn/col/col60562/index.html",
+      "group": "jining.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "领导、科室、直属单位；同名或跨部门冲突留待人工确认。",
+      "review_required": true
+    },
+    {
+      "id": "jining-environment-institutions",
+      "name": "济宁市生态环境局机构概况",
+      "entry_url": "https://jnhj.jining.gov.cn/col/col18543/index.html",
+      "group": "jining.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "职能、领导及分局线索；市局和省驻济监测中心分别建机构。",
+      "review_required": true
+    },
+    {
+      "id": "jining-transport",
+      "name": "济宁市交通运输局",
+      "entry_url": "https://jnjt.jining.gov.cn/",
+      "group": "jining.gov.cn",
+      "category": "department_activity",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "近期具名活动与领导分工；交通、港航、公路等角色按机构拆分。",
+      "review_required": true
+    },
+    {
+      "id": "jining-urban-management",
+      "name": "济宁市城市管理局",
+      "entry_url": "https://csgl.jining.gov.cn/",
+      "group": "jining.gov.cn",
+      "category": "department_activity",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "办公会议、分工与具名活动；科室称谓不自动解释为负责人。",
+      "review_required": true
+    },
+    {
+      "id": "shandong-courts-jining",
+      "name": "山东法院网及济宁辖区法院子站",
+      "entry_url": "https://www.sdcourt.gov.cn/",
+      "group": "sdcourt.gov.cn",
+      "category": "judiciary",
+      "region_ids": [
+        "jining",
+        "shandong"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "法院工作报告、具名活动；司法职务结合人大任免原文确认。",
+      "review_required": true
+    },
+    {
+      "id": "jining-prosecutor-leaders",
+      "name": "济宁市人民检察院领导介绍",
+      "entry_url": "https://jnsjcy.jining.gov.cn/col/col78839/index.html",
+      "group": "jining.gov.cn",
+      "category": "judiciary",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "领导目录，结合该站履职活动及人大任免保留时间证据。",
+      "review_required": true
+    },
+    {
+      "id": "ucsd-ccp-elites-catalog",
+      "name": "UC San Diego CCP Elites 数据目录",
+      "entry_url": "https://chinadatalab.ucsd.edu/resources/ccp-elites-database/",
+      "group": "ucsd.edu",
+      "category": "academic_catalog",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "历史履历数据及授权说明；目录已引用，不等于数据已导入，也不证明现任。",
+      "review_required": true
+    },
+    {
+      "id": "ucsd-ccp-elites-method",
+      "name": "China Data Lab 中共精英可视化与方法介绍",
+      "entry_url": "https://chinadatalab.ucsd.edu/viz-blog/the-makeup-of-the-ccp-elite-update/",
+      "group": "ucsd.edu",
+      "category": "academic_method",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "历史覆盖、履历与可视化方法参考；非实时任免来源。",
+      "review_required": true
+    },
+    {
+      "id": "cfps-cadre-coding",
+      "name": "CFPS 行政／管理职务变量方法文档",
+      "entry_url": "https://www.isss.pku.edu.cn/cfps/docs/20191025120406491438.pdf",
+      "group": "pku.edu.cn",
+      "category": "academic_method",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "历史职位编码参考；不能将历史等级示例直接变为当代个人级别。",
+      "review_required": true
+    },
+    {
+      "id": "nccu-cped",
+      "name": "政治大学中共政治菁英资料库",
+      "entry_url": "https://cped.nccu.edu.tw/about.aspx",
+      "category": "historical_discovery",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "1949年以来副部级以上历史资料；详细查询需注册审核，尚未导入。",
+      "review_required": true
+    },
+    {
+      "id": "jiang-cped",
+      "name": "Junyan Jiang CPED",
+      "entry_url": "https://www.junyanjiang.com/data.html",
+      "category": "historical_discovery",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "与政大CPED不同；主要历史覆盖至2015年，需向作者获取，尚未导入。",
+      "review_required": true
+    },
+    {
+      "id": "wikidata-sources",
+      "name": "Wikidata 人物资料引用规范",
+      "entry_url": "https://www.wikidata.org/wiki/Help:Sources",
+      "category": "historical_discovery",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "身份和原引用发现；保留版本、限定符与原references，不自动作为事实确认。",
+      "review_required": true
+    },
+    {
+      "id": "jining-ccdi-leadership",
+      "name": "济宁市纪委监委领导机构",
+      "entry_url": "http://jnjjjc.jndq.gov.cn/col/col35838/index.html",
+      "group": "jndq.gov.cn",
+      "category": "discipline_leadership",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "已核对可见正文发布日期与任免原文。旧入口和搜索缓存可能仍为旧名册，跟随公开跳转后重新读原页；目录日期不是任命日期。",
+      "review_required": true
+    },
+    {
+      "id": "mod-official-releases",
+      "name": "国防部权威发布",
+      "entry_url": "http://www.mod.gov.cn/",
+      "group": "mod.gov.cn",
+      "category": "military_personnel_discovery",
+      "region_ids": [
+        "central"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "查阅正式涉军通报；党籍、军籍、军衔、党和国家两个军委岗位及移送审查起诉分开。转载新华社的同稿不算独立证据。",
+      "review_required": true
+    },
+    {
+      "id": "shandong-luzuxuan",
+      "name": "鲁祖轩（山东省委组织部微信；转载与身份参考）",
+      "entry_url": "https://renshi.people.com.cn/n1/2025/1227/c139617-40633433.html",
+      "group": "wechat-luzuxuan",
+      "category": "organization_department",
+      "region_ids": [
+        "shandong"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "省组织部任前公示和任免线索；按单篇微信文章留存原URL。此链接是人民网转载佐证，不是账号主页；不承诺首发或完整覆盖。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "publisher_attribution",
+        "evidence_urls": [
+          "https://renshi.people.com.cn/n1/2025/1227/c139617-40633433.html",
+          "https://www.12371.gov.cn/web/article/1438307085275074560/web/content_1438307085275074560.html"
+        ],
+        "access_note": "已读七一网具名转载及人民网检索全文；未在微信客户端检查认证主体和历史消息。"
+      },
+      "entry_kind": "publisher_reference",
+      "platform": "wechat",
+      "account_name": "鲁祖轩"
+    },
+    {
+      "id": "jining-hrss",
+      "name": "济宁市人力资源和社会保障局",
+      "entry_url": "https://hrss.jining.gov.cn/",
+      "group": "jining.gov.cn",
+      "category": "personnel_policy_recruitment",
+      "region_ids": [
+        "jining"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "人事政策、事业单位招聘及考试线索；公务员招录和遴选另查组织部／公务员主管部门。录用聘用公示不等于领导干部任前公示，招聘名单不自动创建官员档案。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "indexed_page_only",
+        "evidence_urls": [
+          "https://hrss.jining.gov.cn/"
+        ],
+        "access_note": "检索主页可见；本轮直接请求有超时，栏目需另行试读。"
+      }
+    },
+    {
+      "id": "state-council-appointments",
+      "name": "中国政府网·国务院任免国家工作人员",
+      "entry_url": "https://www.gov.cn/gwyzzjg/renmian/",
+      "group": "gov.cn",
+      "category": "government_appointments",
+      "region_ids": [
+        "central"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "按具体岗位查询国务院任免；副部长、部长助理等与党内职务分别核准，不能只按个人级别猜任免机关。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "indexed_page_only",
+        "evidence_urls": [
+          "https://www.gov.cn/gwyzzjg/renmian/"
+        ],
+        "access_note": "检索可见，本轮直接访问403。"
+      }
+    },
+    {
+      "id": "state-council-gazette",
+      "name": "国务院公报",
+      "entry_url": "https://www.gov.cn/gongbao/",
+      "group": "gov.cn",
+      "category": "official_gazette",
+      "region_ids": [
+        "central"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "回查任免原刊及期号；正文决定日、新闻发布日期、公报刊载日期分别记录。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "indexed_page_only",
+        "evidence_urls": [
+          "https://www.gov.cn/gongbao/",
+          "https://www.gov.cn/gongbao/2025/issue_11946/material/gwygb202509.pdf"
+        ],
+        "access_note": "入口直连403；已核实有可检索的公报任免原文。"
+      }
+    },
+    {
+      "id": "national-npc-appointments",
+      "name": "全国人大·任免栏目",
+      "entry_url": "https://www.npc.gov.cn/npc/c2/c12435/c12490/index.html",
+      "group": "npc.gov.cn",
+      "category": "npc_appointments",
+      "region_ids": [
+        "central"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "人大及常委会决定、主席令；国务院各部部长与其他部长级岗位区分，按文件确认决定机关和法律程序。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "indexed_page_only",
+        "evidence_urls": [
+          "https://www.npc.gov.cn/npc/c2/c12435/c12490/index_14.html",
+          "https://www.npc.gov.cn/wxzlhgb/"
+        ],
+        "access_note": "归档页可检索，栏目首页本轮502。"
+      }
+    },
+    {
+      "id": "mfa-senior-officials",
+      "name": "外交部·主要官员",
+      "entry_url": "https://www.mfa.gov.cn/wjb_673085/zygy_673101/",
+      "group": "mfa.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "central"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "主要官员与简历入口；部长及司局负责人另有栏目，不承诺实时完整，目录日期不当任职起点。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "original_page_read",
+        "evidence_urls": [
+          "https://www.mfa.gov.cn/wjb_673085/zygy_673101/"
+        ],
+        "access_note": "已核对官方入口与页面用途。"
+      }
+    },
+    {
+      "id": "mfa-departments",
+      "name": "外交部·组织机构",
+      "entry_url": "https://www.mfa.gov.cn/wjb_673085/zzjg_673183/",
+      "group": "mfa.gov.cn",
+      "category": "department_directory",
+      "region_ids": [
+        "central"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "内设司局领导、职责；例如新闻司负责人的信息查新闻司页面。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "original_page_read",
+        "evidence_urls": [
+          "https://www.mfa.gov.cn/wjb_673085/zzjg_673183/",
+          "https://www.mfa.gov.cn/wjb_673085/zzjg_673183/xws_674681/"
+        ],
+        "access_note": "已读组织机构及代表性司局页。"
+      }
+    },
+    {
+      "id": "mfa-ambassador-appointments",
+      "name": "外交部·大使任免",
+      "entry_url": "https://www.mfa.gov.cn/web/wjdt_674879/dsrm_674893/",
+      "group": "mfa.gov.cn",
+      "category": "ambassador_appointments",
+      "region_ids": [
+        "central"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "国家主席任免驻外大使公告；全国人大常委会决定与主席派遣召回的程序分开记录。干部司承办工作不等于法定任免决定。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "original_page_read",
+        "evidence_urls": [
+          "https://www.mfa.gov.cn/web/wjdt_674879/dsrm_674893/"
+        ],
+        "access_note": "列表正文可读；未完整采集历史公告。"
+      }
+    },
+    {
+      "id": "mofcom-personnel",
+      "name": "商务部·人事信息",
+      "entry_url": "https://www.mofcom.gov.cn/rsxx/index.html",
+      "group": "mofcom.gov.cn",
+      "category": "department_appointments",
+      "region_ids": [
+        "central"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "人事栏目发现入口；可见较多历史项，须再查个人页和具体任免公告。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "original_page_read",
+        "evidence_urls": [
+          "https://www.mofcom.gov.cn/rsxx/index.html"
+        ],
+        "access_note": "可读入口包含较多2021／2022旧项，不据此保证当前名册。"
+      }
+    },
+    {
+      "id": "mofcom-personnel-updates",
+      "name": "商务部·人事工作动态",
+      "entry_url": "https://www.mofcom.gov.cn/rsxx/rsgzdt/index.html",
+      "group": "mofcom.gov.cn",
+      "category": "department_appointments",
+      "region_ids": [
+        "central"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "曾发布司局级任免；历史条目只作相应时点的证据，未核实所有人事调整均在此公布。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "original_page_read",
+        "evidence_urls": [
+          "https://www.mofcom.gov.cn/rsxx/rsgzdt/index.html",
+          "https://dcj.mofcom.gov.cn/article/rsxx/rsgzdt/202101/20210103033273.shtml"
+        ],
+        "access_note": "代表性旧任免原文可读；当前动态列表提取不完整，尚未验证采集规则。"
+      }
+    },
+    {
+      "id": "gansu-12380-preappointment",
+      "name": "甘肃省委组织部12380·干部公示",
+      "entry_url": "https://www.gs12380.gov.cn/gbgs/index.php",
+      "group": "gs12380.gov.cn",
+      "category": "organization_department",
+      "region_ids": [
+        "gansu"
+      ],
+      "status": "proposed_manual_review",
+      "scope": "部分地方12380另设公示栏目的一例；不可推及中央12380或其他省，任前公示不等于正式任职。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "original_page_read",
+        "evidence_urls": [
+          "https://www.gs12380.gov.cn/gbgs/index.php"
+        ],
+        "access_note": "本轮列表正文可读。仅保留扩区入口，未导入甘肃人物。"
+      }
+    },
+    {
+      "id": "ce-local-leaders",
+      "name": "中国经济网·地方党政领导人物库",
+      "entry_url": "https://district.ce.cn/zt/rwk/",
+      "group": "ce.cn",
+      "category": "biography_aggregation",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "按省份及领域发现公开履历和任免，追查原始来源；未验证最全或更新最快，不代表所有基层官员。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "indexed_page_only",
+        "evidence_urls": [
+          "https://district.ce.cn/zt/rwk/"
+        ],
+        "access_note": "搜索索引含2026年内容，本轮直连读取失败。"
+      }
+    },
+    {
+      "id": "people-personnel",
+      "name": "人民网·组织人事／人事任免",
+      "entry_url": "https://renshi.people.com.cn/GB/64096/",
+      "group": "people.com.cn",
+      "category": "appointment_discovery",
+      "region_ids": [],
+      "status": "proposed_manual_review",
+      "scope": "中央地方任免和任前公示聚合；逐篇保留发布者、日期、转载关系，旧子栏目可能已停止更新。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "indexed_page_only",
+        "evidence_urls": [
+          "https://renshi.people.com.cn/GB/64096/"
+        ],
+        "access_note": "搜索索引有近期内容；本轮直接访问502。"
+      }
+    },
+    {
+      "id": "dataseed-cpmod",
+      "name": "DataSeed·中国各省市县官员数据库 CPMOD（待评估）",
+      "entry_url": "https://www.cndataseed.com/data-detail/3306?database_id=866",
+      "group": "cndataseed.com",
+      "category": "commercial_dataset",
+      "region_ids": [],
+      "status": "commercial_pending",
+      "scope": "卖方自述D1524、2000—2025.06、54,010条、Excel、专业会员／机构成员下载；条数不等于人数。样表字段和身份对应需说明，覆盖、质量和再发布许可待核；与学术CPED区分。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "provider_claim_only",
+        "evidence_urls": [
+          "https://www.cndataseed.com/data-detail/3306?database_id=866"
+        ],
+        "access_note": "已读卖方介绍及公开样表；未购买、下载整库或导入。"
+      }
+    },
+    {
+      "id": "knowlesys-government",
+      "name": "乐思政府网络情报信息数据库（待评估）",
+      "entry_url": "https://knowlesys.cn/InformationCenter/government.html",
+      "group": "knowlesys.cn",
+      "category": "commercial_dataset",
+      "region_ids": [],
+      "status": "commercial_pending",
+      "scope": "官网宣传领导简历、人事变动、机构等内容；实际覆盖、更新、价格、下载/API与准确率未核实。",
+      "review_required": true,
+      "verification": {
+        "checked_at": "2026-09-21",
+        "level": "provider_claim_only",
+        "evidence_urls": [
+          "https://knowlesys.cn/InformationCenter/government.html"
+        ],
+        "access_note": "官方宣传页可读，子目录本轮超时；未取得数据或授权。"
+      }
+    }
+  ],
+  "verification_definitions": {
+    "original_page_read": "本轮读到入口或代表性正文，不代表完整采集或逐条事实核准。",
+    "indexed_page_only": "本轮检索索引可见，但直接请求受限或失败；尚未验证自动采集可用。",
+    "publisher_attribution": "发布者身份有具名报道或署名转载佐证；未直接核验平台账号认证。",
+    "provider_claim_only": "产品存在；范围、更新及质量仍是供应商自述，未独立验证交付数据。"
+  }
+}
